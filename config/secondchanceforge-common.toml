@@ -15,19 +15,19 @@ secondChanceExplosions = true
 #Determines if the 'Second Chance' feature will be activated by mobs.
 secondChanceMobs = true
 #Determines if the 'Second Chance' feature will be activated by fall damage.
-secondChanceFalls = false
+secondChanceFalls = true
 #Determines if the 'Second Chance' feature will be activated by falling anvils.
 secondChanceAnvils = false
 #Determines if the 'Second Chance' feature will be activated by lightning.
 secondChanceLightning = false
 #Determines if the 'Second Chance' feature will be activated by crashing into a wall.
-secondChanceElytraCrash = false
+secondChanceElytraCrash = true
 #Determines if the 'Second Chance' feature will be activated by falling blocks.
-secondChanceFallingBlocks = false
+secondChanceFallingBlocks = true
 #Determines if the 'Second Chance' feature will be activated by magic, such as potions.
 secondChanceMagic = false
 #Determines if the 'Second Chance' feature will be activated by players.
-secondChancePlayers = false
+secondChancePlayers = true
 #Determines if the 'Second Chance' feature will be activated by thrown tridents.
 secondChanceTridents = false
 #Determines if the 'Second Chance' feature will be activated by arrows.
