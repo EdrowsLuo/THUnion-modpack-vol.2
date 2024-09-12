@@ -65,9 +65,9 @@
 
 [Hunger-Module]
 	#The hunger module removes hunger and makes food to directly heal in order to to remove the tedious task of maintaining hunger, as well as rebalance health management during combat and exploration. Disabling will nullify every feature listed under this module.
-	hungerModuleEnable = true
+	hungerModuleEnable = false
 	#Disable Hunger. Without this, most of the hunger module features and config are nullified, but if you want to adjust stack sizes or potion mechanics without disabling hunger, you can do so here.
-	disableHunger = false
+	disableHunger = true
 	#The multiplier of a food's hunger value to health regained by eating it. Default: 0.5 (50%)
 	foodToHealthModifier = 0.5
 	#The amount of time, in ticks, between players naturally regenerating 1 hp. 1 second is 20 ticks. Turn off the naturalRegeneration gamerule to disable. Default: 250.
