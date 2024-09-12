@@ -188,15 +188,6 @@ machines:
   # Default: false
   steelSteamMultiblocks: false
 
-  # Whether to enable the cleanroom, required for various recipes.
-  # Default: true
-  enableCleanroom: true
-
-  # Whether multiblocks should ignore all cleanroom requirements.
-  # This does nothing if enableCleanroom is false.
-  # Default: false
-  cleanMultiblocks: false
-
   # Block to replace mined ores with in the miner and multiblock miner.
   # Default: minecraft:cobblestone
   replaceMinedBlocksWith: minecraft:cobblestone
@@ -267,10 +258,10 @@ machines:
   # Default: false
   orderedAssemblyLineFluids: false
 
-  # Let Dual Hatch has more ability.
-  # When enabled it, Dual Hatch will can used to assemble line and so on.
+  # Let Buffer has more ability.
+  # When enabled it, Buffer will can used to assemble line and so on.
   # Need restart Minecraft to apply.
-  enableMoreDualHatchAbility: false
+  enableMoreBufferAbility: false
 
   # Small Steam Boiler Options
   smallBoilers:
@@ -466,6 +457,10 @@ gameplay:
   # WARNING: INCOMPLETE
   # Default: false
   enableCompass: false
+
+  disableDrift: true
+
+  babyMode: false
 
 # Config options for Mod Compatibility
 compat:
