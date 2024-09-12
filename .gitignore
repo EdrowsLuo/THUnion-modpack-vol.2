@@ -3,6 +3,7 @@
 /blueprints
 /crash-reports
 /journeymap
+/xaero
 /ldlib
 /local
 /logs
@@ -26,3 +27,15 @@ rhino.local.properties
 
 *.json
 !/**/*/*.json
+
+*.log
+/ESM
+/.vscode
+/aes
+/patchouli_books
+/quests_structures
+/XaeroWaypoints_*
+/*-natives
+/modernfix
+/icon-exports*/*
+knownkeys.txt
