@@ -117,6 +117,9 @@
     "crafting_monitor": true,
     "part_name": true
   },
+  "modularrouters": {
+    "router": true
+  },
   "utilitix": {
     "glue_information": true,
     "experience_crystal": true,
