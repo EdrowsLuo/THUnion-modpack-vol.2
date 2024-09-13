@@ -6,7 +6,7 @@ recipes:
 
   # Whether to remove Block/Ingot compression and decompression in the Crafting Table.
   # Default: true
-  disableManualCompression: true
+  disableManualCompression: false
 
   # Change the recipe of Rods in the Lathe to 1 Rod and 2 Small Piles of Dust, instead of 2 Rods.
   # Default: false
@@ -27,7 +27,7 @@ recipes:
 
   # Recipes for Buckets, Cauldrons, Hoppers, and Iron Bars require Iron Plates, Rods, and more.
   # Default: true
-  hardIronRecipes: true
+  hardIronRecipes: false
 
   # Whether to make Redstone related recipes harder.
   # Default: false
@@ -43,11 +43,11 @@ recipes:
   hardMiscRecipes: false
 
   # Whether to make Glass related recipes harder. Default: true
-  hardGlassRecipes: true
+  hardGlassRecipes: false
 
   # Whether to nerf the Paper crafting recipe.
   # Default: true
-  nerfPaperCrafting: true
+  nerfPaperCrafting: false
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
   # Default: false
@@ -59,11 +59,11 @@ recipes:
 
   # Whether to remove charcoal smelting recipes from the vanilla furnace.
   # Default: true
-  harderCharcoalRecipe: true
+  harderCharcoalRecipe: false
 
   # Whether to make the Flint and Steel recipe require steel parts.
   # Default: true.
-  flintAndSteelRequireSteel: true
+  flintAndSteelRequireSteel: false
 
   # Whether to remove Vanilla Block Recipes from the Crafting Table.
   # Default: false
@@ -71,7 +71,7 @@ recipes:
 
   # Whether to remove Vanilla TNT Recipe from the Crafting Table.
   # Default: true
-  removeVanillaTNTRecipe: true
+  removeVanillaTNTRecipe: false
 
   # How many Multiblock Casings to make per craft. Either 1, 2, or 3.
   # Default: 2
@@ -119,7 +119,7 @@ worldgen:
 
     # Prevents regular vanilla ores from being generated outside GregTech ore veins
     # Default: true
-    removeVanillaOreGen: true
+    removeVanillaOreGen: false
 
     # Prevents vanilla's large ore veins from being generated
     # Default: true
@@ -127,11 +127,11 @@ worldgen:
 
     # Distance between bedrock ore veins in chunks, if enabled.
     # Default: 16
-    bedrockOreDistance: 16
+    bedrockOreDistance: 4
 
     # Make bedrock ore/fluid veins infinite?
     # Default: false
-    infiniteBedrockOresFluids: false
+    infiniteBedrockOresFluids: true
 
     # Sets the maximum number of chunks that may be cached for ore vein generation.
     # Higher values may improve world generation performance, but at the cost of more RAM usage.
@@ -170,11 +170,11 @@ machines:
   # Whether machines or boilers damage the terrain when they explode.
   # Note machines and boilers always explode when overloaded with power or met with special conditions, regardless of this config.
   # Default: true
-  doesExplosionDamagesTerrain: true
+  doesExplosionDamagesTerrain: false
 
   # Enables Safe Active Transformers, removing their ability to explode if unformed while transmitting/receiving power.
   # Default: false
-  harmlessActiveTransformers: false
+  harmlessActiveTransformers: true
 
   # Divisor for Recipe Duration per Overclock.
   # Default: 2.0
@@ -228,7 +228,7 @@ machines:
 
   # Wether to add a "Bedrock Ore Miner" (also enables bedrock ore generation)
   # Default: false
-  doBedrockOres: false
+  doBedrockOres: true
 
   # What Kind of material should the bedrock ore miner output?
   # Default: "raw"
@@ -256,7 +256,7 @@ machines:
   # This is intended for modpack developers only, and is not playable without custom tweaks or addons.
   # Other mods can override this to true, regardless of the config file.
   # Default: false
-  highTierContent: false
+  highTierContent: true
 
   # Whether the Assembly Line should require the item inputs to be in order.
   # Default: true
@@ -267,7 +267,7 @@ machines:
   # Default: false
   orderedAssemblyLineFluids: false
 
-  # Let Dual Hatch has more ability.
+  # Let Dual Hatch has more ability. (DEPRECATED: does nothing now)
   # When enabled it, Dual Hatch will can used to assemble line and so on.
   # Need restart Minecraft to apply.
   enableMoreDualHatchAbility: false
@@ -456,7 +456,7 @@ gameplay:
 
   # Whether environmental hazards like pollution or radiation are active
   # Default: true
-  environmentalHazards: true
+  environmentalHazards: false
 
   # How much environmental hazards decay per chunk, per tick.
   # Default: 0.001
@@ -478,7 +478,7 @@ compat:
 
     # Enable GTEU to Platform native (and vice versa) Converters.
     # Default: false
-    enablePlatformConverters: false
+    enablePlatformConverters: true
 
     # Platform native Energy to GTEU ratio for converting FE to EU.
     # Only affects converters.
