@@ -6,19 +6,19 @@
 	baseRegen = 5
 	#Base max mana
 	#Range: > 0
-	baseMax = 100
+	baseMax = 150
 	#How often max and regen will be calculated, in ticks. NOTE: Having the base mana regen AT LEAST this value is recommended.
 	#Range: 1 ~ 20
 	updateInterval = 5
 	#Max mana bonus per glyph
 	#Range: > 0
-	glyphmax = 15
+	glyphmax = 20
 	#Max mana bonus for tier of book
 	#Range: > 0
-	tierMax = 50
+	tierMax = 100
 	#Mana regen bonus for tier of book
 	#Range: > 0
-	tierRegen = 1
+	tierRegen = 2
 	#Mana Boost value per level
 	#Range: > 0
 	manaBoost = 25
