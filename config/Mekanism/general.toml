@@ -34,7 +34,7 @@
 	superheatingHeatTransfer = 1.6E7
 	#Peak processing rate for the Solar Neutron Activator. Note: It can go higher than this value in some extreme environments.
 	#Range: 1 ~ 1024
-	maxSolarNeutronActivatorRate = 64
+	maxSolarNeutronActivatorRate = 1024
 
 	#Dynamic Tank Settings
 	[general.dynamic_tank]
@@ -96,10 +96,10 @@
 		chunkCheckRadius = 5
 		#Radiation sources are multiplied by this constant roughly once per second to represent their emission decay. At the default rate, it takes roughly 10 hours to remove a 1,000 Sv/h (crazy high) source.
 		#Range: 0.0 ~ 1.0
-		sourceDecayRate = 0.9995
+		sourceDecayRate = 0.99
 		#Radiated objects and entities are multiplied by this constant roughly once per second to represent their dosage decay.
 		#Range: 0.0 ~ 1.0
-		targetDecayRate = 0.9995
+		targetDecayRate = 0.97
 		#Defines the minimum severity radiation dosage severity (scale of 0 to 1) for which negative effects can take place. Set to 1 to disable negative effects completely.
 		#Range: 0.0 ~ 1.0
 		negativeEffectsMinSeverity = 0.1
@@ -117,18 +117,18 @@
 	[general.digital_miner]
 		#Energy multiplier for using silk touch mode with the Digital Miner.
 		#Range: > 1
-		silkMultiplier = 12
+		silkMultiplier = 4
 		#Maximum radius in blocks that the Digital Miner can reach. (Increasing this may have negative effects on stability and/or performance. We strongly recommend you leave it at the default value).
 		#Range: > 1
-		maxRadius = 32
+		maxRadius = 48
 		#Number of ticks required to mine a single block with a Digital Miner (without any upgrades).
 		#Range: > 1
-		ticksPerMine = 80
+		ticksPerMine = 40
 
 	#Laser Settings
 	[general.laser]
 		#If enabled, lasers can break blocks and the flamethrower starts fires.
-		aestheticWorldDamage = true
+		aestheticWorldDamage = false
 		#How far (in blocks) a laser can travel.
 		#Range: 1 ~ 1024
 		range = 64
@@ -151,7 +151,7 @@
 		pumpWaterSources = false
 		#mB of Heavy Water that is extracted per block of Water by the Electric Pump with a Filter Upgrade.
 		#Range: 1 ~ 1000
-		pumpHeavyWaterAmount = 10
+		pumpHeavyWaterAmount = 512
 		#Fluidic Plenisher stops after this many blocks.
 		#Range: 1 ~ 1000000
 		maxPlenisherNodes = 4000
