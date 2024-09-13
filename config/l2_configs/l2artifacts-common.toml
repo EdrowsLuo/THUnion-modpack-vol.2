@@ -15,22 +15,22 @@ storageSmall = 256
 storageLarge = 512
 #exponential experience requirement per rank
 #Range: 1.0 ~ 10.0
-expConsumptionRankFactor = 2.0
+expConsumptionRankFactor = 10.0
 #exponential experience requirement per level
 #Range: 1.0 ~ 10.0
-expLevelFactor = 1.05
+expLevelFactor = 2.0
 #experience requirement for level 0 rank 1 artifact
 #Range: 1 ~ 10000
 baseExpConsumption = 100
 #experience retained for using upgraded artifact to upgrade
 #Range: 0.0 ~ 1.0
-expRetention = 0.9
+expRetention = 1.0
 #experience available for level 0 rank 1 artifact
 #Range: 1 ~ 1000000
 baseExpConversion = 100
 #exponential experience available per rank
 #Range: 1.0 ~ 10.0
-expConversionRankFactor = 2.0
+expConversionRankFactor = 5.0
 #Enable Artifact Rank up recipe
 enableArtifactRankUpRecipe = true
 #When L2Hostility is installed, use level instead of health for drops
