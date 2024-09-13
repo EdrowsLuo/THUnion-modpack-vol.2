@@ -8,7 +8,7 @@
 #Miscellaneous options
 [general]
 	#Always Keep xp on death [false/true|default:false]
-	always_keep_xp_on_death = false
+	always_keep_xp_on_death = true
 	#The duration of the Ghostly Shape effect in seconds [0..MAX|default:120]
 	#Range: > 0
 	ghostly_shape_duration = 120
@@ -16,21 +16,21 @@
 #Allows to customize or disable the enchantments
 [enchantments]
 	#Enables the enchantment Spectral Bite [false/true|default:true]
-	enable_enchantment_spectral_bite = true
+	enable_enchantment_spectral_bite = false
 	#Enables the enchantment Soulbound [false/true|default:true]
 	enable_enchantment_soulbound = true
 	#Enables the enchantment Magic Siphon [false/true|default:true]
-	enable_enchantment_magic_siphon = true
+	enable_enchantment_magic_siphon = false
 	#Enables the enchantment Plague Bringer [false/true|default:true]
-	enable_enchantment_plague_bringer = true
+	enable_enchantment_plague_bringer = false
 	#Enables the enchantment Curse of Bones [false/true|default:true]
-	enable_enchantment_curse_of_bones = true
+	enable_enchantment_curse_of_bones = false
 	#Enables the enchantment Blessing [false/true|default:true]
-	enable_enchantment_blessing = true
+	enable_enchantment_blessing = false
 	#Enables the enchantment Frostbite [false/true|default:true]
-	enable_enchantment_frostbite = true
+	enable_enchantment_frostbite = false
 	#Enables the enchantment Spectral Conjurer [false/true|default:true]
-	enable_enchantment_spectral_conjurer = true
+	enable_enchantment_spectral_conjurer = false
 	#Allows Soulbound at enchanting table [false/true|default:false]
 	soulbound_enchanting_table = true
 	#Allows Spectral Bite at enchanting table [false/true|default:false]
@@ -116,7 +116,7 @@
 #For settings related to magic items
 [magic_item]
 	#Always enchant Grave's Key [false/true|default:false]
-	always_enchant_grave_key = false
+	always_enchant_grave_key = true
 	#Prevents to craft Enchanted Grave Key [false/true|default:false]
 	disable_enchanted_grave_key_recipe = false
 	#Scroll duration [1200..120000|default:12000]
@@ -136,84 +136,84 @@
 [decorative_grave]
 	#The cooldown in hours to pray with the Ankh [1..10|default:3]
 	#Range: 1 ~ 10
-	cooldown_to_pray = 3
+	cooldown_to_pray = 1
 
 #Allows to disable some magic items
 [allowedMagicItems]
 	#Voodoo Poppet [false/true|default:true]
-	allow_voodoo_poppet = true
+	allow_voodoo_poppet = false
 	#Familiar Receptacle [false/true|default:true]
-	allow_familiar_receptacle = true
+	allow_familiar_receptacle = false
 	#Book of Disenchantment [false/true|default:true]
-	allow_book_of_disenchantment = true
+	allow_book_of_disenchantment = false
 	#Scroll of Preservation [false/true|default:true]
-	allow_scroll_of_preservation = true
+	allow_scroll_of_preservation = false
 	#Grave's Key [false/true|default:true]
 	allow_grave_key = true
 	#Scroll of Knowledge [false/true|default:true]
 	allow_scroll_of_knowledge = true
 	#Tablet of Recall [false/true|default:true]
-	allow_tablet_of_recall = true
+	allow_tablet_of_recall = false
 	#Tablet of Home [false/true|default:true]
-	allow_tablet_of_home = true
+	allow_tablet_of_home = false
 	#Tablet of Assistance [false/true|default:true]
-	allow_tablet_of_assistance = true
+	allow_tablet_of_assistance = false
 	#Tablet of Guard [false/true|default:true]
-	allow_tablet_of_guard = true
+	allow_tablet_of_guard = false
 	#Tablet of Cupidity [false/true|default:true]
-	allow_tablet_of_cupidity = true
+	allow_tablet_of_cupidity = false
 	#Scroll of Unstable Intangibility [false/true|default:true]
-	allow_scroll_of_unstable_intangibility = true
+	allow_scroll_of_unstable_intangibility = false
 	#Scroll of Feather Fall [false/true|default:true]
-	allow_scroll_of_feather_fall = true
+	allow_scroll_of_feather_fall = false
 	#Scroll of Purification [false/true|default:true]
-	allow_scroll_of_purification = true
+	allow_scroll_of_purification = false
 	#Scroll of True Sight [false/true|default:true]
-	allow_scroll_of_true_sight = true
+	allow_scroll_of_true_sight = false
 	#Lost Tablet [false/true|default:true]
-	allow_lost_tablet = true
+	allow_lost_tablet = false
 	#Scroll of Reach [false/true|default:true]
-	allow_scroll_of_reach = true
+	allow_scroll_of_reach = false
 	#Scroll of Lightning Resistance [false/true|default:true]
-	allow_scroll_of_lightning_resistance = true
+	allow_scroll_of_lightning_resistance = false
 	#Scroll of Frost Resistance [false/true|default:true]
-	allow_scroll_of_frost_resistance = true
+	allow_scroll_of_frost_resistance = false
 	#Scroll of Aquatic Life [false/true|default:true]
-	allow_scroll_of_aquatic_life = true
+	allow_scroll_of_aquatic_life = false
 	#Scroll of Mercy [false/true|default:true]
-	allow_scroll_of_mercy = true
+	allow_scroll_of_mercy = false
 	#Dust of Vanishing [false/true|default:true]
-	allow_dust_of_vanishing = true
+	allow_dust_of_vanishing = false
 	#Dust of Frost [false/true|default:true]
-	allow_dust_of_frost = true
+	allow_dust_of_frost = false
 	#Enchanted Bundle [false/true|default:true]
-	allow_enchanted_bundle = true
+	allow_enchanted_bundle = false
 	#Book of Recycling [false/true|default:true]
-	allow_book_of_recycling = true
+	allow_book_of_recycling = false
 	#Book of Repairing [false/true|default:true]
-	allow_book_of_repairing = true
+	allow_book_of_repairing = false
 	#Book of Magic Impregnation [false/true|default:true]
-	allow_book_of_magic_impregnation = true
+	allow_book_of_magic_impregnation = false
 	#Book of Scribe [false/true|default:true]
-	allow_book_of_scribe = true
+	allow_book_of_scribe = false
 	#Smoke Ball [false/true|default:true]
-	allow_smoke_ball = true
+	allow_smoke_ball = false
 	#Seeker Rod [false/true|default:true]
-	allow_seeker_rod = true
+	allow_seeker_rod = false
 	#Christmas Hat [false/true|default:true]
-	allow_christmas_hat = true
+	allow_christmas_hat = false
 	#Bag of Seeds [false/true|default:true]
-	allow_bag_of_seeds = true
+	allow_bag_of_seeds = false
 	#Magic Scroll [false/true|default:true]
-	allow_magic_scroll = true
+	allow_magic_scroll = false
 	#Familiar Stone [false/true|default:true]
-	allow_familiar_stone = true
+	allow_familiar_stone = false
 	#Merchant Stone [false/true|default:true]
-	allow_merchant_stone = true
+	allow_merchant_stone = false
 	#Prayer Stone [false/true|default:true]
-	allow_prayer_stone = true
+	allow_prayer_stone = false
 	#Guardian Stone [false/true|default:true]
-	allow_guardian_stone = true
+	allow_guardian_stone = false
 
 #Allows to enable some features related to others mods
 [compatibility]
