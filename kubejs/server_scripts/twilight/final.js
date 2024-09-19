@@ -25,7 +25,8 @@ BlockEvents.rightClicked(event=>{
         var pos1=findMaxCorner(level,pos,1,block=>basementBlocks.indexOf(block.getId())!=-1);
         var pos2=findMaxCorner(level,pos,-1,block=>basementBlocks.indexOf(block.getId())!=-1);
         if(pos1.x-pos2.x==16 && pos1.y-pos2.y==6 && pos1.z-pos2.z==16){
-            level.runCommandSilent(`fill ${pos1.x} ${pos1.y} ${pos1.z} ${pos2.x} ${pos2.y} ${pos2.z} air`);
+            level.runCommandSilent(`fill ${pos1.x} ${pos1.y} ${pos1.z} ${pos2.x} ${pos2.y} ${pos2.z} air replace twilightforest:green_force_field`);
+            level.runCommandSilent(`fill ${pos1.x} ${pos1.y} ${pos1.z} ${pos2.x} ${pos2.y} ${pos2.z} air replace twilightforest:blue_force_field`);
             level.runCommandSilent(`setblock ${pos2.x+8} ${pos2.y} ${pos2.z+8} chest[facing=west]{Items:[{id:"mokels_witch_boss:totem_of_rot_and_decay",Count:1,Slot:13}]}`);
 
         }
