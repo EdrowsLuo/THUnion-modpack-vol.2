@@ -1,0 +1,99 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5D0E863761E7563E"
+	group: "2BEB05CF4131C8C7"
+	icon: "ae2:controller"
+	id: "5D0E863761E7563E"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "alexscaves:uranium_rod"
+			id: "4A8FF827E9855BD9"
+			subtitle: "不要有辐同享。"
+			tasks: [{
+				id: "28FE4034C1759742"
+				title: "核工艺"
+				type: "checkmark"
+			}]
+			title: "核工艺部"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			icon: "gtceu:portable_debug_scanner"
+			id: "55522F416F7D7660"
+			subtitle: "Gregtech is a lifestyle."
+			tasks: [{
+				id: "5E9C94F76654209F"
+				title: "格雷部门"
+				type: "checkmark"
+			}]
+			title: "格雷科技部"
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			id: "4CC22A9E82A92E11"
+			subtitle: "We need QoL"
+			tasks: [{
+				id: "01F4E28404E22C2C"
+				item: "alltheores:raw_osmium"
+				type: "item"
+			}]
+			title: "梅肯动力部"
+			x: -3.0d
+			y: -6.5d
+		}
+		{
+			id: "69761FC9E80E3E5C"
+			subtitle: "真正的沉浸工程"
+			tasks: [{
+				id: "3AE82A41D4DE98BE"
+				item: "create:wrench"
+				type: "item"
+			}]
+			title: "机械动力部"
+			x: -3.0d
+			y: -9.0d
+		}
+		{
+			icon: "ae2:controller"
+			id: "4A754DCA820F3AC2"
+			subtitle: "Applied Energy is all you need."
+			tasks: [{
+				id: "2A419BD1843BE259"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			title: "应用能源中台"
+			x: -6.0d
+			y: -6.5d
+		}
+		{
+			id: "70C3D4620B7ECF85"
+			subtitle: "Feed the next billion!!!"
+			tasks: [{
+				id: "017C80F084F6F81C"
+				item: "minecraft:wheat"
+				type: "item"
+			}]
+			title: "农业部"
+			x: -3.0d
+			y: -11.5d
+		}
+		{
+			id: "09607E43BA645F11"
+			tasks: [{
+				id: "789FC68F7F347352"
+				item: "allthemodium:raw_allthemodium"
+				type: "item"
+			}]
+			title: "资源部"
+			x: -6.0d
+			y: -3.5d
+		}
+	]
+	title: "天顶科技公司员工"
+}

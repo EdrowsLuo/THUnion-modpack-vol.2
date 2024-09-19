@@ -1,0 +1,167 @@
+{
+	default_hide_dependency_lines: true
+	default_quest_shape: ""
+	filename: "2AACC5BCBD21E390"
+	group: "2BEB05CF4131C8C7"
+	icon: "jerotesvillage:piglin_second_round_world_portal_block"
+	id: "2AACC5BCBD21E390"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "minecraft:grass_block"
+			id: "3C0D402788402A59"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "1835B0FBBC7D3347"
+				type: "dimension"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C0D402788402A59"]
+			icon: "minecraft:magma_block"
+			id: "453DC5C13F2B317F"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "49BD22C21AD900AA"
+				type: "dimension"
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["453DC5C13F2B317F"]
+			icon: "allthemodium:ancient_soulberries"
+			id: "04A824447ADE9D38"
+			tasks: [{
+				dimension: "allthemodium:the_other"
+				id: "07B823268DB6C0A7"
+				type: "dimension"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3C0D402788402A59"]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1DD362EDD209A686"
+			tasks: [{
+				dimension: "allthemodium:mining"
+				id: "1BA55418E99DF65B"
+				type: "dimension"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3C0D402788402A59"]
+			icon: "minecraft:end_stone"
+			id: "2334C9164DDF040C"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "7814E94535E6BA69"
+				type: "dimension"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2334C9164DDF040C"]
+			icon: "minecraft:glass"
+			id: "55769E427B11CF4B"
+			tasks: [{
+				dimension: "allthemodium:the_beyond"
+				id: "68E65242569F5D81"
+				type: "dimension"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3C0D402788402A59"]
+			icon: "minecraft:sculk_catalyst"
+			id: "7C507C530D67C59A"
+			tasks: [{
+				dimension: "deeperdarker:otherside"
+				id: "336D136B4B98DE8A"
+				type: "dimension"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3C0D402788402A59"]
+			icon: {
+				Count: 1
+				id: "ae2:facade"
+				tag: {
+					item: "minecraft:grass_block"
+				}
+			}
+			id: "0E19979AB108807E"
+			tasks: [{
+				dimension: "overworldmirror:overworld"
+				id: "011CBACB87841581"
+				type: "dimension"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3C0D402788402A59"]
+			icon: "jerotesvillage:second_round_world_block"
+			id: "4F2493D2152AAC20"
+			tasks: [{
+				dimension: "jerotesvillage:second_round_world"
+				id: "4578B95CB025294F"
+				type: "dimension"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3C0D402788402A59"]
+			icon: "minecraft:bee_nest"
+			id: "063E735A6A3B07D2"
+			tasks: [{
+				dimension: "the_bumblezone:the_bumblezone"
+				id: "3942435D91673166"
+				type: "dimension"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C0D402788402A59"]
+			id: "14D332B483F2EBFD"
+			tasks: [{
+				dimension: "graveyard:past"
+				id: "300F9A0A62EC04DA"
+				type: "dimension"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			id: "3DB10A02EA08E3E0"
+			tasks: [{
+				id: "342CDAED8F25EF3E"
+				title: "提供一些维度相关的提示！"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+	]
+	title: "维度冒险"
+}

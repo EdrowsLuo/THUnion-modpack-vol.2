@@ -1,0 +1,141 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "re"
+	group: "2BEB05CF4131C8C7"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	id: "4817E2A8CC262CC2"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "67930ABD4082CF2B"
+			rewards: [
+				{
+					id: "375E2DD0DA22CB9B"
+					item: "twilightforest:magic_map"
+					type: "item"
+				}
+				{
+					id: "17DC5D3C1FA831AB"
+					item: {
+						Count: 1
+						id: "sophisticatedbackpacks:netherite_backpack"
+						tag: {
+							Enchantments: [{
+								id: "tombstone:soulbound"
+								lvl: 1s
+							}]
+							RepairCost: 1
+							inventorySlots: 120
+							renderInfo: {
+								upgradeItems: [
+									{
+										Count: 1b
+										id: "sophisticatedbackpacks:crafting_upgrade"
+									}
+									{
+										Count: 1b
+										id: "minecraft:air"
+									}
+									{
+										Count: 1b
+										id: "minecraft:air"
+									}
+									{
+										Count: 1b
+										id: "minecraft:air"
+									}
+									{
+										Count: 1b
+										id: "minecraft:air"
+									}
+									{
+										Count: 1b
+										id: "minecraft:air"
+									}
+									{
+										Count: 1b
+										id: "sophisticatedbackpacks:jukebox_upgrade"
+									}
+								]
+								upgrades: { }
+							}
+							upgradeSlots: 7
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "熟悉的灰色天空，故事从这里再次开启了"
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				id: "33949195A0FCF7BB"
+				title: "又一次来到了暮色森林"
+				type: "dimension"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"67930ABD4082CF2B"
+				"1BB9667A2875E0DF"
+				"76A0762F87D8EF26"
+			]
+			id: "109014752147196A"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "可能最终城堡里的魔女能帮助到你"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "52A48269627B74F8"
+				title: "想办法前往主世界"
+				type: "dimension"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["67930ABD4082CF2B"]
+			id: "1BB9667A2875E0DF"
+			subtitle: "我想你应该已经熟知暮色森林的一切了，但是这次，最终城堡上面有人在等着你"
+			tasks: [{
+				id: "6CBC949706E00DC5"
+				structure: "twilightforest:final_castle"
+				title: "最终城堡里的女巫"
+				type: "structure"
+			}]
+			title: "最终城堡里的女巫"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1BB9667A2875E0DF"]
+			id: "6A755857D9E03D9E"
+			tasks: [{
+				id: "1FC77A083A00CEE3"
+				item: "ars_nouveau:novice_spell_book"
+				type: "item"
+			}]
+			title: "魔女的馈赠"
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1BB9667A2875E0DF"]
+			id: "76A0762F87D8EF26"
+			secret: true
+			tasks: [{
+				id: "0148D724C3F62D5C"
+				title: "前往主世界的钥匙"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+	]
+	title: "Re：暮色森林的外乡人"
+}

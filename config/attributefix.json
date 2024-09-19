@@ -143,6 +143,17 @@
         "value": 100
       }
     },
+    "lodestone:magic_proficiency": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
+      }
+    },
     "attributeslib:cold_damage": {
       "enabled": false,
       "min": {
@@ -372,6 +383,17 @@
       "max": {
         "default": 10,
         "value": 10
+      }
+    },
+    "lodestone:magic_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "forge:swim_speed": {
@@ -900,6 +922,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "lodestone:magic_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "attributeslib:life_steal": {
