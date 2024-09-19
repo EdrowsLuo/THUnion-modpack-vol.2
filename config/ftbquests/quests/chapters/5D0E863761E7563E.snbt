@@ -85,6 +85,7 @@
 		}
 		{
 			id: "09607E43BA645F11"
+			subtitle: "我们需要一个强大的后勤矿工"
 			tasks: [{
 				id: "789FC68F7F347352"
 				item: "allthemodium:raw_allthemodium"
