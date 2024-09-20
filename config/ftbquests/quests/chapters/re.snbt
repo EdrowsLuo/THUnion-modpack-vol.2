@@ -82,7 +82,6 @@
 		{
 			dependencies: [
 				"67930ABD4082CF2B"
-				"1BB9667A2875E0DF"
 				"76A0762F87D8EF26"
 			]
 			id: "109014752147196A"
@@ -95,7 +94,7 @@
 				title: "想办法前往主世界"
 				type: "dimension"
 			}]
-			x: -1.0d
+			x: -4.0d
 			y: -3.0d
 		}
 		{
@@ -133,8 +132,21 @@
 				title: "前往主世界的钥匙"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: -1.5d
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1BB9667A2875E0DF"]
+			hide: true
+			id: "7596E87671CBF73B"
+			tasks: [{
+				id: "794C5D8C82C3CCDB"
+				title: "a"
+				type: "checkmark"
+			}]
+			title: "最终城堡的地下室藏有秘密"
+			x: 1.5d
+			y: -0.5d
 		}
 	]
 	title: "Re：暮色森林的外乡人"
