@@ -3,12 +3,15 @@
 	default_quest_shape: ""
 	filename: "5D0E863761E7563E"
 	group: "2BEB05CF4131C8C7"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
 	icon: "ae2:controller"
 	id: "5D0E863761E7563E"
 	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["57C74BF21E254657"]
 			description: ["你需要先去充满辐射的毒化洞穴调查一番"]
 			icon: "alexscaves:uranium_rod"
 			id: "4A8FF827E9855BD9"
@@ -23,6 +26,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["57C74BF21E254657"]
 			icon: "gtceu:portable_debug_scanner"
 			id: "55522F416F7D7660"
 			subtitle: "Gregtech is a lifestyle."
@@ -36,6 +40,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["57C74BF21E254657"]
 			id: "4CC22A9E82A92E11"
 			subtitle: "We need QoL"
 			tasks: [{
@@ -48,6 +53,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["57C74BF21E254657"]
 			id: "69761FC9E80E3E5C"
 			subtitle: "真正的沉浸工程"
 			tasks: [{
@@ -60,6 +66,7 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["57C74BF21E254657"]
 			icon: "ae2:controller"
 			id: "4A754DCA820F3AC2"
 			subtitle: "Applied Energy is all you need."
@@ -73,6 +80,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["57C74BF21E254657"]
 			id: "70C3D4620B7ECF85"
 			subtitle: "Feed the next billion!!!"
 			tasks: [{
@@ -85,6 +93,7 @@
 			y: -11.5d
 		}
 		{
+			dependencies: ["57C74BF21E254657"]
 			id: "09607E43BA645F11"
 			subtitle: "我们需要一个强大的后勤"
 			tasks: [{
@@ -97,6 +106,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["4A8FF827E9855BD9"]
 			id: "7283EFDBC2B0DB41"
 			subtitle: "并不是那么的安全"
 			tasks: [{
@@ -109,6 +119,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["4A8FF827E9855BD9"]
 			id: "2A2EE7F3D4EDF1C2"
 			subtitle: "来自极限反应堆的安全核电站"
 			tasks: [{
@@ -121,6 +132,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["4A8FF827E9855BD9"]
 			id: "1C95042E3F2535B4"
 			subtitle: "与梅肯部门合作，获取进阶反应物"
 			tasks: [
@@ -150,6 +162,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["4A8FF827E9855BD9"]
 			id: "7089E7F6DFD47358"
 			subtitle: "格雷与梅肯合作，更快更直接的裂变产物获取"
 			tasks: [{
@@ -162,6 +175,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["4A8FF827E9855BD9"]
 			id: "015A56E9C2C71A2A"
 			subtitle: "梅肯部门提供技术支持，第一个小太阳"
 			tasks: [{
@@ -174,6 +188,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["4A8FF827E9855BD9"]
 			id: "5B2524C106D47BDC"
 			subtitle: "格雷部门需要用聚变来生产合成材料，他们可能是疯了"
 			tasks: [
@@ -197,6 +212,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["55522F416F7D7660"]
 			id: "5B00174D364E2EBF"
 			subtitle: "梅肯部门提供的简化芯片合成，赞美他们"
 			tasks: [
@@ -231,6 +247,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["55522F416F7D7660"]
 			id: "61B31A068E4E1328"
 			subtitle: "Multibloack Madness"
 			tasks: [{
@@ -243,6 +260,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["4A754DCA820F3AC2"]
 			id: "36743F06AB69026C"
 			tasks: [{
 				id: "5F50C2D7296E7854"
@@ -253,6 +271,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["4A754DCA820F3AC2"]
 			id: "1324790F8D1A9956"
 			tasks: [{
 				id: "61B3969618D148F6"
@@ -263,6 +282,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["4A754DCA820F3AC2"]
 			id: "77857AF78703CC0D"
 			tasks: [{
 				id: "6C750049933E6756"
@@ -273,6 +293,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["09607E43BA645F11"]
 			id: "59860ECA2EFAE873"
 			tasks: [{
 				id: "086F21E78B5178FC"
@@ -283,17 +304,7 @@
 			y: -3.5d
 		}
 		{
-			id: "7D4DD61A54C19C05"
-			subtitle: "村民顺便向您分享了核聚变技术"
-			tasks: [{
-				id: "352A791111B057EA"
-				title: "世外桃源的馈赠"
-				type: "checkmark"
-			}]
-			x: -1.0d
-			y: -11.5d
-		}
-		{
+			dependencies: ["09607E43BA645F11"]
 			id: "535EC589762F7480"
 			subtitle: "来自另一个世界的帕鲁"
 			tasks: [{
@@ -305,6 +316,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["09607E43BA645F11"]
 			id: "22EA52DFADD3AEC1"
 			subtitle: "农业部说他们可以生产矿物？"
 			tasks: [{
@@ -316,6 +328,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["4CC22A9E82A92E11"]
 			description: [
 				"1. 这个世界的钢需要使用魔力来处理，见鬼！"
 				"2. 我的发电机呢？"
@@ -333,6 +346,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["55522F416F7D7660"]
 			id: "15B29F58B1063AF9"
 			subtitle: "用大量的电力来扭曲力场，加快时间"
 			tasks: [{
@@ -345,17 +359,21 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["57C74BF21E254657"]
 			icon: "draconicevolution:dragon_heart"
 			id: "7C06AEE5CE5AB482"
+			subtitle: "龙的力量"
 			tasks: [{
-				id: "3F93A61BBC22E1C3"
-				title: "龙研部"
-				type: "checkmark"
+				id: "50EABC030F6EA36B"
+				item: "draconicevolution:dragon_heart"
+				type: "item"
 			}]
+			title: "龙研部"
 			x: -6.0d
 			y: -0.5d
 		}
 		{
+			dependencies: ["57C74BF21E254657"]
 			icon: "avaritia:infinity"
 			id: "73504C4081F6C4B8"
 			subtitle: "Road to Infinity"
@@ -368,6 +386,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["73504C4081F6C4B8"]
 			id: "0DC1F6F93B5AE081"
 			subtitle: "这个世界里永动机随处可见...我想应该可以做点大事了。"
 			tasks: [{
@@ -376,10 +395,11 @@
 				type: "checkmark"
 			}]
 			title: "永动机"
-			x: -4.5d
+			x: -5.5d
 			y: 4.5d
 		}
 		{
+			dependencies: ["4CC22A9E82A92E11"]
 			description: ["数字采矿机得到了一些提升，同时也变的更加难以制造了。"]
 			id: "56AD4F3B0F940F68"
 			tasks: [{
@@ -389,6 +409,54 @@
 			}]
 			x: 0.0d
 			y: -6.5d
+		}
+		{
+			dependencies: ["70C3D4620B7ECF85"]
+			id: "49B52F8A1B738973"
+			tasks: [{
+				id: "3F2D5627E43C8B15"
+				item: "botanypots:terracotta_hopper_botany_pot"
+				type: "item"
+			}]
+			title: "稳定持续的生长"
+			x: -1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["70C3D4620B7ECF85"]
+			id: "759F35CF9229881A"
+			tasks: [{
+				id: "464B29A3C0A2D1DA"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			title: "厨子模拟"
+			x: 0.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["73504C4081F6C4B8"]
+			id: "47F0F218106AF473"
+			subtitle: "只使用一点点的中子素，制作弱化版的奇点。至少现在够用了"
+			tasks: [{
+				id: "41CAF1C5453C4AE6"
+				item: "avaritia:neutron_compressor"
+				type: "item"
+			}]
+			title: "奇点压缩"
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			id: "57C74BF21E254657"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "341C3F383111B5BF"
+				secret: true
+				type: "dimension"
+			}]
+			x: -4.5d
+			y: -3.5d
 		}
 	]
 	title: "天顶科技公司员工"

@@ -3,6 +3,8 @@
 	default_quest_shape: ""
 	filename: "re"
 	group: "2BEB05CF4131C8C7"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
 	icon: "twilightforest:twilight_portal_miniature_structure"
 	id: "4817E2A8CC262CC2"
 	order_index: 0
@@ -84,6 +86,7 @@
 				"67930ABD4082CF2B"
 				"76A0762F87D8EF26"
 			]
+			hide: false
 			id: "109014752147196A"
 			shape: "diamond"
 			size: 2.0d
@@ -147,6 +150,205 @@
 			title: "最终城堡的地下室藏有秘密"
 			x: 1.5d
 			y: -0.5d
+		}
+		{
+			dependencies: ["20BE6956AE9A7444"]
+			id: "2F2537066B86E9F3"
+			subtitle: "为了发展工业，你需要去找到这个地方"
+			tasks: [{
+				biome: "alexscaves:magnetic_caves"
+				id: "38DFE8776F7AFE2C"
+				type: "biome"
+			}]
+			title: "探索Alex的磁力洞穴"
+			x: -8.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["109014752147196A"]
+			id: "4A5CF0E2C58CC54C"
+			subtitle: "接下来的任务只是一些建议，没有思绪的时候可以来看看"
+			tasks: [{
+				id: "42D73763264A9B2D"
+				title: "建议"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4A5CF0E2C58CC54C"]
+			id: "20BE6956AE9A7444"
+			rewards: [
+				{
+					id: "33F64CB1F103B5E9"
+					item: "alexscaves:cave_book"
+					type: "item"
+				}
+				{
+					id: "645056A3853D8D87"
+					item: {
+						Count: 1
+						id: "alexscaves:cave_tablet"
+						tag: {
+							CaveBiome: "alexscaves:magnetic_caves"
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "找到Alex的洞穴可以给你很大的帮助，请时刻注意安全！"
+			tasks: [{
+				id: "284DFFC6B9A648AE"
+				item: "alexscaves:spelunkery_table"
+				type: "item"
+			}]
+			title: "Alex的洞穴"
+			x: -6.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["20BE6956AE9A7444"]
+			id: "1619774A4979611C"
+			subtitle: "这可以解决你的发电问题"
+			tasks: [{
+				biome: "alexscaves:toxic_caves"
+				id: "14D0C7CB2729F096"
+				type: "biome"
+			}]
+			title: "探索毒化洞穴"
+			x: -9.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4A5CF0E2C58CC54C"]
+			id: "046576A47FE77434"
+			subtitle: "发展血魔法，在不久的将来这会给你带来很大的提升。"
+			tasks: [{
+				id: "4DE76319F857489E"
+				item: "bloodmagic:altar"
+				type: "item"
+			}]
+			title: "大魔法师的精选"
+			x: -5.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4A5CF0E2C58CC54C"]
+			id: "01F85F885D09E929"
+			subtitle: "你现在就可以发展AE了，不过可能还需要解决一下能源问题。"
+			tasks: [{
+				id: "2BB71E50975B2191"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			title: "准备AE"
+			x: -4.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["01F85F885D09E929"]
+			id: "18030E53EF41013B"
+			subtitle: "如果你已经在生产魔力了，那么这也是一种选择。"
+			tasks: [{
+				id: "1F4DEAB3679297F4"
+				item: "arseng:source_acceptor"
+				type: "item"
+			}]
+			title: "魔法驱动AE"
+			x: -5.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["01F85F885D09E929"]
+			id: "5DC69226C5E51F21"
+			subtitle: "或许，最原始的方法也还是可以使用的。"
+			tasks: [{
+				id: "79F6F8D8EA1F6304"
+				item: "ae2:vibration_chamber"
+				type: "item"
+			}]
+			title: "最原始的AE"
+			x: -3.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4A5CF0E2C58CC54C"]
+			id: "5B48BB137AB413A0"
+			subtitle: "去寻找ATM矿，这可能会给你一些帮助"
+			tasks: [{
+				id: "0D4191869648102A"
+				item: "allthemodium:raw_allthemodium"
+				type: "item"
+			}]
+			title: "ATM"
+			x: -2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5B48BB137AB413A0"]
+			id: "463ED6EBE4260297"
+			tasks: [
+				{
+					id: "756C126E7963A5E9"
+					item: "allthemodium:teleport_pad"
+					type: "item"
+				}
+				{
+					dimension: "allthemodium:mining"
+					id: "2D2525BDCFE8AC84"
+					title: "在主世界使用传送垫前往挖矿维度"
+					type: "dimension"
+				}
+				{
+					dimension: "allthemodium:the_other"
+					id: "1A73B3B0A63E9BF7"
+					title: "在下界使用传送垫前往异界"
+					type: "dimension"
+				}
+				{
+					dimension: "allthemodium:the_beyond"
+					id: "173371FE4E3C41E5"
+					title: "在末地使用传送垫前往虚空的维度"
+					type: "dimension"
+				}
+			]
+			title: "三个特殊维度"
+			x: -1.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4A5CF0E2C58CC54C"]
+			description: ["蹲下右键村民可以收回村民，这是简易村民Mod的功能"]
+			id: "64C8D00CF048B24A"
+			subtitle: "村庄可以帮你很多。"
+			tasks: [{
+				id: "0C5574E27E121507"
+				item: "easy_villagers:villager"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "找到一个村庄"
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4A5CF0E2C58CC54C"]
+			description: [
+				"随便逛逛，看看有什么想玩的mod，有啥还没去的维度，你的进度自己做主。"
+				"ps. 善用mcmod百科"
+				"ps. 考虑一下和朋友们一起行动吧"
+			]
+			id: "3F9B250A0F0CDEDD"
+			subtitle: "悠闲的享受minecraft生活"
+			tasks: [{
+				id: "0A9D8FF41D7410CF"
+				title: "自由的探索"
+				type: "checkmark"
+			}]
+			title: "自由的探索"
+			x: -5.5d
+			y: -4.5d
 		}
 	]
 	title: "Re：暮色森林的外乡人"

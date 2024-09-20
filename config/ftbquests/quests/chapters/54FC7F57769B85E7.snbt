@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			hide_dependent_lines: true
 			id: "063CF7110524527C"
 			shape: "octagon"
 			size: 2.0d
