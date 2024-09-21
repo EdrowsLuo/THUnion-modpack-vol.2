@@ -196,4 +196,36 @@ ServerEvents.recipes(event => {
       },
       "show_notification": true
     })
+
+    modifyUnique(event, "mekanism:digital_miner", {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "A": {
+          "tag": "mekanism:alloys/atomic"
+        },
+        "C": {
+          "tag": "forge:circuits/basic"
+        },
+        "R": {
+          "item": "alexscaves:quarry_smasher"
+        },
+        "S": {
+          "item": "mekanism:logistical_sorter"
+        },
+        "T": {
+          "item": "mekanism:teleportation_core"
+        },
+        "X": {
+          "item": "alexscaves:quarry"
+        }
+      },
+      "pattern": [
+        "ACA",
+        "SRS",
+        "TXT"
+      ],
+      "result": {
+        "item": "mekanism:digital_miner"
+      }
+    })
 })
