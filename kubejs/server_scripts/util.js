@@ -1,3 +1,40 @@
+/**
+ * 创建一个不消耗的工具手使用配方
+ * @param {*} output
+ * @param {*} input
+ * @param {*} tool 使用的工具（不消耗）
+ * @returns 
+ */
+function ifiniDeploying(output, input, tool) {
+	return {
+		"type": "create:deploying",
+		"ingredients": [
+			Ingredient.of(input).toJson(),
+			Ingredient.of(tool).toJson()
+		],
+		"results": [
+			Item.of(output).toResultJson()
+		],
+		"keepHeldItem": true
+	}
+}
+
+
+function getEntitiesByItemId(level, item_id) {
+    return level.getEntities().getAll().filter(item => item.type == "minecraft:item" && item.item.id == item_id)
+}
+
+function distanceToSqr(entity, x, y, z) {
+    const d = entity.x - x;
+    const e = entity.y - y;
+    const f = entity.z - z;
+    return d * d + e * e + f * f;
+}
+
+function moveHalfBlock(entity) {
+    entity.x += 0.5
+    entity.z += 0.5
+}
 
 /**
  * 
