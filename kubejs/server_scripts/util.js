@@ -59,3 +59,13 @@ function removeTradeWithOutput(event, prof, targetLevel, itemStack) {
         }
     })
 }
+
+/**
+ * @param {Internal.RecipesEventJS_} event
+ * @param {Internal.Item_} item 
+ * @param {Internal.JsonObject_} recipe 
+ */
+function modifyUnique(event, item, recipe) {
+    event.remove({ output: item })
+    event.custom(recipe)
+}
