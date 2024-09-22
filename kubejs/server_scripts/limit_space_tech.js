@@ -3,6 +3,8 @@
  * 限制传送手段
  * 在获取传送核心前有效的传送方法只有传送卷轴和折跃卷轴（也就是一次性传送）
  * 
+ * 限制空间技术
+ * 主要是纸箱
  */
 
 ServerEvents.recipes(event => {
@@ -122,4 +124,6 @@ ServerEvents.recipes(event => {
         "item": "8x ars_nouveau:warp_scroll"
       }
     })
+
+    event.remove({ output: "mekanism:cardboard_box" })
 })
