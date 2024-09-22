@@ -596,7 +596,7 @@
 				}
 			]
 			title: "奇点蓄电池"
-			x: -10.0d
+			x: -11.0d
 			y: 0.5d
 		}
 		{
@@ -777,6 +777,19 @@
 			}]
 			x: 1.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["6814DD387FBB44C6"]
+			id: "2ADFF62E156D2CB5"
+			subtitle: "被大幅增强了"
+			tasks: [{
+				id: "45EDEC3576641347"
+				item: "fluxnetworks:basic_flux_storage"
+				type: "item"
+			}]
+			title: "通量网络缓存器"
+			x: -10.0d
+			y: 0.5d
 		}
 	]
 	title: "天顶科技公司员工"

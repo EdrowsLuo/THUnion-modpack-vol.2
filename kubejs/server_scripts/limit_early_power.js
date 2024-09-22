@@ -228,4 +228,82 @@ ServerEvents.recipes(event => {
         "item": "mekanism:digital_miner"
       }
     })
+
+    modifyUnique(event, "fluxnetworks:basic_flux_storage", {
+      "type": "minecraft:crafting_shaped",
+      "group": "fluxnetworks",
+      "pattern": [
+        "bbb",
+        "gPg",
+        "bbb"
+      ],
+      "key": {
+        "b": {
+          "item": "fluxnetworks:flux_block"
+        },
+        "g": {
+          "tag": "forge:glass_panes"
+        },
+        "P": "createaddition:modular_accumulator"
+      },
+      "result": {
+        "item": "fluxnetworks:basic_flux_storage"
+      }
+    })
+
+    modifyUnique(event, "fluxnetworks:flux_core", {
+      "type": "minecraft:crafting_shaped",
+      "group": "fluxnetworks",
+      "pattern": [
+        "fof",
+        "oeo",
+        "fof"
+      ],
+      "key": {
+        "o": {
+          "item": "minecraft:obsidian"
+        },
+        "f": {
+          "item": "fluxnetworks:flux_dust"
+        },
+        "e": {
+          "item": energized_galena_neutral
+        }
+      },
+      "result": {
+        "item": "fluxnetworks:flux_core",
+        "count": 4
+      }
+    })
+
+    modifyUnique(event, "fluxnetworks:flux_controller", {
+      "type": "minecraft:crafting_shaped",
+      "group": "fluxnetworks",
+      "pattern": [
+        "bcb",
+        "f f",
+        "bbb"
+      ],
+      "key": {
+        "c": {
+          "item": tesla_bulb
+        },
+        "b": {
+          "item": "fluxnetworks:flux_block"
+        },
+        "f": {
+          "item": "fluxnetworks:flux_dust"
+        }
+      },
+      "result": {
+        "item": "fluxnetworks:flux_controller"
+      }
+    })
+
+    event.remove({ type: "mekanism:metallurgic_infusing", output: "alltheores:steel_dust" })
+    event.remove({ id: "alltheores:steel_dust_from_alloy_blending" })
+    event.remove({ id: "mekanism:metallurgic_infusing/allthecompressed/iron/1x_to_1x_steel" })
+    event.remove({ id: "gtceu:electric_blast_furnace/steel_from_iron" })
+    event.remove({ id: "gtceu:electric_blast_furnace/steel_from_wrought_iron" })
+    event.remove({ type: "gtceu:primitive_blast_furnace" })
 })

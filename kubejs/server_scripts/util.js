@@ -83,3 +83,14 @@ function autoPatternId(charactors, items) {
     }
     return result
 }
+
+/**
+ * 
+ * @param {Internal.RecipesEventJS} event 
+ * @param {Internal.Item_[]} items 
+ */
+function banAll(event, items) {
+    items.forEach(i => {
+        event.remove({ output: i })
+    })
+}
