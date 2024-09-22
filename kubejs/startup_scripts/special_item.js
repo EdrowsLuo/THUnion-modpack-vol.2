@@ -12,4 +12,8 @@ StartupEvents.registry("item", event => {
             .tooltip(Component.translate(`item.kubejs.${core}.desc`))
             .glow(true)
     });
+
+    event.create("kubejs:golden_sweet_berries").texture("kubejs:item/golden_sweet_berries")
+       .tooltip(Component.translate(`item.kubejs.golden_sweet_berries.desc`).gold())
+       .glow(true)
 })

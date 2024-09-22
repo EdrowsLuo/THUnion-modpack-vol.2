@@ -7,17 +7,90 @@
 	id: "74B6EC4C6B3A3764"
 	order_index: 4
 	quest_links: [ ]
-	quests: [{
-		id: "5BDB529A3F61BEE4"
-		subtitle: "一些关键的合成材料，需要独特的合成方法。"
-		tasks: [{
-			dimension: "minecraft:overworld"
-			id: "2237054E73AF2750"
-			type: "dimension"
-		}]
-		title: "特殊的合成方式"
-		x: 1.0d
-		y: -4.5d
-	}]
+	quests: [
+		{
+			id: "5BDB529A3F61BEE4"
+			subtitle: "一些关键的合成材料，需要独特的合成方法。"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "2237054E73AF2750"
+				type: "dimension"
+			}]
+			title: "特殊的合成方式"
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			id: "132E2F8A7CC82CBB"
+			tasks: [{
+				id: "1E2D84BBD8CC811F"
+				item: "kubejs:golden_sweet_berries"
+				type: "item"
+			}]
+			title: "汇聚旅途路上的精华"
+			x: 1.0d
+			y: -6.5d
+		}
+		{
+			id: "5B293BD798A0C418"
+			tasks: [{
+				id: "088635C550009667"
+				item: "mekanism:teleportation_core"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			id: "209EF6D54A1B9A9E"
+			tasks: [{
+				id: "53F7A17A17D48BAC"
+				item: "kubejs:mechanical_core"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			id: "73FA50DAD52DAAA6"
+			tasks: [{
+				id: "050D2EBDE1E2CDEE"
+				item: "kubejs:craft_core"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			id: "4C0F10F7332786AE"
+			tasks: [{
+				id: "4AEC84DF41AB67EF"
+				item: "kubejs:treasure_core"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			id: "675808035831DC0B"
+			tasks: [{
+				id: "75141FE1DCE764B6"
+				item: "kubejs:ore_core"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "623208249D827C7E"
+			tasks: [{
+				id: "1F04DE2F4DE33B0C"
+				item: "kubejs:battle_core"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+	]
 	title: "特殊材料挑战"
 }
