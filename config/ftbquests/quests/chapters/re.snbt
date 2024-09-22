@@ -162,7 +162,7 @@
 			}]
 			title: "探索Alex的磁力洞穴"
 			x: -8.5d
-			y: -7.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["109014752147196A"]
@@ -174,7 +174,7 @@
 				type: "checkmark"
 			}]
 			x: -4.0d
-			y: -5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["4A5CF0E2C58CC54C"]
@@ -205,7 +205,7 @@
 			}]
 			title: "Alex的洞穴"
 			x: -6.5d
-			y: -5.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["20BE6956AE9A7444"]
@@ -218,7 +218,7 @@
 			}]
 			title: "探索毒化洞穴"
 			x: -9.0d
-			y: -5.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["4A5CF0E2C58CC54C"]
@@ -231,7 +231,7 @@
 			}]
 			title: "大魔法师的精选"
 			x: -5.5d
-			y: -6.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["4A5CF0E2C58CC54C"]
@@ -244,7 +244,7 @@
 			}]
 			title: "准备AE"
 			x: -4.0d
-			y: -7.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["01F85F885D09E929"]
@@ -257,7 +257,7 @@
 			}]
 			title: "魔法驱动AE"
 			x: -5.0d
-			y: -8.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["01F85F885D09E929"]
@@ -270,7 +270,7 @@
 			}]
 			title: "最原始的AE"
 			x: -3.0d
-			y: -8.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["4A5CF0E2C58CC54C"]
@@ -283,7 +283,7 @@
 			}]
 			title: "ATM"
 			x: -2.5d
-			y: -6.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["5B48BB137AB413A0"]
@@ -315,7 +315,7 @@
 			]
 			title: "三个特殊维度"
 			x: -1.0d
-			y: -7.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["4A5CF0E2C58CC54C"]
@@ -329,8 +329,8 @@
 				type: "item"
 			}]
 			title: "找到一个村庄"
-			x: -2.5d
-			y: -4.5d
+			x: -1.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["4A5CF0E2C58CC54C"]
@@ -347,8 +347,21 @@
 				type: "checkmark"
 			}]
 			title: "自由的探索"
-			x: -5.5d
-			y: -4.5d
+			x: -4.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4A5CF0E2C58CC54C"]
+			description: ["你可以和往常一样的开始机械动力"]
+			id: "656A3569B50B1FF9"
+			tasks: [{
+				id: "4A0960DE9143CDA2"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "机械动力还是一如既往"
+			x: -6.5d
+			y: -7.5d
 		}
 	]
 	title: "Re：暮色森林的外乡人"
