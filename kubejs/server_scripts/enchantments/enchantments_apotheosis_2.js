@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
         level: '1',
         pedestalItems: [
             {
-                item: 'ars_nouveau:anima_essence'
+                item: 'ars_elemental:anima_essence'
             }, {
                 item: 'bloodmagic:reinforcedslate'
             }, {
@@ -140,9 +140,9 @@ ServerEvents.recipes(event => {
         level: '2',
         pedestalItems: [
             {
-                item: 'ars_nouveau:anima_essence'
+                item: 'ars_elemental:anima_essence'
             }, {
-                item: 'ars_nouveau:anima_essence'
+                item: 'ars_elemental:anima_essence'
             }, {
                 item: 'bloodmagic:reinforcedslate'
             }, {
@@ -166,11 +166,11 @@ ServerEvents.recipes(event => {
         level: '3',
         pedestalItems: [
             {
-                item: 'ars_nouveau:anima_essence'
+                item: 'ars_elemental:anima_essence'
             }, {
-                item: 'ars_nouveau:anima_essence'
+                item: 'ars_elemental:anima_essence'
             }, {
-                item: 'ars_nouveau:anima_essence'
+                item: 'ars_elemental:anima_essence'
             }, {
                 item: 'bloodmagic:infusedslate'
             }, {

@@ -237,7 +237,7 @@ ServerEvents.recipes(event => {
             {
                 item: 'l2complements:totemic_gold_ingot'
             },  {
-                item: 'l2complements:soul_fire'
+                item: 'l2complements:soul_flame'
             }, {
                 item: 'minecraft:cobweb'
             }, {
@@ -259,7 +259,7 @@ ServerEvents.recipes(event => {
             {
                 item: 'l2complements:totemic_gold_ingot'
             },  {
-                item: 'l2complements:soul_fire'
+                item: 'l2complements:soul_flame'
             }, {
                 item: 'minecraft:cobweb'
             }, {
@@ -285,7 +285,7 @@ ServerEvents.recipes(event => {
             {
                 item: 'l2complements:totemic_gold_block'
             },  {
-                item: 'l2complements:soul_fire'
+                item: 'l2complements:soul_flame'
             }, {
                 item: 'minecraft:cobweb'
             }, {
