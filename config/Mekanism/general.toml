@@ -62,13 +62,13 @@
 		#Add filled creative fluid tanks to creative/JEI.
 		fluidTanks = true
 		#Add filled creative gas tanks to creative/JEI.
-		gasTanks = false
+		gasTanks = true
 		#Add filled creative infusion tanks to creative/JEI.
-		infusionTanks = false
+		infusionTanks = true
 		#Add filled creative pigment tanks to creative/JEI.
-		pigmentTanks = false
+		pigmentTanks = true
 		#Add filled creative slurry tanks to creative/JEI.
-		slurryTanks = false
+		slurryTanks = true
 
 	#Energy Conversion Rate Settings
 	[general.energy_conversion]

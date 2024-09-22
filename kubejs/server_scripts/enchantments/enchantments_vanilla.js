@@ -1,6 +1,6 @@
 /*
  * 添加附魔配方
- * 待添加：
+ * 已添加：
  * 
  * 饵钓I
  * 饵钓II
@@ -442,5 +442,34 @@ ServerEvents.recipes(event => {
             }
         ],
         sourceCost: 9000
+    })
+})
+
+ServerEvents.recipes(event => {
+
+    event.custom({
+        type: 'ars_nouveau:enchantment',
+        enchantment: 'minecraft:mending',
+        level: '1',
+        pedestalItems: [
+            {
+                item: 'ars_nouveau:abjuration_essence'
+            }, {
+                tag: 'minecraft:sculk'
+            }, {
+                tag: 'minecraft:sculk'
+            }, {
+                tag: 'minecraft:sculk'
+            }, {
+                item: 'create:experience_block'
+            }, {
+                item: 'create:experience_block'
+            }, {
+                tag: 'forge:storage_blocks/source'
+            }, {
+                tag: 'forge:storage_blocks/source'
+            }
+        ],
+        sourceCost: 5000
     })
 })
