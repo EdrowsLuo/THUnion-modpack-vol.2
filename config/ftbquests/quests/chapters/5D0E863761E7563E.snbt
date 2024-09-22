@@ -386,19 +386,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["73504C4081F6C4B8"]
-			id: "0DC1F6F93B5AE081"
-			subtitle: "这个世界里永动机随处可见...我想应该可以做点大事了。"
-			tasks: [{
-				id: "68BB7DB1FB60EDBF"
-				title: "永动机"
-				type: "checkmark"
-			}]
-			title: "永动机"
-			x: -1.0d
-			y: 2.0d
-		}
-		{
 			dependencies: ["4CC22A9E82A92E11"]
 			description: ["数字采矿机得到了一些提升，同时也变的更加难以制造了。"]
 			id: "56AD4F3B0F940F68"
@@ -719,6 +706,17 @@
 			]
 			x: -9.0d
 			y: -1.5d
+		}
+		{
+			id: "3D6D8F4961236D2D"
+			tasks: [{
+				id: "6CC2E8EB8E84DAF7"
+				item: "avaritia:neutron_collector"
+				type: "item"
+			}]
+			title: "中子收集"
+			x: -1.0d
+			y: 2.0d
 		}
 	]
 	title: "天顶科技公司员工"
