@@ -142,8 +142,8 @@
 				type: "checkmark"
 			}]
 			title: "魔力合成学"
-			x: 2.5d
-			y: 2.5d
+			x: 3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["063CF7110524527C"]
@@ -154,7 +154,7 @@
 				title: "星光学"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: 1.0d
 			y: 3.0d
 		}
 		{
@@ -166,8 +166,8 @@
 				title: "自我强化学"
 				type: "checkmark"
 			}]
-			x: -2.0d
-			y: -1.5d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["063CF7110524527C"]
@@ -178,8 +178,8 @@
 				title: "$禁忌魔法学$"
 				type: "checkmark"
 			}]
-			x: -2.0d
-			y: 1.0d
+			x: -1.5d
+			y: 2.0d
 		}
 	]
 	title: "大魔法使"

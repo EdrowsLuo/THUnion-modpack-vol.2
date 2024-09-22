@@ -300,7 +300,7 @@
 				title: "坠星"
 				type: "checkmark"
 			}]
-			x: -8.0d
+			x: -9.0d
 			y: -3.5d
 		}
 		{
@@ -312,7 +312,7 @@
 				title: "采矿维度的魔灵之壶"
 				type: "checkmark"
 			}]
-			x: -9.0d
+			x: -10.0d
 			y: -3.5d
 		}
 		{
@@ -324,7 +324,7 @@
 				title: "资源种植"
 				type: "checkmark"
 			}]
-			x: -10.0d
+			x: -8.0d
 			y: -3.5d
 		}
 		{
@@ -370,7 +370,7 @@
 			}]
 			title: "龙研部"
 			x: -6.0d
-			y: -0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["57C74BF21E254657"]
@@ -382,8 +382,8 @@
 				title: "无尽部"
 				type: "checkmark"
 			}]
-			x: -4.5d
-			y: 3.0d
+			x: -3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["73504C4081F6C4B8"]
@@ -395,8 +395,8 @@
 				type: "checkmark"
 			}]
 			title: "永动机"
-			x: -5.5d
-			y: 4.5d
+			x: -1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4CC22A9E82A92E11"]
@@ -444,8 +444,8 @@
 				type: "item"
 			}]
 			title: "奇点压缩"
-			x: -4.5d
-			y: 4.5d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			id: "57C74BF21E254657"
@@ -455,8 +455,270 @@
 				secret: true
 				type: "dimension"
 			}]
+			title: "欢迎来到天顶科技公司"
 			x: -4.5d
 			y: -3.5d
+		}
+		{
+			dependencies: ["57C74BF21E254657"]
+			description: ["在获取传送核心前，你可能只能使用一些一次性的传送手段，或者去村庄搜刮几个传送石碑。"]
+			icon: "mekanism:teleporter"
+			id: "4DDE2EB4DAC53791"
+			tasks: [{
+				id: "74561A9B58DD37EE"
+				title: "空间科技部"
+				type: "checkmark"
+			}]
+			title: "空间科技部"
+			x: -6.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["4DDE2EB4DAC53791"]
+			id: "4FDA51769D6F6012"
+			tasks: [{
+				id: "540DD55881A6D85D"
+				item: {
+					Count: 1
+					id: "ars_nouveau:warp_scroll"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["4DDE2EB4DAC53791"]
+			id: "644F5840F5545ACC"
+			tasks: [{
+				id: "66F7E06CCBB1DA63"
+				item: "waystones:warp_scroll"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["4DDE2EB4DAC53791"]
+			id: "21200B9B7515A075"
+			tasks: [{
+				id: "5DB58FF33AA3CBF2"
+				item: "mekanism:teleportation_core"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["21200B9B7515A075"]
+			id: "2E5F57D8BC2EB7EF"
+			tasks: [{
+				id: "5B920083E35AA716"
+				item: {
+					Count: 1
+					id: "waystones:warp_stone"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["21200B9B7515A075"]
+			id: "7788CE51FC098E5C"
+			tasks: [{
+				id: "27FABF60BAF8C346"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["21200B9B7515A075"]
+			id: "2559D35FDE22EC67"
+			tasks: [{
+				id: "6DFB8414F9DFCDF8"
+				item: {
+					Count: 1
+					id: "ars_nouveau:stable_warp_scroll"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["57C74BF21E254657"]
+			id: "6814DD387FBB44C6"
+			tasks: [{
+				id: "331437B245629A8F"
+				item: "alexscaves:energized_galena_neutral"
+				type: "item"
+			}]
+			title: "电力部"
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6814DD387FBB44C6"]
+			id: "5E6197A48259A410"
+			tasks: [
+				{
+					id: "5669867B353C0AB1"
+					item: "fluxnetworks:flux_plug"
+					type: "item"
+				}
+				{
+					id: "15F6BAD9B9D0A488"
+					item: "fluxnetworks:flux_point"
+					type: "item"
+				}
+				{
+					id: "3EC0B119B1B3708A"
+					item: "fluxnetworks:flux_controller"
+					type: "item"
+				}
+			]
+			title: "超距能量传输最佳实践"
+			x: -8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6814DD387FBB44C6"]
+			id: "243E8C896F01F2E9"
+			tasks: [
+				{
+					id: "5633F40748618FC3"
+					item: {
+						Count: 1
+						id: "bigger_ae2:digital_singularity_flux_storage_cell"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "10F37DB59449E951"
+					item: "appflux:flux_accessor"
+					type: "item"
+				}
+			]
+			title: "奇点蓄电池"
+			x: -10.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6814DD387FBB44C6"]
+			id: "04F09EFCE13E0C96"
+			subtitle: "早期能源存储选项之一"
+			tasks: [{
+				id: "076267173F2BB9C3"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			title: "多方块蓄电池"
+			x: -8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6814DD387FBB44C6"]
+			id: "750EDAF837CEF878"
+			tasks: [{
+				id: "63DF0C655E742108"
+				item: "mekanism:ultimate_energy_cube"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6814DD387FBB44C6"]
+			description: ["在你解锁核电之前的过度选项。"]
+			id: "10C8581C9CFAE465"
+			subtitle: "切割磁感线！"
+			tasks: [
+				{
+					id: "767B75318AB198E4"
+					item: "create_new_age:generator_coil"
+					type: "item"
+				}
+				{
+					id: "54385D11375B9336"
+					item: "create_new_age:carbon_brushes"
+					type: "item"
+				}
+			]
+			title: "机械动力发电机"
+			x: -10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6814DD387FBB44C6"]
+			id: "516E6F96DA84C1A9"
+			subtitle: "可以堆的很大，真的很大很大"
+			tasks: [{
+				id: "733FA8BCBC177FD5"
+				item: "biggerreactors:reactor_terminal"
+				type: "item"
+			}]
+			title: "紧凑安全的核电"
+			x: -11.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6814DD387FBB44C6"]
+			id: "6F5933593EAF1161"
+			tasks: [{
+				id: "6BFE75ADFB2CDF90"
+				item: "mekanismgenerators:fusion_reactor_controller"
+				type: "item"
+			}]
+			title: "小太阳"
+			x: -12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6814DD387FBB44C6"]
+			id: "653DB6D9843DC2AC"
+			subtitle: "红石粉可以直接给梅肯机器供能，只需要放在电池槽即可。"
+			tasks: [{
+				id: "417A64F021F0E0BD"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			title: "Redstone Forge Power"
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6814DD387FBB44C6"]
+			description: ["梅肯的生物发电机和燃气机消失了。"]
+			id: "6EC282E80D88F53C"
+			subtitle: "他们效率真的很低。"
+			tasks: [
+				{
+					id: "0053356DB1DE3721"
+					item: "mekanismgenerators:heat_generator"
+					type: "item"
+				}
+				{
+					id: "7559B09C76A0B1CB"
+					item: "mekanismgenerators:wind_generator"
+					type: "item"
+				}
+				{
+					id: "4EDFA543020510A6"
+					item: "mekanismgenerators:solar_generator"
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: -1.5d
 		}
 	]
 	title: "天顶科技公司员工"
