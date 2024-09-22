@@ -69,3 +69,28 @@ function modifyUnique(event, item, recipe) {
     event.remove({ output: item })
     event.custom(recipe)
 }
+
+
+/**
+ * 
+ * @param {string} charactors 
+ * @param {Internal.Ingredient_[]} items 
+ */
+function autoPatternId(charactors, items) {
+    let result = {}
+    for (let i = 0; i < charactors.length; i++) {
+        result[charactors[i]] = items[i]
+    }
+    return result
+}
+
+/**
+ * 
+ * @param {Internal.RecipesEventJS} event 
+ * @param {Internal.Item_[]} items 
+ */
+function banAll(event, items) {
+    items.forEach(i => {
+        event.remove({ output: i })
+    })
+}
