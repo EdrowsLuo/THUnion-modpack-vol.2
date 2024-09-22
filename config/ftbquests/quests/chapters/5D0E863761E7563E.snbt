@@ -708,6 +708,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["73504C4081F6C4B8"]
 			id: "3D6D8F4961236D2D"
 			tasks: [{
 				id: "6CC2E8EB8E84DAF7"
@@ -717,6 +718,65 @@
 			title: "中子收集"
 			x: -1.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["22EA52DFADD3AEC1"]
+			id: "135851F2EC98DC68"
+			tasks: [{
+				id: "0D0299C49107E756"
+				item: {
+					Count: 1
+					id: "avaritia:singularity"
+					tag: {
+						Id: "avaritia:iron"
+					}
+				}
+				type: "item"
+			}]
+			title: "奇点种植"
+			x: -8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["73504C4081F6C4B8"]
+			id: "7AA79851460B0BAD"
+			subtitle: "mine[Craft]"
+			tasks: [{
+				id: "0D0A80B74AFEBD0B"
+				item: "avaritia:extreme_crafting_table"
+				type: "item"
+			}]
+			title: "最大的工作台"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"73504C4081F6C4B8"
+				"7AA79851460B0BAD"
+			]
+			id: "7818AF3756F474DC"
+			tasks: [{
+				id: "15BA8287CA7C7472"
+				item: "avaritia:infinity_catalyst"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"73504C4081F6C4B8"
+				"7818AF3756F474DC"
+			]
+			id: "7394D4FEF14EE0B1"
+			tasks: [{
+				id: "7C010A90CB577B1B"
+				item: "avaritia:infinity"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
 		}
 	]
 	title: "天顶科技公司员工"
