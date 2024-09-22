@@ -5,7 +5,40 @@ ServerEvents.recipes(event => {
     MakeOreCore(event)
     MakeMechanicalCore(event)
     MakeCraftCore(event)
+    MakeGoldenSweetBerries(event)
 })
+
+/**
+ * 
+ * @param {Internal.RecipesEventJS} event 
+ */
+function MakeGoldenSweetBerries(event) {
+    event.recipes.create.mechanical_crafting(
+        "kubejs:golden_sweet_berries",
+        [
+            "12345",
+            "67890",
+            "ABCDE"
+        ],
+        autoPatternId("1234567890ABCDE",[
+            "draconicevolution:dragon_heart",
+            "mekanism:pellet_antimatter",
+            "alexsmobs:void_worm_eye",
+            "alexscaves:immortal_embryo",
+            "biggerreactors:ludicrite_block",
+            "bigger_ae2:digital_singularity_flux_storage_cell",
+            "gtceu:nan_certificate",
+            "the_bumblezone:essence_of_the_bees",
+            "deeperdarker:sonorous_staff",
+            "jerotesvillage:second_round_world_teleport_stone",
+            "cataclysm:void_forge",
+            "cataclysm:tidal_claws",
+            "cataclysm:ignitium_block",
+            "tomeofblood:archmage_tome_of_blood",
+            "apotheosis:ender_library"
+        ])
+    )
+}
 
 
 function MakeTeleportationCore(event) {
