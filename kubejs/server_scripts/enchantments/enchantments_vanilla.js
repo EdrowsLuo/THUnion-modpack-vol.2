@@ -455,11 +455,11 @@ ServerEvents.recipes(event => {
             {
                 item: 'ars_nouveau:abjuration_essence'
             }, {
-                tag: 'minecraft:sculk'
+                item: 'minecraft:sculk'
             }, {
-                tag: 'minecraft:sculk'
+                item: 'minecraft:sculk'
             }, {
-                tag: 'minecraft:sculk'
+                item: 'minecraft:sculk'
             }, {
                 item: 'create:experience_block'
             }, {

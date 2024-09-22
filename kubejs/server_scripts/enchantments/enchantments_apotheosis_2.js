@@ -1,6 +1,6 @@
 /*
  * 添加附魔配方
- * 待添加：
+ * 已添加：
  * 
  * 狂怒I
  * 狂怒II
@@ -525,7 +525,7 @@ ServerEvents.recipes(event => {
 
     event.custom({
         type: 'ars_nouveau:enchantment',
-        enchantment: 'minecraft:stable_footing',
+        enchantment: 'apotheosis:stable_footing',
         level: '1',
         pedestalItems: [
             {
@@ -535,15 +535,15 @@ ServerEvents.recipes(event => {
             }, {
                 item: 'ars_nouveau:air_essence'
             }, {
-                item: 'ars_nouveau:air_essence'
+                item: 'gtceu:double_iron_plate'
             }, {
-                item: 'ars_nouveau:air_essence'
-            }, {
-                item: 'ars_nouveau:air_essence'
+                tag: 'forge:storage_blocks/iron'
             }, {
                 item: 'gtceu:double_iron_plate'
             }, {
-                item: 'gtceu:double_iron_plate'
+                item: 'ars_nouveau:air_essence'
+            }, {
+                item: 'ars_nouveau:air_essence'
             }
         ],
         sourceCost: 9000
