@@ -30,11 +30,20 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                     var level=meta.getLevel();
                     var pos=meta.getPos();
                     var facing=meta.getFrontFacing();
-                    var center=pos.offset(facing.getOpposite().getNormal().multiply(3)).offset(0,3,0);
+                    pos=pos.offset(facing.getOpposite().getNormal().multiply(3)).offset(0,1,0);
+                    console.log(pos);
                     var result=false;
-                    level.getEntitiesWithin(AABB.ofBlocks(center.offset(3,3,3),center.offset(-3,-3,-3))).forEach(entity=>{
+                    level.getEntitiesWithin(AABB.ofBlocks(pos.offset(3,3,3),pos.offset(-3,-3,-3))).forEach(entity=>{
                         if(entity.getType()==='the_bumblezone:bee_queen') result= true;
                     });
+                    var te=level.getBlockEntity(pos);
+                    if(te!=null){
+                        console.log(te.getBlockState().getBlock().getId());
+                        console.log(te.serializeNBT().toString());
+                        if(te.getBlockState().getBlock().getId()==='ars_nouveau:mob_jar' && te.serializeNBT().toString().includes('the_bumblezone:bee_queen')){
+                            result=true;
+                        }
+                    }
                     return result;
                 }
             }catch(error){console.log(error);}
