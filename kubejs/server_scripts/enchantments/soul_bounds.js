@@ -15,11 +15,11 @@ ServerEvents.recipes(event => {
             {
                 item: 'ars_elemental:anima_essence'
             }, {
-                tag: 'forge:storage_blocks/source'
+                item: 'tombstone:grave_dust'
             }, {
                 tag: 'forge:storage_blocks/lapis'
             }, {
-                item: 'tombstone:grave_dust'
+                tag: 'forge:storage_blocks/source'
             }
         ],
         sourceCost: 10000

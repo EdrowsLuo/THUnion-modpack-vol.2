@@ -21,7 +21,16 @@ ServerEvents.recipes(event => {
         "avaritia:infinity_boots",
         "avaritia:infinity_bow",
         "avaritia:infinity_pickaxe",
-        "avaritia:infinity_totem"
+        "avaritia:infinity_totem",
+        "gtceu:quarktech_helmet",
+        "gtceu:quarktech_chestplate",
+        "gtceu:quarktech_leggings",
+        "gtceu:quarktech_boots",
+        "gtceu:nanomuscle_helmet",
+        "gtceu:nanomuscle_chestplate",
+        "gtceu:nanomuscle_leggings",
+        "gtceu:nanomuscle_boots",
+
     ])
     
 })

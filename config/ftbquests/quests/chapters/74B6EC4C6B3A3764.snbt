@@ -91,6 +91,18 @@
 			x: 2.0d
 			y: -1.5d
 		}
+		{
+			id: "235148BA775DE71C"
+			subtitle: "对沃土上的远古树苗使用骨粉获得。"
+			tasks: [{
+				id: "7ADF70AA5E01B17B"
+				title: "t"
+				type: "checkmark"
+			}]
+			title: "生长核心"
+			x: -1.0d
+			y: -2.5d
+		}
 	]
 	title: "特殊材料挑战"
 }

@@ -6,6 +6,7 @@ StartupEvents.registry("item", event => {
         "craft_core",
         "battle_core",
         "treasure_core",
+        "growth_core"
     ]
     special_cores.forEach(core => {
         event.create(`kubejs:${core}`).texture("kubejs:item/" + core)

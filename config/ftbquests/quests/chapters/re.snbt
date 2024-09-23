@@ -352,8 +352,9 @@
 		}
 		{
 			dependencies: ["4A5CF0E2C58CC54C"]
-			description: ["你可以和往常一样的开始机械动力"]
+			description: [""]
 			id: "656A3569B50B1FF9"
+			subtitle: "你可以和往常一样的开始机械动力"
 			tasks: [{
 				id: "4A0960DE9143CDA2"
 				item: "create:andesite_alloy"
@@ -361,6 +362,19 @@
 			}]
 			title: "机械动力还是一如既往"
 			x: -6.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4A5CF0E2C58CC54C"]
+			id: "41EFC4B59A0E55CD"
+			subtitle: "整个法术系统的基础"
+			tasks: [{
+				id: "09CA2FAE99661B44"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			title: "开始新生魔艺"
+			x: -1.5d
 			y: -7.5d
 		}
 	]
