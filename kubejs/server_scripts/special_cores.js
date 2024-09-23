@@ -62,7 +62,7 @@ function MakeOreCore(event) {
             { "tag": "forge:ores/aluminum" },
             { "tag": "forge:ores/lead" },
             { "tag": "forge:ores/nickel" },
-            { "tag": "forge:ores/osmiun" },
+            { "tag": "forge:ores/osmium" },
             { "tag": "forge:ores/zinc" },
             { "tag": "forge:ores/redstone" },
         ],
