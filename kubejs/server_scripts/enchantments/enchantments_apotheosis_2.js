@@ -91,11 +91,11 @@ ServerEvents.recipes(event => {
             }, {
                 item: 'ars_nouveau:fire_essence'
             }, {
-                tag: 'forge:storage_blocks/netherite'
-            }, {
                 tag: 'forge:storage_blocks/diamond'
             }, {
-                tag: 'forge:storage_blocks/diamond'
+                tag: 'forge:storage_blocks/source'
+            }, {
+                tag: 'forge:storage_blocks/source'
             }, {
                 tag: 'forge:storage_blocks/source'
             }, {
