@@ -19,7 +19,7 @@ enableSpawnEggRecipe = true
 	phantomHeight = 200
 	#Requirement for explosion shard drop
 	#Range: 1 ~ 10000
-	explosionDamage = 80
+	explosionDamage = 60
 	#Requirement for space shard drop
 	#Range: 1 ~ 1000000
 	spaceDamage = 1638
@@ -27,7 +27,7 @@ enableSpawnEggRecipe = true
 	allowModBanSpaceShard = true
 	#Enable immunity enchantments
 	#Be sure to inform players when you turn this off
-	enableImmunityEnchantments = false
+	enableImmunityEnchantments = true
 
 ["fire charge"]
 	#Soul Fire Charge Duration
@@ -71,7 +71,7 @@ enableSpawnEggRecipe = true
 	emeraldBaseRange = 10
 	#Sonic Shooter Damage
 	#Range: 1 ~ 1000
-	sonicShooterDamage = 10
+	sonicShooterDamage = 30
 	#Hellfire Wand Damage
 	#Range: 1 ~ 1000
 	hellfireWandDamage = 10
