@@ -5,7 +5,7 @@
 
 ServerEvents.recipes(event => {
     event.remove({id: 'ars_nouveau:soulbound_1'})
-    event.remove({id: 'ars_nouveau:soul_bound_1'})
+    event.remove({id: 'l2complements:enchantments/soul_bound_ars'})
 
     event.custom({
         type: 'ars_nouveau:enchantment',
