@@ -1,3 +1,5 @@
+// priority: 100
+
 JEIEvents.hideItems(event=>{
     [
         'gtceu:basic_electronic_circuit',
@@ -38,6 +40,5 @@ JEIEvents.hideItems(event=>{
         event.hide(item);
     })
 
-    
+    event.hide("#botanypots:all_botany_pots")
 })
-
