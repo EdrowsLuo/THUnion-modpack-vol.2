@@ -34,6 +34,10 @@ function circuit(recipe){
     return value;
 }
 
+function getCircuit(recipe){
+    return circuit(recipe);
+}
+
 function allConsumingInputs(recipe){
     var inputList=[];
     recipe.get("inputs").get($GTRecipeCapabilities.ITEM).forEach( (content) => {
