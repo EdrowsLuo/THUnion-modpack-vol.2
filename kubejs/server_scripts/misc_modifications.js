@@ -19,5 +19,7 @@ ServerEvents.recipes(event => {
         "item": "minecraft:ender_eye"
       }
     })
+
+    banAll(event, ["modularrouters:player_module"])
 })
 
