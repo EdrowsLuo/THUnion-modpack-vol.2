@@ -22,9 +22,9 @@ enableSpawnEggRecipe = true
 	explosionDamage = 60
 	#Requirement for space shard drop
 	#Range: 1 ~ 1000000
-	spaceDamage = 16384
+	spaceDamage = 1638
 	#Allow mods to ban space shard
-	allowModBanSpaceShard = true
+	allowModBanSpaceShard = false
 	#Enable immunity enchantments
 	#Be sure to inform players when you turn this off
 	enableImmunityEnchantments = false
