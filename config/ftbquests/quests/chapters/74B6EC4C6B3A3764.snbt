@@ -93,11 +93,11 @@
 		}
 		{
 			id: "235148BA775DE71C"
-			subtitle: "对沃土上的远古树苗使用骨粉获得。"
+			subtitle: "让繁茂树叶吸收原始洞穴的生长力"
 			tasks: [{
-				id: "7ADF70AA5E01B17B"
-				title: "t"
-				type: "checkmark"
+				id: "679E492158AA7D96"
+				item: "kubejs:growth_core"
+				type: "item"
 			}]
 			title: "生长核心"
 			x: -1.0d

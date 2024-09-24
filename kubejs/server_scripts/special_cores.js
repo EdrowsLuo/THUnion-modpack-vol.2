@@ -8,6 +8,16 @@ ServerEvents.recipes(event => {
     MakeGoldenSweetBerries(event)
 })
 
+ItemEvents.firstRightClicked("ars_nouveau:green_archwood_leaves", event => {
+    if(event.item.count >= 32 && playerInBiome(event.player, "alexscaves:primordial_caves")) {
+        event.item.shrink(32)
+        event.player.give("kubejs:growth_core")
+
+        let player = event.player
+        event.level.runCommandSilent(`particle minecraft:glow ${player.x} ${player.eyeY} ${player.z} 1 1 1 0.1 100 normal`);
+    }
+})
+
 /**
  * 
  * @param {Internal.RecipesEventJS} event 
