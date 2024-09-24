@@ -8,7 +8,6 @@ const boss_list = [
     "alexsmobs:void_worm",
     "allthemodium:piglich", // 看看还有没有bug
     "ars_nouveau:wilden_boss",
-    "artifacts:mimic",
     "avaritia:infinity_golem", //...
     "bosses_of_mass_destruction:gauntlet",
     "bosses_of_mass_destruction:lich",
