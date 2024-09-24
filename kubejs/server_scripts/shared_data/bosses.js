@@ -1,4 +1,10 @@
 
+/**
+ * 
+ * @param {string} name 名称，目前就填写中文翻译
+ * @param {Internal.EntityType_} entityId 实体id
+ * @param {number} healthMultiplier 血量倍率 
+ */
 function BossType(name, entityId, healthMultiplier) {
 
 }
@@ -28,7 +34,7 @@ BossType.prototype.enableSpawner = function() {
  * @type {BossType[]}
  */
 const minecraftBosses = [
-
+    
 ]
 
 
