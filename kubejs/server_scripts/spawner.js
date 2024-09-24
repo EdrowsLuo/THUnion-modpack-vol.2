@@ -14,6 +14,40 @@ ServerEvents.recipes(event => {
         20000
     )
 
+    modifyUnique(event, "pneumaticcraft:spawner_extractor", {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+            "A": {
+                "item": "pneumaticcraft:spawner_agitator"
+            },
+            "I": {
+                "item": "alexscaves:pure_darkness"
+            },
+            "O": {
+                "tag": "forge:obsidian"
+            },
+            "P": {
+                "item": "pneumaticcraft:drill_pipe"
+            },
+            "T": {
+                "item": "pneumaticcraft:pressure_tube"
+            },
+            "W": {
+                "item": "pneumaticcraft:pressure_chamber_wall"
+            }
+        },
+        "pattern": [
+            "ITI",
+            "WAW",
+            "OPO"
+        ],
+        "result": {
+            "item": "pneumaticcraft:spawner_extractor"
+        },
+        "show_notification": true
+    })
+
     /** @param {Internal.Item_} mainhand */
     function modifySpawner(mainhand, stat_change, stat_change_inverted) {
         event.custom({
@@ -28,7 +62,7 @@ ServerEvents.recipes(event => {
                 "item": mainhand
             },
             "offhand": {
-                "item": "pneumaticcraft:spawner_core"
+                "item": "alexscaves:pure_darkness"
             },
             "consumes_offhand": true,
             "stat_changes": [

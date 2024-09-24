@@ -276,6 +276,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["36C365C02502083D"]
 			id: "30D88F85FC763601"
 			subtitle: "用黑暗来支配生物的灵魂"
 			tasks: [{
@@ -288,6 +289,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["36C365C02502083D"]
 			id: "7CDE4C59F424DEA5"
 			tasks: [{
 				id: "07AE2203D321597D"
@@ -298,6 +300,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["36C365C02502083D"]
 			id: "3A036D92668B08BD"
 			tasks: [{
 				id: "73C236576BE9231D"
@@ -308,6 +311,7 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["36C365C02502083D"]
 			id: "486EB79BA47DC60E"
 			tasks: [{
 				id: "2470E370CEEE3C7B"
@@ -344,6 +348,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["36C365C02502083D"]
 			id: "2CAEBAAB7DC53BA2"
 			tasks: [{
 				icon: "minecraft:spawner"
