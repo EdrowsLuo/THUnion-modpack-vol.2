@@ -94,3 +94,11 @@ function banAll(event, items) {
         event.remove({ output: i })
     })
 }
+
+function getBiomeId(level, pos) {
+    return level.getBiome(pos).unwrap().left().get().location()
+}
+
+function playerInBiome(player, biome) {
+    return getBiomeId(player.level, player.blockPosition()) == biome
+}
