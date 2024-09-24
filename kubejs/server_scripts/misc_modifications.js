@@ -19,5 +19,9 @@ ServerEvents.recipes(event => {
         "item": "minecraft:ender_eye"
       }
     })
+
+    banAll(event, ["modularrouters:player_module", "apotheosis:treasure_shelf"])
+
+    event.remove({"type": "pneumaticcraft:pressure_chamber_enchanting"})
 })
 

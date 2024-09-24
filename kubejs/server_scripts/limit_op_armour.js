@@ -30,7 +30,14 @@ ServerEvents.recipes(event => {
         "gtceu:nanomuscle_chestplate",
         "gtceu:nanomuscle_leggings",
         "gtceu:nanomuscle_boots",
-
+        "allthemodium:vibranium_helmet",
+        "allthemodium:vibranium_chestplate",
+        "allthemodium:vibranium_leggings",
+        "allthemodium:vibranium_boots",
+        "allthemodium:unobtainium_helmet",
+        "allthemodium:unobtainium_chestplate",
+        "allthemodium:vibranium_leggings",
+        "allthemodium:unobtainium_boots",
     ])
     
 })

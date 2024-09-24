@@ -137,10 +137,23 @@
 			dependencies: ["063CF7110524527C"]
 			id: "679DE7BCE1FC7879"
 			subtitle: "魔力是否可以当饮料？"
-			tasks: [{
-				id: "468E305B56C2BB30"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "01586F8FF4903865"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					id: "3F1128192F47ACAE"
+					item: "starbunclemania:source_condenser"
+					type: "item"
+				}
+				{
+					id: "0847F007913C20A9"
+					item: "starbunclemania:source_fluid_bucket"
+					type: "item"
+				}
+			]
 			title: "魔力合成学"
 			x: 3.0d
 			y: 2.0d
@@ -154,6 +167,7 @@
 				title: "星光学"
 				type: "checkmark"
 			}]
+			title: "星光学【WIP】"
 			x: 1.0d
 			y: 3.0d
 		}
@@ -166,6 +180,7 @@
 				title: "自我强化学"
 				type: "checkmark"
 			}]
+			title: "自我强化学【WIP】"
 			x: -2.5d
 			y: 0.0d
 		}
@@ -180,6 +195,167 @@
 			}]
 			x: -1.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["681880F3C1D4A405"]
+			id: "7E8FAAAAE3B36B0A"
+			tasks: [{
+				id: "106C8EB1895369B6"
+				item: "bloodmagic:altar"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["681880F3C1D4A405"]
+			id: "0F74EE5B10AFFD1C"
+			tasks: [{
+				id: "473536F633099DF1"
+				item: "bloodmagic:ritualdiviner"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["681880F3C1D4A405"]
+			description: ["可以在种植盆里种植。"]
+			id: "2C2BAAB104D3D83F"
+			tasks: [{
+				id: "049A6025ADE3E27A"
+				item: "bloodmagic:strong_tau"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["681880F3C1D4A405"]
+			id: "27B0C75B5C0AE502"
+			tasks: [{
+				id: "05DBCAC0D61C9204"
+				item: "bloodmagic:simplekey"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["681880F3C1D4A405"]
+			id: "35C4C47AB3EE36CB"
+			tasks: [{
+				id: "3628BA715DA5E885"
+				item: "bloodmagic:hellforgedparts"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["681880F3C1D4A405"]
+			id: "2243CE885EB7C190"
+			tasks: [{
+				id: "521A7B07FBF8B55E"
+				item: "tomeofblood:archmage_tome_of_blood"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			id: "5EBB0A253474C125"
+			subtitle: "给锻铁注入魔力，然后用牛奶清除魔力的杂质"
+			tasks: [{
+				id: "0BA2BFA345024C2C"
+				item: "alltheores:steel_ingot"
+				type: "item"
+			}]
+			title: "魔力造钢"
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			id: "30D88F85FC763601"
+			subtitle: "用黑暗来支配生物的灵魂"
+			tasks: [{
+				id: "3B5BEF645D0E576D"
+				item: "alexscaves:pure_darkness"
+				type: "item"
+			}]
+			title: "最纯粹的黑暗"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			id: "7CDE4C59F424DEA5"
+			tasks: [{
+				id: "07AE2203D321597D"
+				item: "ars_nouveau:mob_jar"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			id: "3A036D92668B08BD"
+			tasks: [{
+				id: "73C236576BE9231D"
+				item: "ars_nouveau:drygmy_charm"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			id: "486EB79BA47DC60E"
+			tasks: [{
+				id: "2470E370CEEE3C7B"
+				item: {
+					Count: 1
+					id: "utilitix:mob_yoinker"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			description: [
+				"大部分的附魔从附魔台移除了，你需要用附魔装置来进行附魔。"
+				"你也不能将两本同等级的附魔书升级附魔了。"
+			]
+			id: "22086C7EA4B422F7"
+			tasks: [
+				{
+					id: "1D56512407FE2467"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+				{
+					id: "5407AB3B1B17C89D"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+			]
+			title: "附魔"
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			id: "2CAEBAAB7DC53BA2"
+			tasks: [{
+				icon: "minecraft:spawner"
+				id: "5E8D2B3E3C1E6364"
+				observe_type: 0
+				timer: 0L
+				to_observe: "minecraft:spawner"
+				type: "observation"
+			}]
+			title: "自定义刷怪笼"
+			x: -4.5d
+			y: 3.5d
 		}
 	]
 	title: "大魔法使"
