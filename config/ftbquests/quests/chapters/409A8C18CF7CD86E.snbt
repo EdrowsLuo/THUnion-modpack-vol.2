@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "409A8C18CF7CD86E"
 	group: ""
+	icon: "minecraft:compass"
 	id: "409A8C18CF7CD86E"
 	order_index: 0
 	quest_links: [ ]

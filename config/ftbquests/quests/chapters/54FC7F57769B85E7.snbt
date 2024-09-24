@@ -1,4 +1,5 @@
 {
+	autofocus_id: "063CF7110524527C"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "54FC7F57769B85E7"
@@ -31,6 +32,16 @@
 		}
 		{
 			dependencies: ["063CF7110524527C"]
+			icon: {
+				Count: 1
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:vanishing_curse"
+						lvl: 1s
+					}]
+				}
+			}
 			id: "183157F188325BED"
 			subtitle: "你需要一种不一样的附魔"
 			tasks: [{
@@ -135,25 +146,9 @@
 		}
 		{
 			dependencies: ["063CF7110524527C"]
+			icon: "starbunclemania:source_fluid_bucket"
 			id: "679DE7BCE1FC7879"
 			subtitle: "魔力是否可以当饮料？"
-			tasks: [
-				{
-					id: "01586F8FF4903865"
-					item: "ars_nouveau:source_jar"
-					type: "item"
-				}
-				{
-					id: "3F1128192F47ACAE"
-					item: "starbunclemania:source_condenser"
-					type: "item"
-				}
-				{
-					id: "0847F007913C20A9"
-					item: "starbunclemania:source_fluid_bucket"
-					type: "item"
-				}
-			]
 			title: "魔力合成学"
 			x: 3.0d
 			y: 2.0d
@@ -186,13 +181,16 @@
 		}
 		{
 			dependencies: ["063CF7110524527C"]
+			icon: "graveyard:black_urn"
 			id: "36C365C02502083D"
 			subtitle: "操纵人体，异化生命"
 			tasks: [{
-				id: "44ED44792AEF0FAB"
-				title: "$禁忌魔法学$"
-				type: "checkmark"
+				biome: "alexscaves:forlorn_hollows"
+				id: "12005F32E066D957"
+				title: "访问异寂空谷"
+				type: "biome"
 			}]
+			title: "$禁忌魔法学$"
 			x: -1.5d
 			y: 2.0d
 		}
@@ -264,6 +262,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["679DE7BCE1FC7879"]
 			id: "5EBB0A253474C125"
 			subtitle: "给锻铁注入魔力，然后用牛奶清除魔力的杂质"
 			tasks: [{
@@ -326,6 +325,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["183157F188325BED"]
 			description: [
 				"大部分的附魔从附魔台移除了，你需要用附魔装置来进行附魔。"
 				"你也不能将两本同等级的附魔书升级附魔了。"
@@ -361,6 +361,36 @@
 			title: "自定义刷怪笼"
 			x: -4.5d
 			y: 3.5d
+		}
+		{
+			dependencies: ["22086C7EA4B422F7"]
+			id: "6CE29B6541EEC056"
+			tasks: [{
+				id: "5C49433FC87000CF"
+				item: "the_bumblezone:royal_jelly_bottle"
+				type: "item"
+			}]
+			title: "蜂王带来的更强大附魔"
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			id: "64D685BF5D27AF80"
+			tasks: [
+				{
+					id: "4A56E312A4F323C8"
+					item: "starbunclemania:source_condenser"
+					type: "item"
+				}
+				{
+					id: "5BE82A4BEA93AE5C"
+					item: "starbunclemania:source_fluid_bucket"
+					type: "item"
+				}
+			]
+			title: "液态魔力"
+			x: 5.0d
+			y: 3.0d
 		}
 	]
 	title: "大魔法使"

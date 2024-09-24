@@ -465,6 +465,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["109014752147196A"]
 			id: "57C74BF21E254657"
 			tasks: [{
 				dimension: "minecraft:overworld"
@@ -844,6 +845,7 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["7C06AEE5CE5AB482"]
 			id: "3A2424C5F4BE032D"
 			tasks: [{
 				id: "05F95AD7CC800E48"
