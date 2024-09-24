@@ -1,40 +1,41 @@
 
 
 ServerEvents.recipes(event => {
-    event.recipes.botanypots.crop(
-        "minecraft:candle", // seed item
-        ["oak_leaves"], // categories that this crop can be planted on
-        { block: "minecraft:candle" }, // display block
-        [
-            Item.of ("minecraft:candle") // item
-                .withChance(100) // weight of this entry compared to the others
-                .withRolls(1, 2) // the times this loot will be chosen (min, max)
-            // for example, when chosen this will give 1 to 2 candles
-        ],
-        10, // growthTicks
-        1, // optional, growthModifier - this can be set to 1 in most cases
-    )
- 
-    event.recipes.botanypots.soil(
-        "minecraft:oak_leaves", // the item that this soil is attached to
-        { block: "minecraft:oak_leaves" }, // display block
-        ["oak_leaves"], // categories that this soil provides
-        100, // growth ticks that this soil will provide, set to -1 for no modifier
-        0.5 // optional, growth modifier, example: 0.5 means all crops will take half the time
-    )
 
-
-    MetalOre.forEach(ore => {
+    /**
+     * 
+     * @param {OreType} ore 
+     * @param {Internal.Item_} seed 
+     * @param {Internal.Item_} displayBlock
+     * @param {Internal.ItemStack_[]} output 
+     */
+    function addOreBotanyRecipe(ore, seed, displayBlock, output) {
         event.recipes.botanypots.crop(
-            ore.asOresBlock(),
+            seed,
             ["ore_core"],
-            { block: ore.asOresBlock().getId() },
-            [
-                ore.asClump().withChance(1).withRolls(ore.multiplyRate, ore.multiplyRate)
-            ],
+            { block: displayBlock.getId() },
+            output.concat(ore.customExport),
             ore.growTime*20,
             1
         )
+    }
+
+
+    MetalOre.forEach(ore => {
+        addOreBotanyRecipe(ore, ore.asOresBlock(), ore.asOresBlock(), [
+            ore.asClump().withChance(1).withRolls(ore.multiplyRate, ore.multiplyRate),
+            ore.asNugget().withChance(0.1).withRolls(ore.multiplyRate, ore.multiplyRate),
+        ])
+    })
+
+    GemOre.forEach(ore => {
+        addOreBotanyRecipe(ore, ore.asGem(), ore.asBlock(), [
+            ore.asGem().withChance(1).withRolls(ore.multiplyRate, ore.multiplyRate),
+        ])
+    })
+
+    MiscOre.forEach(ore => {
+        addOreBotanyRecipe(ore, ore.asBlock(), ore.asBlock(), [])
     })
 
     event.recipes.botanypots.soil(
