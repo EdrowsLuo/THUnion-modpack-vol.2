@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "boss"
 	group: "5D83065599C5EF63"
+	icon: "minecraft:dragon_head"
 	id: "00506F069400AA8F"
 	order_index: 0
 	quest_links: [ ]
@@ -37,6 +38,8 @@
 		}
 		{
 			dependencies: ["0A08F03034669B23"]
+			description: ["你的第一个暮色Boss"]
+			hide: true
 			id: "603EBBEAE2062745"
 			tasks: [{
 				disable_toast: true
@@ -50,6 +53,8 @@
 		}
 		{
 			dependencies: ["603EBBEAE2062745"]
+			description: ["需要一点魔法才能打破它的护盾"]
+			hide: true
 			id: "45F406A79614CCD7"
 			tasks: [{
 				disable_toast: true
@@ -63,6 +68,8 @@
 		}
 		{
 			dependencies: ["45F406A79614CCD7"]
+			description: ["希望你还记得迷宫的入口在哪"]
+			hide: true
 			id: "071018459E95243F"
 			tasks: [{
 				disable_toast: true
@@ -76,6 +83,8 @@
 		}
 		{
 			dependencies: ["071018459E95243F"]
+			description: ["美味的炭烤九头蛇肉排！"]
+			hide: true
 			id: "62D564E934426136"
 			tasks: [{
 				disable_toast: true
@@ -89,6 +98,8 @@
 		}
 		{
 			dependencies: ["62D564E934426136"]
+			description: ["当心这些会穿墙的家伙"]
+			hide: true
 			id: "39E8CE813DA858E4"
 			tasks: [{
 				disable_toast: true
@@ -102,6 +113,8 @@
 		}
 		{
 			dependencies: ["39E8CE813DA858E4"]
+			description: ["也许我们需要找个地方避雨"]
+			hide: true
 			id: "649BA3FF70D29B32"
 			tasks: [{
 				disable_toast: true
@@ -115,6 +128,8 @@
 		}
 		{
 			dependencies: ["649BA3FF70D29B32"]
+			description: ["温暖的大雪怪"]
+			hide: true
 			id: "48BBF872330A8C8D"
 			tasks: [{
 				disable_toast: true
@@ -128,6 +143,8 @@
 		}
 		{
 			dependencies: ["48BBF872330A8C8D"]
+			description: ["就快成功了……只差一点点"]
+			hide: true
 			id: "68C9AA70D98F40DB"
 			tasks: [{
 				disable_toast: true
@@ -142,7 +159,7 @@
 		{
 			dependencies: ["4C7F29F27F335A19"]
 			disable_toast: true
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: "jerotesvillage:second_round_world_portal_block"
 			id: "4436E5D4E4A7A6EF"
 			invisible: true
@@ -160,7 +177,6 @@
 		{
 			dependencies: ["4C7F29F27F335A19"]
 			disable_toast: true
-			hide_dependency_lines: true
 			icon: "twilightforest:twilight_portal_miniature_structure"
 			id: "0A08F03034669B23"
 			invisible: true
@@ -177,6 +193,7 @@
 		}
 		{
 			dependencies: ["4436E5D4E4A7A6EF"]
+			description: ["找到沉降墓穴中心的沉降领主棺"]
 			icon: "jerotesvillage:sediment_coffin"
 			id: "3528818C2039D51F"
 			tasks: [{
@@ -192,6 +209,7 @@
 		}
 		{
 			dependencies: ["4436E5D4E4A7A6EF"]
+			description: ["击败女巫居所楼顶的大巫婆，并将邪恶的药剂放进鬼婆之锅"]
 			icon: {
 				Count: 1
 				id: "jerotesvillage:big_witchs_hat"
@@ -213,6 +231,7 @@
 		}
 		{
 			dependencies: ["4436E5D4E4A7A6EF"]
+			description: ["向无尽海洋的水中投入恶鳞饵叉"]
 			icon: "jerotesvillage:gemstone_malignasaur_scale"
 			id: "480337870DCA6D60"
 			tasks: [{
@@ -228,6 +247,7 @@
 		}
 		{
 			dependencies: ["4436E5D4E4A7A6EF"]
+			description: ["在明路草原用明路鼓槌猛敲明路大鼓"]
 			icon: "jerotesvillage:bright_land_drum"
 			id: "2714E38E8ABDCEE9"
 			tasks: [{
@@ -243,6 +263,7 @@
 		}
 		{
 			dependencies: ["4436E5D4E4A7A6EF"]
+			description: ["在苦寒之地吹响蚀龙兽号角"]
 			icon: "jerotesvillage:corrosiver_bugle"
 			id: "5C1915E4643C70E9"
 			tasks: [{
@@ -259,7 +280,6 @@
 		{
 			dependencies: ["4C7F29F27F335A19"]
 			disable_toast: true
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			icon: "minecraft:grass_block"
 			id: "4E52B257A591EFEC"
@@ -277,25 +297,27 @@
 		}
 		{
 			dependencies: ["4C7F29F27F335A19"]
-			disable_toast: true
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: "minecraft:end_portal_frame"
 			id: "711922A44EB1214E"
 			secret: true
 			size: 1.2d
 			tasks: [{
-				dimension: "minecraft:the_end"
 				disable_toast: true
-				id: "4F1D524676D3B42E"
-				title: "末地"
-				type: "dimension"
+				entity: "minecraft:ender_dragon"
+				icon: "minecraft:spawner"
+				id: "2C443873438DD6A8"
+				type: "kill"
+				value: 1L
 			}]
+			title: "末地"
 			x: -1.5d
 			y: 2.0d
 		}
 		{
+			dependencies: ["4C7F29F27F335A19"]
 			disable_toast: true
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: "minecraft:crimson_nylium"
 			id: "091EA64D5A245838"
 			secret: true
@@ -313,15 +335,21 @@
 		{
 			dependencies: ["4C7F29F27F335A19"]
 			disable_toast: true
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: "soulsweapons:altar_block"
 			id: "5A55B291E8A49B2D"
+			secret: true
 			size: 1.2d
 			tasks: [{
-				id: "10C128547E56E825"
+				disable_toast: true
+				icon: "soulsweapons:altar_block"
+				id: "07E0FB00B96C3971"
+				stat: "minecraft:mob_kills"
 				title: "召唤Boss"
-				type: "checkmark"
+				type: "stat"
+				value: 1
 			}]
+			title: "召唤Boss"
 			x: 1.5d
 			y: 2.0d
 		}
@@ -331,7 +359,11 @@
 				"4436E5D4E4A7A6EF"
 			]
 			dependency_requirement: "one_completed"
-			hide_dependency_lines: true
+			description: [
+				"在主世界和二轮世界的地表可以发现深板岩砖入口，击败后生成暗夜之影"
+				"在第一次击败Boss以后，可以对破旧的月光祭坛使用德拉古尔再次召唤"
+			]
+			hide_dependent_lines: true
 			icon: {
 				Count: 1
 				id: "soulsweapons:draugr"
@@ -353,6 +385,7 @@
 		}
 		{
 			dependencies: ["466F96D9758AEDCE"]
+			description: ["击败古英雄的遗骸后生成"]
 			icon: "soulsweapons:essence_of_eventide"
 			id: "1CBAAC36B2E81C71"
 			tasks: [{
@@ -368,6 +401,7 @@
 		}
 		{
 			dependencies: ["4E52B257A591EFEC"]
+			description: ["在主世界底部的洞穴中生成"]
 			icon: "bosses_of_mass_destruction:void_lily"
 			id: "7552407D6F72F1E5"
 			tasks: [{
@@ -378,11 +412,12 @@
 				value: 1L
 			}]
 			title: "虚空之花"
-			x: -4.5d
-			y: -4.0d
+			x: -5.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["4E52B257A591EFEC"]
+			description: ["在主世界寒冷生物群系的巫妖塔上，把四颗灵魂之星放进祭坛召唤"]
 			icon: "bosses_of_mass_destruction:soul_star"
 			id: "1FC8CF4505562C6C"
 			tasks: [{
@@ -398,6 +433,7 @@
 		}
 		{
 			dependencies: ["4E52B257A591EFEC"]
+			description: ["主世界大海深处的沉没之城，使用深渊祭品右键水底深渊祭坛生成"]
 			icon: "cataclysm:abyssal_egg"
 			id: "4521D562919DF719"
 			tasks: [{
@@ -408,11 +444,12 @@
 				value: 1L
 			}]
 			title: "利维坦"
-			x: -0.5d
-			y: -3.5d
+			x: -1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4E52B257A591EFEC"]
+			description: ["主世界地下深处的远古工厂，使用下界之星唤醒"]
 			icon: "cataclysm:witherite_ingot"
 			id: "754623062B0FE562"
 			tasks: [{
@@ -423,11 +460,15 @@
 				value: 1L
 			}]
 			title: "先驱者"
-			x: -1.5d
-			y: -4.5d
+			x: 0.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["4E52B257A591EFEC"]
+			description: [
+				"位于主世界沙漠里的诅咒金字塔中心，使用沙漠项链唤醒"
+				"沙漠项链可以在诅咒金字塔中刷可疑的沙子获得"
+			]
 			icon: "cataclysm:remnant_skull"
 			id: "44E57657F41A4903"
 			tasks: [{
@@ -439,8 +480,291 @@
 			}]
 			title: "远古遗魂"
 			x: 0.0d
-			y: -5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4E52B257A591EFEC"]
+			description: ["向原始洞穴的火山口扔出灾厄触媒"]
+			icon: "alexscaves:ominous_catalyst"
+			id: "701A07B53DFFB162"
+			tasks: [{
+				disable_toast: true
+				entity: "alexscaves:luxtructosaurus"
+				id: "3C2EC9633C4332B8"
+				type: "kill"
+				value: 1L
+			}]
+			title: "暝煌龙"
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4E52B257A591EFEC"]
+			description: ["在海洋上方的空岛，使用三种骨杖残片和血瓶召唤"]
+			icon: "graveyard:white_bone_staff"
+			id: "74AF307C0CB82948"
+			tasks: [{
+				disable_toast: true
+				entity: "graveyard:lich"
+				id: "016F0F67FBECF617"
+				type: "kill"
+				value: 1L
+			}]
+			title: "腐化英雄"
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["091EA64D5A245838"]
+			description: ["在下界熔岩海附近的结构中，通过破坏远古雕纹黑石召唤"]
+			icon: "minecraft:netherite_block"
+			id: "26EF4F0AC90A7E57"
+			tasks: [{
+				disable_toast: true
+				entity: "bosses_of_mass_destruction:gauntlet"
+				id: "51061D1E0F9AE32C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "下界铁掌"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["091EA64D5A245838"]
+			description: ["下界的烈焰竞技场第三层，对烈焰祭坛使用炽燃余烬激活"]
+			icon: "cataclysm:ignitium_ingot"
+			id: "457AA487758CD449"
+			tasks: [{
+				disable_toast: true
+				entity: "cataclysm:ignis"
+				id: "4E086980A79D4F54"
+				type: "kill"
+				value: 1L
+			}]
+			title: "焰魔"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["091EA64D5A245838"]
+			description: ["下界熔岩海上的灵魂锻造厂中间生成"]
+			icon: {
+				Count: 1
+				id: "obtrophies:trophy"
+				tag: {
+					BlockEntityTag: {
+						VariantID: 0
+						entity: "cataclysm:netherite_monstrosity"
+					}
+				}
+			}
+			id: "7A62E6853F1E69B1"
+			tasks: [{
+				disable_toast: true
+				entity: "cataclysm:netherite_monstrosity"
+				id: "33C70B4610F81609"
+				type: "kill"
+				value: 1L
+			}]
+			title: "下界合金巨兽"
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["091EA64D5A245838"]
+			description: [
+				"在下界的红色下界砖结构中生成"
+				"在第一次击败Boss以后，可以对黑石基座使用凋零恶魔之心再次召唤"
+			]
+			icon: "soulsweapons:withered_demon_heart"
+			id: "1E80E594F4FB0968"
+			tasks: [{
+				disable_toast: true
+				entity: "soulsweapons:accursed_lord_boss"
+				id: "5D545BE0D68839B7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "腐朽的王"
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["711922A44EB1214E"]
+			description: [
+				"把神秘蠕虫扔进末地的虚空"
+				"神秘蠕虫由绯红孑孓放进衣壳体中变异而成"
+			]
+			icon: "alexsmobs:mysterious_worm"
+			id: "3AF951791633EAED"
+			tasks: [{
+				disable_toast: true
+				entity: "alexsmobs:void_worm_part"
+				id: "5F9F1BB8656A3B66"
+				type: "kill"
+				value: 1L
+			}]
+			title: "虚空蠕虫"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["711922A44EB1214E"]
+			description: ["在末地外岛高空中的结构，向黑曜石祭坛放置末影之眼召唤"]
+			icon: "minecraft:crying_obsidian"
+			id: "21F85D55B7E131B7"
+			tasks: [{
+				disable_toast: true
+				entity: "bosses_of_mass_destruction:obsidilith"
+				id: "0AE33D92DFFD2F35"
+				type: "kill"
+				value: 1L
+			}]
+			title: "黑曜石柱"
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["711922A44EB1214E"]
+			description: ["末地的废弃堡垒底部地下二层生成"]
+			icon: "minecraft:shulker_box"
+			id: "677122BAF560680E"
+			tasks: [{
+				disable_toast: true
+				entity: "cataclysm:ender_guardian"
+				id: "1719DAC80AD329FE"
+				type: "kill"
+				value: 1L
+			}]
+			title: "末影守卫"
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["711922A44EB1214E"]
+			description: ["感谢游玩整合包！"]
+			icon: "draconicevolution:chaos_shard"
+			id: "0BAC28156909732A"
+			size: 2.0d
+			tasks: [{
+				disable_toast: true
+				entity: "draconicevolution:draconic_guardian"
+				id: "6AADD8039CC1F210"
+				type: "kill"
+				value: 1L
+			}]
+			title: "混沌守卫"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5A55B291E8A49B2D"]
+			description: ["在荒野召唤仪式中同时使用荒野尖刺、荒野之角和荒野翼膜"]
+			icon: "ars_nouveau:wilden_tribute"
+			id: "05622563FE8C922C"
+			tasks: [{
+				disable_toast: true
+				entity: "ars_nouveau:wilden_boss"
+				id: "31968B2F4E1B3CB5"
+				type: "kill"
+				value: 1L
+			}]
+			title: "荒野奇美拉"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5A55B291E8A49B2D"]
+			description: ["对黑石基座使用不确定性的残片召唤"]
+			icon: "soulsweapons:shard_of_uncertainty"
+			id: "4DB855817060731C"
+			tasks: [{
+				disable_toast: true
+				entity: "soulsweapons:chaos_monarch"
+				id: "143D698848C94BE5"
+				type: "kill"
+				value: 1L
+			}]
+			title: "混沌君主"
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5A55B291E8A49B2D"]
+			description: ["使用混沌宝珠召唤昼从者与夜伏者"]
+			icon: "soulsweapons:chaos_orb"
+			id: "3199E7B44FB3552D"
+			tasks: [
+				{
+					disable_toast: true
+					entity: "soulsweapons:day_stalker"
+					id: "4E528D5847600CBF"
+					type: "kill"
+					value: 1L
+				}
+				{
+					disable_toast: true
+					entity: "soulsweapons:night_prowler"
+					id: "50D84B6AEB408772"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "昼从者与夜伏者"
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5A55B291E8A49B2D"]
+			description: ["对破旧的月光祭坛使用日暮精粹召唤"]
+			icon: "soulsweapons:essence_of_luminescence"
+			id: "71DD97A83FCB24EA"
+			tasks: [{
+				disable_toast: true
+				entity: "soulsweapons:moonknight"
+				id: "5F9E0A316D639874"
+				type: "kill"
+				value: 1L
+			}]
+			title: "陨落王者"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5A55B291E8A49B2D"]
+			description: ["对破旧的月光祭坛使用迷失的灵魂召唤"]
+			icon: "soulsweapons:arkenstone"
+			id: "363F49CB791F9878"
+			tasks: [{
+				disable_toast: true
+				entity: "soulsweapons:returning_knight"
+				id: "315CF78369525EDE"
+				type: "kill"
+				value: 1L
+			}]
+			title: "复仇骑士"
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["68C9AA70D98F40DB"]
+			description: ["重返主世界！"]
+			hide: true
+			icon: "minecraft:pink_tulip"
+			id: "2D07BCB195658F0A"
+			size: 1.2d
+			tasks: [{
+				disable_toast: true
+				entity: "mokels_witch_boss:witchboss"
+				id: "5432027336BF60EB"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Saphyra"
+			x: 5.5d
+			y: 0.0d
 		}
 	]
-	title: "BOSS"
+	title: "冒险、战斗与探索"
 }
