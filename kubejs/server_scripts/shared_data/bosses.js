@@ -52,8 +52,8 @@ BossType.prototype.enableSpawner = function() {
  * @type {BossType[]}
  */
 const AllBosses = [
-    new BossType("凋灵", "minecraft:wither", 1.0),
-    new BossType("末影龙", "minecraft:ender_dragon", 1.0),
+    new BossType("凋灵", "minecraft:wither", 1.0).enableDrygmy(),
+    new BossType("末影龙", "minecraft:ender_dragon", 1.0).enableDrygmy(),
     new BossType("暝煌龙", "alexscaves:luxtructosaurus", 40.0), // 24000
     new BossType("擎天龙", "alexscaves:atlatitan", 0.6).withDeathReset(-1), // not a boss
     new BossType("撼地斯拉", "alexscaves:tremorzilla", 0.6).withDeathReset(-1), // not a boss
