@@ -49,8 +49,8 @@ const AllBosses = [
     new BossType("凋灵", "minecraft:wither", 1.0),
     new BossType("末影龙", "minecraft:ender_dragon", 1.0),
     new BossType("暝煌龙", "alexscaves:luxtructosaurus", 40.0), // 24000
-    new BossType("擎天龙", "alexscaves:atlatitan", 1.0), // not a boss
-    new BossType("撼地斯拉", "alexscaves:tremorzilla", 1.0), // not a boss
+    new BossType("擎天龙", "alexscaves:atlatitan", 0.6), // not a boss
+    new BossType("撼地斯拉", "alexscaves:tremorzilla", 0.6), // not a boss
     new BossType("虚空蠕虫", "alexsmobs:void_worm", 10.0), // 1600每节
     new BossType("猪巫妖", "allthemodium:piglich", 1.0), // not a boss
     new BossType("荒野奇美拉", "ars_nouveau:wilden_boss", 2.0), // 2000 / 500每阶段
@@ -84,7 +84,7 @@ const AllBosses = [
     new BossType("夜伏者", "soulsweapons:night_prowler", 5.0),
     new BossType("暗夜之影", "soulsweapons:night_shade", 5.0),
     new BossType("复仇骑士" ,"soulsweapons:returning_knight", 5.0),
-    new BossType("蜜蜂女王", "the_bumblezone:bee_queen", 1.0), // not a boss
+    new BossType("蜜蜂女王", "the_bumblezone:bee_queen", 1.0).enableDrygmy(), // not a boss
     new BossType("宇宙水晶实体", "the_bumblezone:cosmic_crystal_entity", 1.0), // not a boss
     new BossType("娜迦", "twilightforest:naga", 1.0),
     new BossType("巫妖", "twilightforest:lich", 1.0),
@@ -95,3 +95,16 @@ const AllBosses = [
     new BossType("雪怪首领", "twilightforest:yeti_alpha", 1.0),
     new BossType("冰雪女王", "twilightforest:snow_queen", 1.0)
 ]
+
+const AllBossesIDMap = {}
+AllBosses.forEach(boss => {
+    AllBossesIDMap[boss.entityId] = boss
+})
+
+/**
+ * 
+ * @param {Internal.Entity} entity 
+ */
+function isBoss(entity) {
+    return AllBossesIDMap[entity]
+}

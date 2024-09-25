@@ -1,4 +1,4 @@
-
+const $SpawnerModule = Java.loadClass("dev.shadowsoffire.apotheosis.spawn.SpawnerModule")
 
 const BOSS_HEALTH_MULTIPLIER = new VariableAttributeModifier(
     "minecraft:generic.max_health", 
@@ -20,4 +20,22 @@ AllBosses.forEach(boss => {
     })
 })
 
+ServerEvents.tags("entity_type", event => {
+    AllBosses.forEach(boss => {
+        if(!boss.drygmy) {
+            event.add("ars_nouveau:drygmy_blacklist", boss.entityId)
+            event.add("ars_nouveau:jar_blacklist", boss.entityId)
+            event.add("ars_nouveau:jar_release_blacklist", boss.entityId)
+        }
+    })
 
+    let lines = ["=======[Apotheosis Spawner Blacklist]======="]
+    AllBosses.forEach(boss => {
+        if(!boss.spawner) {
+            lines.push(`    ${boss.entityId}`)
+        }
+    })
+    lines.push("=======[Apotheosis Spawner Blacklist End]=======")
+    
+    console.log(lines.join("\n"))
+})
