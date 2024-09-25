@@ -46,14 +46,13 @@ BossType.prototype.enableSpawner = function() {
  * @type {BossType[]}
  */
 const AllBosses = [
-    new BossType("凋灵", "minecraft:wither", 1.0),
-    new BossType("末影龙", "minecraft:ender_dragon", 1.0),
+    new BossType("凋灵", "minecraft:wither", 1.0).enableDrygmy(),
+    new BossType("末影龙", "minecraft:ender_dragon", 1.0).enableDrygmy(),
     new BossType("暝煌龙", "alexscaves:luxtructosaurus", 40.0), // 24000
-    new BossType("擎天龙", "alexscaves:atlatitan", 0.6), // not a boss
     new BossType("撼地斯拉", "alexscaves:tremorzilla", 0.6), // not a boss
     new BossType("虚空蠕虫", "alexsmobs:void_worm", 10.0), // 1600每节
-    new BossType("猪巫妖", "allthemodium:piglich", 1.0), // not a boss
-    new BossType("荒野奇美拉", "ars_nouveau:wilden_boss", 2.0), // 2000 / 500每阶段
+    new BossType("猪巫妖", "allthemodium:piglich", 1.0).enableDrygmy(), // not a boss
+    new BossType("荒野奇美拉", "ars_nouveau:wilden_boss", 2.0).enableDrygmy(), // 2000 / 500每阶段
     new BossType("宝箱怪", "artifacts:mimic", 10.0), // not a boss, 600
     new BossType("无尽傀儡", "avaritia:infinity_golem", 1.0), // not a boss
     new BossType("下界铁掌", "bosses_of_mass_destruction:gauntlet", 20.0), // 5000

@@ -8,6 +8,7 @@ const boss_list = [
     "alexsmobs:void_worm",
     "allthemodium:piglich", // 看看还有没有bug
     "ars_nouveau:wilden_boss",
+    "artifacts:mimic", // not boss
     "avaritia:infinity_golem", //...
     "bosses_of_mass_destruction:gauntlet",
     "bosses_of_mass_destruction:lich",
@@ -39,7 +40,7 @@ const boss_list = [
     "soulsweapons:night_shade",
     "soulsweapons:returning_knight",
     "the_bumblezone:bee_queen", // ee
-    "the_bumblezone:cosmic_crystal_entity", // maybe boss?
+    "the_bumblezone:cosmic_crystal_entity", // not boss
     "twilightforest:naga",
     "twilightforest:lich",
     "twilightforest:minoshroom",
