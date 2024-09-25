@@ -98,7 +98,7 @@
 				type: "dimension"
 			}]
 			x: -4.0d
-			y: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["67930ABD4082CF2B"]
@@ -136,16 +136,16 @@
 				type: "checkmark"
 			}]
 			x: -1.0d
-			y: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1BB9667A2875E0DF"]
 			hide: true
 			id: "7596E87671CBF73B"
 			tasks: [{
-				id: "794C5D8C82C3CCDB"
-				title: "a"
-				type: "checkmark"
+				id: "4CE631861137286F"
+				item: "mokels_witch_boss:totem_of_rot_and_decay"
+				type: "item"
 			}]
 			title: "最终城堡的地下室藏有秘密"
 			x: 1.5d
@@ -376,6 +376,23 @@
 			title: "开始新生魔艺"
 			x: -1.5d
 			y: -7.5d
+		}
+		{
+			dependencies: ["67930ABD4082CF2B"]
+			id: "06D20B714BBBA0CD"
+			subtitle: "暮色的BOSS会掉落一些特殊的法术书"
+			tasks: [{
+				id: "47E7160C97682089"
+				item: {
+					Count: 1
+					id: "ars_nouveau:caster_tome"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "奇妙法术"
+			x: -4.0d
+			y: 2.5d
 		}
 	]
 	title: "Re：暮色森林的外乡人"
