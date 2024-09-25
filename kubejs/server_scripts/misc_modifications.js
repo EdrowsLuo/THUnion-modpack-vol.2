@@ -25,3 +25,6 @@ ServerEvents.recipes(event => {
     event.remove({"type": "pneumaticcraft:pressure_chamber_enchanting"})
 })
 
+BlockEvents.rightClicked("the_bumblezone:crystalline_flower", event => {
+  event.cancel()
+})
