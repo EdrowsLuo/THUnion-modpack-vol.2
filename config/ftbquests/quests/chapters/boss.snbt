@@ -6,6 +6,441 @@
 	id: "00506F069400AA8F"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"不管怎样，你踏出了冒险的第一步。这个世界上有许多危险而强大的生物，本章节详细列出了它们的藏身之处。"
+				"注意：许多的生物已经变得更加难以对付，请小心应对！"
+			]
+			id: "4C7F29F27F335A19"
+			invisible: true
+			size: 2.0d
+			subtitle: "握紧你的木剑"
+			tasks: [{
+				disable_toast: true
+				icon: {
+					Count: 1
+					id: "minecraft:diamond_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "2AC8FD796417BAAE"
+				secret: true
+				stat: "minecraft:mob_kills"
+				title: "冒险的开端"
+				type: "stat"
+				value: 1
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A08F03034669B23"]
+			id: "603EBBEAE2062745"
+			tasks: [{
+				disable_toast: true
+				id: "3E0121C060A64B28"
+				item: "twilightforest:naga_trophy"
+				type: "item"
+			}]
+			title: "娜迦"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["603EBBEAE2062745"]
+			id: "45F406A79614CCD7"
+			tasks: [{
+				disable_toast: true
+				id: "724C081CAC96397C"
+				item: "twilightforest:lich_trophy"
+				type: "item"
+			}]
+			title: "巫妖"
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["45F406A79614CCD7"]
+			id: "071018459E95243F"
+			tasks: [{
+				disable_toast: true
+				id: "544AF6703CAE2559"
+				item: "twilightforest:minoshroom_trophy"
+				type: "item"
+			}]
+			title: "米诺菇"
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["071018459E95243F"]
+			id: "62D564E934426136"
+			tasks: [{
+				disable_toast: true
+				id: "173F9DDCBB56EDF4"
+				item: "twilightforest:hydra_trophy"
+				type: "item"
+			}]
+			title: "九头蛇"
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["62D564E934426136"]
+			id: "39E8CE813DA858E4"
+			tasks: [{
+				disable_toast: true
+				id: "758E2F2FD586656E"
+				item: "twilightforest:knight_phantom_trophy"
+				type: "item"
+			}]
+			title: "幻影骑士"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["39E8CE813DA858E4"]
+			id: "649BA3FF70D29B32"
+			tasks: [{
+				disable_toast: true
+				id: "69D7AE6027A9BA3E"
+				item: "twilightforest:ur_ghast_trophy"
+				type: "item"
+			}]
+			title: "暮初恶魂"
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["649BA3FF70D29B32"]
+			id: "48BBF872330A8C8D"
+			tasks: [{
+				disable_toast: true
+				id: "5C6E4F9C51A88EC6"
+				item: "twilightforest:alpha_yeti_trophy"
+				type: "item"
+			}]
+			title: "雪怪首领"
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["48BBF872330A8C8D"]
+			id: "68C9AA70D98F40DB"
+			tasks: [{
+				disable_toast: true
+				id: "5503C18AC34E80F5"
+				item: "twilightforest:snow_queen_trophy"
+				type: "item"
+			}]
+			title: "冰雪女王"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4C7F29F27F335A19"]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "jerotesvillage:second_round_world_portal_block"
+			id: "4436E5D4E4A7A6EF"
+			invisible: true
+			size: 1.2d
+			tasks: [{
+				dimension: "jerotesvillage:second_round_world"
+				disable_toast: true
+				id: "5E138FC271A20A0D"
+				title: "二轮世界"
+				type: "dimension"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C7F29F27F335A19"]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			id: "0A08F03034669B23"
+			invisible: true
+			size: 1.2d
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				disable_toast: true
+				id: "2DEC2105CB1AE89E"
+				title: "暮色森林"
+				type: "dimension"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4436E5D4E4A7A6EF"]
+			icon: "jerotesvillage:sediment_coffin"
+			id: "3528818C2039D51F"
+			tasks: [{
+				disable_toast: true
+				entity: "jerotesvillage:sediment_lord"
+				id: "5C3FF79FDF73DB20"
+				type: "kill"
+				value: 1L
+			}]
+			title: "沉降领主"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4436E5D4E4A7A6EF"]
+			icon: {
+				Count: 1
+				id: "jerotesvillage:big_witchs_hat"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "77685AE7A12E7B47"
+			tasks: [{
+				disable_toast: true
+				entity: "jerotesvillage:purple_sand_hag"
+				id: "7C0CD03B5F3CD325"
+				type: "kill"
+				value: 1L
+			}]
+			title: "紫沙鬼婆"
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4436E5D4E4A7A6EF"]
+			icon: "jerotesvillage:gemstone_malignasaur_scale"
+			id: "480337870DCA6D60"
+			tasks: [{
+				disable_toast: true
+				entity: "jerotesvillage:gemstone_malignasaur_part"
+				id: "579673D9D742FE74"
+				type: "kill"
+				value: 1L
+			}]
+			title: "宝石恶鳞"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4436E5D4E4A7A6EF"]
+			icon: "jerotesvillage:bright_land_drum"
+			id: "2714E38E8ABDCEE9"
+			tasks: [{
+				disable_toast: true
+				entity: "jerotesvillage:bright_land_beast_part"
+				id: "0962970CFD43AF1C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "明路巨兽"
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4436E5D4E4A7A6EF"]
+			icon: "jerotesvillage:corrosiver_bugle"
+			id: "5C1915E4643C70E9"
+			tasks: [{
+				disable_toast: true
+				entity: "jerotesvillage:corrosiver"
+				id: "285629FDEC94358A"
+				type: "kill"
+				value: 1L
+			}]
+			title: "蚀龙兽"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4C7F29F27F335A19"]
+			disable_toast: true
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "minecraft:grass_block"
+			id: "4E52B257A591EFEC"
+			secret: true
+			size: 1.2d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				disable_toast: true
+				id: "02C20BD12C0C4BE7"
+				title: "主世界"
+				type: "dimension"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4C7F29F27F335A19"]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "minecraft:end_portal_frame"
+			id: "711922A44EB1214E"
+			secret: true
+			size: 1.2d
+			tasks: [{
+				dimension: "minecraft:the_end"
+				disable_toast: true
+				id: "4F1D524676D3B42E"
+				title: "末地"
+				type: "dimension"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "minecraft:crimson_nylium"
+			id: "091EA64D5A245838"
+			secret: true
+			size: 1.2d
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				disable_toast: true
+				id: "7C7130A1B1AB43DD"
+				title: "下界"
+				type: "dimension"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4C7F29F27F335A19"]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "soulsweapons:altar_block"
+			id: "5A55B291E8A49B2D"
+			size: 1.2d
+			tasks: [{
+				id: "10C128547E56E825"
+				title: "召唤Boss"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4E52B257A591EFEC"
+				"4436E5D4E4A7A6EF"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "soulsweapons:draugr"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "466F96D9758AEDCE"
+			tasks: [{
+				disable_toast: true
+				entity: "soulsweapons:draugr_boss"
+				id: "1CA79D7FB2AF3FB9"
+				type: "kill"
+				value: 1L
+			}]
+			title: "古英雄的遗骸"
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["466F96D9758AEDCE"]
+			icon: "soulsweapons:essence_of_eventide"
+			id: "1CBAAC36B2E81C71"
+			tasks: [{
+				disable_toast: true
+				entity: "soulsweapons:night_shade"
+				id: "57BD0FCF7D59F1B6"
+				type: "kill"
+				value: 1L
+			}]
+			title: "暗夜之影"
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4E52B257A591EFEC"]
+			icon: "bosses_of_mass_destruction:void_lily"
+			id: "7552407D6F72F1E5"
+			tasks: [{
+				disable_toast: true
+				entity: "bosses_of_mass_destruction:void_blossom"
+				id: "48CCC2F9A4ED3474"
+				type: "kill"
+				value: 1L
+			}]
+			title: "虚空之花"
+			x: -4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4E52B257A591EFEC"]
+			icon: "bosses_of_mass_destruction:soul_star"
+			id: "1FC8CF4505562C6C"
+			tasks: [{
+				disable_toast: true
+				entity: "bosses_of_mass_destruction:lich"
+				id: "14E46FAF6F6FAF8D"
+				type: "kill"
+				value: 1L
+			}]
+			title: "暗夜巫妖"
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4E52B257A591EFEC"]
+			icon: "cataclysm:abyssal_egg"
+			id: "4521D562919DF719"
+			tasks: [{
+				disable_toast: true
+				entity: "cataclysm:the_leviathan"
+				id: "336611178D887EB3"
+				type: "kill"
+				value: 1L
+			}]
+			title: "利维坦"
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4E52B257A591EFEC"]
+			icon: "cataclysm:witherite_ingot"
+			id: "754623062B0FE562"
+			tasks: [{
+				disable_toast: true
+				entity: "cataclysm:the_harbinger"
+				id: "49E03FCF0113B0BF"
+				type: "kill"
+				value: 1L
+			}]
+			title: "先驱者"
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4E52B257A591EFEC"]
+			icon: "cataclysm:remnant_skull"
+			id: "44E57657F41A4903"
+			tasks: [{
+				disable_toast: true
+				entity: "cataclysm:ancient_remnant"
+				id: "70AA5DBA1D31F017"
+				type: "kill"
+				value: 1L
+			}]
+			title: "远古遗魂"
+			x: 0.0d
+			y: -5.5d
+		}
+	]
 	title: "BOSS"
 }
