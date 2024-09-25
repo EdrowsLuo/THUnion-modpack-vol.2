@@ -359,8 +359,8 @@
 				type: "observation"
 			}]
 			title: "自定义刷怪笼"
-			x: -4.5d
-			y: 3.5d
+			x: -5.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["22086C7EA4B422F7"]
@@ -391,6 +391,17 @@
 			title: "液态魔力"
 			x: 5.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["36C365C02502083D"]
+			id: "18A44BC5CE03E00D"
+			tasks: [{
+				id: "72AACCF950DCEAB2"
+				item: "pneumaticcraft:spawner_extractor"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
 		}
 	]
 	title: "大魔法使"
