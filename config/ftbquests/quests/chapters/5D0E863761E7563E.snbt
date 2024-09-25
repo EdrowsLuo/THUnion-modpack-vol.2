@@ -855,6 +855,41 @@
 			x: -8.0d
 			y: 2.0d
 		}
+		{
+			dependencies: ["57C74BF21E254657"]
+			id: "29196CEBBB425520"
+			subtitle: "在模拟空间里收割生物"
+			tasks: [{
+				id: "66608E982D91FABC"
+				item: "hostilenetworks:blank_data_model"
+				type: "item"
+			}]
+			title: "生物深度学习部"
+			x: -6.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["29196CEBBB425520"]
+			id: "63EFB9514FA9710D"
+			tasks: [{
+				id: "5F94EAFD4F31A1BB"
+				item: "hostilenetworks:sim_chamber"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["29196CEBBB425520"]
+			id: "18BEEC932DC606CF"
+			tasks: [{
+				id: "05905D7A6245879F"
+				item: "hostilenetworks:loot_fabricator"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -11.5d
+		}
 	]
 	title: "天顶科技公司员工"
 }
