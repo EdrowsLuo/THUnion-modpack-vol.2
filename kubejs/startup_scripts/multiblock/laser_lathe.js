@@ -21,7 +21,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
      * @type {Internal.CustomMultiblockBuilder}
      */
     let builder=event.create('laser_lathe', 'multiblock')
-    
+    for(let i=0;i<=4;i++) builder.tooltips(Component.translatable(`desc.${builder.id}.${i}`));
     builder.rotationState(RotationState.NON_Y_AXIS)
 
         .recipeTypes([GTRecipeTypes.get('precision_lathe_all'),GTRecipeTypes.BENDER_RECIPES,GTRecipeTypes.LATHE_RECIPES,GTRecipeTypes.COMPRESSOR_RECIPES,

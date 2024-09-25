@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
      * @type {Internal.CustomMultiblockBuilder}
      */
     let builder=event.create('beehive', 'multiblock')
-    
+    for(let i=0;i<=4;i++) builder.tooltips(Component.translatable(`desc.${builder.id}.${i}`));
     builder.rotationState(RotationState.NON_Y_AXIS)
         .recipeType(GTRecipeTypes.get('beehive'))
         .workableCasingRenderer(

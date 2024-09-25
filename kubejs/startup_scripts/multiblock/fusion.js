@@ -22,7 +22,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
      * @type {Internal.CustomMultiblockBuilder}
      */
     let builder=event.create('twisted_fusion_mk1', 'multiblock')
-    
+    for(let i=0;i<=9;i++) builder.tooltips(Component.translatable(`desc.${builder.id}.${i}`));
     builder.rotationState(RotationState.NON_Y_AXIS)
         .recipeModifier(
             (machine,/** @type {Internal.GTRecipe} */ recipe, params, result)=>{
