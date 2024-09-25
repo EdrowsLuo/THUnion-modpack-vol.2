@@ -50,3 +50,12 @@ ServerEvents.tags("entity_type", event => {
     
     console.log(lines.join("\n"))
 })
+
+LootJS.modifiers(event => {
+    AllBosses.forEach(boss => {
+        if(boss.extraDrop != null) {
+            let builder = event.addEntityLootModifier(boss.entityId)
+            builder.addLoot(boss.extraDrop)
+        }
+    })
+})
