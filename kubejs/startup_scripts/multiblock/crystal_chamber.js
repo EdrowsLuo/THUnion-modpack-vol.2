@@ -14,10 +14,24 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
      * @type {Internal.CustomMultiblockBuilder}
      */
     let builder=event.create('crystal_chamber', 'multiblock')
-    
+    for(let i=0;i<=6;i++) builder.tooltips(Component.translatable(`desc.${builder.id}.${i}`));
     builder.rotationState(RotationState.NON_Y_AXIS)
 
         .recipeTypes([GTRecipeTypes.get('crystal_chamber'),GTRecipeTypes.AUTOCLAVE_RECIPES])
+        .recipeModifiers([
+            (machine,/** @type {Internal.GTRecipe} */ recipe,params,result)=>{
+
+                if(recipe.getType().toString()=='gtceu:autoclave'){
+                    recipe=powerBasedParallel(4,4)(machine,recipe,params,result);
+                    recipe.duration/=2.5;if(recipe.duration<1) recipe.duration=1;
+                    
+                    
+                }
+                recipe=GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK).apply(machine,recipe,params,result);
+                return recipe;
+                
+            }
+        ])
         .workableCasingRenderer(
             "ae2:block/smooth_sky_stone_block",
             "gtceu:block/machines/autoclave",
