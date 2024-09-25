@@ -219,7 +219,7 @@ ServerEvents.recipes(event => {
             {
                 item: 'l2complements:totemic_gold_ingot'
             }, {
-                item: 'minecraft:cobweb'
+                item: 'ars_nouveau:mob_jar'
             }, {
                 tag: 'forge:storage_blocks/source'
             }, {
@@ -237,11 +237,11 @@ ServerEvents.recipes(event => {
             {
                 item: 'l2complements:totemic_gold_ingot'
             },  {
-                item: 'l2complements:soul_flame'
-            }, {
                 item: 'minecraft:cobweb'
             }, {
-                item: 'minecraft:cobweb'
+                item: 'ars_nouveau:mob_jar'
+            }, {
+                item: 'ars_nouveau:mob_jar'
             }, {
                 tag: 'forge:storage_blocks/source'
             }, {
@@ -259,13 +259,13 @@ ServerEvents.recipes(event => {
             {
                 item: 'l2complements:totemic_gold_ingot'
             },  {
-                item: 'l2complements:soul_flame'
+                item: 'l2complements:totemic_gold_ingot'
             }, {
-                item: 'minecraft:cobweb'
+                item: 'l2complements:totemic_gold_ingot'
             }, {
-                item: 'minecraft:cobweb'
+                item: 'ars_nouveau:mob_jar'
             }, {
-                tag: 'forge:storage_blocks/source'
+                item: 'ars_nouveau:mob_jar'
             }, {
                 tag: 'forge:storage_blocks/source'
             }, {
@@ -285,11 +285,11 @@ ServerEvents.recipes(event => {
             {
                 item: 'l2complements:totemic_gold_block'
             },  {
-                item: 'l2complements:soul_flame'
+                item: 'l2complements:force_field'
             }, {
-                item: 'minecraft:cobweb'
+                item: 'ars_nouveau:mob_jar'
             }, {
-                item: 'minecraft:cobweb'
+                item: 'ars_nouveau:mob_jar'
             }, {
                 tag: 'forge:storage_blocks/source'
             }, {
@@ -310,16 +310,16 @@ ServerEvents.recipes(event => {
         pedestalItems: [
             {
                 item: 'l2complements:totemic_gold_block'
+            },  {
+                item: 'l2complements:force_field'
             }, {
-                item: 'l2complements:totemic_gold_block'
+                item: 'l2complements:force_field'
             }, {
-                item: 'l2complements:totemic_gold_block'
+                item: 'ars_nouveau:mob_jar'
             }, {
-                item: 'l2complements:totemic_gold_block'
+                item: 'ars_nouveau:mob_jar'
             }, {
-                item: 'minecraft:cobweb'
-            }, {
-                item: 'minecraft:cobweb'
+                tag: 'forge:storage_blocks/source'
             }, {
                 tag: 'forge:storage_blocks/source'
             }, {

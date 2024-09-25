@@ -12,6 +12,10 @@
  * 力量VII
  * 力量VIII
  * 
+ * 捕捉VI
+ * 捕捉VII
+ * 捕捉VIII
+ * 
  * 时运IV
  * 时运V
  * 
@@ -207,6 +211,86 @@ ServerEvents.recipes(event => {
                 tag: 'forge:storage_blocks/source'
             }, {
                 tag: 'forge:storage_blocks/lapis'
+            }
+        ],
+        sourceCost: 16000
+    })
+})
+
+ServerEvents.recipes(event => {
+    event.custom({
+        type: 'ars_nouveau:enchantment',
+        enchantment: 'apotheosis:capture',
+        level: '6',
+        pedestalItems: [
+            {
+                item: 'l2complements:totemic_gold_block'
+            },  {
+                item: 'l2complements:totemic_gold_block'
+            }, {
+                item: 'l2complements:force_field'
+            }, {
+                item: 'l2complements:force_field'
+            }, {
+                item: 'ars_nouveau:mob_jar'
+            }, {
+                tag: 'forge:storage_blocks/source'
+            }, {
+                tag: 'forge:storage_blocks/source'
+            }, {
+                tag: 'forge:storage_blocks/source'
+            }
+        ],
+        sourceCost: 10500
+    })
+    
+    event.custom({
+        type: 'ars_nouveau:enchantment',
+        enchantment: 'apotheosis:capture',
+        level: '7',
+        pedestalItems: [
+            {
+                item: 'l2complements:totemic_gold_block'
+            },  {
+                item: 'l2complements:totemic_gold_block'
+            }, {
+                item: 'l2complements:force_field'
+            }, {
+                item: 'l2complements:force_field'
+            }, {
+                item: 'ars_nouveau:mob_jar'
+            }, {
+                item: 'ars_nouveau:mob_jar'
+            }, {
+                tag: 'forge:storage_blocks/source'
+            }, {
+                tag: 'forge:storage_blocks/source'
+            }
+        ],
+        sourceCost: 13000
+    })
+    
+    event.custom({
+        type: 'ars_nouveau:enchantment',
+        enchantment: 'apotheosis:capture',
+        level: '8',
+        pedestalItems: [
+            {
+                item: 'l2complements:totemic_gold_block'
+            },  {
+                item: 'l2complements:totemic_gold_block'
+            }, {
+                item: 'l2complements:force_field'
+            }, {
+                item: 'l2complements:force_field'
+            }, {
+                item: 'l2complements:force_field'
+            }, {
+                item: 'ars_nouveau:mob_jar'
+            }, {
+                tag: 'forge:storage_blocks/source'
+            }, {
+                tag: 'forge:storage_blocks/source'
             }
         ],
         sourceCost: 16000
