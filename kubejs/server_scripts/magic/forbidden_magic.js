@@ -240,4 +240,35 @@ ServerEvents.recipes(event => {
             "count": 64
         }
     })
+
+    modifyUnique(event, "mob_grinding_utils:saw", {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+            "D": {
+                "tag": "forge:gems/diamond"
+            },
+            "I": {
+                "tag": "forge:storage_blocks/iron"
+            },
+            "R": {
+                "item": "allthemodium:allthemodium_sword"
+            },
+            "S": {
+                "item": "minecraft:iron_sword"
+            },
+            "V": {
+                "item": "mob_grinding_utils:spikes"
+            }
+        },
+        "pattern": [
+            "SDS",
+            "VRV",
+            "DID"
+        ],
+        "result": {
+            "item": "mob_grinding_utils:saw"
+        },
+        "show_notification": true
+    })
 })

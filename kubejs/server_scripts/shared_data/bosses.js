@@ -83,7 +83,7 @@ const AllBosses = [
     , new BossType("紫沙鬼婆", "jerotesvillage:purple_sand_hag", 24.0)//.addDesc("击败女巫居所楼顶的大巫婆，并将邪恶的药剂放进鬼婆之锅"), // 3960
     , new BossType("蚀龙兽", "jerotesvillage:corrosiver", 40.0)//.addDesc("在苦寒之地吹响蚀龙兽号角"), // 7400
     , new BossType("宝石恶鳞", "jerotesvillage:gemstone_malignasaur", 25.0)//.addDesc("向无尽海洋的水中投入恶鳞饵叉"), // 8700
-    , new BossType("bound witch of purgatory, Saphyra", "mokels_witch_boss:witchboss", 1.0).withDeathReset(2)//.addDesc("获得回到主世界的钥匙"), // 暮色闭门boss，400基础血量
+    , new BossType("bound witch of purgatory, Saphyra", "mokels_witch_boss:witchboss", 1.5).withDeathReset(2)//.addDesc("获得回到主世界的钥匙"), // 暮色闭门boss，400基础血量
     , new BossType("腐朽的王", "soulsweapons:accursed_lord_boss", 5.0)//.addDesc("在下界的红色下界砖结构中生成。或者对黑石基座使用凋零恶魔之心再次召唤"),
     , new BossType("混沌君主", "soulsweapons:chaos_monarch", 5.0)//.addDesc("对黑石基座使用不确定性的残片召唤"),
     , new BossType("昼从者", "soulsweapons:day_stalker", 5.0)//.addDesc("使用混沌宝珠召唤昼从者与夜伏者"),
@@ -110,7 +110,12 @@ const AllBosses = [
             `{"ars_nouveau:caster": {flavor: "", is_hidden: 0b, current_slot: 0, spell_count: 1, spells: {spell0: {name: "诱饵的代价", recipe: {size: 10, part0: "ars_nouveau:glyph_self", part1: "ars_nouveau:glyph_summon_decoy", part2: "ars_nouveau:glyph_duration_down", part3: "ars_nouveau:glyph_blink", part4: "ars_nouveau:glyph_freeze", part5: "ars_nouveau:glyph_extend_time", part6: "toomanyglyphs:glyph_amplify_three", part7: "ars_nouveau:glyph_invisibility", part8: "ars_nouveau:glyph_duration_down", part9: "ars_nouveau:glyph_duration_down"}, spellColor: {r: 255, b: 180, type: "ars_nouveau:constant", g: 25}, sound: {volume: 1.0f, soundTag: {id: "ars_nouveau:fire_family"}, pitch: 1.0f}}}, hidden_recipe: ""}, display: {Name: '{"text":"诱饵的代价"}'}}`
         ).when(c => c.randomChance(0.5))
     ])//.addDesc("需要一点魔法才能打破它的护盾"),
-    , new BossType("米诺菇", "twilightforest:minoshroom", 1.0)//.addDesc("希望你还记得迷宫的入口在哪"),
+    , new BossType("米诺菇", "twilightforest:minoshroom", 1.0).withExtraDrop([
+        LootEntry.of(
+            "ars_nouveau:caster_tome",
+            `{"ars_nouveau:caster": {flavor: "", is_hidden: 0b, current_slot: 0, spell_count: 1, spells: {spell0: {name: "地刺", recipe: {size: 10, part0: "ars_elemental:glyph_arc_projectile", part1: "ars_elemental:glyph_spike", part2: "ars_nouveau:glyph_amplify", part3: "ars_nouveau:glyph_aoe", part4: "ars_nouveau:glyph_aoe", part5: "ars_nouveau:glyph_aoe", part6: "ars_nouveau:glyph_aoe", part7: "ars_nouveau:glyph_pierce", part8: "ars_nouveau:glyph_pierce", part9: "ars_nouveau:glyph_pierce"}, spellColor: {r: 255, b: 180, type: "ars_nouveau:constant", g: 25}, sound: {volume: 1.0f, soundTag: {id: "ars_nouveau:fire_family"}, pitch: 1.0f}}}, hidden_recipe: ""}, display: {Name: '{"text":"地刺"}'}}`
+        )
+    ])//.addDesc("希望你还记得迷宫的入口在哪"),
     , new BossType("九头蛇", "twilightforest:hydra", 1.0).withExtraDrop([
         LootEntry.of(
             "ars_nouveau:caster_tome",
@@ -120,7 +125,7 @@ const AllBosses = [
     , new BossType("幻影骑士", "twilightforest:knight_phantom", 1.0).withExtraDrop([
         LootEntry.of(
             "ars_nouveau:caster_tome",
-            `{"ars_nouveau:caster": {flavor: "", is_hidden: 0b, current_slot: 0, spell_count: 1, spells: {spell0: {name: "飞行陷阱", recipe: {size: 10, part0: "ars_nouveau:glyph_self", part1: "ars_nouveau:glyph_freeze", part2: "ars_nouveau:glyph_extend_time", part3: "ars_nouveau:glyph_extend_time", part4: "ars_nouveau:glyph_extend_time", part5: "ars_nouveau:glyph_extend_time", part6: "ars_nouveau:glyph_extend_time", part7: "ars_nouveau:glyph_wither", part8: "ars_nouveau:glyph_snare", part9: "ars_nouveau:glyph_summon_wolves"}, spellColor: {r: 255, b: 180, type: "ars_nouveau:constant", g: 25}, sound: {volume: 1.0f, soundTag: {id: "ars_nouveau:fire_family"}, pitch: 1.0f}}}, hidden_recipe: ""}, display: {Name: '{"text":"狼魔术"}'}}`
+            `{"ars_nouveau:caster": {flavor: "", is_hidden: 0b, current_slot: 0, spell_count: 1, spells: {spell0: {name: "狼魔术", recipe: {size: 10, part0: "ars_nouveau:glyph_self", part1: "ars_nouveau:glyph_freeze", part2: "ars_nouveau:glyph_extend_time", part3: "ars_nouveau:glyph_extend_time", part4: "ars_nouveau:glyph_extend_time", part5: "ars_nouveau:glyph_extend_time", part6: "ars_nouveau:glyph_extend_time", part7: "ars_nouveau:glyph_wither", part8: "ars_nouveau:glyph_snare", part9: "ars_nouveau:glyph_summon_wolves"}, spellColor: {r: 255, b: 180, type: "ars_nouveau:constant", g: 25}, sound: {volume: 1.0f, soundTag: {id: "ars_nouveau:fire_family"}, pitch: 1.0f}}}, hidden_recipe: ""}, display: {Name: '{"text":"狼魔术"}'}}`
         )
     ])//.addDesc("当心这些会穿墙的家伙"),
     , new BossType("暮初恶魂", "twilightforest:ur_ghast", 1.0).withExtraDrop([
