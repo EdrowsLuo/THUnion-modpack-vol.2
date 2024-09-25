@@ -1,3 +1,5 @@
+// priority: 100
+
 /**
  * @param {Internal.Item_} modId
  * @param {string} oreId 
