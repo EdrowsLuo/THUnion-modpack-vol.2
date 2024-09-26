@@ -92,6 +92,7 @@
 			y: -3.0d
 		}
 		{
+			description: ["任务书也可能缺少内容，具体内容多查jei、mcmod wiki以及问管理员"]
 			id: "4E6844B4E3529049"
 			shape: "gear"
 			tasks: [{
