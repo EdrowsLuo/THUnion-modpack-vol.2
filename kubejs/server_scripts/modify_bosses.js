@@ -19,12 +19,13 @@ AllBosses.forEach(boss => {
     })
 
     if(!boss.allowFly) {
-        EntityEvents.hurt(event => {
+        EntityEvents.hurt(boss.entityId, event => {
             if(event.source.player) {
                 let player = event.source.player
+                if(player.creative) return
                 if(player.persistentData.flying) {
                     player.tell("§6给我下来！")
-                    stopFlying(player)
+                    stopFlying(player, 20)
                 }
             }
         })
