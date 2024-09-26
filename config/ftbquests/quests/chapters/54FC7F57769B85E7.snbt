@@ -180,7 +180,7 @@
 				title: "自我强化学"
 				type: "checkmark"
 			}]
-			title: "自我强化学【WIP】"
+			title: "自我强化学"
 			x: -2.5d
 			y: 0.0d
 		}
@@ -439,6 +439,34 @@
 			title: "良好饮食"
 			x: -4.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["1C37586C58FBE287"]
+			id: "0FAC2EA10428D071"
+			tasks: [{
+				id: "195F916284D03206"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "apotheosis:flying"
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1C37586C58FBE287"]
+			id: "290947238625D947"
+			tasks: [{
+				id: "41F301CD37AF6718"
+				item: "ars_nouveau:ritual_flight"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
 		}
 	]
 	title: "大魔法使"
