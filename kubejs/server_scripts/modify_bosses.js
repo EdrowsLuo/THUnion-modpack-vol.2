@@ -17,6 +17,18 @@ AllBosses.forEach(boss => {
             entity.setHealth(entity.getMaxHealth())
         }
     })
+
+    if(!boss.allowFly) {
+        EntityEvents.hurt(event => {
+            if(event.source.player) {
+                let player = event.source.player
+                if(player.persistentData.flying) {
+                    player.tell("stop")
+                    stopFlying(player)
+                }
+            }
+        })
+    }
 })
 
 ServerEvents.tags("entity_type", event => {

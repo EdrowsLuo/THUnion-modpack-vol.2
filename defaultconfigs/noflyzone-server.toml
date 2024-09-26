@@ -1,6 +1,6 @@
 #No-fly zone checks happen every x player ticks, which can be taxing on the system when there's many players. Increase this number for better performance.
 #Range: > 1
-checkInterval = 10
+checkInterval = 20
 #Whether to allow flight using an elytra in a no flight zone
 allowElytraFlight = false
 #Whether to allow flight using a flying device like a jetpack in a no flight zone
