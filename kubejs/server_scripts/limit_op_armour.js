@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         "allthemodium:vibranium_boots",
         "allthemodium:unobtainium_helmet",
         "allthemodium:unobtainium_chestplate",
-        "allthemodium:vibranium_leggings",
+        "allthemodium:unobtainium_leggings",
         "allthemodium:unobtainium_boots",
     ])
     
