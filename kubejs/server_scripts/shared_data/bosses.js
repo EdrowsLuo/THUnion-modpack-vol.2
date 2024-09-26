@@ -83,7 +83,7 @@ const AllBosses = [
     , new BossType("混沌守卫", "draconicevolution:draconic_guardian", 1.0).withDeathReset(2).enableFly()//.addDesc("感谢游玩本整合包！"),
     , new BossType("守卫凋灵", "draconicevolution:guardian_wither", 1.0).withDeathReset(-1).enableFly() // not a boss
     , new BossType("幼年末影龙", "endertrigon:baby_ender_dragon", 1.0).withDeathReset(-1).enableFly() // not a boss
-    , new BossType("腐化英雄", "graveyard:lich", 30.0)//.addDesc("在海洋上方的空岛，使用三种骨杖残片和血瓶召唤"), // 12000
+    , new BossType("腐化英雄", "graveyard:lich", 1.0)//.addDesc("在海洋上方的空岛，使用三种骨杖残片和血瓶召唤"), // 12000
     , new BossType("明路巨兽", "jerotesvillage:bright_land_beast", 20.0)//.addDesc("在明路草原用明路鼓槌猛敲明路大鼓"), // 13000
     , new BossType("沉降领主", "jerotesvillage:sediment_lord", 30.0)//.addDesc("找到沉降墓穴中心的沉降领主棺"), // 5100
     , new BossType("紫沙鬼婆", "jerotesvillage:purple_sand_hag", 24.0)//.addDesc("击败女巫居所楼顶的大巫婆，并将邪恶的药剂放进鬼婆之锅"), // 3960
@@ -92,10 +92,10 @@ const AllBosses = [
     , new BossType("bound witch of purgatory, Saphyra", "mokels_witch_boss:witchboss", 1.5).withDeathReset(2)//.addDesc("获得回到主世界的钥匙"), // 暮色闭门boss，400基础血量
     , new BossType("腐朽的王", "soulsweapons:accursed_lord_boss", 5.0)//.addDesc("在下界的红色下界砖结构中生成。或者对黑石基座使用凋零恶魔之心再次召唤"),
     , new BossType("混沌君主", "soulsweapons:chaos_monarch", 5.0)//.addDesc("对黑石基座使用不确定性的残片召唤"),
-    , new BossType("昼从者", "soulsweapons:day_stalker", 5.0)//.addDesc("使用混沌宝珠召唤昼从者与夜伏者"),
+    , new BossType("昼从者", "soulsweapons:day_stalker", 20.0)//.addDesc("使用混沌宝珠召唤昼从者与夜伏者"),
     , new BossType("古英雄的遗骸", "soulsweapons:draugr_boss", 5.0)//.addDesc("在主世界和二轮世界的地表可以发现深板岩砖入口，击败后生成暗夜之影。或者对破旧的月光祭坛使用德拉古尔再次召唤"),
     , new BossType("陨落王者", "soulsweapons:moonknight", 5.0)//.addDesc("对破旧的月光祭坛使用日暮精粹召唤"),
-    , new BossType("夜伏者", "soulsweapons:night_prowler", 5.0)//.addDesc("使用混沌宝珠召唤昼从者与夜伏者"),
+    , new BossType("夜伏者", "soulsweapons:night_prowler", 20.0)//.addDesc("使用混沌宝珠召唤昼从者与夜伏者"),
     , new BossType("暗夜之影", "soulsweapons:night_shade", 5.0)//.addDesc("击败古英雄的遗骸后生成，死亡时会进行一次分裂"),
     , new BossType("复仇骑士", "soulsweapons:returning_knight", 5.0)//.addDesc("对破旧的月光祭坛使用迷失的灵魂召唤"),
     , new BossType("蜜蜂女王", "the_bumblezone:bee_queen", 100.0).enableDrygmy().withDeathReset(-1).enableFly() // not a boss
