@@ -271,4 +271,30 @@ ServerEvents.recipes(event => {
         },
         "show_notification": true
     })
+
+    modifyUnique(event, "torchmaster:megatorch", {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            "TTT",
+            "DLD",
+            "GLG"
+        ],
+        "key": {
+            "T": {
+                "item": "minecraft:torch"
+            },
+            "D": {
+                "item": "alexscaves:pure_darkness"
+            },
+            "G": {
+                "tag": "forge:storage_blocks/gold"
+            },
+            "L": {
+                "tag": "minecraft:logs"
+            }
+        },
+        "result": {
+            "item": "torchmaster:megatorch"
+        }
+    })
 })
