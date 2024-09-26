@@ -94,8 +94,8 @@ const GemOre = [
  */
 const MiscOre = [
     new OreType("minecraft", "redstone", 80, 60*2, 8).withCustomExport([
-        Item.of("#forge:dusts/redstone").withChance(1).withRolls(8, 16),
-        Item.of("#forge:gems/redstone").withChance(0.05).withRolls(1,2)])
+        Item.of("minecraft:redstone").withChance(1).withRolls(8, 16),
+        Item.of("appflux:redstone_crystal").withChance(0.05).withRolls(1,2)])
 ]
 
 const AllOre = MetalOre.concat(GemOre)
