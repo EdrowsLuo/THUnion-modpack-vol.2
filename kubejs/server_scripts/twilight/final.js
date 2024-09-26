@@ -35,12 +35,17 @@ BlockEvents.rightClicked(event=>{
 
 });
 
-EntityEvents.drops(event=>{
-    var entity=event.getEntity();
-    if(entity.getType()=='mokels_witch_boss:witchboss'){
-        event.addDrop(Item.of('twilightforest:experiment_115'));
-    }
-});
+// EntityEvents.drops(event=>{
+//     var entity=event.getEntity();
+//     if(entity.getType()=='mokels_witch_boss:witchboss'){
+//         event.addDrop(Item.of("twilightforest:twilight_portal_miniature_structure"));
+//     }
+// });
+
+LootJS.modifiers(event => {
+    event.addEntityLootModifier("mokels_witch_boss:witchboss")
+        .addLoot(LootEntry.of("twilightforest:twilight_portal_miniature_structure"))
+})
 
 function findMaxCorner(level, pos,offset, predicate ){
     if(!predicate(level.getBlock(pos))) return pos;
@@ -64,3 +69,8 @@ function findMaxCorner(level, pos,offset, predicate ){
     return pos;
 }
 
+
+ServerEvents.tags("item", event => {
+    event.get("twilightforest:portal/activator").removeAll()
+    event.get("twilightforest:portal/activator").add("twilightforest:twilight_portal_miniature_structure")
+})
