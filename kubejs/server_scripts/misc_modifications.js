@@ -46,9 +46,8 @@ ServerEvents.recipes(event => {
 
   event.replaceInput({ output: "modularrouters:blank_module" }, "minecraft:redstone", "kubejs:mechanical_core")
   event.replaceInput({ output: "modularrouters:blank_upgrade" }, "minecraft:lapis_lazuli", "kubejs:mechanical_core")
-  event.remove({ output: modularrouters.modular_router })
 
-  event.custom({
+  modifyUnique(event, "modularrouters:modular_router", {
     "type": "minecraft:crafting_shaped",
     "key": {
       "B": {
@@ -73,6 +72,7 @@ ServerEvents.recipes(event => {
       "item": "modularrouters:modular_router"
     }
   })
+
 })
 
 BlockEvents.rightClicked("the_bumblezone:crystalline_flower", event => {
