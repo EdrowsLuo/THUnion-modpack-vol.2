@@ -10,7 +10,6 @@
             "value": false
         },
         "enable_updates_check": false,
-        "for_modpack_devs": true,
         "first_run": false
     },
     "GuiSettings": {
@@ -33,6 +32,23 @@
         },
         "refill_before_tool_break": {
             "value": false
+        }
+    },
+    "Hotkeys": {
+        "sort_inventory": {
+            "main": {
+                "keys": "BUTTON_3"
+            }
+        },
+        "move_all_items": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "throw_all_items": {
+            "main": {
+                "keys": ""
+            }
         }
     }
 }
