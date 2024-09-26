@@ -75,6 +75,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x676767).iconSet(GTMaterialIconSet.MAGNETIC)
         .flags(GTMaterialFlags.GENERATE_ROD);  
 
+    
+
     GTMaterials.Gadolinium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Holmium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Lanthanum.setProperty(PropertyKey.INGOT, new $IngotProperty());
