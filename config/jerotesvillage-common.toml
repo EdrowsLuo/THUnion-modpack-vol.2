@@ -31,7 +31,7 @@
 			"Sediment Lord Max Health" = 170.0
 			#[Boss] Melee Damage : 6.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			"Sediment Lord Melee Damage" = 6.0
+			"Sediment Lord Melee Damage" = 60.0
 			#[Boss] Armor : 3.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Sediment Lord Armor" = 3.0
@@ -57,7 +57,7 @@
 			"Corrosiver Max Health" = 185.0
 			#[Boss] Melee Damage : 12.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			"Corrosiver Melee Damage" = 12.0
+			"Corrosiver Melee Damage" = 96.0
 			#[Boss] Armor : 5.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Corrosiver Armor" = 5.0
@@ -95,7 +95,7 @@
 			"Purple Sand Hag Max Health" = 165.0
 			#[Boss] Melee Damage : 13.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			"Purple Sand Hag Melee Damage" = 13.0
+			"Purple Sand Hag Melee Damage" = 104.0
 			#[Boss] Armor : 15.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Purple Sand Hag Armor" = 15.0
@@ -124,7 +124,7 @@
 			"Gemstone Malignasaur Max Health" = 348.0
 			#[Boss] Melee Damage : 14.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			"Gemstone Malignasaur Melee Damage" = 14.0
+			"Gemstone Malignasaur Melee Damage" = 112.0
 			#[Boss] Armor : 4.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Gemstone Malignasaur Armor" = 4.0
@@ -186,7 +186,7 @@
 			"Bright Land Beast Max Health" = 650.0
 			#[Boss] Melee Damage : 40.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			"Bright Land Beast Melee Damage" = 40.0
+			"Bright Land Beast Melee Damage" = 400.0
 			#[Boss] Armor : 4.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Bright Land Beast Armor" = 4.0

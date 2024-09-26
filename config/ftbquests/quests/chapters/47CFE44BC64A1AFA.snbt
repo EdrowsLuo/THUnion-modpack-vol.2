@@ -1,0 +1,95 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "47CFE44BC64A1AFA"
+	group: ""
+	id: "47CFE44BC64A1AFA"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4B17819102A8E6D0"
+			tasks: [
+				{
+					id: "1FC8A4C66C754C8C"
+					item: "createutilities:void_motor"
+					type: "item"
+				}
+				{
+					id: "255C69529A97D3B1"
+					item: "createutilities:void_chest"
+					type: "item"
+				}
+				{
+					id: "71A1AA2ADD3B860B"
+					item: "createutilities:void_tank"
+					type: "item"
+				}
+			]
+			title: "末影储罐的替代"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			id: "59924678642F92E3"
+			tasks: [
+				{
+					id: "08107119F293C456"
+					item: "travelanchors:travel_staff"
+					type: "item"
+				}
+				{
+					id: "32A0672B154F2388"
+					item: "travelanchors:travel_anchor"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			description: ["请不要用自然指南针寻找Alex的洞穴的群系，你会永远失去你的指南针！"]
+			id: "1AA43899C0CAE490"
+			tasks: [
+				{
+					id: "7B67E31D41825F91"
+					item: {
+						Count: 1
+						id: "naturescompass:naturescompass"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5B539FDF710AC5FE"
+					item: {
+						Count: 1
+						id: "explorerscompass:explorerscompass"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			description: ["很好用的工具腰带，如果你愿意牺牲一个腰部饰品栏位的话。"]
+			id: "18B2271BC28C5FED"
+			rewards: [{
+				count: 3
+				id: "6A8262DACD471316"
+				item: "toolbelt:pouch"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5CA7D47D6764C32E"
+				item: "toolbelt:belt"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+	]
+	title: "实用提示"
+}

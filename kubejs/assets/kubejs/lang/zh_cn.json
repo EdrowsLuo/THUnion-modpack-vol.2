@@ -9,5 +9,17 @@
     "item.kubejs.golden_sweet_berries": "金浆果",
     "item.kubejs.golden_sweet_berries.desc": "汇聚了旅途上的精华。",
     "item.kubejs.growth_core": "生长核心",
-    "item.kubejs.growth_core.desc": "手持32个繁茂至高木树叶在原始洞穴里吸收空气的精华获得。"
+    "item.kubejs.growth_core.desc": "手持32个繁茂至高木树叶在原始洞穴里吸收空气的精华获得。",
+
+    "block.allthemodium.molten_allthemodium_block": "熔融ATM",
+    "block.allthemodium.molten_unobtainium_block": "熔融难得素",
+    "block.allthemodium.molten_vibranium_block": "熔融振金",
+    "fluid.allthemodium.molten_allthemodium": "熔融ATM",
+    "fluid.allthemodium.molten_unobtainium": "熔融难得素",
+    "fluid.allthemodium.molten_vibranium": "熔融振金",
+
+    "item.bloodmagic.ingot_hellforged": "恶魔合金锭",
+    "item.bloodmagic.dungeon_metal": "恶魔合金块",
+    "item.bloodmagic.hellforgedparts": "复杂地狱锻件",
+    "item.bloodmagic.hellforgedparts.desc": "这个材料暂时超出你的制作能力范围了，或许应该寻找更强大的力量..."
 }

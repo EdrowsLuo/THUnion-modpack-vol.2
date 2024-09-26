@@ -115,6 +115,19 @@
 			x: -1.0d
 			y: -2.5d
 		}
+		{
+			dependencies: ["132E2F8A7CC82CBB"]
+			id: "4AF8C0CD40878659"
+			shape: "diamond"
+			size: 3.0d
+			tasks: [{
+				id: "6E900549D579D81D"
+				item: "avaritia:infinity_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -9.5d
+		}
 	]
 	title: "特殊材料挑战"
 }

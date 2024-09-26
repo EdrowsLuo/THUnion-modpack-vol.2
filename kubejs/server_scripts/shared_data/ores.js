@@ -85,7 +85,8 @@ const GemOre = [
     new OreType("minecraft", "coal", 100, 60*2, 4),
     new OreType("minecraft", "lapis", 80, 60*2, 2),
     new OreType("minecraft", "diamond", 40, 60*4, 1),
-    new OreType("alltheores", "ruby", 80, 60*2, 2)
+    new OreType("alltheores", "ruby", 80, 60*2, 2),
+    new OreType("mekanism", "fluorite", 80, 60*2, 6)
 ]
 
 /**
@@ -93,8 +94,8 @@ const GemOre = [
  */
 const MiscOre = [
     new OreType("minecraft", "redstone", 80, 60*2, 8).withCustomExport([
-        Item.of("#forge:dusts/redstone").withChance(1).withRolls(8, 16),
-        Item.of("#forge:gems/redstone").withChance(0.05).withRolls(1,2)])
+        Item.of("minecraft:redstone").withChance(1).withRolls(8, 16),
+        Item.of("appflux:redstone_crystal").withChance(0.05).withRolls(1,2)])
 ]
 
 const AllOre = MetalOre.concat(GemOre)

@@ -8,6 +8,15 @@ ServerEvents.recipes(event => {
     MakeGoldenSweetBerries(event)
 })
 
+LootJS.modifiers((event) => {
+    event.addLootTypeModifier(LootType.CHEST)
+        .randomChance(0.05)
+        .addLoot(LootEntry.of("kubejs:treasure_core"));
+    event.addEntityLootModifier("artifacts:mimic")
+        .randomChance(0.8)
+        .addLoot(LootEntry.of("kubejs:treasure_core"),);
+});
+
 ItemEvents.firstRightClicked("ars_nouveau:green_archwood_leaves", event => {
     if(event.item.count >= 32 && playerInBiome(event.player, "alexscaves:primordial_caves")) {
         event.item.shrink(32)

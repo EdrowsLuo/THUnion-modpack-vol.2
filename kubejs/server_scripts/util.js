@@ -84,6 +84,8 @@ function autoPatternId(charactors, items) {
     return result
 }
 
+const _bannedItems = []
+
 /**
  * 
  * @param {Internal.RecipesEventJS} event 
@@ -92,7 +94,17 @@ function autoPatternId(charactors, items) {
 function banAll(event, items) {
     items.forEach(i => {
         event.remove({ output: i })
+        _bannedItems.push(i)
     })
+}
+
+function dumpBanned() {
+    let lines = ["=======[Banned Items]======="]
+    _bannedItems.forEach(item => {
+        lines.push(`    ${item},`)
+    })
+    lines.push("=======[Banned Items End]=======")
+    console.log(lines.join("\n"))
 }
 
 function getBiomeId(level, pos) {

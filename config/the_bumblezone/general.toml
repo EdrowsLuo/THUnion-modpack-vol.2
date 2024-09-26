@@ -161,25 +161,25 @@
 	#
 	# Whether the Crystalline Flower block will eat any item entity that touches the block's collision box in the world
 	#
-	crystallineFlowerConsumeItemEntities = true
+	crystallineFlowerConsumeItemEntities = false
 	# 
 	#-----------------------------------------------------
 	#
 	# Whether the Crystalline Flower block will pull in and eat any experience orb that touches it in the world
 	#
-	crystallineFlowerConsumeExperienceOrbEntities = true
+	crystallineFlowerConsumeExperienceOrbEntities = false
 	# 
 	#-----------------------------------------------------
 	#
 	# Whether the Crystalline Flower's GUI allows players to feed it items directly
 	#
-	crystallineFlowerConsumeItemUI = true
+	crystallineFlowerConsumeItemUI = false
 	# 
 	#-----------------------------------------------------
 	#
 	# Whether the Crystalline Flower's GUI allows players to feed it the player's experience
 	#
-	crystallineFlowerConsumeExperienceUI = true
+	crystallineFlowerConsumeExperienceUI = false
 	# 
 	#-----------------------------------------------------
 	#
@@ -189,7 +189,7 @@
 	# Except here, the flower's tier times this config value is used as the threshold to know what enchantment and level to show.
 	#
 	#Range: 0 ~ 1000
-	crystallineFlowerEnchantingPowerAllowedPerTier = 8
+	crystallineFlowerEnchantingPowerAllowedPerTier = 0
 	# 
 	#-----------------------------------------------------
 	#

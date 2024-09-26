@@ -35,6 +35,7 @@
 		}
 		{
 			dependencies: ["453DC5C13F2B317F"]
+			description: ["在下界使用传送垫"]
 			icon: "allthemodium:ancient_soulberries"
 			id: "04A824447ADE9D38"
 			tasks: [{
@@ -47,6 +48,7 @@
 		}
 		{
 			dependencies: ["3C0D402788402A59"]
+			description: ["在主世界里使用传送垫"]
 			icon: {
 				Count: 1
 				id: "minecraft:diamond_pickaxe"
@@ -77,6 +79,7 @@
 		}
 		{
 			dependencies: ["2334C9164DDF040C"]
+			description: ["在末地使用传送垫，全是虚空的维度，适合建筑。"]
 			icon: "minecraft:glass"
 			id: "55769E427B11CF4B"
 			tasks: [{
@@ -101,6 +104,7 @@
 		}
 		{
 			dependencies: ["3C0D402788402A59"]
+			description: ["3x3的花朵方阵周围围一圈石砖，对花潜行使用骨粉开门。"]
 			icon: {
 				Count: 1
 				id: "ae2:facade"
@@ -119,13 +123,33 @@
 		}
 		{
 			dependencies: ["3C0D402788402A59"]
+			description: ["用二轮世界方块搭建一个地狱门一样的形状"]
 			icon: "jerotesvillage:second_round_world_block"
 			id: "4F2493D2152AAC20"
-			tasks: [{
-				dimension: "jerotesvillage:second_round_world"
-				id: "4578B95CB025294F"
-				type: "dimension"
-			}]
+			tasks: [
+				{
+					dimension: "jerotesvillage:second_round_world"
+					id: "4578B95CB025294F"
+					type: "dimension"
+				}
+				{
+					id: "64E668375F653D86"
+					item: {
+						Count: 1
+						id: "jerotesvillage:second_round_world_key"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "048B05969159F2C8"
+					item: { Count: 10, id: "jerotesvillage:second_round_world_block" }
+					type: "item"
+				}
+			]
 			x: -0.5d
 			y: 1.0d
 		}
@@ -133,6 +157,7 @@
 			dependencies: ["3C0D402788402A59"]
 			icon: "minecraft:bee_nest"
 			id: "063E735A6A3B07D2"
+			subtitle: "对着蜂巢丢末影珍珠"
 			tasks: [{
 				dimension: "the_bumblezone:the_bumblezone"
 				id: "3942435D91673166"

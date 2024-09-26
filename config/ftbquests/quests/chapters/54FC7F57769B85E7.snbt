@@ -149,6 +149,11 @@
 			icon: "starbunclemania:source_fluid_bucket"
 			id: "679DE7BCE1FC7879"
 			subtitle: "魔力是否可以当饮料？"
+			tasks: [{
+				id: "4EAC5E763AF74DC4"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
 			title: "魔力合成学"
 			x: 3.0d
 			y: 2.0d
@@ -175,7 +180,7 @@
 				title: "自我强化学"
 				type: "checkmark"
 			}]
-			title: "自我强化学【WIP】"
+			title: "自我强化学"
 			x: -2.5d
 			y: 0.0d
 		}
@@ -375,6 +380,7 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["679DE7BCE1FC7879"]
 			id: "64D685BF5D27AF80"
 			tasks: [
 				{
@@ -414,6 +420,64 @@
 			title: "数字化怪物模拟"
 			x: -3.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["1C37586C58FBE287"]
+			description: [
+				"总共有130种符合要求的食物。"
+				"累计食用食物种类达到一定里程碑会增加血量上限"
+				"前10个里程碑就是前10个素数的位置，之后每10个食物增加一个里程碑。最后10种食物每一种食物都有一个里程碑。"
+				""
+				"&4&l注意：死亡会重置你的食物食用进度！&r&r"
+			]
+			id: "44B1B7E64EA6480E"
+			tasks: [{
+				id: "6A6655B16557071D"
+				item: "solcarrot:food_book"
+				type: "item"
+			}]
+			title: "良好饮食"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C37586C58FBE287"]
+			id: "0FAC2EA10428D071"
+			tasks: [{
+				id: "195F916284D03206"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "apotheosis:flying"
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1C37586C58FBE287"]
+			id: "290947238625D947"
+			tasks: [{
+				id: "41F301CD37AF6718"
+				item: "ars_nouveau:ritual_flight"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["36C365C02502083D"]
+			id: "1B6448DEF596C6D9"
+			tasks: [{
+				id: "277ACEDD62135F87"
+				item: "torchmaster:megatorch"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.0d
 		}
 	]
 	title: "大魔法使"

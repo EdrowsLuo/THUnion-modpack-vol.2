@@ -17,6 +17,19 @@ AllBosses.forEach(boss => {
             entity.setHealth(entity.getMaxHealth())
         }
     })
+
+    if(!boss.allowFly) {
+        EntityEvents.hurt(boss.entityId, event => {
+            if(event.source.player) {
+                let player = event.source.player
+                if(player.creative) return
+                if(player.persistentData.flying) {
+                    player.tell("§6给我下来！")
+                    stopFlying(player, 20)
+                }
+            }
+        })
+    }
 })
 
 ServerEvents.tags("entity_type", event => {
@@ -49,4 +62,13 @@ ServerEvents.tags("entity_type", event => {
     lines.push("=======[Death But Three End]=======")
     
     console.log(lines.join("\n"))
+})
+
+LootJS.modifiers(event => {
+    AllBosses.forEach(boss => {
+        if(boss.extraDrop != null) {
+            let builder = event.addEntityLootModifier(boss.entityId)
+            builder.addLoot(boss.extraDrop)
+        }
+    })
 })

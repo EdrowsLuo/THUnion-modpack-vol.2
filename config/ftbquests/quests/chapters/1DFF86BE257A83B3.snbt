@@ -1,4 +1,5 @@
 {
+	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: "square"
 	default_repeatable_quest: true
@@ -8,26 +9,55 @@
 	id: "1DFF86BE257A83B3"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		id: "5857516570F87007"
-		rewards: [{
-			command: "/curios drop @p catastrophe"
-			exclude_from_claim_all: true
-			icon: "celestial_artifacts:catastrophe_scroll"
-			id: "07FA3623EA269F5B"
-			title: "弹出你的灾厄之册"
-			type: "command"
-		}]
-		tasks: [{
-			consume_items: true
-			count: 32L
-			id: "095A3134B08681FF"
-			item: "alexscaves:pure_darkness"
-			type: "item"
-		}]
-		title: "摘下灾厄之册"
-		x: -4.0d
-		y: -4.5d
-	}]
+	quests: [
+		{
+			id: "5857516570F87007"
+			rewards: [
+				{
+					command: "/curios drop @p catastrophe"
+					exclude_from_claim_all: true
+					icon: "celestial_artifacts:catastrophe_scroll"
+					id: "07FA3623EA269F5B"
+					title: "弹出你的灾厄之册"
+					type: "command"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "04178AB1B0D39DF6"
+					table_id: 5740770500190313831L
+					title: "防止你弄丢了你的书"
+					type: "choice"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "095A3134B08681FF"
+				item: "alexscaves:pure_darkness"
+				type: "item"
+			}]
+			title: "摘下灾厄之册"
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			id: "684AEE3210BF7A1D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4BD50CEC2307D372"
+				table_id: 6564464805351165390L
+				type: "choice"
+			}]
+			tasks: [{
+				count: 4L
+				id: "629D2078F57B6D7D"
+				item: "kubejs:treasure_core"
+				type: "item"
+			}]
+			title: "遗物自选"
+			x: -1.0d
+			y: -8.0d
+		}
+	]
 	title: "商店"
 }

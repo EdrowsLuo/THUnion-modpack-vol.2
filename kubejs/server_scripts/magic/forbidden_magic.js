@@ -128,4 +128,173 @@ ServerEvents.recipes(event => {
         },
         "show_notification": true
     })
+
+    modifyUnique(event, "hostilenetworks:blank_data_model", {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            "LPL",
+            "RSR",
+            "LGL"
+        ],
+        "key": {
+            "L": {
+                "item": "minecraft:clay_ball"
+            },
+            "P": {
+                "item": "minecraft:repeater"
+            },
+            "R": {
+                "tag": "forge:dusts/redstone"
+            },
+            "S": {
+                "item": "alexscaves:pure_darkness"
+            },
+            "G": {
+                "tag": "forge:ingots/gold"
+            }
+        },
+        "result": {
+            "item": "hostilenetworks:blank_data_model"
+        }
+    })
+
+    modifyUnique(event, "hostilenetworks:sim_chamber", {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            " P ",
+            "EOE",
+            "LCL"
+        ],
+        "key": {
+            "P": {
+                "item": "ars_nouveau:drygmy_charm"
+            },
+            "E": {
+                "item": "minecraft:ender_pearl"
+            },
+            "O": {
+                "item": "pneumaticcraft:spawner_agitator"
+            },
+            "L": {
+                "tag": "forge:gems/lapis"
+            },
+            "C": {
+                "item": "minecraft:comparator"
+            }
+        },
+        "result": {
+            "item": "hostilenetworks:sim_chamber"
+        }
+    })
+
+    modifyUnique(event, "hostilenetworks:loot_fabricator", {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            "1P2",
+            "EOE",
+            "3C4"
+        ],
+        "key": {
+            "P": {
+                "tag": "forge:ingots/netherite"
+            },
+            "E": {
+                "tag": "forge:gems/diamond"
+            },
+            "O": {
+                "item": "pneumaticcraft:spawner_agitator"
+            },
+            "C": {
+                "item": "minecraft:comparator"
+            },
+            "1": "hostilenetworks:overworld_prediction",
+            "2": "hostilenetworks:nether_prediction",
+            "3": "hostilenetworks:end_prediction",
+            "4": "hostilenetworks:twilight_prediction",
+        },
+        "result": {
+            "item": "hostilenetworks:loot_fabricator"
+        }
+    })
+
+    modifyUnique(event, "hostilenetworks:prediction_matrix", {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            "BGB",
+            "GLG",
+            "BGB"
+        ],
+        "key": {
+            "G": {
+                "item": "ae2:matter_ball"
+            },
+            "L": {
+                "item": "minecraft:dragon_egg"
+            },
+            "B": {
+                "item": "starbunclemania:source_fluid_bucket"
+            }
+        },
+        "result": {
+            "item": "hostilenetworks:prediction_matrix",
+            "count": 64
+        }
+    })
+
+    modifyUnique(event, "mob_grinding_utils:saw", {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+            "D": {
+                "tag": "forge:gems/diamond"
+            },
+            "I": {
+                "tag": "forge:storage_blocks/iron"
+            },
+            "R": {
+                "item": "allthemodium:allthemodium_sword"
+            },
+            "S": {
+                "item": "minecraft:iron_sword"
+            },
+            "V": {
+                "item": "mob_grinding_utils:spikes"
+            }
+        },
+        "pattern": [
+            "SDS",
+            "VRV",
+            "DID"
+        ],
+        "result": {
+            "item": "mob_grinding_utils:saw"
+        },
+        "show_notification": true
+    })
+
+    modifyUnique(event, "torchmaster:megatorch", {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+            "TTT",
+            "DLD",
+            "GLG"
+        ],
+        "key": {
+            "T": {
+                "item": "minecraft:torch"
+            },
+            "D": {
+                "item": "alexscaves:pure_darkness"
+            },
+            "G": {
+                "tag": "forge:storage_blocks/gold"
+            },
+            "L": {
+                "tag": "minecraft:logs"
+            }
+        },
+        "result": {
+            "item": "torchmaster:megatorch"
+        }
+    })
 })

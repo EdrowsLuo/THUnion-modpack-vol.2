@@ -24,6 +24,7 @@ ServerEvents.recipes(event => {
         "avaritia:infinity_totem",
         "gtceu:quarktech_helmet",
         "gtceu:quarktech_chestplate",
+        "gtceu:advanced_quarktech_chestplate",
         "gtceu:quarktech_leggings",
         "gtceu:quarktech_boots",
         "gtceu:nanomuscle_helmet",
@@ -36,7 +37,7 @@ ServerEvents.recipes(event => {
         "allthemodium:vibranium_boots",
         "allthemodium:unobtainium_helmet",
         "allthemodium:unobtainium_chestplate",
-        "allthemodium:vibranium_leggings",
+        "allthemodium:unobtainium_leggings",
         "allthemodium:unobtainium_boots",
     ])
     

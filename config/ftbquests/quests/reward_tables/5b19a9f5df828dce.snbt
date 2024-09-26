@@ -1,0 +1,26 @@
+{
+	id: "5B19A9F5DF828DCE"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ item: "artifacts:whoopee_cushion" }
+		{ item: "artifacts:rooted_boots" }
+		{ item: "artifacts:flippers" }
+		{ item: "artifacts:steadfast_spikes" }
+		{ item: "artifacts:running_shoes" }
+		{ item: "artifacts:bunny_hoppers" }
+		{ item: "artifacts:vampiric_glove" }
+		{ item: "artifacts:digging_claws" }
+		{ item: "artifacts:feral_claws" }
+		{ item: "artifacts:obsidian_skull" }
+		{ item: "artifacts:cloud_in_a_bottle" }
+		{ item: "artifacts:cross_necklace" }
+		{ item: "artifacts:anglers_hat" }
+		{ item: "artifacts:superstitious_hat" }
+		{ item: "artifacts:villager_hat" }
+		{ item: "artifacts:night_vision_goggles" }
+		{ item: "artifacts:novelty_drinking_hat" }
+		{ item: "artifacts:everlasting_beef" }
+	]
+	title: "遗物自选"
+}
