@@ -85,7 +85,8 @@ const GemOre = [
     new OreType("minecraft", "coal", 100, 60*2, 4),
     new OreType("minecraft", "lapis", 80, 60*2, 2),
     new OreType("minecraft", "diamond", 40, 60*4, 1),
-    new OreType("alltheores", "ruby", 80, 60*2, 2)
+    new OreType("alltheores", "ruby", 80, 60*2, 2),
+    new OreType("mekanism", "fluorite", 80, 60*2, 6)
 ]
 
 /**
