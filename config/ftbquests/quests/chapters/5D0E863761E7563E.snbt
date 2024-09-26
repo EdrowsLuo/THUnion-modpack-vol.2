@@ -97,9 +97,8 @@
 			id: "09607E43BA645F11"
 			subtitle: "我们需要一个强大的后勤"
 			tasks: [{
-				id: "789FC68F7F347352"
-				item: "allthemodium:raw_allthemodium"
-				type: "item"
+				id: "5CCCD5F4CDD4F434"
+				type: "checkmark"
 			}]
 			title: "资源部"
 			x: -6.0d
@@ -345,6 +344,7 @@
 					type: "item"
 				}
 			]
+			title: "矿物种植"
 			x: -8.0d
 			y: -3.5d
 		}
