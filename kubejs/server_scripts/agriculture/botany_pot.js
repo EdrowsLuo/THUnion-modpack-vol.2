@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
     })
 
     MiscOre.forEach(ore => {
-        addOreBotanyRecipe(ore, ore.asBlock(), ore.asBlock(), [])
+        addOreBotanyRecipe(ore, ore.asBlock(), ore.asBlock(), [ore.asDust().withChance(1).withRolls(ore.multiplyRate, ore.multiplyRate)])
     })
 
     event.recipes.botanypots.soil(
