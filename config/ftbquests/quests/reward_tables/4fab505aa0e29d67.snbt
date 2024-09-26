@@ -1,0 +1,10 @@
+{
+	id: "4FAB505AA0E29D67"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: "celestial_artifacts:catastrophe_scroll" }
+		{ count: 2, item: "celestial_core:treasure_fragment" }
+	]
+	title: "星月遗物-书"
+}
