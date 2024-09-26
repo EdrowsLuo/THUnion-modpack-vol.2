@@ -23,7 +23,7 @@ AllBosses.forEach(boss => {
             if(event.source.player) {
                 let player = event.source.player
                 if(player.persistentData.flying) {
-                    player.tell("stop")
+                    player.tell("§6给我下来！")
                     stopFlying(player)
                 }
             }
