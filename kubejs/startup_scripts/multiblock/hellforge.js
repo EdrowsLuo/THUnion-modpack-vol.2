@@ -1,10 +1,16 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-    let builder=event.create('hellforge')
-    .category('thunion')
+    GTRecipeTypes.register('hellforge','multiblock')
     .setMaxIOSize(4, 1, 0, 0)
     .setEUIO('in')
     .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, FillDirection.LEFT_TO_RIGHT)
-    .setSound(GTSoundEntries.TURBINE);
+    .setSound(GTSoundEntries.TURBINE)
+    .addDataInfo(data => {
+        return Component.translatable('desc.gtceu.hellforge.minimumdrain',data.getInt('minimumDrain')).getString();
+    })
+    .addDataInfo(data => {
+        return Component.translatable('desc.gtceu.hellforge.drain',data.getInt('drain')).getString();
+    });
+    
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
@@ -37,7 +43,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 }
             }catch(error){
                 machine.self().getHolder().self().persistentData.putInt('will',0);
-                console.log(error);
                 return false;
             }
             
@@ -46,7 +51,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             if(controller.isFormed()){
                 var will=controller.getHolder().self().persistentData.getInt('will');
                 if(will===null) will=0;
-                list.add(Component.translatable('desc.gtceu.hellforge.will'+will));
+                list.add(Component.translatable('desc.gtceu.hellforge.will',will));
             }
         })
         .pattern(definition => FactoryBlockPattern.start()

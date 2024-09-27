@@ -5,6 +5,22 @@
 
 
 ServerEvents.recipes(event => {
+
+    event.recipes.gtceu.assembly_line('meteor')
+        .itemInputs(
+            'gtceu:hastelloy_c_276_frame',
+            '2x gtceu:luv_field_generator',
+            '8x #gtceu:circuits/zpm',
+            '8x gtceu:double_titanium_tungsten_carbide_plate',
+            '64x gtceu:iv_emitter',
+            '16x gtceu:quantum_star'
+        )
+        .inputFluids(Fluid.of('bloodmagic:life_essence_fluid',1024000))
+        .itemOutputs('gtceu:meteor_capturer')
+        .duration(4800)
+        .EUt(32000)
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('bloodmagic:masterritualstone')).EUt(120).duration(9600)) // (1)
+
     //casings
 
     event.recipes.gtceu.chemical_bath('blood_casing')

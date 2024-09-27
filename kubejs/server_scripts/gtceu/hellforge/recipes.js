@@ -1,4 +1,28 @@
 ServerEvents.recipes(event=>{
+
+    event.shaped(
+        'gtceu:hellforge',
+        [
+            'ICI',
+            'SHS',
+            'IFI'
+        ], {
+        C: '#gtceu:circuits/luv',
+        H: 'gtceu:iv_machine_hull',
+        I: 'bloodmagic:ingot_hellforged',
+        S: 'bloodmagic:etherealslate',
+        F: 'bloodmagic:soulforge'
+    })
+
+    event.recipes.gtceu.hellforge('hellpart')
+        .itemInputs('bloodmagic:hellforgedparts','minecraft:diamond','minecraft:netherite_scrap','bloodmagic:defaultcrystal')
+        .itemOutputs('2x bloodmagic:hellforgedparts')
+        .EUt(4000)
+        .duration(200)
+        .addDataNumber('minimumDrain',1000)
+        .addDataNumber('drain',200);
+
+
     var counter=1;
     event.findRecipes({type:'bloodmagic:soulforge'}).forEach(recipe=>{
         /** @type {InputItem} */var input0=recipe.get('input0');

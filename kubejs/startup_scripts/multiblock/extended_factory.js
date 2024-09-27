@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
      * @type {Internal.CustomMultiblockBuilder}
      */
     let builder=event.create('extended_factory', 'multiblock')
-    
+    for(let i=0;i<=3;i++) builder.tooltips(Component.translatable(`desc.${builder.id}.${i}`));
     builder.rotationState(RotationState.NON_Y_AXIS)
 
         .recipeTypes([GTRecipeTypes.ASSEMBLER_RECIPES,GTRecipeTypes.CIRCUIT_ASSEMBLER_RECIPES,GTRecipeTypes.get('precision_assembler')])

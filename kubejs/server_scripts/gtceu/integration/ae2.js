@@ -49,7 +49,7 @@ ServerEvents.recipes(event=>{
         .itemOutputs('ae2additions:cell_component_4096');
 
     event.recipes.gtceu.precision_assembler('16384konestep')
-        .itemInputs('#gtceu:circuits/uhv','4x #gtceu:circuits/uv','256x #ae2:all_certus_quartz','8x #forge:dusts/redstone')
+        .itemInputs('#gtceu:circuits/uhv','4x #gtceu:circuits/uv','256x #ae2:all_certus_quartz','256x #forge:dusts/redstone')
         .inputFluids(Fluid.of('gtceu:soldering_alloy',4608))
         .duration(20)
         .EUt(1966080)

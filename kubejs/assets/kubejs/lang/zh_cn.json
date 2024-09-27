@@ -30,5 +30,12 @@
     "item.bloodmagic.ingot_hellforged": "恶魔合金锭",
     "item.bloodmagic.dungeon_metal": "恶魔合金块",
     "item.bloodmagic.hellforgedparts": "复杂地狱锻件",
-    "item.bloodmagic.hellforgedparts.desc": "这个材料暂时超出你的制作能力范围了，或许应该寻找更强大的力量..."
+    "item.bloodmagic.hellforgedparts.desc": "这个材料暂时超出你的制作能力范围了，或许应该寻找更强大的力量...",
+
+    "block.kubejs.blood_casing": "染血机械方块",
+    "block.kubejs.force_field_casing": "力场机械方块",
+    "block.kubejs.twisted_fusion_casing": "扭曲聚变机械方块",
+    "block.kubejs.elemental_casing":"元素约束机械方块",
+    "block.kubejs.proton_casing":"质子约束机械方块",
+    "block.kubejs.neutron_casing":"中子约束机械方块"
 }

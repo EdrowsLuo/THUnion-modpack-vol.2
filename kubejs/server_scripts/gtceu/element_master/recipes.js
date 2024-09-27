@@ -2,6 +2,30 @@ ServerEvents.recipes(event=>{
     
     addRecipes(event);
 
+    event.recipes.gtceu.assembler('atomic_force')
+    .itemInputs('gtceu:polytetrafluoroethylene_frame','4x gtceu:graphene_dust','6x gtceu:magnalium_plate')
+    .itemOutputs('kubejs:elemental_casing')
+    .EUt(480)
+    .duration(50);
+
+    event.recipes.gtceu.assembler('proton')
+    .itemInputs('gtceu:black_steel_frame','4x gtceu:beryllium_dust','6x gtceu:stainless_steel_plate')
+    .itemOutputs('kubejs:proton_casing')
+    .EUt(480)
+    .duration(50);
+
+    event.recipes.gtceu.assembler('neutron')
+    .itemInputs('gtceu:blue_steel_frame','4x gtceu:boron_dust','6x gtceu:stainless_steel_plate')
+    .itemOutputs('kubejs:neutron_casing')
+    .EUt(480)
+    .duration(50);
+
+    event.recipes.gtceu.assembler('element_master')
+    .itemInputs('gtceu:iv_machine_hull','4x gtceu:data_orb','2x gtceu:iv_sensor','2x gtceu:iv_emitter','64x gtceu:fine_energetic_alloy_wire')
+    .itemOutputs('gtceu:element_master')
+    .EUt(7680)
+    .duration(500);
+
 
     event.recipes.gtceu.cosmic_neutron_collector('spnt_1')
     .circuit(1)
