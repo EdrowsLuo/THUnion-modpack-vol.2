@@ -32,6 +32,8 @@
 				"我们在不同mod之间添加了很多联动，并且做了大量的调整来使得游戏中的内容恰当的融合到一起,还有一些独特的定制内容"
 				""
 				"希望大家能够享受探索的乐趣，我们没有严格的主线，玩的开心！"
+				""
+				"&l&6ps. 任务书里没有什么重要的奖励，不建议组队。&r&r"
 			]
 			id: "72020FD69437BCB6"
 			rewards: [
@@ -217,16 +219,25 @@
 			]
 			hide_dependency_lines: true
 			id: "26D97EC06ACFEB47"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5459AE69313603B5"
-				table_id: 6564464805351165390L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5459AE69313603B5"
+					table_id: 6564464805351165390L
+					type: "choice"
+				}
+				{
+					count: 16
+					id: "60F8F3F1673C6EF3"
+					item: "pneumaticcraft:sourdough_bread"
+					type: "item"
+				}
+			]
 			secret: true
 			tasks: [{
-				id: "4A0501718BBCEEAA"
-				type: "checkmark"
+				dimension: "twilightforest:twilight_forest"
+				id: "4FC8FC8C198C9BE5"
+				type: "dimension"
 			}]
 			title: "给耐心看完了所有描述的你的奖励！"
 			x: 6.5d
