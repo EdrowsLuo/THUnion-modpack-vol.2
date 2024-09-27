@@ -34,7 +34,10 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["453DC5C13F2B317F"]
+			dependencies: [
+				"453DC5C13F2B317F"
+				"3C0D402788402A59"
+			]
 			description: ["在下界使用传送垫"]
 			icon: "allthemodium:ancient_soulberries"
 			id: "04A824447ADE9D38"
@@ -78,7 +81,10 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["2334C9164DDF040C"]
+			dependencies: [
+				"2334C9164DDF040C"
+				"3C0D402788402A59"
+			]
 			description: ["在末地使用传送垫，全是虚空的维度，适合建筑。"]
 			icon: "minecraft:glass"
 			id: "55769E427B11CF4B"
@@ -92,6 +98,7 @@
 		}
 		{
 			dependencies: ["3C0D402788402A59"]
+			description: ["想办法点亮远古城市的传送门。"]
 			icon: "minecraft:sculk_catalyst"
 			id: "7C507C530D67C59A"
 			tasks: [{
@@ -155,9 +162,9 @@
 		}
 		{
 			dependencies: ["3C0D402788402A59"]
+			description: ["对着蜂巢丢末影珍珠"]
 			icon: "minecraft:bee_nest"
 			id: "063E735A6A3B07D2"
-			subtitle: "对着蜂巢丢末影珍珠"
 			tasks: [{
 				dimension: "the_bumblezone:the_bumblezone"
 				id: "3942435D91673166"
@@ -178,6 +185,7 @@
 			y: 2.0d
 		}
 		{
+			description: ["如果有遗漏最好还是去查一下mcmod wiki"]
 			id: "3DB10A02EA08E3E0"
 			tasks: [{
 				id: "342CDAED8F25EF3E"
