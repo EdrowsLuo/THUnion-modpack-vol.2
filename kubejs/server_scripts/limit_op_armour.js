@@ -22,6 +22,7 @@ ServerEvents.recipes(event => {
         "avaritia:infinity_bow",
         "avaritia:infinity_pickaxe",
         "avaritia:infinity_totem",
+        "avaritia:infinity_sword",
         "gtceu:quarktech_helmet",
         "gtceu:quarktech_chestplate",
         "gtceu:advanced_quarktech_chestplate",
