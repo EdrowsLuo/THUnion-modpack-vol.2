@@ -58,6 +58,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(2024)
         .flags(GTMaterialFlags.GENERATE_DENSE,GTMaterialFlags.GENERATE_FOIL,GTMaterialFlags.DISABLE_DECOMPOSITION);
 
+    event.create('proton')
+        .liquid(new GTFluidBuilder().temperature(1))
+        .color(0x1779DA);
+    event.create('neutron')
+        .liquid(new GTFluidBuilder().temperature(1))
+        .color(0xDA1717);
+
     event.create('azure_neodymium')
         .dust()
         .element('azure_neodymium')
@@ -232,6 +239,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('14x uv_mechanical_alloy','1x uv_magnetic_alloy','1x uv_conductive_alloy')
         .iconSet(GTMaterialIconSet.METALLIC)
         .flags(GTMaterialFlags.GENERATE_PLATE,GTMaterialFlags.DISABLE_DECOMPOSITION,GTMaterialFlags.NO_WORKING);
+
+    
 
     
 })
