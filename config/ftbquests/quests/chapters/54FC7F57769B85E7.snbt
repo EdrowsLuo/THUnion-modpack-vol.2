@@ -140,7 +140,7 @@
 				id: "559481BCF8FD33C1"
 				type: "checkmark"
 			}]
-			title: "铁咒语学"
+			title: "铁咒语学【WIP】"
 			x: 3.5d
 			y: 0.0d
 		}
@@ -478,6 +478,17 @@
 			}]
 			x: -4.5d
 			y: 5.0d
+		}
+		{
+			dependencies: ["1C37586C58FBE287"]
+			id: "0A46B56C721071FA"
+			tasks: [{
+				id: "49B9C590F337BFEC"
+				item: "celestial_artifacts:flight_ring"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.0d
 		}
 	]
 	title: "大魔法使"

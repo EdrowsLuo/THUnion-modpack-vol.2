@@ -232,6 +232,17 @@
 			x: 6.5d
 			y: -0.5d
 		}
+		{
+			description: ["玩家之间的伤害被降低到了0。"]
+			id: "2BB4DC464F7F4443"
+			tasks: [{
+				id: "124DFA3798C8BC4B"
+				type: "checkmark"
+			}]
+			title: "禁止玩家友伤"
+			x: 4.5d
+			y: -4.0d
+		}
 	]
 	title: "先看这里"
 }
