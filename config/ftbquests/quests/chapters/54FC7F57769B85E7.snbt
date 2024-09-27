@@ -305,6 +305,7 @@
 		}
 		{
 			dependencies: ["36C365C02502083D"]
+			description: ["可以产出几乎所有的生物的掉落物。"]
 			id: "3A036D92668B08BD"
 			tasks: [{
 				id: "73C236576BE9231D"
@@ -316,6 +317,7 @@
 		}
 		{
 			dependencies: ["36C365C02502083D"]
+			description: ["把生物抓起来，消耗和生物血量相当的经验。"]
 			id: "486EB79BA47DC60E"
 			tasks: [{
 				id: "2470E370CEEE3C7B"
@@ -442,6 +444,7 @@
 		}
 		{
 			dependencies: ["1C37586C58FBE287"]
+			description: ["或许可以制作一个机械动力的装置，让1mb的药水就可以提供30分钟飞行。"]
 			id: "0FAC2EA10428D071"
 			tasks: [{
 				id: "195F916284D03206"

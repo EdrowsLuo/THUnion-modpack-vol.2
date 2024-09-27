@@ -58,6 +58,36 @@
 			x: -1.0d
 			y: -8.0d
 		}
+		{
+			description: ["只要运气好就可以提前获得传送石"]
+			icon: {
+				Count: 1
+				id: "waystones:warp_stone"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6FA4B48B4653A4EC"
+			rewards: [{
+				id: "4567808D15387C61"
+				item: {
+					Count: 1
+					id: "waystones:warp_stone"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0295CC3917C12CE1"
+				item: "kubejs:treasure_core"
+				type: "item"
+			}]
+			title: "传送石"
+			x: 0.0d
+			y: -8.0d
+		}
 	]
 	title: "商店"
 }
