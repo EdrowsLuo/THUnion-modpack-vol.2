@@ -244,8 +244,16 @@
 			y: -0.5d
 		}
 		{
-			description: ["玩家之间的伤害被降低到了0。"]
+			description: [
+				"玩家之间的伤害被降低到了0。"
+				"（除非你在副手拿着骷髅头）"
+			]
 			id: "2BB4DC464F7F4443"
+			rewards: [{
+				id: "26F95936FA5AB0B1"
+				item: "minecraft:skeleton_skull"
+				type: "item"
+			}]
 			tasks: [{
 				id: "124DFA3798C8BC4B"
 				type: "checkmark"
