@@ -31,4 +31,18 @@ if (TaCZ_Loaded) {
             }
         })
     })
+
+    LootJS.modifiers(event => {
+        event.addEntityLootModifier("twilightforest:minoshroom")
+        .addLoot(
+            LootEntry.of(
+                "tacz:modern_kinetic_gun",
+                `{HasBulletInBarrel: 1b, GunFireMode: "AUTO", GunId: "tacz:cz75", GunCurrentAmmoCount: 16}`
+            ),
+            LootEntry.of(
+                "tacz:ammo_box",
+                `{AmmoCount: 180, Level: 0, AmmoId: "tacz:9mm"}`
+            )
+        ).randomChance(0.5)
+    })
 }

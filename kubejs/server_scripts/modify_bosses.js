@@ -66,7 +66,7 @@ ServerEvents.tags("entity_type", event => {
 
 LootJS.modifiers(event => {
     AllBosses.forEach(boss => {
-        if(boss.extraDrop != null) {
+        if(boss.extraDrop.length > 0) {
             let builder = event.addEntityLootModifier(boss.entityId)
             builder.addLoot(boss.extraDrop)
         }
