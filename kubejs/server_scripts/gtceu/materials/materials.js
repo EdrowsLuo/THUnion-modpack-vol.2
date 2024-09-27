@@ -119,6 +119,24 @@ ServerEvents.recipes(event=>{
     .EUt(480)
     .duration(100)
     .itemOutputs('gtceu:energetic_alloy_dust');
+
+    event.recipes.gtceu.mixer('trind')
+    .itemInputs('gtceu:azure_neodymium_dust','gtceu:neodymium_dust','gtceu:scarlet_neodymium_dust')
+    .EUt(30)
+    .duration(20)
+    .itemOutputs('gtceu:trineodymium_dust');
+
+    event.recipes.gtceu.macerator('aznd')
+    .itemInputs('alexscaves:raw_azure_neodymium')
+    .EUt(15)
+    .duration(20)
+    .itemOutputs('gtceu:azure_neodymium_dust');
+
+    event.recipes.gtceu.macerator('scnd')
+    .itemInputs('alexscaves:raw_scarlet_neodymium')
+    .EUt(15)
+    .duration(20)
+    .itemOutputs('gtceu:scarlet_neodymium_dust');
     
 });
 
