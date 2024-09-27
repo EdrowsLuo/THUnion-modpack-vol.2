@@ -39,20 +39,20 @@ ServerEvents.recipes(event=>{
         .inputFluids(Fluid.of('gtceu:soldering_alloy',1152))
         .duration(20)
         .EUt(122880)
-        .itemOutputs('ae2:cell_component_1024k');
+        .itemOutputs('ae2additions:cell_component_1024');
 
     event.recipes.gtceu.precision_assembler('4096konestep')
         .itemInputs('#gtceu:circuits/uv','4x #gtceu:circuits/zpm','128x #ae2:all_certus_quartz','128x #forge:dusts/redstone')
         .inputFluids(Fluid.of('gtceu:soldering_alloy',2304))
         .duration(20)
         .EUt(491520)
-        .itemOutputs('ae2:cell_component_4096k');
+        .itemOutputs('ae2additions:cell_component_4096');
 
     event.recipes.gtceu.precision_assembler('16384konestep')
         .itemInputs('#gtceu:circuits/uhv','4x #gtceu:circuits/uv','256x #ae2:all_certus_quartz','8x #forge:dusts/redstone')
         .inputFluids(Fluid.of('gtceu:soldering_alloy',4608))
         .duration(20)
         .EUt(1966080)
-        .itemOutputs('ae2:cell_component_16384k');
+        .itemOutputs('ae2additions:cell_component_16384');
     
 })
