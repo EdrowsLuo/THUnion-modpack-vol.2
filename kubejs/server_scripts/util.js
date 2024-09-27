@@ -101,7 +101,7 @@ function banAll(event, items) {
 function dumpBanned() {
     let lines = ["=======[Banned Items]======="]
     _bannedItems.forEach(item => {
-        lines.push(`    ${item},`)
+        lines.push(`        "${item}",`)
     })
     lines.push("=======[Banned Items End]=======")
     console.log(lines.join("\n"))

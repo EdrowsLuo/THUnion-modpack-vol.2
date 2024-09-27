@@ -41,27 +41,27 @@ ServerEvents.tags("entity_type", event => {
         }
     })
 
-    let lines = ["=======[Apotheosis Spawner Blacklist]======="]
-    AllBosses.forEach(boss => {
-        if(!boss.spawner) {
-            lines.push(`    ${boss.entityId}`)
-        }
-    })
-    lines.push("=======[Apotheosis Spawner Blacklist End]=======")
+    // let lines = ["=======[Apotheosis Spawner Blacklist]======="]
+    // AllBosses.forEach(boss => {
+    //     if(!boss.spawner) {
+    //         lines.push(`    ${boss.entityId}`)
+    //     }
+    // })
+    // lines.push("=======[Apotheosis Spawner Blacklist End]=======")
     
-    console.log(lines.join("\n"))
+    // console.log(lines.join("\n"))
 
-    lines = ["=======[Death But Three]======="]
-    let db3 = []
-    AllBosses.forEach(boss => {
-        if(boss.deathReset != -1) {
-            db3.push(`"${boss.entityId};${boss.deathReset}"`)
-        }
-    })
-    lines.push(db3.join(", "))
-    lines.push("=======[Death But Three End]=======")
+    // lines = ["=======[Death But Three]======="]
+    // let db3 = []
+    // AllBosses.forEach(boss => {
+    //     if(boss.deathReset != -1) {
+    //         db3.push(`"${boss.entityId};${boss.deathReset}"`)
+    //     }
+    // })
+    // lines.push(db3.join(", "))
+    // lines.push("=======[Death But Three End]=======")
     
-    console.log(lines.join("\n"))
+    // console.log(lines.join("\n"))
 })
 
 LootJS.modifiers(event => {

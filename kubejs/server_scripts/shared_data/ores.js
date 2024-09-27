@@ -100,12 +100,12 @@ const MiscOre = [
 
 const AllOre = MetalOre.concat(GemOre)
 
-ServerEvents.recipes(events => {
-    MetalOre.forEach(ore => {
-        console.log(`${ore.oreId}: asBlock[${ore.asBlock().getId()}]`)
-        console.log(`${ore.oreId}: asIngot[${ore.asBlock().getId()}]`)
-        console.log(`${ore.oreId}: asNugget[${ore.asBlock().getId()}]`)
-        console.log(`${ore.oreId}: asClump[${ore.asClump().getId()}]`)
-        console.log(`${ore.oreId}: asOresBlock[${ore.asOresBlock().getId()}]`)
-    })
-})
+// ServerEvents.recipes(events => {
+//     MetalOre.forEach(ore => {
+//         console.log(`${ore.oreId}: asBlock[${ore.asBlock().getId()}]`)
+//         console.log(`${ore.oreId}: asIngot[${ore.asBlock().getId()}]`)
+//         console.log(`${ore.oreId}: asNugget[${ore.asBlock().getId()}]`)
+//         console.log(`${ore.oreId}: asClump[${ore.asClump().getId()}]`)
+//         console.log(`${ore.oreId}: asOresBlock[${ore.asOresBlock().getId()}]`)
+//     })
+// })
