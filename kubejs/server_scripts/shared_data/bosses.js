@@ -29,7 +29,7 @@ function BossType(name, entityId, healthMultiplier) {
  * @returns 
  */
 BossType.prototype.withExtraDrop = function (extraDrop) {
-    this.extraDrop = extraDrop
+    this.extraDrop = this.extraDrop.concat(extraDrop)
     return this
 }
 
