@@ -105,6 +105,18 @@
     "desc.gtceu:eternal_well_of_suffer.6":"两台机器需要共用岩浆池，且控制器必须位于狱火锻炉的正上方。请查阅JEI以获得更多信息。",
     "desc.gtceu:eternal_well_of_suffer.7":"产出生命源质量（mB）/100000的意志。",
 
+    "block.gtceu.element_master":"§5元素掌控者§r",
+    "desc.gtceu:element_master.0":"机器类型：§e质量发生器/元素复制机/元素创造机/宇宙中子态素收集器§r",
+    "desc.gtceu:element_master.1":"§8元素之力，听我号令！§r",
+    "desc.gtceu:element_master.2":"所有机器模式都享受无损超频。§r",
+    "desc.gtceu:element_master.3":"§e质量发生器模式：§r",
+    "desc.gtceu:element_master.4":"将元素分解为质子流体和中子流体。配方时间正比于元素的质量数。§r",
+    "desc.gtceu:element_master.5":"§e元素复制机/元素创造机模式：§r",
+    "desc.gtceu:element_master.6":"使用质子流体和中子流体创造元素。配方时间正比于元素质量数的1.5次方。§r",
+    "desc.gtceu:element_master.7":"元素创造机模式下，复制元素不需要模板，代价是10倍的处理时间和640倍的能量需求。§r",
+    "desc.gtceu:element_master.8":"§e宇宙中子态素收集器模式：§r",
+    "desc.gtceu:element_master.9":"收集宇宙中子态素尘埃。使用中子流体或液态中子素以进行增产。此模式下机器额外具有256并行。",
+
     "block.gtceu.extended_factory":"原子组装机",
     "desc.gtceu:extended_factory.0":"机器类型：§e组装机/电路组装机/精密组装机§r",
     "desc.gtceu:extended_factory.1":"§8Atomic, Assemble!§r",
