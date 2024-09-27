@@ -70,5 +70,9 @@ LootJS.modifiers(event => {
             let builder = event.addEntityLootModifier(boss.entityId)
             builder.addLoot(boss.extraDrop)
         }
+
+        if(boss.deathReset > 0) {
+            event.addEntityLootModifier(boss.entityId).randomChance(0.33).addLoot(LootEntry.of("kubejs:battle_core"))
+        }
     })
 })
