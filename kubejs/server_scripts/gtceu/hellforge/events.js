@@ -14,9 +14,6 @@ EntityEvents.death(event=>{
             }
         }
     }catch(error){}
-    console.log();
-    console.log(event.entity.getType());
-    console.log(event.entity.position());
 })
 
 ItemEvents.dropped(event=>{
