@@ -1,0 +1,22 @@
+{
+  "name": "singularity.avaritia.naquadah",
+  "colors": [
+    "312929",
+    "1E3D2C"
+  ],
+  "timeRequired": 240,
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "tag": "forge:ingots/naquadah",
+        "type": "forge:tag_empty"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/naquadah"
+  },
+  "enabled": true,
+  "recipeDisabled": false
+}
