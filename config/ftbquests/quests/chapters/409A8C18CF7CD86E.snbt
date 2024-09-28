@@ -235,6 +235,7 @@
 				"3DDF19A7C696EAD5"
 				"0CE4CE35982441FD"
 				"390B32FB37CB9B88"
+				"675EABCCB6FB5867"
 			]
 			hide_dependency_lines: true
 			id: "26D97EC06ACFEB47"
@@ -419,6 +420,19 @@
 			title: "需要冷却的连锁挖矿"
 			x: 2.0d
 			y: -5.0d
+		}
+		{
+			dependencies: ["72020FD69437BCB6"]
+			description: ["通过模拟火山来获取无限的岩浆。"]
+			icon: "alexscaves:volcanic_core"
+			id: "675EABCCB6FB5867"
+			tasks: [{
+				id: "5B8DFBE8063A1D89"
+				type: "checkmark"
+			}]
+			title: "没有机械动力无限岩浆了，但是我们有火山核心"
+			x: 5.5d
+			y: 1.0d
 		}
 	]
 	title: "先看这里"

@@ -478,6 +478,11 @@
 		{
 			dependencies: ["109014752147196A"]
 			id: "57C74BF21E254657"
+			rewards: [{
+				id: "25301910E67F4B8D"
+				item: "gtceu:terminal"
+				type: "item"
+			}]
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "341C3F383111B5BF"
@@ -967,6 +972,19 @@
 			}]
 			x: -8.0d
 			y: -4.5d
+		}
+		{
+			dependencies: ["22EA52DFADD3AEC1"]
+			description: ["更强大的机器，这个机器可以种植奇点来产生矿物。"]
+			id: "70E173C615E0C53E"
+			tasks: [{
+				id: "467DB13B32CA5401"
+				item: "gtceu:eig"
+				type: "item"
+			}]
+			title: "奇点种植"
+			x: -8.0d
+			y: -2.5d
 		}
 	]
 	title: "天顶科技公司员工"
