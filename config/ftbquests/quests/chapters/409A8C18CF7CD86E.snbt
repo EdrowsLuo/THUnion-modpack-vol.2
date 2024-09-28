@@ -236,6 +236,7 @@
 				"0CE4CE35982441FD"
 				"390B32FB37CB9B88"
 				"675EABCCB6FB5867"
+				"7420E76101D7AEC2"
 			]
 			hide_dependency_lines: true
 			id: "26D97EC06ACFEB47"
@@ -433,6 +434,24 @@
 			title: "没有机械动力无限岩浆了，但是我们有火山核心"
 			x: 5.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["72020FD69437BCB6"]
+			description: [
+				"默认R键翻滚，带有2tick无敌。"
+				"冷却时间3s，附魔可以增加翻滚次数和冷却。"
+				""
+				"整合包作者推荐改为中键翻滚。"
+			]
+			id: "7420E76101D7AEC2"
+			tasks: [{
+				id: "551B9E5ABB6B7023"
+				title: "战斗翻滚"
+				type: "checkmark"
+			}]
+			title: "战斗翻滚"
+			x: 3.0d
+			y: -5.0d
 		}
 	]
 	title: "先看这里"
