@@ -79,3 +79,13 @@ ServerEvents.recipes(event => {
 BlockEvents.rightClicked("the_bumblezone:crystalline_flower", event => {
   event.cancel()
 })
+
+LootJS.modifiers((event) => {
+  event.addLootTableModifier(/.*/).removeLoot("tombstone:soul_receptacle");
+});
+
+EntityEvents.spawned("minecraft:item", event => {
+  if(event.item.id == "tombstone:soul_receptacle") {
+    event.cancel()
+  }
+})
