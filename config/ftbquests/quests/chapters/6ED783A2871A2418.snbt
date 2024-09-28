@@ -3,11 +3,13 @@
 	default_quest_shape: ""
 	filename: "6ED783A2871A2418"
 	group: "5D83065599C5EF63"
+	hide_quest_until_deps_visible: true
 	id: "6ED783A2871A2418"
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["18B12709A88EE136"]
 			id: "07D2DD3DD314E3F6"
 			tasks: [{
 				id: "2F15FE3B11683586"
@@ -18,6 +20,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["18B12709A88EE136"]
 			id: "36CE4331D3F42B36"
 			tasks: [{
 				id: "5C9B397087244862"
@@ -28,6 +31,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["18B12709A88EE136"]
 			id: "6C10098173C8A45A"
 			tasks: [{
 				id: "21C752EC71D85018"
@@ -38,6 +42,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["18B12709A88EE136"]
 			id: "0E6E8A9C9CBA9C3F"
 			tasks: [{
 				id: "436BA6D5D5A67293"
@@ -48,6 +53,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["18B12709A88EE136"]
 			id: "55B71F0838120935"
 			tasks: [{
 				id: "4502FC026393D958"
@@ -58,6 +64,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["18B12709A88EE136"]
 			id: "11D4E280517CC3EF"
 			tasks: [{
 				id: "6558389DBCB6AB28"
@@ -68,6 +75,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["18B12709A88EE136"]
 			id: "5626FD7BCCDDEF7C"
 			tasks: [{
 				id: "6E387C2301547634"
@@ -78,6 +86,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["18B12709A88EE136"]
 			id: "5877B19046D169EF"
 			tasks: [{
 				id: "00FBC025372312CF"
@@ -88,6 +97,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["18B12709A88EE136"]
 			id: "19A9511524AF45AF"
 			tasks: [{
 				id: "664256686C543AE3"
@@ -98,6 +108,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["18B12709A88EE136"]
 			id: "69A195C476E3D9D7"
 			tasks: [{
 				id: "78C68328D049E6C5"
@@ -108,6 +119,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["18B12709A88EE136"]
 			id: "7181C85AA402A298"
 			tasks: [{
 				id: "399A72483E5F1676"
@@ -116,6 +128,18 @@
 			}]
 			x: -3.5d
 			y: -2.0d
+		}
+		{
+			dependencies: ["109014752147196A"]
+			hide_dependent_lines: true
+			id: "18B12709A88EE136"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "33459197F101E08A"
+				type: "dimension"
+			}]
+			x: -1.5d
+			y: -6.5d
 		}
 	]
 	title: "大型机器"
