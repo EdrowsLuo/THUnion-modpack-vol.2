@@ -37,6 +37,9 @@
     "material.gtceu.uv_conductive_alloy":"UV导电合金",
     "material.gtceu.uv_component_alloy":"UV预制件",
 
+    "material.gtceu.proton":"质子流体",
+    "material.gtceu.neutron":"中子流体",
+
     "block.gtceu.meteor_capturer":"§4陨石禁锢装置§r",
     "desc.gtceu:meteor_capturer.0":"机器类型：§e坠星标位§r",
     "desc.gtceu:meteor_capturer.1":"§8为什么陨石总能落在陨石坑里？§r",
@@ -129,6 +132,20 @@
     "desc.gtceu:extended_factory.2":"比相同电压的小型机器快100%，且具有8并行（但不随电压提升而提升）。§r",
     "desc.gtceu:extended_factory.3":"精密组装机模式下可以简化部分合成配方。§r",
 
+    "block.gtceu.eig":"§b极限工业温室§r",
+    "desc.gtceu:eig.0":"机器类型：§e温室§r",
+    "desc.gtceu:eig.1":"最多可以同时运行64个配方。机器自身会消耗480EU/t。§r",
+    "desc.gtceu:eig.2":"§e输入模式：§r",
+    "desc.gtceu:eig.3":"使用1号电路板。机器会读取输入中的配方并将其储存到机器内部。§r",
+    "desc.gtceu:eig.4":"§e输出模式：§r",
+    "desc.gtceu:eig.5":"使用2号电路板。机器会将内部储存的物品输出。§r",
+    "desc.gtceu:eig.6":"§8请不要从工作模式直接切换到此模式，可能会吞物品。建议先取消电路板输入，让机器冷静下来再进行输出。（这是一个bug，但是我不会修，如果有人会的话麻烦抢救一下秋梨膏）§r",
+    "desc.gtceu:eig.7":"§e工作模式：§r",
+    "desc.gtceu:eig.8":"将内部储存的所有配方一并产出。耗电为自身耗电（480EU/t）加上运行的所有配方的总和。§r",
+    "desc.gtceu:eig.9":"处理时间固定为5秒，可以进行有损超频。§r",
+    "desc.gtceu:eig.10":"§8可能还有其它未知的bug，总之最好对机器好点。机器内部的储存不会在多方块结构被破坏时丢失，但方块本体破坏时会。§r",
+
+
     "block.gtceu.lv_digital_well_of_suffer":"基础数字化苦难之井",
     "block.gtceu.mv_digital_well_of_suffer":"§b进阶数字化苦难之井§r",
     "block.gtceu.hv_digital_well_of_suffer":"§6进阶数字化苦难之井 II§r",
@@ -150,5 +167,6 @@
     "gtceu.cosmic_neutron_collector":"宇宙中子态素收集器",
     "gtceu.element_creator":"元素创造机",
     "gtceu.element_duplicator":"元素复制机",
-    "gtceu.mass_generator":"质量发生器"
+    "gtceu.mass_generator":"质量发生器",
+    "gtceu.eig_input":"极限工业温室"
 }

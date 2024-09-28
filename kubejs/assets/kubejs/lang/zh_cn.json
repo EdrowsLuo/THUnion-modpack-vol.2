@@ -28,5 +28,13 @@
     "block.kubejs.twisted_fusion_casing": "扭曲聚变机械方块",
     "block.kubejs.elemental_casing":"元素约束机械方块",
     "block.kubejs.proton_casing":"质子约束机械方块",
-    "block.kubejs.neutron_casing":"中子约束机械方块"
+    "block.kubejs.neutron_casing":"中子约束机械方块",
+
+    "item.kubejs.singular_storage_2": "§b2³奇点空间元件§r",
+    "item.kubejs.singular_storage_16": "§616³奇点空间元件§r",
+    "item.kubejs.singular_storage_128": "§d128³奇点空间元件§r",
+
+    "item.kubejs.singular_storage_2.desc":"§82指的可不是空间的边长§r",
+    "item.kubejs.singular_storage_16.desc":"§8还不够§r",
+    "item.kubejs.singular_storage_128.desc":"§8容纳过去，现在，未来的一切可能§r"
 }
