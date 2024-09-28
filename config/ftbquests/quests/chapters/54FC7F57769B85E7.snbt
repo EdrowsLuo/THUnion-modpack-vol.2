@@ -493,6 +493,18 @@
 			x: -5.5d
 			y: -1.0d
 		}
+		{
+			dependencies: ["681880F3C1D4A405"]
+			description: ["我们添加了六级祭坛，使用中子态素锭作为激活方块，具体查看附带的机械动力蓝图。"]
+			id: "4037A903146FB3AF"
+			tasks: [{
+				id: "377CF7CC871108C4"
+				title: "六级祭坛"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -5.0d
+		}
 	]
 	title: "大魔法使"
 }
