@@ -155,6 +155,14 @@
     "block.gtceu.zpm_digital_well_of_suffer":"§c数字化猩红深渊§r",
     "block.gtceu.uv_digital_well_of_suffer":"§3数字化猩红深渊 II§r",
 
+    "block.gtceu.mv_advanced_inscriber":"§b进阶高级压印器§r",
+    "block.gtceu.hv_advanced_inscriber":"§6进阶高级压印器 II§r",
+    "block.gtceu.ev_advanced_inscriber":"§5进阶高级压印器 III§r",
+    "block.gtceu.iv_advanced_inscriberr":"§9精英高级压印器§r",
+    "block.gtceu.luv_advanced_inscriber":"§d精英高级压印器 II§r",
+    "block.gtceu.zpm_advanced_inscriber":"§c精英高级压印器 III§r",
+    "block.gtceu.uv_advanced_inscriber":"§3精英高级压印器 IV§r",
+
     "gtceu.digital_well_of_suffer":"数字化苦难之井",
     "gtceu.mark_of_falling_tower":"坠星标位",
     "gtceu.beehive":"蜂箱",
@@ -168,5 +176,6 @@
     "gtceu.element_creator":"元素创造机",
     "gtceu.element_duplicator":"元素复制机",
     "gtceu.mass_generator":"质量发生器",
-    "gtceu.eig_input":"极限工业温室"
+    "gtceu.eig_input":"极限工业温室",
+    "gtceu.precision_lathe_all":"精密加工车床：§c集§b成§e模§a式§9！§r"
 }
