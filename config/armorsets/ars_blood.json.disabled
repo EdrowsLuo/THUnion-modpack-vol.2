@@ -1,0 +1,59 @@
+{
+    "armorSetName": "ars_blood",
+    "performanceMode": true,
+    "head": {
+      "itemKey": "tomeofblood:living_maga_hood",
+      "mustBeEmpty": false
+    },
+    "chest": {
+      "itemKey": "tomeofblood:living_maga_robes",
+      "mustBeEmpty": false
+    },
+    "legs": {
+      "itemKey": "tomeofblood:living_maga_leggings",
+      "mustBeEmpty": false
+    },
+    "boots": {
+      "itemKey": "tomeofblood:living_maga_boots",
+      "mustBeEmpty": false
+    },
+    "fullSetBonuses": [
+      {
+        "type": "attribute",
+        "name": "ars_nouveau:ars_nouveau.perk.mana_regen",
+        "value": 0.1,
+        "modifierUUID": "64a0f2f9-dfa2-4ace-9fce-de724fe4047a",
+        "description": "x1.1 mana regen",
+        "attributeOperation": 2,
+        "interactionType": "self",
+        "interactionDuration": 300,
+        "hideBonusDescription": false,
+        "onlyImmuneToNewEffects": false
+      },
+      {
+        "type": "attribute",
+        "name": "ars_nouveau:ars_nouveau.perk.spell_damage",
+        "value": 8,
+        "modifierUUID": "42ed3fee-ec7b-4cc7-b173-44ee35a06425",
+        "description": "+8 ars spell damage",
+        "attributeOperation": 0,
+        "interactionType": "self",
+        "interactionDuration": 300,
+        "hideBonusDescription": false,
+        "onlyImmuneToNewEffects": false
+      },
+      {
+        "type": "attribute",
+        "name": "ars_nouveau:ars_nouveau.perk.max_mana",
+        "value": 1.0,
+        "modifierUUID": "88786869-b4bc-4c45-b253-d416ddb83fe2",
+        "description": "x2.0 max mana",
+        "attributeOperation": 2,
+        "interactionType": "self",
+        "interactionDuration": 300,
+        "hideBonusDescription": false,
+        "onlyImmuneToNewEffects": false
+      }
+    ],
+    "hideGeneratedTooltip": false
+}
