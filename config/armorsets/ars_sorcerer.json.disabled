@@ -1,0 +1,95 @@
+{
+    "armorSetName": "ars_nouveau",
+    "performanceMode": true,
+    "head": {
+      "itemKey": "ars_nouveau:sorcerer_hood",
+      "mixAndMatch": [
+        "ars_nouveau:arcanist_hood",
+        "ars_nouveau:battlemaga_hood",
+        "ars_elemental:earth_hood",
+        "ars_elemental:air_hood",
+        "ars_elemental:aqua_hood",
+        "ars_elemental:fire_hood",
+        "tomeofblood:living_maga_hood"
+      ],
+      "mustBeEmpty": false
+    },
+    "chest": {
+      "itemKey": "ars_nouveau:sorcerer_robes",
+      "mixAndMatch": [
+        "ars_nouveau:arcanist_robes",
+        "ars_nouveau:battlemaga_robes",
+        "ars_elemental:earth_robes",
+        "ars_elemental:air_robes",
+        "ars_elemental:aqua_robes",
+        "ars_elemental:fire_robes",
+        "tomeofblood:living_maga_robes"
+      ],
+      "mustBeEmpty": false
+    },
+    "legs": {
+      "itemKey": "ars_nouveau:sorcerer_leggings",
+      "mixAndMatch": [
+        "ars_nouveau:arcanist_leggings",
+        "ars_nouveau:battlemaga_leggings",
+        "ars_elemental:earth_leggings",
+        "ars_elemental:air_leggings",
+        "ars_elemental:aqua_leggings",
+        "ars_elemental:fire_leggings",
+        "tomeofblood:living_maga_leggings"
+      ],
+      "mustBeEmpty": false
+    },
+    "boots": {
+      "itemKey": "ars_nouveau:sorcerer_boots",
+      "mixAndMatch": [
+        "ars_nouveau:arcanist_boots",
+        "ars_nouveau:battlemaga_boots",
+        "ars_elemental:earth_boots",
+        "ars_elemental:air_boots",
+        "ars_elemental:aqua_boots",
+        "ars_elemental:fire_boots",
+        "tomeofblood:living_maga_boots"
+      ],
+      "mustBeEmpty": false
+    },
+    "fullSetBonuses": [
+      {
+        "type": "attribute",
+        "name": "ars_nouveau:ars_nouveau.perk.mana_regen",
+        "value": 0.3,
+        "modifierUUID": "ced13ed0-ebe8-4731-8319-884241159e33",
+        "description": "x1.3 mana regen",
+        "attributeOperation": 2,
+        "interactionType": "self",
+        "interactionDuration": 300,
+        "hideBonusDescription": false,
+        "onlyImmuneToNewEffects": false
+      },
+      {
+        "type": "attribute",
+        "name": "ars_nouveau:ars_nouveau.perk.max_mana",
+        "value": 0.3,
+        "modifierUUID": "a257f646-d322-4562-82bb-69bcea5dd9e1",
+        "description": "x1.3 max mana",
+        "attributeOperation": 2,
+        "interactionType": "self",
+        "interactionDuration": 300,
+        "hideBonusDescription": false,
+        "onlyImmuneToNewEffects": false
+      },
+      {
+        "type": "attribute",
+        "name": "ars_nouveau:ars_nouveau.perk.spell_damage",
+        "value": 6,
+        "modifierUUID": "20ddb060-465e-4ce2-a9dd-72518c696d36",
+        "description": "+6 ars spell damage",
+        "attributeOperation": 0,
+        "interactionType": "self",
+        "interactionDuration": 300,
+        "hideBonusDescription": false,
+        "onlyImmuneToNewEffects": false
+      }
+    ],
+    "hideGeneratedTooltip": false
+}
