@@ -27,6 +27,7 @@
 			dependencies: ["5BDB529A3F61BEE4"]
 			hide_dependent_lines: true
 			id: "132E2F8A7CC82CBB"
+			size: 2.0d
 			tasks: [{
 				id: "1E2D84BBD8CC811F"
 				item: "kubejs:golden_sweet_berries"
@@ -119,7 +120,7 @@
 			dependencies: ["132E2F8A7CC82CBB"]
 			id: "4AF8C0CD40878659"
 			shape: "diamond"
-			size: 3.0d
+			size: 2.0d
 			tasks: [{
 				id: "6E900549D579D81D"
 				item: "avaritia:infinity_ingot"
