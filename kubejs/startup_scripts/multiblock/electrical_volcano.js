@@ -17,8 +17,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
         .recipeTypes([GTRecipeTypes.get('electric_volcano'),GTRecipeTypes.ROCK_BREAKER_RECIPES])
         .workableCasingRenderer(
-            "alexscaves:block/flood_basalt_top",
-            "gtceu:block/machines/rock_breaker",
+            "alexscaves:block/volcanic_core",
+            "gtceu:block/machines/rock_crusher",
             false
         )
         .recipeModifiers([
