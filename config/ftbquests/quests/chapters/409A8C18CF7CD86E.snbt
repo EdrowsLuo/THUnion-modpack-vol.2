@@ -106,8 +106,8 @@
 				type: "checkmark"
 			}]
 			title: "工期紧张！部分内容如果存在问题及时和管理员沟通！"
-			x: 1.0d
-			y: -6.0d
+			x: -0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["72020FD69437BCB6"]
@@ -136,7 +136,7 @@
 				type: "checkmark"
 			}]
 			title: "死亡掉落，但是有墓碑"
-			x: 2.0d
+			x: 4.5d
 			y: -4.0d
 		}
 		{
@@ -149,7 +149,7 @@
 				type: "checkmark"
 			}]
 			title: "后悔药"
-			x: 3.0d
+			x: 5.5d
 			y: -4.0d
 		}
 		{
@@ -183,8 +183,8 @@
 				type: "checkmark"
 			}]
 			title: "德格米无法处理强大的Boss"
-			x: 4.5d
-			y: 2.0d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["72020FD69437BCB6"]
@@ -209,8 +209,8 @@
 				type: "checkmark"
 			}]
 			title: "生物奖杯"
-			x: 0.0d
-			y: -4.0d
+			x: 5.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -226,6 +226,15 @@
 				"4DB10D4B486C3DED"
 				"06F794340371462E"
 				"4B0290AFFEB3F631"
+				"3F8CD27A7841A952"
+				"2BB4DC464F7F4443"
+				"47244DF15D6C8396"
+				"2FD216978B08019F"
+				"21A9E67AC30DB54C"
+				"167F6140957F161B"
+				"3DDF19A7C696EAD5"
+				"0CE4CE35982441FD"
+				"390B32FB37CB9B88"
 			]
 			hide_dependency_lines: true
 			id: "26D97EC06ACFEB47"
@@ -250,7 +259,7 @@
 				type: "dimension"
 			}]
 			title: "给耐心看完了所有描述的你的奖励！"
-			x: 6.5d
+			x: 8.0d
 			y: -0.5d
 		}
 		{
@@ -271,8 +280,8 @@
 				type: "checkmark"
 			}]
 			title: "禁止玩家友伤"
-			x: 4.5d
-			y: -4.0d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["72020FD69437BCB6"]
@@ -283,7 +292,7 @@
 				title: "可视化按键绑定"
 				type: "checkmark"
 			}]
-			x: 5.5d
+			x: 0.0d
 			y: -4.0d
 		}
 		{
@@ -319,10 +328,11 @@
 				type: "checkmark"
 			}]
 			title: "成为赛马娘"
-			x: -1.0d
-			y: -4.0d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
+			dependencies: ["72020FD69437BCB6"]
 			description: [
 				"你应该使用各种传送相关的道具来传送，而不是打指令（/home、/back）"
 				""
@@ -336,8 +346,79 @@
 				type: "checkmark"
 			}]
 			title: "使用道具来传送"
-			x: 5.5d
-			y: -3.0d
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["72020FD69437BCB6"]
+			description: ["当你有至少6点血时你不会被秒杀。"]
+			id: "21A9E67AC30DB54C"
+			tasks: [{
+				id: "1CF46E637FAD3B60"
+				title: "防止一击必杀"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["72020FD69437BCB6"]
+			description: [
+				"在JEI里可以用拼音进行搜索。"
+				""
+				"一些特殊搜索符号："
+				"&6&l@modid&r&r 根据模组的id来进行搜索，比如@ae2就是搜索ae2（和名称里带有ae2的其他附属mod）"
+				""
+				"&6&l#描述&r&r"
+				"根据物品的描述来搜索，很可惜不能用拼音搜索。搜索附魔书的时候你可能需要这个。"
+				""
+				"&6&l$tag&r&r"
+				"根据tag来搜索，比如$tools/pickaxe就是搜索所有的稿子"
+			]
+			id: "167F6140957F161B"
+			tasks: [{
+				id: "776D82970888E170"
+				title: "善用JEI"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["72020FD69437BCB6"]
+			description: ["你可以在 https://mcmod.cn/ 里找到各种mod的百科页面。任务书里不会有特别细致的指引，遇到不懂的就可以去百科查查，甚至还可以发现新天地。"]
+			id: "3F8CD27A7841A952"
+			tasks: [{
+				id: "1AFB9AD4B8A5CE57"
+				type: "checkmark"
+			}]
+			title: "善用mcmod wiki"
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["72020FD69437BCB6"]
+			description: ["即使你吃饱了你也可以继续吃，任然可以增加饱腹度。"]
+			id: "0CE4CE35982441FD"
+			tasks: [{
+				id: "28AF7EF4CE224F2A"
+				type: "checkmark"
+			}]
+			title: "你可以一直吃"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["72020FD69437BCB6"]
+			description: ["默认按键为左Alt。一次最多挖掘32个方块，有5s冷却时间。"]
+			id: "390B32FB37CB9B88"
+			tasks: [{
+				id: "3D4CF4E9E1040113"
+				type: "checkmark"
+			}]
+			title: "需要冷却的连锁挖矿"
+			x: 2.0d
+			y: -5.0d
 		}
 	]
 	title: "先看这里"
