@@ -220,7 +220,7 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
     event.custom({
         type: 'ars_nouveau:enchantment',
-        enchantment: 'apotheosis:capture',
+        enchantment: 'apotheosis:capturing',
         level: '6',
         pedestalItems: [
             {
@@ -246,7 +246,7 @@ ServerEvents.recipes(event => {
     
     event.custom({
         type: 'ars_nouveau:enchantment',
-        enchantment: 'apotheosis:capture',
+        enchantment: 'apotheosis:capturing',
         level: '7',
         pedestalItems: [
             {
@@ -272,7 +272,7 @@ ServerEvents.recipes(event => {
     
     event.custom({
         type: 'ars_nouveau:enchantment',
-        enchantment: 'apotheosis:capture',
+        enchantment: 'apotheosis:capturing',
         level: '8',
         pedestalItems: [
             {
