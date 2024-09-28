@@ -1,6 +1,8 @@
 /* 
  * l2complements
  * 
+ * 装备
+ * 
  */
 
 // durable_armor 盔甲耐久
