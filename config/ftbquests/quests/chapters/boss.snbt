@@ -197,11 +197,9 @@
 			icon: "jerotesvillage:sediment_coffin"
 			id: "3528818C2039D51F"
 			tasks: [{
-				disable_toast: true
-				entity: "jerotesvillage:sediment_lord"
-				id: "5C3FF79FDF73DB20"
-				type: "kill"
-				value: 1L
+				id: "30B7DE2587004C23"
+				item: "jerotesvillage:sediment_lord_robe_pieces"
+				type: "item"
 			}]
 			title: "沉降领主"
 			x: -4.5d
@@ -219,11 +217,9 @@
 			}
 			id: "77685AE7A12E7B47"
 			tasks: [{
-				disable_toast: true
-				entity: "jerotesvillage:purple_sand_hag"
-				id: "7C0CD03B5F3CD325"
-				type: "kill"
-				value: 1L
+				id: "1CDA44FC8327B2CD"
+				item: "jerotesvillage:purple_sand_hag_hair"
+				type: "item"
 			}]
 			title: "紫沙鬼婆"
 			x: -6.0d
@@ -231,15 +227,13 @@
 		}
 		{
 			dependencies: ["4436E5D4E4A7A6EF"]
-			description: ["向无尽海洋的水中投入恶鳞饵叉"]
+			description: ["向无尽海洋的深水中投入恶鳞饵叉"]
 			icon: "jerotesvillage:gemstone_malignasaur_scale"
 			id: "480337870DCA6D60"
 			tasks: [{
-				disable_toast: true
-				entity: "jerotesvillage:gemstone_malignasaur_part"
-				id: "579673D9D742FE74"
-				type: "kill"
-				value: 1L
+				id: "18A9947054982A33"
+				item: "jerotesvillage:gemstone_malignasaur_scale"
+				type: "item"
 			}]
 			title: "宝石恶鳞"
 			x: -4.0d
@@ -251,11 +245,9 @@
 			icon: "jerotesvillage:bright_land_drum"
 			id: "2714E38E8ABDCEE9"
 			tasks: [{
-				disable_toast: true
-				entity: "jerotesvillage:bright_land_beast_part"
-				id: "0962970CFD43AF1C"
-				type: "kill"
-				value: 1L
+				id: "196788E3604FDC8A"
+				item: "jerotesvillage:bright_land_beast_fluff"
+				type: "item"
 			}]
 			title: "明路巨兽"
 			x: -6.0d
@@ -267,11 +259,9 @@
 			icon: "jerotesvillage:corrosiver_bugle"
 			id: "5C1915E4643C70E9"
 			tasks: [{
-				disable_toast: true
-				entity: "jerotesvillage:corrosiver"
-				id: "285629FDEC94358A"
-				type: "kill"
-				value: 1L
+				id: "397217758EE7514B"
+				item: "jerotesvillage:corrosiver_broken_horn"
+				type: "item"
 			}]
 			title: "蚀龙兽"
 			x: -4.0d

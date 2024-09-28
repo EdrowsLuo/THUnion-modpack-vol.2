@@ -76,10 +76,6 @@ ServerEvents.recipes(event => {
   event.replaceInput({ "mod": "immersive_aircraft" }, "minecraft:iron_ingot", "#forge:ingots/steel")
 })
 
-BlockEvents.rightClicked("the_bumblezone:crystalline_flower", event => {
-  event.cancel()
-})
-
 LootJS.modifiers((event) => {
   event.addLootTableModifier(/.*/).removeLoot("tombstone:soul_receptacle");
 });

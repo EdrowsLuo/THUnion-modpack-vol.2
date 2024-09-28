@@ -589,6 +589,27 @@
 			x: -5.5d
 			y: 2.5d
 		}
+		{
+			description: ["很遗憾，无主世界路线尚未制作完成，跟着任务书走吧（）"]
+			icon: "minecraft:grass_block"
+			id: "543AA1751228F966"
+			secret: true
+			tasks: [
+				{
+					id: "470084B304A42FF1"
+					item: "ars_nouveau:archwood_planks"
+					type: "item"
+				}
+				{
+					id: "715EEC6C25CAEA24"
+					title: "快去主世界"
+					type: "checkmark"
+				}
+			]
+			title: "不想前往主世界？"
+			x: -7.5d
+			y: -4.0d
+		}
 	]
 	title: "Re：暮色森林的外乡人"
 }
