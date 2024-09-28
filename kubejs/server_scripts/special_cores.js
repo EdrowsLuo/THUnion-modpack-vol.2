@@ -37,9 +37,12 @@ function MakeGoldenSweetBerries(event) {
         [
             "12345",
             "67890",
-            "ABCDE"
+            "ABCDE",
+            "FGHIJ",
+            "KL***"
         ],
-        autoPatternId("1234567890ABCDE",[
+        autoPatternId("*1234567890ABCDEFGHIJKL",[
+            "minecraft:sweet_berries",
             "draconicevolution:dragon_heart",
             "mekanism:pellet_antimatter",
             "alexsmobs:void_worm_eye",
@@ -54,7 +57,14 @@ function MakeGoldenSweetBerries(event) {
             "cataclysm:tidal_claws",
             "cataclysm:ignitium_block",
             "tomeofblood:archmage_tome_of_blood",
-            "apotheosis:ender_library"
+            "apotheosis:library",
+            "soulsweapons:chaos_orb",
+            "umapyoi:crystal_rainbow",
+            "allthecompressed:gold_block_4x",
+            "celestial_core:soaring_wings",
+            "celestial_artifacts:life_etching",
+            "l2complements:eternal_anvil",
+            "l2complements:space_shard"
         ])
     )
 }
