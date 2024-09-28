@@ -273,15 +273,15 @@
 		{
 			dependencies: ["4A754DCA820F3AC2"]
 			description: [
-				"只需要2个存储组件就可以升级为高一级的组件（原本需要3个）"
-				"组装的存储元件具有更大的容量，并且物品种类占用更少的字节"
+				""
+				"一步到位的组件配方"
 			]
 			id: "36743F06AB69026C"
-			subtitle: "高效的组件制造和更加优质的元件"
+			subtitle: "高效的组件制造"
 			tasks: [{
-				id: "5F50C2D7296E7854"
-				title: "优质存储元件制造"
-				type: "checkmark"
+				id: "6FC8854E08D2CD0C"
+				item: "gtceu:extended_factory"
+				type: "item"
 			}]
 			title: "先进封装工厂"
 			x: -10.0d
@@ -300,11 +300,16 @@
 		}
 		{
 			dependencies: ["4A754DCA820F3AC2"]
+			description: [
+				"你可能需要使用魔法的力量来获取到无暇的母岩。"
+				""
+				"（提示：新生魔艺可以让方块变成掉落方块）"
+			]
 			id: "77857AF78703CC0D"
 			tasks: [{
-				id: "6C750049933E6756"
-				title: "集成化石英生长仓"
-				type: "checkmark"
+				id: "647F692102C271C5"
+				item: "gtceu:crystal_chamber"
+				type: "item"
 			}]
 			x: -9.0d
 			y: -6.5d
@@ -312,6 +317,11 @@
 		{
 			dependencies: ["09607E43BA645F11"]
 			id: "59860ECA2EFAE873"
+			tasks: [{
+				id: "7C0A83E5349366FA"
+				item: "gtceu:meteor_capturer"
+				type: "item"
+			}]
 			title: "坠星"
 			x: -9.0d
 			y: -3.5d
@@ -325,6 +335,7 @@
 				title: "采矿维度的魔灵之壶"
 				type: "checkmark"
 			}]
+			title: "采矿维度的魔灵【WIP】"
 			x: -10.0d
 			y: -3.5d
 		}
@@ -889,6 +900,73 @@
 			}]
 			x: -9.0d
 			y: -11.5d
+		}
+		{
+			dependencies: ["4A754DCA820F3AC2"]
+			id: "1B78B54F8534B7E4"
+			tasks: [{
+				id: "75A6592C0F47DB45"
+				item: "modularrouters:modular_router"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4A754DCA820F3AC2"]
+			id: "29FD0D1BBB541D59"
+			tasks: [{
+				id: "3ECC0F0D515E8F97"
+				item: "pipez:universal_pipe"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4A754DCA820F3AC2"]
+			id: "6E7750C9BCC5E81C"
+			tasks: [{
+				id: "0CE047AE2CF84D4F"
+				item: "functionalstorage:oak_1"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4A754DCA820F3AC2"]
+			id: "1B2AA182F72E76FA"
+			tasks: [{
+				id: "76385A93665F74F3"
+				item: "createutilities:void_chest"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4A754DCA820F3AC2"]
+			id: "61B3E65C0D238271"
+			tasks: [{
+				id: "55B72670ED8160C8"
+				item: "createutilities:void_tank"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["09607E43BA645F11"]
+			description: ["来自机械动力的矿脉。"]
+			id: "07D716C133D9AC0B"
+			tasks: [{
+				id: "2E246AEBE9698711"
+				item: "createoreexcavation:drilling_machine"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -4.5d
 		}
 	]
 	title: "天顶科技公司员工"

@@ -436,7 +436,7 @@
 			}]
 			title: "奇妙法术"
 			x: -4.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["67930ABD4082CF2B"]
@@ -576,6 +576,18 @@
 			title: "格雷的武器和工具"
 			x: -6.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["67930ABD4082CF2B"]
+			description: ["可以挂在腰带上，方便的移动光源。"]
+			id: "5D28910C1BBB5168"
+			tasks: [{
+				id: "0EACC81216E5939D"
+				item: "minecraft:lantern"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.5d
 		}
 	]
 	title: "Re：暮色森林的外乡人"

@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "47CFE44BC64A1AFA"
 	group: ""
+	icon: "minecraft:soul_torch"
 	id: "47CFE44BC64A1AFA"
 	order_index: 2
 	quest_links: [ ]
@@ -113,6 +114,143 @@
 			title: "自定义画"
 			x: 3.5d
 			y: -2.5d
+		}
+		{
+			id: "518F97289D534ECA"
+			tasks: [
+				{
+					id: "453EA3004BC8E656"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "comforts:sleeping_bags"
+						}
+					}
+					title: "睡袋"
+					type: "item"
+				}
+				{
+					id: "58940516C0AF06E8"
+					item: "comforts:rope_and_nail"
+					type: "item"
+				}
+				{
+					id: "4F2E8753D23D8584"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "comforts:hammocks"
+						}
+					}
+					title: "可以跳过白天"
+					type: "item"
+				}
+			]
+			title: "随时随地睡大觉"
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"书的书，可以塞进去所有的书。"
+				""
+				"&4&l警告：不要把你的魔法书也塞进去了！&r&r"
+			]
+			id: "675AE780F9ABFC96"
+			tasks: [{
+				id: "4C2517EF3C8E86D1"
+				item: "akashictome:tome"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			id: "7C79E15A70AA694D"
+			tasks: [{
+				id: "71E010E701F60691"
+				item: {
+					Count: 1
+					id: "constructionwand:diamond_wand"
+					tag: {
+						Damage: 0
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			description: ["并不安全，别一不小心就把贵重物品丢了。"]
+			id: "2E0B580CF72DEA02"
+			tasks: [
+				{
+					id: "4305F4C7ED4FFDCD"
+					item: "trashcans:energy_trash_can"
+					type: "item"
+				}
+				{
+					id: "2E502F9357E21C3C"
+					item: "trashcans:item_trash_can"
+					type: "item"
+				}
+				{
+					id: "1D5B13D512B3BC4D"
+					item: "trashcans:liquid_trash_can"
+					type: "item"
+				}
+				{
+					id: "727D2AC1959298BF"
+					item: "trashcans:ultimate_trash_can"
+					type: "item"
+				}
+			]
+			title: "垃圾桶"
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			description: ["可以监测电网流量，设置为销毁时会销毁掉所有输入的能量！"]
+			id: "0CF88EE220FC58CA"
+			tasks: [{
+				id: "5569E016437569F8"
+				item: "energymeter:meter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			description: ["末影龙会直接掉落鞘翅了"]
+			id: "4A9A6035D521619C"
+			tasks: [{
+				id: "2E4B6755AF0082DC"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "末影龙的翅膀"
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			id: "5AEFCFA30EBCD4DA"
+			tasks: [{
+				id: "39068BCB65EF2E62"
+				item: "buildinggadgets2:gadget_building"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
 		}
 	]
 	title: "实用提示"
