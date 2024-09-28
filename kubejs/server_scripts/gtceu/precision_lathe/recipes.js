@@ -1,20 +1,45 @@
 ServerEvents.recipes(event=>{
     event.recipes.gtceu.imprinter('logic')
         .itemInputs('#forge:ingots/gold','#forge:silicon','#forge:dusts/redstone')
-        .EUt(480)
+        .EUt(120)
         .duration(100)
         .itemOutputs('ae2:logic_processor');
     event.recipes.gtceu.imprinter('eng')
         .itemInputs('#forge:gems/diamond','#forge:silicon','#forge:dusts/redstone')
-        .EUt(480)
+        .EUt(120)
         .duration(100)
         .itemOutputs('ae2:engineering_processor');
     event.recipes.gtceu.imprinter('calc')
         .itemInputs('#forge:gems/certus_quartz','#forge:silicon','#forge:dusts/redstone')
-        .EUt(480)
+        .EUt(120)
         .duration(100)
         .itemOutputs('ae2:logic_processor');
     event.recipes.gtceu.imprinter('flux')
+        .itemInputs('appflux:redstone_crystal','#forge:silicon','#forge:dusts/redstone')
+        .EUt(480)
+        .duration(300)
+        .itemOutputs('appflux:energy_processor');
+
+    event.recipes.gtceu.precision_lathe_all('logic')
+        .circuit(26)
+        .itemInputs('#forge:ingots/gold','#forge:silicon','#forge:dusts/redstone')
+        .EUt(120)
+        .duration(100)
+        .itemOutputs('ae2:logic_processor');
+    event.recipes.gtceu.precision_lathe_all('eng')
+        .circuit(26)
+        .itemInputs('#forge:gems/diamond','#forge:silicon','#forge:dusts/redstone')
+        .EUt(120)
+        .duration(100)
+        .itemOutputs('ae2:engineering_processor');
+    event.recipes.gtceu.precision_lathe_all('calc')
+    .circuit(26)
+        .itemInputs('#forge:gems/certus_quartz','#forge:silicon','#forge:dusts/redstone')
+        .EUt(120)
+        .duration(100)
+        .itemOutputs('ae2:logic_processor');
+    event.recipes.gtceu.precision_lathe_all('flux')
+    .circuit(26)
         .itemInputs('appflux:redstone_crystal','#forge:silicon','#forge:dusts/redstone')
         .EUt(480)
         .duration(300)
@@ -26,7 +51,9 @@ ServerEvents.recipes(event=>{
     addType(event,'gtceu:wiremill',23);
     addType(event,'gtceu:forge_hammer',24);
     addType(event,'gtceu:forming_press',25);
-    addType(event,'gtceu:imprinter',26);
+
+
+    
     
     
 })
