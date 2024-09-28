@@ -4,12 +4,14 @@
 	default_quest_shape: ""
 	filename: "54FC7F57769B85E7"
 	group: "2BEB05CF4131C8C7"
+	hide_quest_until_deps_visible: true
 	icon: "ars_nouveau:creative_spell_book"
 	id: "54FC7F57769B85E7"
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["109014752147196A"]
 			hide_dependent_lines: true
 			id: "063CF7110524527C"
 			shape: "octagon"

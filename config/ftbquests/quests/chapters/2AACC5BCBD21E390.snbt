@@ -1,14 +1,16 @@
 {
-	default_hide_dependency_lines: true
+	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "2AACC5BCBD21E390"
 	group: "2BEB05CF4131C8C7"
+	hide_quest_until_deps_visible: true
 	icon: "jerotesvillage:piglin_second_round_world_portal_block"
 	id: "2AACC5BCBD21E390"
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["109014752147196A"]
 			icon: "minecraft:grass_block"
 			id: "3C0D402788402A59"
 			shape: "octagon"
@@ -111,7 +113,11 @@
 		}
 		{
 			dependencies: ["3C0D402788402A59"]
-			description: ["3x3的花朵方阵周围围一圈石砖，对花潜行使用骨粉开门。"]
+			description: [
+				"3x3的花朵方阵周围围一圈石砖，对花潜行使用骨粉开门。"
+				""
+				"这里的生物具有更多的血量，怪物变的更有攻击性。"
+			]
 			icon: {
 				Count: 1
 				id: "ae2:facade"
@@ -185,6 +191,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["3C0D402788402A59"]
 			description: ["如果有遗漏最好还是去查一下mcmod wiki"]
 			id: "3DB10A02EA08E3E0"
 			tasks: [{

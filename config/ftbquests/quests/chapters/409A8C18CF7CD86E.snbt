@@ -275,6 +275,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["72020FD69437BCB6"]
 			description: ["在按键绑定按钮的右侧有一个新按钮，点进去后可以可视化的看到键盘上每个键绑定了哪些功能。"]
 			id: "3DDF19A7C696EAD5"
 			tasks: [{
@@ -284,6 +285,59 @@
 			}]
 			x: 5.5d
 			y: -4.0d
+		}
+		{
+			dependencies: ["72020FD69437BCB6"]
+			description: [
+				"快速开启你的赛马娘之旅"
+				""
+				""
+			]
+			icon: "umapyoi:jewel"
+			id: "2FD216978B08019F"
+			rewards: [
+				{
+					count: 4
+					id: "4A96CE4F48BBB027"
+					item: "umapyoi:jewel"
+					type: "item"
+				}
+				{
+					id: "20ECE74095A744CA"
+					item: "umapyoi:silver_uma_pedestal"
+					type: "item"
+				}
+				{
+					id: "4C1FFB15D0A5DC1D"
+					item: "umapyoi:three_goddess"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "44A38F7F0EC19D47"
+				title: "成为赛马娘"
+				type: "checkmark"
+			}]
+			title: "成为赛马娘"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"你应该使用各种传送相关的道具来传送，而不是打指令（/home、/back）"
+				""
+				"可用的传送指令只有/tpa和/rtp了"
+				""
+				"&4使用/rtp时请注意安全，自负后果!&r&l"
+			]
+			id: "47244DF15D6C8396"
+			tasks: [{
+				id: "2CE08A9C1A01F740"
+				type: "checkmark"
+			}]
+			title: "使用道具来传送"
+			x: 5.5d
+			y: -3.0d
 		}
 	]
 	title: "先看这里"
