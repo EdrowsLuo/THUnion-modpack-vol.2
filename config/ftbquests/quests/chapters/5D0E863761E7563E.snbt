@@ -291,10 +291,11 @@
 			dependencies: ["4A754DCA820F3AC2"]
 			id: "1324790F8D1A9956"
 			tasks: [{
-				id: "61B3969618D148F6"
-				title: "快速压印"
-				type: "checkmark"
+				id: "36D7A1CFC39E5C32"
+				item: "gtceu:mv_advanced_inscriber"
+				type: "item"
 			}]
+			title: "高级压印"
 			x: -8.0d
 			y: -6.5d
 		}
@@ -601,6 +602,7 @@
 		}
 		{
 			dependencies: ["6814DD387FBB44C6"]
+			description: ["甚至可以直接给格雷机器供电。"]
 			id: "5E6197A48259A410"
 			tasks: [
 				{

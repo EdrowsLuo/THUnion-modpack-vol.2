@@ -507,6 +507,18 @@
 			x: 4.5d
 			y: -5.0d
 		}
+		{
+			dependencies: ["681880F3C1D4A405"]
+			id: "1AB91E38250036E2"
+			tasks: [{
+				id: "3446E9C83230A4F4"
+				item: "gtceu:lv_digital_well_of_suffer"
+				type: "item"
+			}]
+			title: "数字化血液生产"
+			x: 3.5d
+			y: -5.0d
+		}
 	]
 	title: "大魔法使"
 }
