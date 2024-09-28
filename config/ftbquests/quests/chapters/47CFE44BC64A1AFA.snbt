@@ -90,6 +90,30 @@
 			x: 1.5d
 			y: -2.5d
 		}
+		{
+			description: ["便宜且优秀的飞行移动手段。"]
+			id: "189FF0A4E2BD567A"
+			tasks: [{
+				id: "28F881B7AF1DDA1E"
+				item: "immersive_aircraft:hull"
+				type: "item"
+			}]
+			title: "沉浸式飞机"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			description: ["你可以自己上传图片"]
+			id: "7B0B25C6EEC3DF84"
+			tasks: [{
+				id: "2BE370F5ECCD4E4D"
+				item: "immersive_paintings:painting"
+				type: "item"
+			}]
+			title: "自定义画"
+			x: 3.5d
+			y: -2.5d
+		}
 	]
 	title: "实用提示"
 }

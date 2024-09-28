@@ -1,11 +1,8 @@
-/**
- * 主要是删除meka套和无尽套
- * 允许龙研套，
- */
 
 
-ServerEvents.recipes(event => {
-    banAll(event, [
+JEIEvents.hideItems(event => {
+    let banned = [
+        "l2archery:void_arrow",
         "mekanism:mekasuit_helmet",
         "mekanism:mekasuit_bodyarmor",
         "mekanism:mekasuit_pants",
@@ -15,14 +12,9 @@ ServerEvents.recipes(event => {
         "mekanism:jetpack_armored",
         "mekanism:free_runners",
         "mekanism:free_runners_armored",
-        "avaritia:infinity_helmet",
-        "avaritia:infinity_chestplate",
-        "avaritia:infinity_pants",
-        "avaritia:infinity_boots",
         "avaritia:infinity_bow",
         "avaritia:infinity_pickaxe",
         "avaritia:infinity_totem",
-        "avaritia:infinity_sword",
         "gtceu:quarktech_helmet",
         "gtceu:quarktech_chestplate",
         "gtceu:advanced_quarktech_chestplate",
@@ -40,6 +32,31 @@ ServerEvents.recipes(event => {
         "allthemodium:unobtainium_chestplate",
         "allthemodium:unobtainium_leggings",
         "allthemodium:unobtainium_boots",
-    ])
-    
+        "tomeofblood:novice_tome_of_blood",
+        "tomeofblood:apprentice_tome_of_blood",
+        "modularrouters:player_module",
+        "apotheosis:treasure_shelf",
+        "l2complements:totem_of_dream",
+        "l2complements:eternal_totem_of_dream",
+        "l2complements:totem_of_the_sea",
+        "ars_nouveau:thread_undying",
+        "mob_grinding_utils:mob_swab",
+        "mob_grinding_utils:mob_swab_used",
+        "mob_grinding_utils:gm_chicken_feed",
+        "mob_grinding_utils:gm_chicken_feed_cursed",
+        "allthemodium:vibranium_sword",
+        "allthemodium:vibranium_axe",
+        "allthemodium:vibranium_hoe",
+        "allthemodium:vibranium_pickaxe",
+        "allthemodium:vibranium_shovel",
+        "allthemodium:unobtainium_sword",
+        "allthemodium:unobtainium_axe",
+        "allthemodium:unobtainium_hoe",
+        "allthemodium:unobtainium_pickaxe",
+        "allthemodium:unobtainium_shovel"
+    ]
+
+    banned.forEach(item=>{
+        event.hide(item);
+    })
 })

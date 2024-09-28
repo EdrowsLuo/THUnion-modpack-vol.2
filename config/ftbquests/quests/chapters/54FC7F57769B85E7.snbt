@@ -4,12 +4,14 @@
 	default_quest_shape: ""
 	filename: "54FC7F57769B85E7"
 	group: "2BEB05CF4131C8C7"
+	hide_quest_until_deps_visible: true
 	icon: "ars_nouveau:creative_spell_book"
 	id: "54FC7F57769B85E7"
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["109014752147196A"]
 			hide_dependent_lines: true
 			id: "063CF7110524527C"
 			shape: "octagon"
@@ -305,6 +307,7 @@
 		}
 		{
 			dependencies: ["36C365C02502083D"]
+			description: ["可以产出几乎所有的生物的掉落物。"]
 			id: "3A036D92668B08BD"
 			tasks: [{
 				id: "73C236576BE9231D"
@@ -316,6 +319,7 @@
 		}
 		{
 			dependencies: ["36C365C02502083D"]
+			description: ["把生物抓起来，消耗和生物血量相当的经验。"]
 			id: "486EB79BA47DC60E"
 			tasks: [{
 				id: "2470E370CEEE3C7B"
@@ -442,6 +446,7 @@
 		}
 		{
 			dependencies: ["1C37586C58FBE287"]
+			description: ["或许可以制作一个机械动力的装置，让1mb的药水就可以提供30分钟飞行。"]
 			id: "0FAC2EA10428D071"
 			tasks: [{
 				id: "195F916284D03206"
@@ -489,6 +494,18 @@
 			}]
 			x: -5.5d
 			y: -1.0d
+		}
+		{
+			dependencies: ["681880F3C1D4A405"]
+			description: ["我们添加了六级祭坛，使用中子态素锭作为激活方块，具体查看附带的机械动力蓝图。"]
+			id: "4037A903146FB3AF"
+			tasks: [{
+				id: "377CF7CC871108C4"
+				title: "六级祭坛"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -5.0d
 		}
 	]
 	title: "大魔法使"

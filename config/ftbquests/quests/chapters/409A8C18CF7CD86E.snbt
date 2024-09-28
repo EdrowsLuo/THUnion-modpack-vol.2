@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "409A8C18CF7CD86E"
 	group: ""
@@ -27,17 +27,20 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["0AD2FDBCB981F155"]
 			description: [
 				"不是那么水槽的水槽包"
 				"我们在不同mod之间添加了很多联动，并且做了大量的调整来使得游戏中的内容恰当的融合到一起,还有一些独特的定制内容"
 				""
 				"希望大家能够享受探索的乐趣，我们没有严格的主线，玩的开心！"
+				""
+				"&l&6ps. 任务书里没有什么重要的奖励，不建议组队。&r&r"
 			]
 			id: "72020FD69437BCB6"
 			rewards: [
 				{
 					id: "48BE928A8EE13458"
-					item: "celestial_artifacts:red_heart_necklace"
+					item: "celestial_artifacts:backtrack_mirror"
 					type: "item"
 				}
 				{
@@ -56,6 +59,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["72020FD69437BCB6"]
 			description: ["在一部分维度以及和一部分boss进行战斗时会禁止飞行，除此以外的时间在进入主世界后就可以获得创造飞行的能力了！"]
 			icon: "l2complements:storm_core"
 			id: "34814F5B2326C49C"
@@ -68,6 +72,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["72020FD69437BCB6"]
 			description: ["不死图腾受到了诅咒，一次轮回里只能使用一次。（重生时重置）"]
 			icon: "minecraft:totem_of_undying"
 			id: "45F6033968B90C64"
@@ -80,6 +85,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["72020FD69437BCB6"]
 			description: ["在挑战boss的过程中死去太多次的话会重置boss血量"]
 			icon: "celestial_core:death_essence"
 			id: "6F8A706583AA3075"
@@ -104,6 +110,7 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["72020FD69437BCB6"]
 			description: ["你无法使用铁砧来升级附魔等级"]
 			icon: "minecraft:damaged_anvil"
 			id: "06F794340371462E"
@@ -116,6 +123,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["72020FD69437BCB6"]
 			description: [
 				"死亡后会生成墓碑，而且会给你一把附魔钥匙，长摁右键就可以传送到墓碑所在的位置。"
 				""
@@ -132,6 +140,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["72020FD69437BCB6"]
 			description: ["如果你后悔装备了星月遗物的灾厄之册，商店里有取下它的办法，不过需要你前往主世界。"]
 			icon: "celestial_artifacts:catastrophe_scroll"
 			id: "4B0290AFFEB3F631"
@@ -144,6 +153,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["72020FD69437BCB6"]
 			description: ["你需要精准采集II来挖下刷怪笼。"]
 			icon: "minecraft:spawner"
 			id: "2F43E6F6F8A51C24"
@@ -156,6 +166,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["72020FD69437BCB6"]
 			icon: {
 				Count: 1
 				id: "obtrophies:trophy"
@@ -176,6 +187,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["72020FD69437BCB6"]
 			description: [
 				"几乎所有生物都有一定的概率产生一个奖杯，收集你的boss手办！"
 				""
@@ -217,24 +229,43 @@
 			]
 			hide_dependency_lines: true
 			id: "26D97EC06ACFEB47"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5459AE69313603B5"
-				table_id: 6564464805351165390L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5459AE69313603B5"
+					table_id: 6564464805351165390L
+					type: "choice"
+				}
+				{
+					count: 16
+					id: "60F8F3F1673C6EF3"
+					item: "pneumaticcraft:sourdough_bread"
+					type: "item"
+				}
+			]
 			secret: true
 			tasks: [{
-				id: "4A0501718BBCEEAA"
-				type: "checkmark"
+				dimension: "twilightforest:twilight_forest"
+				id: "4FC8FC8C198C9BE5"
+				type: "dimension"
 			}]
 			title: "给耐心看完了所有描述的你的奖励！"
 			x: 6.5d
 			y: -0.5d
 		}
 		{
-			description: ["玩家之间的伤害被降低到了0。"]
+			dependencies: ["72020FD69437BCB6"]
+			description: [
+				"玩家之间的伤害被降低到了0。"
+				"（除非你在副手拿着骷髅头）"
+			]
+			icon: "minecraft:skeleton_skull"
 			id: "2BB4DC464F7F4443"
+			rewards: [{
+				id: "26F95936FA5AB0B1"
+				item: "minecraft:skeleton_skull"
+				type: "item"
+			}]
 			tasks: [{
 				id: "124DFA3798C8BC4B"
 				type: "checkmark"
@@ -242,6 +273,71 @@
 			title: "禁止玩家友伤"
 			x: 4.5d
 			y: -4.0d
+		}
+		{
+			dependencies: ["72020FD69437BCB6"]
+			description: ["在按键绑定按钮的右侧有一个新按钮，点进去后可以可视化的看到键盘上每个键绑定了哪些功能。"]
+			id: "3DDF19A7C696EAD5"
+			tasks: [{
+				id: "5056FFAB1D21CFF4"
+				title: "可视化按键绑定"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["72020FD69437BCB6"]
+			description: [
+				"快速开启你的赛马娘之旅"
+				""
+				""
+			]
+			icon: "umapyoi:jewel"
+			id: "2FD216978B08019F"
+			rewards: [
+				{
+					count: 4
+					id: "4A96CE4F48BBB027"
+					item: "umapyoi:jewel"
+					type: "item"
+				}
+				{
+					id: "20ECE74095A744CA"
+					item: "umapyoi:silver_uma_pedestal"
+					type: "item"
+				}
+				{
+					id: "4C1FFB15D0A5DC1D"
+					item: "umapyoi:three_goddess"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "44A38F7F0EC19D47"
+				title: "成为赛马娘"
+				type: "checkmark"
+			}]
+			title: "成为赛马娘"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"你应该使用各种传送相关的道具来传送，而不是打指令（/home、/back）"
+				""
+				"可用的传送指令只有/tpa和/rtp了"
+				""
+				"&4使用/rtp时请注意安全，自负后果!&r&l"
+			]
+			id: "47244DF15D6C8396"
+			tasks: [{
+				id: "2CE08A9C1A01F740"
+				type: "checkmark"
+			}]
+			title: "使用道具来传送"
+			x: 5.5d
+			y: -3.0d
 		}
 	]
 	title: "先看这里"

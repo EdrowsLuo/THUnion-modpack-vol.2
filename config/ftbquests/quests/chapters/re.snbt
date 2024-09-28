@@ -68,6 +68,50 @@
 					}
 					type: "item"
 				}
+				{
+					id: "5176114B5680B9CC"
+					item: {
+						Count: 1
+						id: "minecraft:leather_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1ECFAE40119625D5"
+					item: {
+						Count: 1
+						id: "minecraft:leather_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "49277AD3FE268138"
+					item: {
+						Count: 1
+						id: "minecraft:leather_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5BD1D696A28A9565"
+					item: {
+						Count: 1
+						id: "minecraft:leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
 			]
 			shape: "diamond"
 			size: 2.0d
@@ -393,6 +437,145 @@
 			title: "奇妙法术"
 			x: -4.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["67930ABD4082CF2B"]
+			description: ["莱特兰武器mod提供了一系列前期就可以使用的武器。"]
+			icon: {
+				Count: 1
+				id: "l2weaponry:iron_javelin"
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "l2complements:drill_digging"
+						lvl: 1s
+					}]
+				}
+			}
+			id: "7C5BA35FF6C1DDC5"
+			rewards: [
+				{
+					id: "2CE97BEF846471F9"
+					item: {
+						Count: 1
+						id: "l2weaponry:iron_nunchaku"
+						tag: {
+							Damage: 240
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "69A46DE4971215AD"
+					item: {
+						Count: 1
+						id: "l2weaponry:iron_spear"
+						tag: {
+							Damage: 240
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6CD2290D7FFE69E5"
+					item: {
+						Count: 1
+						id: "l2weaponry:iron_throwing_axe"
+						tag: {
+							Damage: 245
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "21AC430A3AC49B2B"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "莱特兰-武器"
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67930ABD4082CF2B"]
+			description: ["你或许有机会在进入主世界前就获得你的第一把枪。"]
+			id: "018297FE3AB9CE96"
+			rewards: [
+				{
+					id: "6EB01FD73D4A6F67"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:light_extended_mag_1"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4D25A00AC28FAA31"
+					item: {
+						Count: 1
+						id: "tacz:ammo_box"
+						tag: {
+							AmmoCount: 540
+							AmmoId: "tacz:9mm"
+							Level: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "033C5A0D64D74434"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 16
+						GunFireMode: "AUTO"
+						GunId: "tacz:cz75"
+						HasBulletInBarrel: 1b
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "永恒机械工坊"
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["67930ABD4082CF2B"]
+			description: ["格雷的武器和工具最有用的一集。"]
+			id: "4A1C3067E8F467B5"
+			tasks: [{
+				id: "3A931C04786AB4EB"
+				item: {
+					Count: 1
+					id: "gtceu:iron_butchery_knife"
+					tag: {
+						DisallowContainerItem: 0b
+						Enchantments: [{
+							id: "minecraft:looting"
+							lvl: 3s
+						}]
+						GT.Behaviours: { }
+						GT.Tool: {
+							AttackDamage: 3.5f
+							AttackSpeed: -1.3f
+							Damage: 0
+							MaxDamage: 255
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			title: "格雷的武器和工具"
+			x: -6.5d
+			y: 1.5d
 		}
 	]
 	title: "Re：暮色森林的外乡人"

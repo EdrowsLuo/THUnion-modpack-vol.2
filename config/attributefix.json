@@ -352,6 +352,17 @@
         "value": 1000
       }
     },
+    "l2weaponry:shield_defense": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
     "minecraft:zombie.spawn_reinforcements": {
       "enabled": true,
       "min": {
@@ -779,6 +790,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "l2weaponry:reflect_time": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
       }
     },
     "irons_spellbooks:lightning_spell_power": {
