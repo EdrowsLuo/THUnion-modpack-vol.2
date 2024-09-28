@@ -170,9 +170,9 @@ ServerEvents.recipes(event => {
         level: '7',
         pedestalItems: [
             {
-                tag: 'forge:exqusite_gems/diamond'
+                tag: 'forge:exquisite_gems/diamond'
             }, {
-                tag: 'forge:exqusite_gems/diamond'
+                tag: 'forge:exquisite_gems/diamond'
             }, {
                 item: 'the_bumblezone:royal_jelly_bottle'
             }, {
@@ -196,11 +196,11 @@ ServerEvents.recipes(event => {
         level: '8',
         pedestalItems: [
             {
-                tag: 'forge:exqusite_gems/diamond'
+                tag: 'forge:exquisite_gems/diamond'
             }, {
-                tag: 'forge:exqusite_gems/diamond'
+                tag: 'forge:exquisite_gems/diamond'
             }, {
-                tag: 'forge:exqusite_gems/diamond'
+                tag: 'forge:exquisite_gems/diamond'
             }, {
                 item: 'the_bumblezone:royal_jelly_bucket'
             }, {
