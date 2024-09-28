@@ -4,4 +4,7 @@ ServerEvents.recipes(event=>{
         .outputFluids(Fluid.of('mekanism:heavy_water',1000))
         .duration(100)
         .EUt(480);
+
+
+    
 })
