@@ -54,5 +54,29 @@ ServerEvents.recipes(event=>{
         .duration(20)
         .EUt(1966080)
         .itemOutputs('ae2additions:cell_component_16384');
+
+
+
+    event.recipes.gtceu.circuit_assembler('s23onestep')
+    .itemInputs('#gtceu:circuits/mv','2x ae2:fluix_pearl','2x #forge:dusts/glowstone')
+    .inputFluids(Fluid.of('gtceu:soldering_alloy',576))
+    .duration(20)
+    .EUt(120)
+    .itemOutputs('ae2:spatial_cell_component_2');
+
+    event.recipes.gtceu.precision_assembler('s163onestep')
+    .itemInputs('#gtceu:circuits/ev','4x ae2:fluix_pearl','4x #forge:dusts/glowstone')
+    .inputFluids(Fluid.of('gtceu:soldering_alloy',1152))
+    .duration(20)
+    .EUt(1920)
+    .itemOutputs('ae2:spatial_cell_component_16');
+
+    event.recipes.gtceu.precision_assembler('s1283onestep')
+    .itemInputs('#gtceu:circuits/luv','8x ae2:fluix_pearl','8x #forge:dusts/glowstone')
+    .inputFluids(Fluid.of('gtceu:soldering_alloy',2304))
+    .duration(20)
+    .EUt(1920)
+    .itemOutputs('ae2:spatial_cell_component_128');
+    
     
 })

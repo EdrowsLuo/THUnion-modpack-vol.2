@@ -132,6 +132,12 @@
     "desc.gtceu:extended_factory.2":"比相同电压的小型机器快100%，且具有8并行（但不随电压提升而提升）。§r",
     "desc.gtceu:extended_factory.3":"精密组装机模式下可以简化部分合成配方。§r",
 
+    "block.gtceu.void_miner":"虚空采矿场",
+    "desc.gtceu:void_miner.0":"机器类型：§e采矿场§r",
+    "desc.gtceu:void_miner.1":"§8太可惜了，那些可口的矿石被牢牢锁在基岩之下。拿来吧你！§r",
+    "desc.gtceu:void_miner.2":"只能在采矿维度工作。可以挖掘出几乎所有的格雷矿石。§r",
+    "desc.gtceu:void_miner.3":"请注意机器自身高度不同可能会产出不同的产物。更高的电压会提高配方的产出。§r",
+
     "block.gtceu.eig":"§b极限工业温室§r",
     "desc.gtceu:eig.0":"机器类型：§e温室§r",
     "desc.gtceu:eig.1":"最多可以同时运行64个配方。机器自身会消耗480EU/t。§r",
@@ -163,6 +169,7 @@
     "block.gtceu.zpm_advanced_inscriber":"§c精英高级压印器 III§r",
     "block.gtceu.uv_advanced_inscriber":"§3精英高级压印器 IV§r",
 
+    "gtceu.void_miner":"虚空采矿场",
     "gtceu.digital_well_of_suffer":"数字化苦难之井",
     "gtceu.mark_of_falling_tower":"坠星标位",
     "gtceu.beehive":"蜂箱",

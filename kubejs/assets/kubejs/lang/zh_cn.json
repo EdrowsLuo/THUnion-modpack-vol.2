@@ -45,5 +45,13 @@
 
     "item.kubejs.singular_storage_2.desc":"§82指的可不是空间的边长§r",
     "item.kubejs.singular_storage_16.desc":"§8还不够§r",
-    "item.kubejs.singular_storage_128.desc":"§8容纳过去，现在，未来的一切可能§r"
+    "item.kubejs.singular_storage_128.desc":"§8容纳过去，现在，未来的一切可能§r",
+
+    "item.kubejs.optic_processor_assembly":"光学处理器集群",
+    "item.kubejs.optic_processor_computer":"光学处理器超级计算机",
+    "item.kubejs.optic_processor_mainframe":"光学处理器主机",
+
+    "item.kubejs.optic_processor_assembly.desc":"§8新的起点，新的终点§r",
+    "item.kubejs.optic_processor_computer.desc":"§8后来居上§r",
+    "item.kubejs.optic_processor_mainframe.desc":"§8百尺竿头，更进一步§r"
 }

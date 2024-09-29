@@ -1,12 +1,25 @@
 ServerEvents.recipes(event=>{
 
+    event.shaped(
+        'gtceu:eig',
+        [
+            'CAC',
+            'PHP',
+            'CSC'
+        ], {
+        C: '#gtceu:circuits/ev',
+        H: 'gtceu:hv_machine_hull',
+        A: 'gtceu:hv_world_accelerator',
+        S: 'gtceu:hv_sensor',
+        P: 'botanypotstiers:ultra_terracotta_hopper_botany_pot'
+    })
+
     //似乎不太支持概率配方
     MetalOre.forEach(ore=>{
         event.recipes.gtceu.eig_input(`${ore.modId}_${ore.oreId}`)
         .itemInputs('kubejs:ore_core',ore.asOresBlock())
         .itemOutputs(
-            ore.asClump(),
-            ore.asNugget()
+            ore.asClump()
         )
         .EUt(480)
         .duration(1);
@@ -33,11 +46,17 @@ ServerEvents.recipes(event=>{
     });
 
 
-    ['nickel','iron','copper'].forEach(material=>{
-        addSingular(event,0,material,1920,'',1);
+    ['nickel','iron','copper','bronze','electrum','steel','tin','invar','aluminum','silver','gold','lead'].forEach(material=>{
+        addSingular(event,0,material,480,'',1);
     });
+    addSingular(event,0,'coal',480,'minecraft:coal',1);
+    addSingular(event,0,'diamond',480,'minecraft:diamond',1);
+    addSingular(event,0,'emerald',480,'minecraft:emerald',1);
+    addSingular(event,0,'lapis_lazuli',480,'minecraft:lapis_lazuli',1);
+    addSingular(event,0,'glowstone',480,'minecraft:glowstone',1);
+    addSingular(event,0,'redstone',480,'minecraft:redstone',1);
 
-    ['naquadah'].forEach(material=>{
+    ['naquadah','netherite','platinum'].forEach(material=>{
         addSingular(event,1,material,7680,'',1);
     });
 

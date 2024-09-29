@@ -12,6 +12,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     const $IngotProperty=Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty');
     GTMaterials.NaquadahEnriched.setProperty(PropertyKey.ORE, new $OreProperty());
     GTMaterials.Osmium.setProperty(PropertyKey.ORE, new $OreProperty());
+    GTMaterials.Iridium.setProperty(PropertyKey.ORE, new $OreProperty());
     GTMaterials.Rhodium.setProperty(PropertyKey.ORE, new $OreProperty());
     GTMaterials.Ruthenium.setProperty(PropertyKey.ORE, new $OreProperty());
     GTMaterials.Naquadria.setProperty(PropertyKey.ORE, new $OreProperty());
@@ -27,8 +28,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Caesium.setProperty(PropertyKey.FLUID, new $FluidProperty($FluidStorageKeys.LIQUID,new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(300)));
     GTMaterials.Phosphorus.setProperty(PropertyKey.FLUID, new $FluidProperty($FluidStorageKeys.LIQUID,new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(500)));
     GTMaterials.Sulfur.setProperty(PropertyKey.FLUID, new $FluidProperty($FluidStorageKeys.LIQUID,new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(500)));
+    GTMaterials.Calcium.setProperty(PropertyKey.FLUID, new $FluidProperty($FluidStorageKeys.LIQUID,new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(500)));
+    GTMaterials.Holmium.setProperty(PropertyKey.FLUID, new $FluidProperty($FluidStorageKeys.LIQUID,new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(1000)));
+    GTMaterials.Gadolinium.setProperty(PropertyKey.FLUID, new $FluidProperty($FluidStorageKeys.LIQUID,new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(1000)));
+    GTMaterials.Scandium.setProperty(PropertyKey.FLUID, new $FluidProperty($FluidStorageKeys.LIQUID,new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(1000)));
+    GTMaterials.Rhenium.setProperty(PropertyKey.FLUID, new $FluidProperty($FluidStorageKeys.LIQUID,new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(1000)));
     
-    
+    GTMaterials.Calcium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+
     GTMaterials.Duranium.addFlags(GTMaterialFlags.GENERATE_FRAME);
     event.create('hyperblend')
         .dust()

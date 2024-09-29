@@ -1,4 +1,16 @@
 ServerEvents.recipes(event=>{
+    event.shaped(
+        'gtceu:laser_lathe',
+        [
+            'ELE',
+            'CHC',
+            'ELE'
+        ], {
+        C: '#gtceu:circuits/luv',
+        H: `gtceu:iv_forming_press`,
+        E: 'gtceu:iv_emitter',
+        L: 'mekanism:laser'
+    })
     event.recipes.gtceu.imprinter('logic')
         .itemInputs('#forge:ingots/gold','#forge:silicon','#forge:dusts/redstone')
         .EUt(120)

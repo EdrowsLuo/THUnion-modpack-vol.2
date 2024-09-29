@@ -10,6 +10,15 @@ ServerEvents.tags("item", event => {
 
     event.add("gtceu:circuits", "mekanism:ultimate_control_circuit")
     event.add("gtceu:circuits/ev", "mekanism:ultimate_control_circuit")
+
+    event.add('gtceu:circuits', 'kubejs:optic_processor_assembly');
+    event.add('gtceu:circuits/uv', 'kubejs:optic_processor_assembly');
+
+    event.add('gtceu:circuits', 'kubejs:optic_processor_computer');
+    event.add('gtceu:circuits/uhv', 'kubejs:optic_processor_computer');
+
+    event.add('gtceu:circuits', 'kubejs:optic_processor_mainframe');
+    event.add('gtceu:circuits/uev', 'kubejs:optic_processor_mainframe');
 })
 
 ServerEvents.recipes(event => {
