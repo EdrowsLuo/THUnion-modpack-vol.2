@@ -988,6 +988,19 @@
 			x: -8.0d
 			y: -2.5d
 		}
+		{
+			dependencies: ["4A754DCA820F3AC2"]
+			description: ["强大的AE多方块计算器，可以同时容纳数个计划任务，只要还有内存空间剩余就可以继续添加，并且共享并行线程。"]
+			id: "75D1C2E2062B37F8"
+			tasks: [{
+				id: "3CEE8B43C2BB39D5"
+				item: "advanced_ae:quantum_core"
+				type: "item"
+			}]
+			title: "量子计算机"
+			x: -11.0d
+			y: -6.5d
+		}
 	]
 	title: "天顶科技公司员工"
 }
