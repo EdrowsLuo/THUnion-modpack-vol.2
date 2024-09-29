@@ -58,7 +58,7 @@
 	[Spells."irons_spellbooks:fireball"]
 		Enabled = true
 		School = "irons_spellbooks:fire"
-		MaxLevel = 5
+		MaxLevel = 3
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
@@ -523,12 +523,12 @@
 	[Spells."irons_spellbooks:spectral_hammer"]
 		Enabled = true
 		School = "irons_spellbooks:evocation"
-		MaxLevel = 5
+		MaxLevel = 3
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "UNCOMMON"
+		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 2.0
+		CooldownInSeconds = 20.0
 		AllowCrafting = true
 
 	[Spells."irons_spellbooks:slow"]
@@ -923,7 +923,7 @@
 	[Spells."irons_spellbooks:acupuncture"]
 		Enabled = true
 		School = "irons_spellbooks:blood"
-		MaxLevel = 10
+		MaxLevel = 6
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
@@ -1012,7 +1012,7 @@
 	[Spells."irons_spellbooks:thunderstorm"]
 		Enabled = true
 		School = "irons_spellbooks:lightning"
-		MaxLevel = 8
+		MaxLevel = 5
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0

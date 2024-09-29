@@ -69,12 +69,12 @@
     "irons_spellbooks:nature_spell_power": {
       "enabled": false,
       "min": {
-        "default": -100,
-        "value": -100
+        "default": -10,
+        "value": -10
       },
       "max": {
-        "default": 100,
-        "value": 100
+        "default": 10,
+        "value": 10
       }
     },
     "irons_spellbooks:nature_magic_resist": {
@@ -267,12 +267,12 @@
     "irons_spellbooks:holy_spell_power": {
       "enabled": false,
       "min": {
-        "default": -100,
-        "value": -100
+        "default": -10,
+        "value": -10
       },
       "max": {
-        "default": 100,
-        "value": 100
+        "default": 10,
+        "value": 10
       }
     },
     "irons_spellbooks:evocation_magic_resist": {
@@ -322,12 +322,12 @@
     "irons_spellbooks:evocation_spell_power": {
       "enabled": false,
       "min": {
-        "default": -100,
-        "value": -100
+        "default": -10,
+        "value": -10
       },
       "max": {
-        "default": 100,
-        "value": 100
+        "default": 10,
+        "value": 10
       }
     },
     "attributeslib:prot_pierce": {
@@ -366,12 +366,12 @@
     "irons_spellbooks:lightning_spell_power": {
       "enabled": false,
       "min": {
-        "default": -100,
-        "value": -100
+        "default": -10,
+        "value": -10
       },
       "max": {
-        "default": 100,
-        "value": 100
+        "default": 10,
+        "value": 10
       }
     },
     "attributeslib:mining_speed": {
@@ -674,12 +674,12 @@
     "irons_spellbooks:eldritch_spell_power": {
       "enabled": false,
       "min": {
-        "default": -100,
-        "value": -100
+        "default": -10,
+        "value": -10
       },
       "max": {
-        "default": 100,
-        "value": 100
+        "default": 10,
+        "value": 10
       }
     },
     "combatroll:distance": {
@@ -707,12 +707,12 @@
     "irons_spellbooks:spell_power": {
       "enabled": false,
       "min": {
-        "default": -100,
-        "value": -100
+        "default": -10,
+        "value": -10
       },
       "max": {
-        "default": 100,
-        "value": 100
+        "default": 10,
+        "value": 10
       }
     },
     "combatroll:recharge": {
@@ -751,12 +751,12 @@
     "irons_spellbooks:ice_spell_power": {
       "enabled": false,
       "min": {
-        "default": -100,
-        "value": -100
+        "default": -10,
+        "value": -10
       },
       "max": {
-        "default": 100,
-        "value": 100
+        "default": 10,
+        "value": 10
       }
     },
     "minecraft:generic.attack_knockback": {
@@ -839,12 +839,12 @@
     "irons_spellbooks:ender_spell_power": {
       "enabled": false,
       "min": {
-        "default": -100,
-        "value": -100
+        "default": -10,
+        "value": -10
       },
       "max": {
-        "default": 100,
-        "value": 100
+        "default": 10,
+        "value": 10
       }
     },
     "attributeslib:crit_damage": {
@@ -982,12 +982,12 @@
     "irons_spellbooks:blood_spell_power": {
       "enabled": false,
       "min": {
-        "default": -100,
-        "value": -100
+        "default": -10,
+        "value": -10
       },
       "max": {
-        "default": 100,
-        "value": 100
+        "default": 10,
+        "value": 10
       }
     },
     "attributeslib:current_hp_damage": {
