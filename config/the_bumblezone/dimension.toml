@@ -70,5 +70,5 @@
 	# This will affect forceExitToOverworld, forceBumblezoneOriginMobToOverworldCenter, and onlyOverworldHivesTeleports
 	# config options so that they use this new default dimension instead of Overworld.
 	#
-	defaultDimension = "minecraft:overworld"
+	defaultDimension = "twilightforest:twilight_forest"
 

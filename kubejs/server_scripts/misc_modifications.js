@@ -74,10 +74,55 @@ ServerEvents.recipes(event => {
   })
 
   event.replaceInput({ "mod": "immersive_aircraft" }, "minecraft:iron_ingot", "#forge:ingots/steel")
-})
 
-BlockEvents.rightClicked("the_bumblezone:crystalline_flower", event => {
-  event.cancel()
+  event.replaceInput({ "mod": "ironfurnaces" }, "allthemodium:allthemodium_block", "allthemodium:allthemodium_ingot")
+  event.replaceInput({ "mod": "ironfurnaces" }, "allthemodium:vibranium_block", "allthemodium:vibranium_ingot")
+  event.replaceInput({ "mod": "ironfurnaces" }, "allthemodium:unobtainium_block", "allthemodium:unobtainium_ingot")
+
+  event.recipes.create.emptying(["minecraft:glass_bottle", Fluid.of("gtceu:radon").withAmount(250)], "alexscaves:radon_bottle")
+  event.recipes.create.filling("alexscaves:radon_bottle", ["minecraft:glass_bottle", Fluid.of("gtceu:radon").withAmount(250)])
+
+  modifyUnique(event, "advanced_ae:quantum_unit", {
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+      "a": {
+        "item": "ae2:crafting_unit"
+      },
+      "b": {
+        "item": "ae2:calculation_processor"
+      },
+      "c": {
+        "item": "ae2:fluix_glass_cable"
+      },
+      "d": {
+        "item": "gtceu:quantum_star"
+      }
+    },
+    "pattern": [
+      "aba",
+      "cdc",
+      "aba"
+    ],
+    "result": {
+      "item": "advanced_ae:quantum_unit"
+    },
+    "show_notification": true
+  })
+
+  event.recipes.minecraft.crafting_shaped(
+    "2x alexscaves:ferrouslime_ball", 
+    [
+      "SIS",
+      "IFI",
+      "SIS"
+    ],{
+      "S": "minecraft:slime_block",
+      "I": {
+        "tag": "forge:storage_blocks/steel"
+      },
+      "F": "alexscaves:ferrouslime_ball"
+    })
 })
 
 LootJS.modifiers((event) => {

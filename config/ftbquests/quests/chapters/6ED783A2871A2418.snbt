@@ -4,6 +4,7 @@
 	filename: "6ED783A2871A2418"
 	group: "5D83065599C5EF63"
 	hide_quest_until_deps_visible: true
+	icon: "gtceu:beehive"
 	id: "6ED783A2871A2418"
 	order_index: 1
 	quest_links: [ ]

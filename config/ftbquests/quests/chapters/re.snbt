@@ -589,6 +589,44 @@
 			x: -5.5d
 			y: 2.5d
 		}
+		{
+			description: ["很遗憾，无主世界路线尚未制作完成，跟着任务书走吧（）"]
+			icon: "minecraft:grass_block"
+			id: "543AA1751228F966"
+			secret: true
+			tasks: [
+				{
+					id: "470084B304A42FF1"
+					item: "ars_nouveau:archwood_planks"
+					type: "item"
+				}
+				{
+					id: "715EEC6C25CAEA24"
+					title: "快去主世界"
+					type: "checkmark"
+				}
+			]
+			title: "不想前往主世界？"
+			x: -7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["67930ABD4082CF2B"]
+			description: [
+				"击败暮色boss后会在宝藏箱上方生成一个光点，对其使用时间之尘可以重新挑战boss。"
+				""
+				"时间之尘在暮色击败任何生物都有0.5%概率掉落，你也可以把任意boss奖杯分解为两个时间之尘。"
+			]
+			id: "68F885B181D2E762"
+			tasks: [{
+				id: "47011F6B1480A3EE"
+				item: "twilighttweaks:time_powder"
+				type: "item"
+			}]
+			title: "暮色boss重战"
+			x: -2.5d
+			y: -1.5d
+		}
 	]
 	title: "Re：暮色森林的外乡人"
 }

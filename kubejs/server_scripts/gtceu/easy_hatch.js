@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         event.remove({ "type": "gtceu:macerator", "input": energy_hatch })
         event.remove({ "output": energy_hatch })
 
-        event.shapeless(energy_hatch, [ `mekanism:${mkLevel}_induction_cell`, ball ])
+        event.shapeless(energy_hatch, [ `mekanism:${mkLevel}_energy_cube`, ball ])
     }
 
     easy_energy_hatch("basic", "lv", false)

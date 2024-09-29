@@ -37,16 +37,16 @@ function MakeGoldenSweetBerries(event) {
         [
             "12345",
             "67890",
-            "ABCDE",
-            "FGHIJ",
-            "KL***"
+            "AB*CD",
+            "EFGHI",
+            "JKLMN"
         ],
-        autoPatternId("*1234567890ABCDEFGHIJKL",[
-            "minecraft:sweet_berries",
+        autoPatternId("*1234567890ABCDEFGHIJKLMN",[
+            "create_confectionery:ruby_chocolate_glazed_berries",
             "draconicevolution:dragon_heart",
             "mekanism:pellet_antimatter",
             "alexsmobs:void_worm_eye",
-            "alexscaves:immortal_embryo",
+            "alexscaves:tremorzilla_egg",
             "biggerreactors:ludicrite_block",
             "bigger_ae2:digital_singularity_flux_storage_cell",
             "gtceu:nan_certificate",
@@ -54,17 +54,19 @@ function MakeGoldenSweetBerries(event) {
             "deeperdarker:sonorous_staff",
             "jerotesvillage:second_round_world_teleport_stone",
             "cataclysm:void_forge",
-            "cataclysm:tidal_claws",
-            "cataclysm:ignitium_block",
+            "cataclysm:abyssal_egg",
+            "draconicevolution:wyvern_core",
             "tomeofblood:archmage_tome_of_blood",
             "apotheosis:library",
-            "soulsweapons:chaos_orb",
+            "soulsweapons:frostmourne",
             "umapyoi:crystal_rainbow",
-            "allthecompressed:gold_block_4x",
-            "celestial_core:soaring_wings",
+            "allthecompressed:allthemodium_block_2x",
+            "bosses_of_mass_destruction:charged_ender_pearl",
             "celestial_artifacts:life_etching",
             "l2complements:eternal_anvil",
-            "l2complements:space_shard"
+            "l2complements:space_shard",
+            "aquaculture:neptunium_block",
+            "irons_spellbooks:dragonskin_spell_book"
         ])
     )
 }
