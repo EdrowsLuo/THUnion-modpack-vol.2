@@ -130,7 +130,7 @@ LootJS.modifiers((event) => {
 });
 
 EntityEvents.spawned("minecraft:item", event => {
-  if(event.item.id == "tombstone:soul_receptacle") {
+  if(event.entity.item.id == "tombstone:soul_receptacle") {
     event.cancel()
   }
 })
