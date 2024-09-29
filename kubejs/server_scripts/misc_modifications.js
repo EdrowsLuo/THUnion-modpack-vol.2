@@ -109,6 +109,20 @@ ServerEvents.recipes(event => {
     },
     "show_notification": true
   })
+
+  event.recipes.minecraft.crafting_shaped(
+    "2x alexscaves:ferrouslime_ball", 
+    [
+      "SIS",
+      "IFI",
+      "SIS"
+    ],{
+      "S": "minecraft:slime_block",
+      "I": {
+        "tag": "forge:storage_blocks/steel"
+      },
+      "F": "alexscaves:ferrouslime_ball"
+    })
 })
 
 LootJS.modifiers((event) => {
