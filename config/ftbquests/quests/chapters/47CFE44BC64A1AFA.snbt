@@ -252,6 +252,18 @@
 			x: -0.5d
 			y: -1.5d
 		}
+		{
+			description: ["PotionsMaster提供了矿透药水。"]
+			id: "6B5DDD197BB4D7EB"
+			tasks: [{
+				id: "328C1BEA6B67A68B"
+				item: "potionsmaster:pestle"
+				type: "item"
+			}]
+			title: "矿物视野药水"
+			x: 3.5d
+			y: -1.5d
+		}
 	]
 	title: "实用提示"
 }
