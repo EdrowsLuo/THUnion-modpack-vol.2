@@ -60,7 +60,7 @@ function MakeGoldenSweetBerries(event) {
             "apotheosis:library",
             "soulsweapons:frostmourne",
             "umapyoi:crystal_rainbow",
-            "allthecompressed:allthemodium_block_3x",
+            "allthecompressed:allthemodium_block_2x",
             "bosses_of_mass_destruction:charged_ender_pearl",
             "celestial_artifacts:life_etching",
             "l2complements:eternal_anvil",
