@@ -88,6 +88,107 @@
 			x: 0.0d
 			y: -8.0d
 		}
+		{
+			id: "6BB6A76E3B61FDA9"
+			shape: "octagon"
+			tasks: [{
+				consume_items: false
+				id: "5FC28D426B3BC5E0"
+				item: "kubejs:treasure_core"
+				type: "item"
+			}]
+			title: "宝藏核心兑换栏"
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			id: "4562B0FF10043474"
+			shape: "diamond"
+			tasks: [{
+				consume_items: false
+				id: "5C9F2C7617E7BFD7"
+				item: "kubejs:battle_core"
+				type: "item"
+			}]
+			title: "战斗核心兑换栏"
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "tacz:ammo_box"
+				tag: {
+					AmmoCount: 360
+					AmmoId: "tacz:9mm"
+					Level: 1
+				}
+			}
+			id: "33A03647B886A678"
+			rewards: [{
+				id: "1570A7981BD2B420"
+				item: {
+					Count: 1
+					id: "tacz:ammo_box"
+					tag: {
+						AmmoCount: 360
+						AmmoId: "tacz:9mm"
+						Level: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4D1221DA830A6D6B"
+				item: "kubejs:battle_core"
+				type: "item"
+			}]
+			title: "弹药箱"
+			x: -1.0d
+			y: -7.0d
+		}
+		{
+			icon: "ars_nouveau:source_berry_pie"
+			id: "1060E70E7724ED60"
+			rewards: [{
+				count: 16
+				id: "573B710D3E9C9860"
+				item: "ars_nouveau:source_berry_pie"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4D2D19CE29787683"
+				item: "kubejs:battle_core"
+				type: "item"
+			}]
+			title: "恢复魔力的食物"
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:mundane"
+				}
+			}
+			id: "502584934C3C179C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "07517EF2B8059AA8"
+				table_id: 5411450708539696811L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "1B162468FEC67741"
+				item: "kubejs:battle_core"
+				type: "item"
+			}]
+			title: "药水自选"
+			x: 1.0d
+			y: -7.0d
+		}
 	]
 	title: "商店"
 }

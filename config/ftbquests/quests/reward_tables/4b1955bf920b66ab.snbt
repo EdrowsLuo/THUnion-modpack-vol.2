@@ -1,0 +1,55 @@
+{
+	id: "4B1955BF920B66AB"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:long_fire_resistance"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:long_regeneration"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:luck"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "tombstone:earthly_garden"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "ars_nouveau:mana_regen_potion_strong"
+				}
+			}
+		}
+		{ item: "irons_spellbooks:invisibility_elixir" }
+		{ item: "irons_spellbooks:oakskin_elixir" }
+	]
+	title: "药水自选"
+}
