@@ -142,6 +142,17 @@
 			x: -1.5d
 			y: -6.5d
 		}
+		{
+			dependencies: ["18B12709A88EE136"]
+			id: "687C6462258E68E3"
+			tasks: [{
+				id: "4197D36715C0059A"
+				item: "gtceu:void_miner"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
 	]
 	title: "大型机器"
 }
