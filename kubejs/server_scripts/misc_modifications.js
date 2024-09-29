@@ -74,6 +74,10 @@ ServerEvents.recipes(event => {
   })
 
   event.replaceInput({ "mod": "immersive_aircraft" }, "minecraft:iron_ingot", "#forge:ingots/steel")
+
+  event.replaceInput({ "mod": "ironfurnaces" }, "allthemodium:allthemodium_block", "allthemodium:allthemodium_ingot")
+  event.replaceInput({ "mod": "ironfurnaces" }, "allthemodium:vibranium_block", "allthemodium:vibranium_ingot")
+  event.replaceInput({ "mod": "ironfurnaces" }, "allthemodium:unobtainium_block", "allthemodium:unobtainium_ingot")
 })
 
 LootJS.modifiers((event) => {
