@@ -20,6 +20,9 @@ function BossType(name, entityId, healthMultiplier) {
     this.allowFly = false
     this.mobYoinker = false
     this.deathReset = 3
+    /**
+     * @type {VariableAttributeModifier[]}
+     */
     this.attributes = []
 }
 
@@ -33,6 +36,11 @@ BossType.prototype.withExtraDrop = function (extraDrop) {
     return this
 }
 
+/**
+ * 
+ * @param {VariableAttributeModifier[]} attributes 
+ * @returns 
+ */
 BossType.prototype.withExtraAttributes = function (attributes) {
     this.attributes = attributes
     return this
@@ -95,7 +103,20 @@ const AllBosses = [
     , new BossType("紫沙鬼婆", "jerotesvillage:purple_sand_hag", 24.0)//.addDesc("击败女巫居所楼顶的大巫婆，并将邪恶的药剂放进鬼婆之锅"), // 3960
     , new BossType("蚀龙兽", "jerotesvillage:corrosiver", 40.0)//.addDesc("在苦寒之地吹响蚀龙兽号角"), // 7400
     , new BossType("宝石恶鳞", "jerotesvillage:gemstone_malignasaur", 25.0)//.addDesc("向无尽海洋的水中投入恶鳞饵叉"), // 8700
-    , new BossType("bound witch of purgatory, Saphyra", "mokels_witch_boss:witchboss", 1.5).withDeathReset(2)//.addDesc("获得回到主世界的钥匙"), // 暮色闭门boss，400基础血量
+    , new BossType("【被束缚的魔女】萨菲拉", "mokels_witch_boss:witchboss", 1.5).withExtraAttributes([
+        new VariableAttributeModifier(
+            "tacz:tacz.bullet_resistance",
+            "TACZ_RESIS",
+            "56846a60-a201-4a6b-8764-634b4c3b855f",
+            "addition"
+        ).withDefaultValue(0.33),
+        new VariableAttributeModifier(
+            "minecraft:generic.movement_speed",
+            "MOVE_SPEED",
+            "55a09f3a-ac9a-40ee-aaf7-77bbe19aa2f1",
+            "addition"
+        ).withDefaultValue(0.30)
+    ]).withDeathReset(2)//.addDesc("获得回到主世界的钥匙"), // 暮色闭门boss，400基础血量
     , new BossType("腐朽的王", "soulsweapons:accursed_lord_boss", 5.0)//.addDesc("在下界的红色下界砖结构中生成。或者对黑石基座使用凋零恶魔之心再次召唤"),
     , new BossType("混沌君主", "soulsweapons:chaos_monarch", 5.0)//.addDesc("对黑石基座使用不确定性的残片召唤"),
     , new BossType("昼从者", "soulsweapons:day_stalker", 20.0)//.addDesc("使用混沌宝珠召唤昼从者与夜伏者"),
@@ -147,7 +168,12 @@ const AllBosses = [
         )
     ])//.addDesc("也许我们需要找个地方避雨"),
     , new BossType("雪怪首领", "twilightforest:yeti_alpha", 1.0)//.addDesc("温暖的大雪怪"),
-    , new BossType("冰雪女王", "twilightforest:snow_queen", 1.0)//.addDesc("就快成功了……只差一点点")
+    , new BossType("冰雪女王", "twilightforest:snow_queen", 1.0).withExtraDrop([
+        LootEntry.of(
+            "ars_nouveau:caster_tome",
+            `{"ars_nouveau:caster": {flavor: "", is_hidden: 0b, current_slot: 0, spell_count: 1, spells: {spell0: {name: "影子绑定", recipe: {size: 10, part0: "ars_nouveau:glyph_self", part1: "ars_nouveau:glyph_snare", part2: "ars_elemental:glyph_propagator_arc", part3: "ars_nouveau:glyph_accelerate", part4: "ars_nouveau:glyph_accelerate", part5: "ars_nouveau:glyph_accelerate", part6: "ars_nouveau:glyph_accelerate", part7: "ars_nouveau:glyph_accelerate", part8: "ars_nouveau:glyph_snare", part9: "ars_elemental:glyph_spike"}, spellColor: {r: 255, b: 180, type: "ars_nouveau:constant", g: 25}, sound: {volume: 1.0f, soundTag: {id: "ars_nouveau:fire_family"}, pitch: 1.0f}}}, hidden_recipe: ""}, display: {Name: '{"text":"影子绑定"}'}}`
+        )
+    ])//.addDesc("就快成功了……只差一点点")
 ]
 
 const AllBossesIDMap = {}

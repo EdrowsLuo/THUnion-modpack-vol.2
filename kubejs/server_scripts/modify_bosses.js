@@ -16,6 +16,9 @@ AllBosses.forEach(boss => {
             BOSS_HEALTH_MULTIPLIER.initValue(entity, boss.healthMultiplier - 1)
             entity.setHealth(entity.getMaxHealth())
         }
+        boss.attributes.forEach(attr => {
+            attr.initDefault(entity)
+        })
     })
 
     if(!boss.allowFly) {

@@ -12,6 +12,7 @@ function VariableAttributeModifier(target, name, uuid, operation){
     this.name = name
     this.operation = operation
     this.uuid = UUID.fromString(uuid)
+    this.defaultValue = 0
 }
 
 /**
@@ -25,3 +26,12 @@ VariableAttributeModifier.prototype.initValue = function(entity, value) {
     }
 }
 
+
+VariableAttributeModifier.prototype.withDefaultValue = function(value) {
+    this.defaultValue = value
+    return this
+}
+
+VariableAttributeModifier.prototype.initDefault = function(entity) {
+    this.initValue(entity, this.defaultValue)
+}
