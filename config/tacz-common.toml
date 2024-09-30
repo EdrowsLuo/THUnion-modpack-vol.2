@@ -24,7 +24,7 @@
 	#Those blocks that the ammo can pass through
 	PassThroughBlocks = []
 	#Whether a ammo can break the glass
-	DestroyGlass = true
+	DestroyGlass = false
 	#Whether a ammo can ignite the block
 	IgniteBlock = false
 	#Whether a ammo can ignite the entity
@@ -32,7 +32,7 @@
 
 [other]
 	#When enabled, the reload command will not overwrite the default model file under config
-	DefaultPackDebug = false
+	DefaultPackDebug = true
 	#The farthest sound distance of the target, including minecarts type
 	#Range: > 0
 	TargetSoundDistance = 128
