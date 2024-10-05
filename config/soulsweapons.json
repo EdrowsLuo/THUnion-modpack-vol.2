@@ -524,7 +524,7 @@
   "old_champions_remains_hits_before_growing_resistant": 3,
   "old_champions_remains_xp": 200,
   "frenzied_shade_health": 100.0,
-  "frenzied_shade_damage_modifier": 31.0,
+  "frenzied_shade_damage_modifier": 3.0,
   "frenzied_shade_cooldown": 10,
   "frenzied_shade_xp": 400,
   "chaos_monarch_health": 400.0,
