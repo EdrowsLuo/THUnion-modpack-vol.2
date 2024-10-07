@@ -222,13 +222,13 @@ ServerEvents.recipes(event => {
         level: '2',
         pedestalItems: [
             {
-                item: 'l2weaponry:shulkerate_ingot'
+                item: 'l2complements:shulkerate_ingot'
             }, {
-                item: 'l2weaponry:shulkerate_ingot'
+                item: 'l2complements:shulkerate_ingot'
             }, {
-                item: 'l2weaponry:shulkerate_ingot'
+                item: 'l2complements:shulkerate_ingot'
             }, {
-                item: 'l2weaponry:shulkerate_ingot'
+                item: 'l2complements:shulkerate_ingot'
             }, {
                 item: 'l2weaponry:reinforced_handle'
             }, {
@@ -247,11 +247,11 @@ ServerEvents.recipes(event => {
         level: '3',
         pedestalItems: [
             {
-                item: 'l2weaponry:shulkerate_ingot'
+                item: 'l2complements:shulkerate_ingot'
             }, {
-                item: 'l2weaponry:shulkerate_ingot'
+                item: 'l2complements:shulkerate_ingot'
             }, {
-                item: 'l2weaponry:shulkerate_ingot'
+                item: 'l2complements:shulkerate_ingot'
             }, {
                 item: 'l2complements:force_field'
             }, {
@@ -272,11 +272,11 @@ ServerEvents.recipes(event => {
         level: '4',
         pedestalItems: [
             {
-                item: 'l2weaponry:shulkerate_ingot'
+                item: 'l2complements:shulkerate_ingot'
             }, {
-                item: 'l2weaponry:shulkerate_ingot'
+                item: 'l2complements:shulkerate_ingot'
             }, {
-                item: 'l2weaponry:shulkerate_ingot'
+                item: 'l2complements:shulkerate_ingot'
             }, {
                 item: 'l2complements:force_field'
             }, {
@@ -297,11 +297,11 @@ ServerEvents.recipes(event => {
         level: '5',
         pedestalItems: [
             {
-                item: 'l2weaponry:shulkerate_ingot'
+                item: 'l2complements:shulkerate_ingot'
             }, {
-                item: 'l2weaponry:shulkerate_ingot'
+                item: 'l2complements:shulkerate_ingot'
             }, {
-                item: 'l2weaponry:shulkerate_ingot'
+                item: 'l2complements:shulkerate_ingot'
             }, {
                 item: 'l2complements:eternium_ingot'
             }, {
