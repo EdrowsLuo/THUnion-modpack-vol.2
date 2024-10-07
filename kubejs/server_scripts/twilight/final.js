@@ -27,7 +27,11 @@ BlockEvents.rightClicked(event=>{
         if(pos1.x-pos2.x==16 && pos1.y-pos2.y==6 && pos1.z-pos2.z==16){
             level.runCommandSilent(`fill ${pos1.x} ${pos1.y} ${pos1.z} ${pos2.x} ${pos2.y} ${pos2.z} air replace twilightforest:green_force_field`);
             level.runCommandSilent(`fill ${pos1.x} ${pos1.y} ${pos1.z} ${pos2.x} ${pos2.y} ${pos2.z} air replace twilightforest:blue_force_field`);
-            level.runCommandSilent(`setblock ${pos2.x+8} ${pos2.y} ${pos2.z+8} chest[facing=west]{Items:[{id:"mokels_witch_boss:totem_of_rot_and_decay",Count:1,Slot:13}]}`);
+            // level.runCommandSilent(`setblock ${pos2.x+8} ${pos2.y} ${pos2.z+8} chest[facing=west]{Items:[{id:"mokels_witch_boss:totem_of_rot_and_decay",Count:1,Slot:13}]}`);
+            let chestPos = pos2.offset(8, 0, 8)
+            level.setBlockAndUpdate(chestPos, Block.getBlock("minecraft:chest").defaultBlockState())
+            let chest = level.getBlock(chestPos)
+            chest.setEntityData(`{Items:[{id:"mokels_witch_boss:totem_of_rot_and_decay",Count:1,Slot:13}]}`)
             level.runCommandSilent(`fill ${pos2.x+7} ${pos2.y+1} ${pos2.z+7} ${pos2.x+9} ${pos2.y+2} ${pos2.z+9} minecraft:white_wool`);
             level.runCommandSilent(`setblock ${pos2.x+8} ${pos2.y+1} ${pos2.z+8} minecraft:spawner{Delay:0, ignore_light:1, SpawnData:{entity:{id:"irons_spellbooks:necromancer", Attributes:[{Name:generic.max_health,Base:60}],Health:60}}}`);
         }
