@@ -13,20 +13,28 @@ const DIMENSION_DAMEGE_MULTIPLIER = new VariableAttributeModifier(
 EntityEvents.spawned(event => {
     /** @type {Internal.LivingEntity} */
     let entity = event.entity
-    if (!entity || !entity.isLiving()) return
+    if (!entity || !entity.isLiving() || entity.isPlayer()) return
 
     if (event.level.dimension == "overworldmirror:overworld") {
         let health = 2, damage = 2
+        let modify = false
         if(entity.isAnimal()) {
             health = 10
+            modify = true
+        }
+        if(entity.isMonster()) {
+            modify = true
         }
         if(isBoss(entity)) {
             damage = 4
             health = 4
+            modify = true
         }
-        DIMENSION_HEALTH_MULTIPLIER.initValue(entity, health)
-        DIMENSION_DAMEGE_MULTIPLIER.initValue(entity, damage)
-        entity.setHealth(entity.getMaxHealth())
+        if(modify) {
+            DIMENSION_HEALTH_MULTIPLIER.initValue(entity, health)
+            DIMENSION_DAMEGE_MULTIPLIER.initValue(entity, damage)
+            entity.setHealth(entity.getMaxHealth())
+        }
     }
 })
 
