@@ -35,7 +35,7 @@ JEIEvents.hideItems(event=>{
         'gtceu:umv_dual_output_hatch',
         'gtceu:opv_dual_input_hatch',
         'gtceu:opv_dual_output_hatch',
-
+        'ae2:facade'
     ].forEach(item=>{
         event.hide(item);
     })
