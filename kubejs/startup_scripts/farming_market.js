@@ -31,7 +31,10 @@ ForgeEvents.onEvent('net.blay09.mods.farmingforblockheads.api.MarketRegistryRelo
         "farmersdelight:wild_onions",
         "farmersdelight:wild_potatoes",
         "farmersdelight:wild_rice",
-        "farmersdelight:wild_tomatoes"
+        "farmersdelight:wild_tomatoes",
+        "ars_nouveau:sourceberry_bush",
+        "minecraft:glow_berries",
+        "minecraft:sweet_berries"
         ]
     )
 
