@@ -1,3 +1,6 @@
+let MACERATE_BLACKLIST = {
+    "gtceu:macerator/macerate_wheat": true
+}
 
 ServerEvents.recipes( event => {
     event.forEachRecipe({ mod: 'gtceu', type: 'gtceu:macerator' }, recipe => { 
@@ -6,7 +9,9 @@ ServerEvents.recipes( event => {
             /** @type {InputItem} */var input = xthInput(recipe, 1);
             //不产出任何概率产出的副产物
             /** @type {OutputItem[]} */var outputs=allOutputs(recipe).filter(output => output.chance==1);
-            event.recipes.create.milling(outputs,input);
+            if(!MACERATE_BLACKLIST[recipe.getId()]) {
+                event.recipes.create.milling(outputs,input);
+            }
         } catch (err) {
             
         }
