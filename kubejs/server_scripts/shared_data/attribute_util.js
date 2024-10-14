@@ -19,9 +19,9 @@ function VariableAttributeModifier(target, name, uuid, operation){
  * 如果实体没有这个修改器，则初始化这个修改器
  * @param {Internal.LivingEntity} entity 
  */
-VariableAttributeModifier.prototype.initValue = function(entity, value) {
-    if(!entity.attributes.hasModifier(this.target, this.uuid)) {
-        let attribute = entity.getAttribute(this.target)
+VariableAttributeModifier.prototype.initValue = function (entity, value) {
+    let attribute = entity.getAttribute(this.target)
+    if (attribute && !entity.attributes.hasModifier(this.target, this.uuid)) {
         attribute.addTransientModifier(new $AttributeModifier(this.uuid, this.name, value, this.operation))
     }
 }
