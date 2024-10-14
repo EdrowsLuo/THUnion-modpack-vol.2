@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     let builder=event.create('void_miner')
     .category('thunion')
-    .setMaxIOSize(1, 27, 1, 0)
+    .setMaxIOSize(2, 27, 1, 0)
     .setEUIO('in')
     .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
     .setSound(GTSoundEntries.MINER);

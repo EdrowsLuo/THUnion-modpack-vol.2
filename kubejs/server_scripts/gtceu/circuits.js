@@ -19,6 +19,9 @@ ServerEvents.tags("item", event => {
 
     event.add('gtceu:circuits', 'kubejs:optic_processor_mainframe');
     event.add('gtceu:circuits/uev', 'kubejs:optic_processor_mainframe');
+
+    event.add('gtceu:circuits', 'kubejs:optic_processor_singularity');
+    event.add('gtceu:circuits/uiv', 'kubejs:optic_processor_singularity');
 })
 
 ServerEvents.recipes(event => {

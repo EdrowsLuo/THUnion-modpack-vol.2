@@ -109,6 +109,27 @@ ServerEvents.recipes(event => {
         .EUt(122880)
         .duration(800);
 
+    event.recipes.gtceu.mark_of_falling_tower('stone_calamity')
+        .itemInputs('gtceu:exquisite_calamity_crystal_gem')
+        .inputFluids(Fluid.of('bloodmagic:life_essence_fluid',1024000))
+        .itemOutputs('64x gtceu:celestial_chaotic_ore','64x gtceu:celestial_truth_ore','64x gtceu:celestial_origin_ore','64x gtceu:celestial_end_ore',
+            '64x gtceu:celestial_nihility_ore','64x gtceu:celestial_life_ore','64x gtceu:celestial_desire_ore'
+        )
+        .addData('radius',6)
+        .addData('rock','minecraft:end_stone')
+        .EUt(122880)
+        .duration(400);
+
+
+    event.recipes.gtceu.mark_of_falling_tower('neutronium')
+        .itemInputs('gtceu:nan_certificate')
+        .inputFluids(Fluid.of('bloodmagic:life_essence_fluid',16384000))
+        .itemOutputs('512x gtceu:neutronium_block','4096x avaritia:neutron')
+        .addData('radius',12)
+        .addData('rock','avaritia:neutron')
+        .EUt(1966080)
+        .duration(3000);
+
 
     event.recipes.gtceu.mark_of_falling_tower('sandstone_oil')
         .itemInputs('gtceu:oil_bucket')

@@ -3,6 +3,10 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('thunium', -1, -1, -1, null, 'ThU', false);
     event.create('azure_neodymium', 60, 83, -1, null, 'Nd*', true);
     event.create('scarlet_neodymium', 60, 85, -1, null, '*Nd', true);
+    event.create('cosmic_neutron', -1, -1, -1, null, 'SpNt', false);
+    event.create('eternal_neutron', -1, -1, -1, null, '*Nt*', false);
+    event.create('twisted', -1, -1, -1, null, '☼', false);
+    event.create('unknown',-1,-1,-1,null,'?',false);
  })
 GTCEuStartupEvents.registry('gtceu:material', event => {
 
@@ -23,7 +27,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Tritanium.setProperty(PropertyKey.ORE, new $OreProperty());
     GTMaterials.Trinium.setProperty(PropertyKey.ORE, new $OreProperty());
     GTMaterials.Americium.setProperty(PropertyKey.ORE, new $OreProperty());
-
+    
     GTMaterials.Iodine.setProperty(PropertyKey.FLUID, new $FluidProperty($FluidStorageKeys.LIQUID,new GTFluidBuilder().state(GTFluidState.GAS).temperature(363)));
     GTMaterials.Caesium.setProperty(PropertyKey.FLUID, new $FluidProperty($FluidStorageKeys.LIQUID,new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(300)));
     GTMaterials.Phosphorus.setProperty(PropertyKey.FLUID, new $FluidProperty($FluidStorageKeys.LIQUID,new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(500)));
@@ -34,9 +38,150 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Scandium.setProperty(PropertyKey.FLUID, new $FluidProperty($FluidStorageKeys.LIQUID,new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(1000)));
     GTMaterials.Rhenium.setProperty(PropertyKey.FLUID, new $FluidProperty($FluidStorageKeys.LIQUID,new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(1000)));
     
+    GTMaterials.RutheniumTriniumAmericiumNeutronate.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE);
+
+    
+    event.create('p-difluorobenzene')
+        .liquid(new GTFluidBuilder().temperature(300))
+        .color(0x222222)
+        .components('6x carbon', '4x hydrogen', '2x fluorine');
+
+    event.create('p-fluorotoluene')
+        .liquid(new GTFluidBuilder().temperature(300))
+        .color(0x073916)
+        .components('7x carbon', '7x hydrogen', '1x fluorine');
+
+    event.create('4-fluorobenzotrichloride')
+        .liquid(new GTFluidBuilder().temperature(300))
+        .color(0x346f46)
+        .components('13x carbon', '8x hydrogen', '2x chlorine', '2x fluorine');
+
+    event.create('4-fluorobenzotrichloride_solution')
+        .liquid(new GTFluidBuilder().temperature(300))
+        .color(0x346f46)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components('13x carbon', '8x hydrogen', '2x chlorine', '2x fluorine','1x water');
+
+    event.create('bis4-fluorophenylmethanone')
+        .liquid(new GTFluidBuilder().temperature(300))
+        .color(0x54530e)
+        .components('13x carbon', '8x hydrogen', '2x fluorine','1x oxygen');
+        
+    event.create('hydroquinone')
+        .liquid(new GTFluidBuilder().temperature(300))
+        .color(0x345678)
+        .components('6x carbon', '6x hydrogen','2x oxygen');
+
+    event.create('peek')
+        .polymer()
+        .liquid(new GTFluidBuilder().temperature(300))
+        .flags(GTMaterialFlags.GENERATE_FOIL)
+        .color(0x111111)
+        .components('19x carbon', '14x hydrogen', '2x fluorine','3x oxygen');
+
+    event.create('sodium_fluoride')
+        .dust()
+        .color(0xdddddd)
+        .components('1x sodium','1x fluorine');
+
     GTMaterials.Calcium.setProperty(PropertyKey.INGOT, new $IngotProperty());
 
     GTMaterials.Duranium.addFlags(GTMaterialFlags.GENERATE_FRAME);
+    GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_FRAME,GTMaterialFlags.GENERATE_FINE_WIRE);
+    GTMaterials.Naquadria.addFlags(GTMaterialFlags.GENERATE_FRAME);
+    GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_ROUND,GTMaterialFlags.GENERATE_GEAR,GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.GENERATE_GEAR,
+        GTMaterialFlags.GENERATE_SMALL_GEAR
+    )
+    GTMaterials.Darmstadtium.addFlags(GTMaterialFlags.GENERATE_ROUND,GTMaterialFlags.GENERATE_GEAR );
+
+   
+
+    event.create('celestial_origin')
+    .dust()
+    .ore()
+    .color(0x0686ef).iconSet(GTMaterialIconSet.SHINY);
+    event.create('celestial_chaotic')
+    .dust()
+    .ore()
+    .color(0xd70c38).iconSet(GTMaterialIconSet.SHINY);
+    event.create('celestial_life')
+    .dust()
+    .ore()
+    .color(0x21d90d).iconSet(GTMaterialIconSet.SHINY);
+    event.create('celestial_truth')
+    .dust()
+    .ore()
+    .color(0xebc700).iconSet(GTMaterialIconSet.SHINY);
+    event.create('celestial_desire')
+    .dust()
+    .ore()
+    .color(0xbb2a4f).iconSet(GTMaterialIconSet.SHINY);
+    event.create('celestial_nihility')
+    .dust()
+    .ore()
+    .color(0x0f2678).iconSet(GTMaterialIconSet.SHINY);
+    event.create('celestial_end')
+    .dust()
+    .ore()
+    .color(0x2a0c5a).iconSet(GTMaterialIconSet.SHINY);
+
+    event.create('calamity_crystal')
+    .gem()
+    .color(0x75139f).iconSet(GTMaterialIconSet.RADIOACTIVE);
+
+    event.create('crystal_matrix')
+    .ingot()
+    .color(0x1DE6BB).iconSet(GTMaterialIconSet.SHINY)
+    .flags(GTMaterialFlags.GENERATE_FINE_WIRE,GTMaterialFlags.GENERATE_SPRING)
+    .cableProperties(8388608,1,1);
+
+    event.create('eternium')
+    .ingot()
+    .color(0x4C5BE4).iconSet(GTMaterialIconSet.SHINY)
+    .flags(GTMaterialFlags.GENERATE_FINE_WIRE,GTMaterialFlags.GENERATE_SPRING)
+    .cableProperties(8388608,32,0,true);
+
+    event.create('draconium')
+    .ingot()
+    .color(0x6C1BF0).iconSet(GTMaterialIconSet.SHINY)
+    .flags(GTMaterialFlags.GENERATE_GEAR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.GENERATE_PLATE,GTMaterialFlags.GENERATE_SMALL_GEAR,
+        GTMaterialFlags.GENERATE_FOIL,GTMaterialFlags.GENERATE_FRAME,GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_ROUND,GTMaterialFlags.GENERATE_FINE_WIRE)
+    .cableProperties(GTValues.V[GTValues.UIV],8,8);
+
+    event.create('draconium_awakened')
+    .ingot()
+    .color(0xFE6A16).iconSet(GTMaterialIconSet.SHINY)
+    .flags(GTMaterialFlags.GENERATE_GEAR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.GENERATE_PLATE,GTMaterialFlags.GENERATE_SMALL_GEAR,
+        GTMaterialFlags.GENERATE_FOIL,GTMaterialFlags.GENERATE_FRAME,GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_ROUND,GTMaterialFlags.GENERATE_FINE_WIRE)
+    .cableProperties(GTValues.V[GTValues.UIV],48,0,true);
+
+    event.create('twisted')
+        .ingot()
+        .liquid(new GTFluidBuilder().temperature(737371))
+        .element('twisted')
+        .color(0x65038f)
+        .iconSet(GTMaterialIconSet.RADIOACTIVE)
+        .flags(GTMaterialFlags.GENERATE_GEAR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.GENERATE_PLATE,GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_FOIL,GTMaterialFlags.GENERATE_FRAME,GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_ROUND,GTMaterialFlags.GENERATE_FINE_WIRE
+        )
+        .blastTemp(12345,'highest',491520, 2000);
+
+    event.create('eternal_neutron')
+        .ingot()
+        .liquid(new GTFluidBuilder().temperature(121296))
+        .element('eternal_neutron')
+        .color(0x000000)
+        .iconSet(GTMaterialIconSet.RADIOACTIVE)
+        .flags(GTMaterialFlags.GENERATE_GEAR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.GENERATE_PLATE,GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_FOIL,GTMaterialFlags.GENERATE_FRAME,GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_ROUND,GTMaterialFlags.GENERATE_FINE_WIRE
+        )
+        .blastTemp(11000,'highest',122880, 800);
+
+    event.create('cosmic_neutron')
+        .ingot()
+        .element('cosmic_neutron')
+        .color(0x333333).iconSet(GTMaterialIconSet.DULL)
+        .flags(GTMaterialFlags.GENERATE_FRAME,GTMaterialFlags.GENERATE_FINE_WIRE,GTMaterialFlags.GENERATE_GEAR,GTMaterialFlags.GENERATE_DENSE);
     event.create('hyperblend')
         .dust()
         .components('1x redstone', '1x glowstone')
@@ -101,6 +246,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Polonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Californium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Seaborgium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    GTMaterials.Seaborgium.addFlags(GTMaterialFlags.GENERATE_GEAR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.GENERATE_PLATE,GTMaterialFlags.GENERATE_SMALL_GEAR,
+        GTMaterialFlags.GENERATE_FOIL,GTMaterialFlags.GENERATE_FRAME,GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_ROUND,GTMaterialFlags.GENERATE_FINE_WIRE
+    )
     GTMaterials.Scandium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Technetium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Dubnium.setProperty(PropertyKey.INGOT, new $IngotProperty());
@@ -109,6 +257,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Moscovium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Livermorium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Oganesson.setProperty(PropertyKey.FLUID,new $FluidProperty($FluidStorageKeys.GAS,new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(10)) )
+
+    GTMaterials.Seaborgium.setProperty(PropertyKey.FLUID, new $FluidProperty($FluidStorageKeys.LIQUID,new GTFluidBuilder().state(GTFluidState.LIQUID).temperature(1000)));
+
+
 
 
     event.create('hv_magnetic_alloy')

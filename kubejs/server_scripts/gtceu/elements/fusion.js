@@ -30,4 +30,12 @@ ServerEvents.recipes(event=>{
     .duration(32)
     .EUt(49152)
     .fusionStartEU(200000000);
+
+
+    event.recipes.gtceu.fusion_reactor('seaborgium')
+    .inputFluids(Fluid.of('gtceu:calcium',16),Fluid.of('gtceu:radon',125))
+    .outputFluids(Fluid.of('gtceu:seaborgium',16))
+    .duration(32)
+    .EUt(786432)
+    .fusionStartEU(800000000);
 })

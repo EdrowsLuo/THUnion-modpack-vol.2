@@ -19,7 +19,7 @@ ServerEvents.recipes(event=>{
     function addOreRecipe(list, baseMat, posYmin, posYmax, tier, voltage){
         var builder=event.recipes.gtceu.void_miner(`miner_${overallCounter}`);
         overallCounter++;
-        builder.posY(posYmin,posYmax) //stone area
+        builder.circuit(overallCounter)//posY(posYmin,posYmax) //stone area
         .notConsumable(`gtceu:${tieredDrill[tier-1]}_drill_head`)
         .EUt(voltage)
         .dimension('allthemodium:mining')
