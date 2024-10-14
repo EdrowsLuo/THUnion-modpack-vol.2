@@ -1,0 +1,22 @@
+{
+  "name": "singularity.avaritia.tungsten",
+  "colors": [
+    "312929",
+    "000000"
+  ],
+  "timeRequired": 240,
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "tag": "forge:ingots/tungsten",
+        "type": "forge:tag_empty"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/tungsten"
+  },
+  "enabled": true,
+  "recipeDisabled": false
+}

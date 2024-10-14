@@ -16,14 +16,14 @@ ServerEvents.recipes(event=>{
     var overallCounter=0;
     var tieredDrill=['steel','aluminium','stainless_steel','titanium','tungsten_steel','naquadah_alloy','duranium','neutronium'];
 
-    function addOreRecipe(list, baseMat, posYmin, posYmax, tier, voltage, fluid){
+    function addOreRecipe(list, baseMat, posYmin, posYmax, tier, voltage){
         var builder=event.recipes.gtceu.void_miner(`miner_${overallCounter}`);
         overallCounter++;
-        builder.posY(posYmin,posYmax) //stone area
+        builder.circuit(overallCounter)//posY(posYmin,posYmax) //stone area
         .notConsumable(`gtceu:${tieredDrill[tier-1]}_drill_head`)
         .EUt(voltage)
         .dimension('allthemodium:mining')
-        .inputFluids(Fluid.of(fluid,100))
+        .inputFluids(Fluid.of('gtceu:drilling_fluid',100))
         .duration(200);
 
         list.forEach(ore=>{
@@ -177,17 +177,16 @@ ServerEvents.recipes(event=>{
         'green_sapphire'
     ];
 
-    addOreRecipe(t1ow,'',128,256,1,30,'minecraft:water');
-    addOreRecipe(t2ow,'',128,256,2,120,'minecraft:water');
-    addOreRecipe(t2ds,'deepslate_',64,128,2,120,'gtceu:drilling_fluid');
-    addOreRecipe(t3ds,'deepslate_',64,128,3,480,'minecraft:water');
-    addOreRecipe(t3ne,'netherrack_',0,64,3,480,'gtceu:drilling_fluid');
-    addOreRecipe(t4ne,'netherrack_',0,64,4,1920,'minecraft:water');
-    addOreRecipe(t4en,'endstone_',-64,0,4,1920,'gtceu:drilling_fluid');
-    addOreRecipe(t5en,'endstone_',-64,0,5,7680,'gtceu:drilling_fluid');
-    addOreRecipe(t6en,'endstone_',-64,0,6,30720,'gtceu:drilling_fluid');
-    addOreRecipe(t7en,'endstone_',-64,0,7,122880,'gtceu:drilling_fluid');
-    addOreRecipe(t8en,'endstone_',-64,0,8,491520,'gtceu:drilling_fluid');
+    addOreRecipe(t1ow,'',128,256,1,30);
+    addOreRecipe(t2ow,'',128,256,2,120);
+    addOreRecipe(t2ds,'deepslate_',64,128,2,120);
+    addOreRecipe(t3ds,'deepslate_',64,128,3,480);
+    addOreRecipe(t3ne,'netherrack_',0,64,3,480);
+    addOreRecipe(t4ne,'netherrack_',0,64,4,1920);
+    addOreRecipe(t4en,'endstone_',-64,0,4,1920);
+    addOreRecipe(t5en,'endstone_',-64,0,5,7680);
+    addOreRecipe(t6en,'endstone_',-64,0,6,30720);
+    addOreRecipe(t7en,'endstone_',-64,0,7,122880);
+    addOreRecipe(t8en,'endstone_',-64,0,8,491520);
     
 })
-

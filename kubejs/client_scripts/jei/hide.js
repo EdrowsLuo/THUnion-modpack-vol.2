@@ -13,16 +13,12 @@ JEIEvents.hideItems(event=>{
         'gtceu:micro_processor_computer',
         'gtceu:nano_processor',
         'gtceu:nano_processor_assembly',
-        'gtceu:nano_processor_computer',
         'gtceu:quantum_processor',
         'gtceu:quantum_processor_assembly',
-        'gtceu:quantum_processor_computer',
         'gtceu:crystal_processor',
         'gtceu:crystal_processor_assembly',
-        'gtceu:crystal_processor_computer',
         'gtceu:wetware_processor',
         'gtceu:wetware_processor_assembly',
-        'gtceu:wetware_processor_computer',
         'gtceu:uv_dual_input_hatch',
         'gtceu:uv_dual_output_hatch',
         'gtceu:uhv_dual_input_hatch',
@@ -35,7 +31,9 @@ JEIEvents.hideItems(event=>{
         'gtceu:umv_dual_output_hatch',
         'gtceu:opv_dual_input_hatch',
         'gtceu:opv_dual_output_hatch',
-        'ae2:facade'
+        'ae2:facade',
+        'gtceu:cosmic_neutron_ingot'
+
     ].forEach(item=>{
         event.hide(item);
     })

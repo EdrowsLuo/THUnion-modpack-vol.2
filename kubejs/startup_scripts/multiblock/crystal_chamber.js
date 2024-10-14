@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     let builder=event.create('crystal_chamber')
     .category('thunion')
-    .setMaxIOSize(2, 1, 1, 0)
+    .setMaxIOSize(3, 1, 1, 0)
     .setEUIO('in')
     .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
     .setSound(GTSoundEntries.TURBINE);
@@ -48,7 +48,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 	.where("#", Predicates.any())
 	.where("A", Predicates.blocks("ae2:smooth_sky_stone_block"))
 	.where("B", Predicates.blocks("minecraft:tinted_glass"))
-	.where("C", Predicates.blocks("minecraft:water"))
+	.where("C", Predicates.air())
 	.where("D", Predicates.blocks("minecraft:quartz_block"))
 	.where("E", Predicates.blocks("ae2:growth_accelerator"))
 	.where("F", Predicates.blocks("ae2:small_quartz_bud"))

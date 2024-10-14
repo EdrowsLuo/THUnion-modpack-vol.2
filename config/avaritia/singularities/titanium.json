@@ -1,0 +1,22 @@
+{
+  "name": "singularity.avaritia.titanium",
+  "colors": [
+    "CC6CE7",
+    "E4080A"
+  ],
+  "timeRequired": 240,
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "tag": "forge:ingots/titanium",
+        "type": "forge:tag_empty"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/titanium"
+  },
+  "enabled": true,
+  "recipeDisabled": false
+}

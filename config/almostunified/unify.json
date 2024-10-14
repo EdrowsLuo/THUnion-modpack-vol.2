@@ -8,11 +8,15 @@
     "thermal",
     "immersiveengineering",
     "mekanism",
+    "avaritia",
+    "l2complements",
+    "draconicevolution",
     "gtceu",
     "ae2",
     "biggerreactors",
     "createaddition",
     "pneumaticcraft"
+    
   ],
   "stoneStrata": [
     "stone",
@@ -83,7 +87,12 @@
     "tin",
     "tungsten",
     "uranium",
-    "zinc"
+    "zinc",
+    "cosmic_neutron",
+    "eternium",
+    "crystal_matrix",
+    "draconium",
+    "draconium_awakened"
   ],
   "priorityOverrides": {},
   "customTags": {},

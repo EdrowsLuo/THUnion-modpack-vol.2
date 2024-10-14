@@ -7,7 +7,6 @@ ServerEvents.recipes( event => {
     materials.forEach(material=>{
       event.remove({output: `gtceu:${material}_coil_block`});
       event.remove({input:`gtceu:${material}_coil_block`,type:'gtceu:macerator'});
-      console.log('123');
       event.shaped(
           Item.of(`gtceu:${material}_coil_block`, 1), 
           [

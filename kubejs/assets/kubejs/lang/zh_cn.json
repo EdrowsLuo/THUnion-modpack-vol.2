@@ -50,8 +50,24 @@
     "item.kubejs.optic_processor_assembly":"光学处理器集群",
     "item.kubejs.optic_processor_computer":"光学处理器超级计算机",
     "item.kubejs.optic_processor_mainframe":"光学处理器主机",
+    "item.kubejs.optic_processor_singularity":"§d§k1§r§d光学处理器奇点§d§k1§r§r",
+    "item.kubejs.optic_processor_assembly.desc.1":"§dUV级电路§r",
+    "item.kubejs.optic_processor_computer.desc.1":"§dUHV级电路§r",
+    "item.kubejs.optic_processor_mainframe.desc.1":"§dUEV级电路§r",
+    "item.kubejs.optic_processor_singularity.desc.1":"§d§k1§r§dUIV级电路§d§k1§r§r",
+    "item.kubejs.optic_processor_assembly.desc.0":"§7它真的可能存在吗？§r",
+    "item.kubejs.optic_processor_computer.desc.0":"§7它真的可能存在吗？§r",
+    "item.kubejs.optic_processor_mainframe.desc.0":"§7百尺竿头，更进一步§r",
+    "item.kubejs.optic_processor_singularity.desc.0":"§7通往另一侧的门§r",
 
-    "item.kubejs.optic_processor_assembly.desc":"§8新的起点，新的终点§r",
-    "item.kubejs.optic_processor_computer.desc":"§8后来居上§r",
-    "item.kubejs.optic_processor_mainframe.desc":"§8百尺竿头，更进一步§r"
+    "item.kubejs.optic_soc_wafer":"光学SoC晶圆",
+    "item.kubejs.optic_soc":"光学SoC",
+    "item.kubejs.optic_soc_enlightened":"§6激发的光学SoC§r",
+    "item.kubejs.optic_smd_capacitor":"光学贴片电容",
+    "item.kubejs.optic_smd_diode":"光学贴片二极管",
+    "item.kubejs.optic_smd_inductor":"光学贴片晶体管",
+    "item.kubejs.optic_smd_resistor":"光学贴片电阻",
+    "item.kubejs.optic_smd_transistor":"光学贴片电感",
+
+    "desc.kubejs.optic_smd":"光学贴片电感"
 }
