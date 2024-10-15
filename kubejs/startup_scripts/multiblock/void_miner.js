@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     let builder=event.create('void_miner', 'multiblock')
     for(let i=0;i<=3;i++) builder.tooltips(Component.translatable(`desc.${builder.id}.${i}`));
     builder.rotationState(RotationState.NON_Y_AXIS)
-
+        .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
         .recipeTypes([GTRecipeTypes.get('void_miner')])
         .workableCasingRenderer(
             "gtceu:block/casings/solid/machine_casing_clean_stainless_steel",

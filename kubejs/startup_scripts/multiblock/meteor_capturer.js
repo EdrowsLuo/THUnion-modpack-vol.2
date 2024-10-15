@@ -61,7 +61,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/machines/miner",
             false
         )
-        
+        .appearanceBlock(()=>Block.getBlock('kubejs:blood_casing'))
         .onWorking(machine=>{
             var pos=machine.self().getPos();
 

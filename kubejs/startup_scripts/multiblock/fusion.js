@@ -41,6 +41,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             }
         )
         .recipeTypes([GTRecipeTypes.FUSION_RECIPES,GTRecipeTypes.get('twisted_fusion')])
+		.appearanceBlock(()=>Block.getBlock('kubejs:twisted_fusion_casing'))
         .workableCasingRenderer(
             "kubejs:block/twisted_fusion_casing",
             "gtceu:block/multiblock/fusion_reactor",

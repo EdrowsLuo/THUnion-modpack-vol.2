@@ -54,6 +54,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 return recipe;
             }
         ])
+        .appearanceBlock(()=>Block.getBlock('kubejs:elemental_casing'))
         .workableCasingRenderer(
             "kubejs:block/elemental_casing",
             "gtceu:block/machines/chemical_reactor",

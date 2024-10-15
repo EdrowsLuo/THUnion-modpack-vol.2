@@ -38,6 +38,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     builder.rotationState(RotationState.NON_Y_AXIS)
 
         .recipeTypes([GTRecipeTypes.get('eig_input'),GTRecipeTypes.get('eig_output'),GTRecipeTypes.get('eig_working')])
+		.appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
         .workableCasingRenderer(
             "gtceu:block/casings/solid/machine_casing_clean_stainless_steel",
             "gtceu:block/machines/distillery",
