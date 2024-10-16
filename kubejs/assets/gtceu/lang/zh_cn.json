@@ -121,9 +121,17 @@
     "desc.gtceu:hellforge.7":"3.使用§4永恒苦难之井§r。请查阅对应机器的tooltip§r",
 
     "desc.gtceu.hellforge.will":"意志：%s",
-    "desc.gtceu.hellforge.drain":"最少：%s意志",
-    "desc.gtceu.hellforge.minimumdrain":"消耗：%s意志",
+    "desc.gtceu.hellforge.drain":"消耗：%s意志",
+    "desc.gtceu.hellforge.minimumdrain":"最少：%s意志",
 
+    "block.gtceu.ore_processing_tower":"§e集成矿石处理塔§r",
+    "desc.gtceu:ore_processing_tower.0":"机器类型：§e矿石处理§r",
+    "desc.gtceu:ore_processing_tower.1":"§8The OPTimal solution for ore processing.§r",
+    "desc.gtceu:ore_processing_tower.2":"机器的处理速度和并行数取决于最低的消声仓等级。",
+    "desc.gtceu:ore_processing_tower.3":"LV消声仓提供100%的处理速度和2x并行。消声仓等级每提升一级，处理速度+100%，并行数x2。",
+    "desc.gtceu:ore_processing_tower.4":"只有顶层的方块可以被替换为输入输出仓室。§r",
+
+    "desc.gtceu.ore_processing_tower.muffler_tier":"当前消声仓等级：%s",
     
 
     "block.gtceu.electrical_volcano":"§c模拟火山§r",
@@ -216,7 +224,7 @@
     "block.gtceu.mv_advanced_inscriber":"§b进阶高级压印器§r",
     "block.gtceu.hv_advanced_inscriber":"§6进阶高级压印器 II§r",
     "block.gtceu.ev_advanced_inscriber":"§5进阶高级压印器 III§r",
-    "block.gtceu.iv_advanced_inscriberr":"§9精英高级压印器§r",
+    "block.gtceu.iv_advanced_inscriber":"§9精英高级压印器§r",
     "block.gtceu.luv_advanced_inscriber":"§d精英高级压印器 II§r",
     "block.gtceu.zpm_advanced_inscriber":"§c精英高级压印器 III§r",
     "block.gtceu.uv_advanced_inscriber":"§3精英高级压印器 IV§r",
