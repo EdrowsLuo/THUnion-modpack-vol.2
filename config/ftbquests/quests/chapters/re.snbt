@@ -174,7 +174,6 @@
 			dependencies: ["1BB9667A2875E0DF"]
 			description: ["这个物品替代了钻石作为暮色传送门激活物品的能力，你现在可以和以前一样搭建一个暮色传送门，然后把这个丢进去了。"]
 			id: "76A0762F87D8EF26"
-			secret: true
 			tasks: [{
 				id: "355DC6671956F9ED"
 				item: "twilightforest:twilight_portal_miniature_structure"
