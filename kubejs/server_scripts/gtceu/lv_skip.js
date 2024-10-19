@@ -1,6 +1,8 @@
 
 ServerEvents.recipes(event=>{
     ['copper','annealed_copper'].forEach(material=>cableManualRecipe(event,material));
+
+    event.recipes.create.mixing(['2x gtceu:cupronickel_ingot'], ['#forge:ingots/copper','#forge:ingots/nickel']).heated()
 })
 
 

@@ -16,6 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     builder.rotationState(RotationState.NON_Y_AXIS)
 
         .recipeTypes([GTRecipeTypes.ASSEMBLER_RECIPES,GTRecipeTypes.CIRCUIT_ASSEMBLER_RECIPES,GTRecipeTypes.get('precision_assembler')])
+        .appearanceBlock(GCyMBlocks.CASING_ATOMIC)
         .workableCasingRenderer(
             "gtceu:block/casings/gcym/atomic_casing",
             "gtceu:block/machines/scanner",

@@ -26,6 +26,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
         .recipeTypes([GTRecipeTypes.get('precision_lathe_all'),GTRecipeTypes.BENDER_RECIPES,GTRecipeTypes.LATHE_RECIPES,GTRecipeTypes.COMPRESSOR_RECIPES,
             GTRecipeTypes.WIREMILL_RECIPES,GTRecipeTypes.FORGE_HAMMER_RECIPES,GTRecipeTypes.FORMING_PRESS_RECIPES,GTRecipeTypes.get('imprinter')])
+        .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .workableCasingRenderer(
             "gtceu:block/casings/solid/machine_casing_solid_steel",
             "gtceu:block/machines/bender",

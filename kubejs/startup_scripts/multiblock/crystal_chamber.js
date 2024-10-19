@@ -32,6 +32,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 
             }
         ])
+        .appearanceBlock(()=>Block.getBlock("ae2:smooth_sky_stone_block"))
         .workableCasingRenderer(
             "ae2:block/smooth_sky_stone_block",
             "gtceu:block/machines/autoclave",
