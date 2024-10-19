@@ -82,34 +82,6 @@ ServerEvents.recipes(event => {
   event.recipes.create.emptying(["minecraft:glass_bottle", Fluid.of("gtceu:radon").withAmount(250)], "alexscaves:radon_bottle")
   event.recipes.create.filling("alexscaves:radon_bottle", ["minecraft:glass_bottle", Fluid.of("gtceu:radon").withAmount(250)])
 
-  modifyUnique(event, "advanced_ae:quantum_unit", {
-    "type": "minecraft:crafting_shaped",
-    "category": "misc",
-    "key": {
-      "a": {
-        "item": "ae2:crafting_unit"
-      },
-      "b": {
-        "item": "ae2:calculation_processor"
-      },
-      "c": {
-        "item": "ae2:fluix_glass_cable"
-      },
-      "d": {
-        "item": "gtceu:quantum_star"
-      }
-    },
-    "pattern": [
-      "aba",
-      "cdc",
-      "aba"
-    ],
-    "result": {
-      "item": "advanced_ae:quantum_unit"
-    },
-    "show_notification": true
-  })
-
   event.recipes.minecraft.crafting_shaped(
     "2x alexscaves:ferrouslime_ball", 
     [
