@@ -4,7 +4,7 @@
 /**
  * 
  * @param {string} name 名称，目前就填写中文翻译
- * @param {Internal.EntityType_} entityId 实体id
+ * @param {Special.EntityType} entityId 实体id
  * @param {number} healthMultiplier 血量倍率 
  */
 function BossType(name, entityId, healthMultiplier) {
@@ -24,6 +24,10 @@ function BossType(name, entityId, healthMultiplier) {
      * @type {VariableAttributeModifier[]}
      */
     this.attributes = []
+
+    if(!doesEntityTypeExist(entityId)) {
+        console.error(`${entityId} invalid`)
+    }
 }
 
 /**
@@ -103,7 +107,7 @@ const AllBosses = [
     , new BossType("紫沙鬼婆", "jerotesvillage:purple_sand_hag", 24.0)//.addDesc("击败女巫居所楼顶的大巫婆，并将邪恶的药剂放进鬼婆之锅"), // 3960
     , new BossType("蚀龙兽", "jerotesvillage:corrosiver", 40.0)//.addDesc("在苦寒之地吹响蚀龙兽号角"), // 7400
     , new BossType("宝石恶鳞", "jerotesvillage:gemstone_malignasaur", 25.0)//.addDesc("向无尽海洋的水中投入恶鳞饵叉"), // 8700
-    , new BossType("【被束缚的魔女】萨菲拉", "mokels_witch_boss:witchboss", 1.5).withExtraAttributes([
+    , new BossType("【被束缚的魔女】萨菲拉", "mokels_witch_boss:witchboss", 4).withExtraAttributes([
         new VariableAttributeModifier(
             "tacz:tacz.bullet_resistance",
             "TACZ_RESIS",
@@ -127,6 +131,14 @@ const AllBosses = [
     , new BossType("复仇骑士", "soulsweapons:returning_knight", 5.0)//.addDesc("对破旧的月光祭坛使用迷失的灵魂召唤"),
     , new BossType("蜜蜂女王", "the_bumblezone:bee_queen", 100.0).enableDrygmy().withDeathReset(-1).enableFly().enableMobYoinker() // not a boss
     , new BossType("宇宙水晶实体", "the_bumblezone:cosmic_crystal_entity", 1.0).withDeathReset(-1).enableFly().enableMobYoinker() // not a boss
+    , new BossType("远古骑士", "irons_spellbooks:citadel_keeper", 3).enableDrygmy()
+    , new BossType("死着之王", "irons_spellbooks:dead_king", 10)
+    , new BossType("高位唤魔者", "irons_spellbooks:archevoker", 15)
+    , new BossType("冰霜术士", "irons_spellbooks:cryomancer", 15)
+    , new BossType("药剂师", "irons_spellbooks:apothecarist", 30)
+    , new BossType("牧师", "irons_spellbooks:priest", 30).withExtraDrop(
+        LootEntry.of("irons_spellbooks:holy_rune", 4)
+    )
     , new BossType("娜迦", "twilightforest:naga", 1.0).withExtraDrop([
         LootEntry.of(
             "minecraft:diamond_hoe",
@@ -143,32 +155,32 @@ const AllBosses = [
             `{"ars_nouveau:caster": {flavor: "", is_hidden: 0b, current_slot: 0, spell_count: 1, spells: {spell0: {name: "诱饵的代价", recipe: {size: 10, part0: "ars_nouveau:glyph_self", part1: "ars_nouveau:glyph_summon_decoy", part2: "ars_nouveau:glyph_duration_down", part3: "ars_nouveau:glyph_blink", part4: "ars_nouveau:glyph_freeze", part5: "ars_nouveau:glyph_extend_time", part6: "toomanyglyphs:glyph_amplify_three", part7: "ars_nouveau:glyph_invisibility", part8: "ars_nouveau:glyph_duration_down", part9: "ars_nouveau:glyph_duration_down"}, spellColor: {r: 255, b: 180, type: "ars_nouveau:constant", g: 25}, sound: {volume: 1.0f, soundTag: {id: "ars_nouveau:fire_family"}, pitch: 1.0f}}}, hidden_recipe: ""}, display: {Name: '{"text":"诱饵的代价"}'}}`
         ).when(c => c.randomChance(0.5))
     ])//.addDesc("需要一点魔法才能打破它的护盾"),
-    , new BossType("米诺菇", "twilightforest:minoshroom", 1.0).withExtraDrop([
+    , new BossType("米诺菇", "twilightforest:minoshroom", 3.0).withExtraDrop([
         LootEntry.of(
             "ars_nouveau:caster_tome",
             `{"ars_nouveau:caster": {flavor: "", is_hidden: 0b, current_slot: 0, spell_count: 1, spells: {spell0: {name: "地刺", recipe: {size: 10, part0: "ars_elemental:glyph_arc_projectile", part1: "ars_elemental:glyph_spike", part2: "ars_nouveau:glyph_amplify", part3: "ars_nouveau:glyph_aoe", part4: "ars_nouveau:glyph_aoe", part5: "ars_nouveau:glyph_aoe", part6: "ars_nouveau:glyph_aoe", part7: "ars_nouveau:glyph_pierce", part8: "ars_nouveau:glyph_pierce", part9: "ars_nouveau:glyph_pierce"}, spellColor: {r: 255, b: 180, type: "ars_nouveau:constant", g: 25}, sound: {volume: 1.0f, soundTag: {id: "ars_nouveau:fire_family"}, pitch: 1.0f}}}, hidden_recipe: ""}, display: {Name: '{"text":"地刺"}'}}`
         )
     ])//.addDesc("希望你还记得迷宫的入口在哪"),
-    , new BossType("九头蛇", "twilightforest:hydra", 1.0).withExtraDrop([
+    , new BossType("九头蛇", "twilightforest:hydra", 3.0).withExtraDrop([
         LootEntry.of(
             "ars_nouveau:caster_tome",
             `{"ars_nouveau:caster": {flavor: "", is_hidden: 0b, current_slot: 0, spell_count: 1, spells: {spell0: {name: "龙牌熔炉", recipe: {part3: "ars_nouveau:glyph_accelerate", part4: "ars_nouveau:glyph_smelt", size: 5, part0: "ars_nouveau:glyph_projectile", part1: "ars_nouveau:glyph_linger", part2: "ars_nouveau:glyph_dampen"}, spellColor: {r: 255, b: 180, type: "ars_nouveau:constant", g: 25}, sound: {volume: 1.0f, soundTag: {id: "ars_nouveau:fire_family"}, pitch: 1.0f}}}, hidden_recipe: ""}, display: {Name: '{"text":"龙牌熔炉"}'}}`
         )
     ])//.addDesc("美味的炭烤九头蛇肉排！"),
-    , new BossType("幻影骑士", "twilightforest:knight_phantom", 1.0).withExtraDrop([
+    , new BossType("幻影骑士", "twilightforest:knight_phantom", 3.0).withExtraDrop([
         LootEntry.of(
             "ars_nouveau:caster_tome",
             `{"ars_nouveau:caster": {flavor: "", is_hidden: 0b, current_slot: 0, spell_count: 1, spells: {spell0: {name: "狼魔术", recipe: {size: 10, part0: "ars_nouveau:glyph_self", part1: "ars_nouveau:glyph_freeze", part2: "ars_nouveau:glyph_extend_time", part3: "ars_nouveau:glyph_extend_time", part4: "ars_nouveau:glyph_extend_time", part5: "ars_nouveau:glyph_extend_time", part6: "ars_nouveau:glyph_extend_time", part7: "ars_nouveau:glyph_wither", part8: "ars_nouveau:glyph_snare", part9: "ars_nouveau:glyph_summon_wolves"}, spellColor: {r: 255, b: 180, type: "ars_nouveau:constant", g: 25}, sound: {volume: 1.0f, soundTag: {id: "ars_nouveau:fire_family"}, pitch: 1.0f}}}, hidden_recipe: ""}, display: {Name: '{"text":"狼魔术"}'}}`
         )
     ])//.addDesc("当心这些会穿墙的家伙"),
-    , new BossType("暮初恶魂", "twilightforest:ur_ghast", 1.0).withExtraDrop([
+    , new BossType("暮初恶魂", "twilightforest:ur_ghast", 3.0).withExtraDrop([
         LootEntry.of(
             "ars_nouveau:caster_tome",
             `{"ars_nouveau:caster": {flavor: "", is_hidden: 0b, current_slot: 0, spell_count: 1, spells: {spell0: {name: "飞行陷阱", recipe: {size: 10, part0: "toomanyglyphs:glyph_ray", part1: "ars_nouveau:glyph_rune", part2: "ars_nouveau:glyph_launch", part3: "toomanyglyphs:glyph_amplify_two", part4: "ars_nouveau:glyph_slowfall", part5: "ars_nouveau:glyph_duration_down", part6: "ars_nouveau:glyph_duration_down", part7: "ars_nouveau:glyph_duration_down", part8: "ars_nouveau:glyph_delay", part9: "ars_nouveau:glyph_wind_shear"}, spellColor: {r: 255, b: 180, type: "ars_nouveau:constant", g: 25}, sound: {volume: 1.0f, soundTag: {id: "ars_nouveau:fire_family"}, pitch: 1.0f}}}, hidden_recipe: ""}, display: {Name: '{"text":"飞行陷阱"}'}}`
         )
     ])//.addDesc("也许我们需要找个地方避雨"),
-    , new BossType("雪怪首领", "twilightforest:yeti_alpha", 1.0)//.addDesc("温暖的大雪怪"),
-    , new BossType("冰雪女王", "twilightforest:snow_queen", 1.0).withExtraDrop([
+    , new BossType("雪怪首领", "twilightforest:alpha_yeti", 3.0)//.addDesc("温暖的大雪怪"),
+    , new BossType("冰雪女王", "twilightforest:snow_queen", 3.0).withExtraDrop([
         LootEntry.of(
             "ars_nouveau:caster_tome",
             `{"ars_nouveau:caster": {flavor: "", is_hidden: 0b, current_slot: 0, spell_count: 1, spells: {spell0: {name: "影子绑定", recipe: {size: 10, part0: "ars_nouveau:glyph_self", part1: "ars_nouveau:glyph_snare", part2: "ars_elemental:glyph_propagator_arc", part3: "ars_nouveau:glyph_accelerate", part4: "ars_nouveau:glyph_accelerate", part5: "ars_nouveau:glyph_accelerate", part6: "ars_nouveau:glyph_accelerate", part7: "ars_nouveau:glyph_accelerate", part8: "ars_nouveau:glyph_snare", part9: "ars_elemental:glyph_spike"}, spellColor: {r: 255, b: 180, type: "ars_nouveau:constant", g: 25}, sound: {volume: 1.0f, soundTag: {id: "ars_nouveau:fire_family"}, pitch: 1.0f}}}, hidden_recipe: ""}, display: {Name: '{"text":"影子绑定"}'}}`

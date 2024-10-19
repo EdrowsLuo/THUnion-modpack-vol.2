@@ -1,3 +1,7 @@
+// priority: 100000
+
+const $EntityType = Java.loadClass("net.minecraft.world.entity.EntityType")
+
 /**
  * 创建一个不消耗的工具手使用配方
  * @param {*} output
@@ -113,4 +117,9 @@ function getBiomeId(level, pos) {
 
 function playerInBiome(player, biome) {
     return getBiomeId(player.level, player.blockPosition()) == biome
+}
+
+
+function doesEntityTypeExist(entityId) {
+    return $EntityType.byString(entityId).isPresent()
 }
