@@ -21,6 +21,7 @@ options.txt
 patchouli_data.json
 rhino.local.properties
 *_patch*.zip
+servers.dat*
 
 *.jar
 !/**/*/*.jar
