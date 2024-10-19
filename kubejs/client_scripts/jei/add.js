@@ -10,4 +10,6 @@ JEIEvents.addItems(event => {
         // event.add(`botanypotstiers:${tier}_terracotta_botany_pot`)
         event.add(`botanypotstiers:${tier}_terracotta_hopper_botany_pot`)
     })
+
+    event.add("apotheosis:potion_charm")
 })

@@ -69,5 +69,10 @@
     "item.kubejs.optic_smd_resistor":"光学贴片电阻",
     "item.kubejs.optic_smd_transistor":"光学贴片电感",
 
-    "desc.kubejs.optic_smd":"光学贴片电感"
+    "desc.kubejs.optic_smd":"光学贴片电感",
+
+    "item.minecraft.potion.effect.flight": "飞行药水",
+    "item.minecraft.potion.effect.long_flight": "飞行药水",
+    "item.minecraft.potion.effect.extra_long_flight": "飞行药水",
+    "effect.ars_nouveau.flight.desc": "创造模式飞行"
 }
