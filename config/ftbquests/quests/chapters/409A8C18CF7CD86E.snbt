@@ -60,7 +60,7 @@
 		}
 		{
 			dependencies: ["72020FD69437BCB6"]
-			description: ["在一部分维度以及和一部分boss进行战斗时会禁止飞行，除此以外的时间在进入主世界后就可以获得创造飞行的能力了！"]
+			description: ["在一部分维度以及和一部分boss进行战斗时会禁止飞行."]
 			icon: "l2complements:storm_core"
 			id: "34814F5B2326C49C"
 			tasks: [{
@@ -254,7 +254,6 @@
 					type: "item"
 				}
 			]
-			secret: true
 			tasks: [{
 				dimension: "twilightforest:twilight_forest"
 				id: "4FC8FC8C198C9BE5"
@@ -266,10 +265,7 @@
 		}
 		{
 			dependencies: ["72020FD69437BCB6"]
-			description: [
-				"玩家之间的伤害被降低到了0。"
-				"（除非你在副手拿着骷髅头）"
-			]
+			description: ["玩家之间无法互相伤害，如果你想被其他玩家伤害，请在副手拿骷髅头。"]
 			icon: "minecraft:skeleton_skull"
 			id: "2BB4DC464F7F4443"
 			rewards: [{
@@ -424,14 +420,18 @@
 		}
 		{
 			dependencies: ["72020FD69437BCB6"]
-			description: ["通过模拟火山来获取无限的岩浆。"]
+			description: [
+				"机械动力软管滑轮不再把10000格流体视作无限流体源了，如果你需要无穷无尽的岩浆，最好换个方法。"
+				""
+				"比如模拟火山。"
+			]
 			icon: "alexscaves:volcanic_core"
 			id: "675EABCCB6FB5867"
 			tasks: [{
 				id: "5B8DFBE8063A1D89"
 				type: "checkmark"
 			}]
-			title: "没有机械动力无限岩浆了，但是我们有火山核心"
+			title: "来自火山核心的岩浆"
 			x: 5.5d
 			y: 1.0d
 		}
