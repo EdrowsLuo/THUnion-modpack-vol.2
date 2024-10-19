@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
       }
     })
 
-    event.remove({ output: "createaddition:alternator" })
+    banAll(event, ["createaddition:alternator", "createaddition:electric_motor"])
 
     modifyUnique(event, "draconicevolution:generator", {
       "type": "minecraft:crafting_shaped",
