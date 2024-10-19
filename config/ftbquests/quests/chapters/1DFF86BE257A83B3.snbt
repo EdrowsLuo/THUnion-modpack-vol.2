@@ -15,9 +15,11 @@
 			rewards: [
 				{
 					command: "/curios drop @p catastrophe"
+					elevate_perms: true
 					exclude_from_claim_all: true
 					icon: "celestial_artifacts:catastrophe_scroll"
 					id: "07FA3623EA269F5B"
+					silent: true
 					title: "弹出你的灾厄之册"
 					type: "command"
 				}
