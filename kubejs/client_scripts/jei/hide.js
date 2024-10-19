@@ -32,8 +32,8 @@ JEIEvents.hideItems(event=>{
         'gtceu:opv_dual_input_hatch',
         'gtceu:opv_dual_output_hatch',
         'ae2:facade',
-        'gtceu:cosmic_neutron_ingot'
-
+        'gtceu:cosmic_neutron_ingot',
+        "apotheosis:potion_charm"
     ].forEach(item=>{
         event.hide(item);
     })
