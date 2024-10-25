@@ -13,13 +13,19 @@
 
 ["Tame Mob"]
 	#Tame Mob Hurt By Owner Has Reduce
-	"驯服生物是否对主人对自身造成的伤害拥有减伤" = true
+	"驯服生物对主人对自身造成的伤害拥有减伤" = true
 	#Tame Mob Attack Creeper And Ghast
-	"模组添加的驯服生物是否攻击苦力怕和恶魂" = false
+	"模组添加的驯服生物攻击苦力怕[Creeper]和恶魂[Ghast]" = false
 
 [Other]
 	#Wicked Ridicule Night BossBar
-	"Wicked Ridicule Night BossBar" = true
+	"邪笑之夜Boss血条" = true
+	#Wicked Ridicule Night Chance
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"邪笑之夜几率" = 0.05000000074505806
+	#Corrosive Stop Durability Value
+	#Range: > 0
+	"腐蚀中止耐久值" = 8
 
 [Attributes]
 
@@ -79,15 +85,18 @@
 			#[Boss] Breath Normal Level : 3
 			#Range: > 0
 			"Corrosiver Breath Normal Level" = 3
-			#[Boss] Breath Cooldown : 12.0
-			#Range: 0.0 ~ 1.7976931348623157E308
-			"Corrosiver Breath Cooldown" = 12.0
 			#[Boss] Breath Count : 3
 			#Range: > 0
 			"Corrosiver Breath Count" = 3
 			#[Boss] Breath Count Wind : 5
 			#Range: > 0
 			"Corrosiver Breath Count Wind" = 5
+			#[Boss] Spell Cooldown : 12.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Corrosiver Spell Cooldown" = 12.0
+			#[Boss] Corrosive Snow Cloud Normal Level : 3
+			#Range: > 0
+			"Corrosiver Corrosive Snow Cloud Normal Level" = 3
 
 		[Attributes.Boss."Purple Sand Hag"]
 			#[Boss] Max Health : 165.0
@@ -167,18 +176,21 @@
 			#[Boss] Control Cooldown : 60.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Gemstone Malignasaur Control Cooldown" = 60.0
-			#[Boss] Deter Cooldown : 120.0
-			#Range: 0.0 ~ 1.7976931348623157E308
-			"Gemstone Malignasaur Deter Cooldown" = 120.0
 			#[Boss] Damage Suffered Value : 30.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Gemstone Malignasaur Damage Suffered Value" = 30.0
-			#[Boss] Break Damage Suffered Value : 105.0
+			#[Boss] Break Damage Suffered Value : 315.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Gemstone Malignasaur Break Damage Suffered Value" = 105.0
 			#[Boss] Break Block Cooldown : 1.5
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Gemstone Malignasaur Break Block Cooldown" = 1.5
+			#[Boss] Angry Spell Cooldown : 120.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Gemstone Malignasaur Angry Spell Cooldown" = 120.0
+			#[Boss] Malignasaur Bomb Normal Level : 3
+			#Range: > 0
+			"Gemstone Malignasaur Malignasaur Bomb Normal Level" = 3
 
 		[Attributes.Boss."Bright Land Beast"]
 			#[Boss] Max Health : 650.0
@@ -208,9 +220,6 @@
 			#[Boss] Melee Attack Cooldown : 3.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Bright Land Beast Melee Attack Cooldown" = 3.0
-			#[Boss] Trample Cooldown : 2.0
-			#Range: 0.0 ~ 1.7976931348623157E308
-			"Bright Land Beast Trample Cooldown" = 2.0
 			#[Boss] Quake Cooldown : 20.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Bright Land Beast Quake Cooldown" = 20.0
@@ -276,4 +285,57 @@
 			#[Boss] Break Block Cooldown : 2
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Second Rounder Golem Break Block Cooldown" = 2.0
+			#[Boss] Poison Fire Cloak Time : 18
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Second Rounder Golem Poison Fire Cloak Time" = 18.0
+
+		[Attributes.Boss."Serpon Combat Executer"]
+			#[Boss] Max Health : 270.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Serpon Combat Executer Max Health" = 270.0
+			#[Boss] Melee Damage : 8.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Serpon Combat Executer Melee Damage" = 8.0
+			#[Boss] Melee Damage Fury : 13.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Serpon Combat Executer Melee Damage Fury" = 12.0
+			#[Boss] Armor : 5.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Serpon Combat Executer Armor" = 5.0
+			#[Boss] Armor Fury : 18.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Serpon Combat Executer Armor Fury" = 18.0
+			#[Boss] Movement Speed : 0.40
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Serpon Combat Executer Movement Speed" = 0.4
+			#[Boss] Flying Speed : 0.50
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Serpon Combat Executer Flying Speed" = 0.5
+			#[Boss] Attack Knockback : 0.5
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Serpon Combat Executer Attack Knockback" = 0.5
+			#[Boss] Knockback Resistance : 0.8
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Serpon Combat Executer Knockback Resistance" = 0.8
+			#[Boss] Knockback Resistance Fury : 1.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Serpon Combat Executer Knockback Resistance Fury" = 1.0
+			#[Boss] Drop Equipment Chance : 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Serpon Combat Executer Drop Equipment Chance" = 0.0
+			#[Boss] Round Time Min : 90.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Serpon Combat Executer Round Time Min" = 90.0
+			#[Boss] Round Time Max : 270.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Serpon Combat Executer Round Time Max" = 270.0
+			#[Boss] Fire Absorption Percentage : 100.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Serpon Combat Executer Fire Absorption Percentage" = 100.0
+			#[Boss] Spell Level : 5
+			#Range: > 0
+			"Serpon Combat Executer Spell Level" = 5
+			#[Boss] Spell Cooldown : 12.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Serpon Combat Executer Spell Cooldown" = 12.0
 
