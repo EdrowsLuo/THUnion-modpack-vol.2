@@ -24,7 +24,4 @@ PlayerEvents.tick(event => {
 })
 
 
-PlayerEvents.inventoryChanged("tombstone:soul_receptacle", event => {
-    event.item.shrink(event.item.count)
-})
 
