@@ -179,9 +179,9 @@
 	#Scroll of Mercy [false/true|default:true]
 	allow_scroll_of_mercy = false
 	#Dust of Vanishing [false/true|default:true]
-	allow_dust_of_vanishing = false
+	allow_dust_of_vanishing = true
 	#Dust of Frost [false/true|default:true]
-	allow_dust_of_frost = false
+	allow_dust_of_frost = true
 	#Enchanted Bundle [false/true|default:true]
 	allow_enchanted_bundle = false
 	#Book of Recycling [false/true|default:true]
@@ -203,7 +203,7 @@
 	#Magic Scroll [false/true|default:true]
 	allow_magic_scroll = false
 	#Receptacle of Familiar [false/true|default:true]
-	allow_receptacle_of_familiar = true
+	allow_receptacle_of_familiar = false
 	#Book of Soulbound [false/true|default:true]
 	allow_book_of_soulbound = true
 	#Book of Oblivion [false/true|default:true]
