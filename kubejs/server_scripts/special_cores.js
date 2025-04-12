@@ -83,19 +83,35 @@ function MakeTeleportationCore(event) {
 }
 
 function MakeOreCore(event) {
+    event.shaped(
+        "kubejs:ore_core_uncompleted",
+        [
+            "ABC",
+            "DEF",
+            "GHI"
+        ],
+        autoPatternId(
+            "ABCDEFGHI",
+            [
+                "#forge:ores/copper",
+                "#forge:ores/iron",
+                "#forge:ores/gold",
+                "#forge:ores/diamond",
+                "#forge:ores/aluminum",
+                "#forge:ores/lead",
+                "#forge:ores/nickel",
+                "#forge:ores/osmium",
+                "#forge:ores/zinc",
+                "#forge:ores/redstone",
+            ]
+        )
+    )
+
     event.custom({
         "type": "lychee:block_crushing",
         "item_in": [
-            { "tag": "forge:ores/copper" },
-            { "tag": "forge:ores/iron" },
-            { "tag": "forge:ores/gold" },
-            { "tag": "forge:ores/diamond" },
-            { "tag": "forge:ores/aluminum" },
-            { "tag": "forge:ores/lead" },
-            { "tag": "forge:ores/nickel" },
-            { "tag": "forge:ores/osmium" },
-            { "tag": "forge:ores/zinc" },
-            { "tag": "forge:ores/redstone" },
+            { "item": "kubejs:ore_core_uncompleted" },
+            { "item": "create:sand_paper"}
         ],
         "post": [
             {
