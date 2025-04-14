@@ -4,7 +4,7 @@ EntityEvents.hurt(event=>{
         event.cancel()
     }
     if(event.source.player && event.entity.isPlayer() && event.player.offHandItem.id != "minecraft:skeleton_skull") {
-        if(event.source.player.UUID != event.entity.UUID) {
+        if(event.source.player.id != event.entity.id) {
             event.cancel()
         }
     }
