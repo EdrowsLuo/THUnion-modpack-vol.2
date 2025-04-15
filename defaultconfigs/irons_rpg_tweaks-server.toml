@@ -11,9 +11,9 @@
 	invulnerabilityTickCount = 5
 	#Specialized handling for player damage ticks. "ALL" means there is no special handling, "ONLY_LIVING" means only living attacks ignore player i-frames (may help with unforeseen damage like potions), and "NONE" means player's damage ticks are unaffected by the damage module.
 	#Allowed Values: ALL, ONLY_LIVING, NONE
-	playerDamageMode = "ONLY_LIVING"
+	playerDamageMode = "NONE"
 	#In order to prevent spam attacks, a minimum threshold of attack strength can be set before an attack can deal damage. Default: 0.75
-	minimumAttackStrength = 0.75
+	minimumAttackStrength = 0.0
 	#Whether or not a player is allowed to even swing if the threshold is not met. Default: true
 	allowNonFullStrengthAttacks = true
 	#Global multiplier to all knockback. Default: 1.0
