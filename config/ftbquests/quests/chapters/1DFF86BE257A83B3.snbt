@@ -33,9 +33,9 @@
 			]
 			tasks: [{
 				consume_items: true
-				count: 32L
+				count: 8L
 				id: "095A3134B08681FF"
-				item: "alexscaves:pure_darkness"
+				item: "twilighttweaks:time_powder"
 				type: "item"
 			}]
 			title: "摘下灾厄之册"

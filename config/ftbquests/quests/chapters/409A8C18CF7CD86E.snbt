@@ -141,7 +141,7 @@
 		}
 		{
 			dependencies: ["72020FD69437BCB6"]
-			description: ["如果你后悔装备了星月遗物的灾厄之册，商店里有取下它的办法，不过需要你前往主世界。"]
+			description: ["如果你后悔装备了星月遗物的灾厄之册，商店里可以找到取下它的办法。"]
 			icon: "celestial_artifacts:catastrophe_scroll"
 			id: "4B0290AFFEB3F631"
 			tasks: [{
