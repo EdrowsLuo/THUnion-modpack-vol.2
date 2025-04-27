@@ -8,7 +8,7 @@ adminOnlyPortals = false
 disablePortalCreation = false
 #Determines if new portals should be pre-checked for safety. If enabled, portals will fail to form rather than redirect to a safe alternate destination.
 #Note that enabling this also reduces the rate at which portal formation checks are performed.
-checkPortalDestination = false
+checkPortalDestination = true
 #Set this true if you want the lightning that zaps the portal to not set things on fire. For those who don't like fun.
 portalLightning = false
 #If false, the return portal will require the activation item.
