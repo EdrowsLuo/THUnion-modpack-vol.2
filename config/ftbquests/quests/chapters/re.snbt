@@ -130,7 +130,7 @@
 				"67930ABD4082CF2B"
 				"76A0762F87D8EF26"
 			]
-			hide: false
+			hide_until_deps_visible: false
 			id: "109014752147196A"
 			shape: "diamond"
 			size: 2.0d
@@ -185,7 +185,7 @@
 		}
 		{
 			dependencies: ["1BB9667A2875E0DF"]
-			hide: true
+			hide_until_deps_visible: true
 			id: "7596E87671CBF73B"
 			tasks: [{
 				id: "4CE631861137286F"
@@ -594,7 +594,6 @@
 			description: ["很遗憾，无主世界路线尚未制作完成，跟着任务书走吧（）"]
 			icon: "minecraft:grass_block"
 			id: "543AA1751228F966"
-			secret: true
 			tasks: [
 				{
 					id: "470084B304A42FF1"

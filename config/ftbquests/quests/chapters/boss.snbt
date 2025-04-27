@@ -14,7 +14,6 @@
 				"注意：许多的生物已经变得更加难以对付，请小心应对！"
 			]
 			id: "4C7F29F27F335A19"
-			invisible: true
 			size: 2.0d
 			subtitle: "握紧你的木剑"
 			tasks: [{
@@ -39,7 +38,7 @@
 		{
 			dependencies: ["0A08F03034669B23"]
 			description: ["你的第一个暮色Boss"]
-			hide: true
+			hide_until_deps_visible: true
 			id: "603EBBEAE2062745"
 			tasks: [{
 				disable_toast: true
@@ -54,7 +53,7 @@
 		{
 			dependencies: ["603EBBEAE2062745"]
 			description: ["需要一点魔法才能打破它的护盾"]
-			hide: true
+			hide_until_deps_visible: true
 			id: "45F406A79614CCD7"
 			tasks: [{
 				disable_toast: true
@@ -69,7 +68,7 @@
 		{
 			dependencies: ["45F406A79614CCD7"]
 			description: ["希望你还记得迷宫的入口在哪"]
-			hide: true
+			hide_until_deps_visible: true
 			id: "071018459E95243F"
 			tasks: [{
 				disable_toast: true
@@ -84,7 +83,7 @@
 		{
 			dependencies: ["071018459E95243F"]
 			description: ["美味的炭烤九头蛇肉排！"]
-			hide: true
+			hide_until_deps_visible: true
 			id: "62D564E934426136"
 			tasks: [{
 				disable_toast: true
@@ -99,7 +98,7 @@
 		{
 			dependencies: ["62D564E934426136"]
 			description: ["当心这些会穿墙的家伙"]
-			hide: true
+			hide_until_deps_visible: true
 			id: "39E8CE813DA858E4"
 			tasks: [{
 				disable_toast: true
@@ -114,7 +113,7 @@
 		{
 			dependencies: ["39E8CE813DA858E4"]
 			description: ["也许我们需要找个地方避雨"]
-			hide: true
+			hide_until_deps_visible: true
 			id: "649BA3FF70D29B32"
 			tasks: [{
 				disable_toast: true
@@ -129,7 +128,7 @@
 		{
 			dependencies: ["649BA3FF70D29B32"]
 			description: ["温暖的大雪怪"]
-			hide: true
+			hide_until_deps_visible: true
 			id: "48BBF872330A8C8D"
 			tasks: [{
 				disable_toast: true
@@ -144,7 +143,7 @@
 		{
 			dependencies: ["48BBF872330A8C8D"]
 			description: ["就快成功了……只差一点点"]
-			hide: true
+			hide_until_deps_visible: true
 			id: "68C9AA70D98F40DB"
 			tasks: [{
 				disable_toast: true
@@ -740,7 +739,7 @@
 		{
 			dependencies: ["68C9AA70D98F40DB"]
 			description: ["重返主世界！"]
-			hide: true
+			hide_until_deps_visible: true
 			icon: "minecraft:pink_tulip"
 			id: "2D07BCB195658F0A"
 			size: 1.2d
