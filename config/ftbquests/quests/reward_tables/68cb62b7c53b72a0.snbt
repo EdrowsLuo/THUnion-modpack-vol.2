@@ -1,0 +1,43 @@
+{
+	id: "68CB62B7C53B72A0"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ count: 2, item: "twilighttweaks:time_powder" }
+		{ count: 6, item: "minecraft:nether_quartz_ore" }
+		{ count: 5, item: "twilightforest:transformation_powder" }
+		{ count: 32, item: "hostilenetworks:twilight_prediction" }
+		{
+			item: {
+				Count: 1
+				id: "twilightforest:peacock_feather_fan"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "twilightforest:giant_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "twilightforest:glass_sword"
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:unbreaking"
+						lvl: 200s
+					}]
+				}
+			}
+		}
+	]
+	title: "暮色森林奖励"
+}

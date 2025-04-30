@@ -29,18 +29,24 @@
 		{
 			dependencies: ["0AD2FDBCB981F155"]
 			description: [
-				"不是那么水槽的水槽包"
 				"我们在不同mod之间添加了很多联动，并且做了大量的调整来使得游戏中的内容恰当的融合到一起,还有一些独特的定制内容"
 				""
 				"希望大家能够享受探索的乐趣，我们没有严格的主线，玩的开心！"
-				""
-				"&l&6ps. 任务书里没有什么重要的奖励，不建议组队。&r&r"
 			]
 			id: "72020FD69437BCB6"
 			rewards: [
 				{
 					id: "48BE928A8EE13458"
-					item: "celestial_artifacts:backtrack_mirror"
+					item: {
+						Count: 1
+						id: "celestial_artifacts:backtrack_mirror"
+						tag: {
+							Enchantments: [{
+								id: "tombstone:soulbound"
+								lvl: 1s
+							}]
+						}
+					}
 					type: "item"
 				}
 				{

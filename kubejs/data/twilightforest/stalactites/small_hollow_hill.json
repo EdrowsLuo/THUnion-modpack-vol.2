@@ -13,6 +13,8 @@
       "twilightforest:iridium_ore_stalactite",
       "twilightforest:uranium_ore_stalactite",
       "twilightforest:extra_diamond_ore_stalactite",
-      "twilightforest:extra_iron_ore_stalactite"
+      "twilightforest:extra_iron_ore_stalactite",
+      "twilightforest:extra_gold_ore_stalactite",
+      "twilightforest:extra_emerald_ore_stalactite"
     ]
   }

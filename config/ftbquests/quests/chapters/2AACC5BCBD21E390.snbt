@@ -3,7 +3,6 @@
 	default_quest_shape: ""
 	filename: "2AACC5BCBD21E390"
 	group: "2BEB05CF4131C8C7"
-	hide_quest_until_deps_visible: true
 	icon: "jerotesvillage:piglin_second_round_world_portal_block"
 	id: "2AACC5BCBD21E390"
 	order_index: 1

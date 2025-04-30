@@ -3,8 +3,6 @@
 	default_quest_shape: ""
 	filename: "re"
 	group: "2BEB05CF4131C8C7"
-	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "twilightforest:twilight_portal_miniature_structure"
 	id: "4817E2A8CC262CC2"
 	order_index: 0
@@ -115,7 +113,7 @@
 			]
 			shape: "diamond"
 			size: 2.0d
-			subtitle: "熟悉的灰色天空，故事从这里再次开启了"
+			subtitle: "熟悉的暗色天空，故事从这里再次开启了"
 			tasks: [{
 				dimension: "twilightforest:twilight_forest"
 				id: "33949195A0FCF7BB"
@@ -126,52 +124,22 @@
 			y: -0.5d
 		}
 		{
-			dependencies: [
-				"67930ABD4082CF2B"
-				"76A0762F87D8EF26"
-			]
+			dependencies: ["76A0762F87D8EF26"]
 			hide_until_deps_visible: false
 			id: "109014752147196A"
 			shape: "diamond"
 			size: 2.0d
-			subtitle: "可能最终城堡里的魔女能帮助到你"
+			subtitle: "回归！"
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "52A48269627B74F8"
-				title: "想办法前往主世界"
+				title: "前往主世界"
 				type: "dimension"
 			}]
 			x: -4.0d
 			y: -4.0d
 		}
 		{
-			dependencies: ["67930ABD4082CF2B"]
-			id: "1BB9667A2875E0DF"
-			subtitle: "我想你应该已经熟知暮色森林的一切了，但是这次，最终城堡上面有人在等着你"
-			tasks: [{
-				id: "6CBC949706E00DC5"
-				structure: "twilightforest:final_castle"
-				title: "最终城堡里的女巫"
-				type: "structure"
-			}]
-			title: "最终城堡里的女巫"
-			x: -1.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["1BB9667A2875E0DF"]
-			id: "6A755857D9E03D9E"
-			tasks: [{
-				id: "1FC77A083A00CEE3"
-				item: "ars_nouveau:novice_spell_book"
-				type: "item"
-			}]
-			title: "魔女的馈赠"
-			x: -1.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["1BB9667A2875E0DF"]
 			description: ["这个物品替代了钻石作为暮色传送门激活物品的能力，你现在可以和以前一样搭建一个暮色传送门，然后把这个丢进去了。"]
 			id: "76A0762F87D8EF26"
 			tasks: [{
@@ -180,21 +148,8 @@
 				type: "item"
 			}]
 			title: "前往主世界的钥匙"
-			x: -1.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["1BB9667A2875E0DF"]
-			hide_until_deps_visible: true
-			id: "7596E87671CBF73B"
-			tasks: [{
-				id: "4CE631861137286F"
-				item: "mokels_witch_boss:totem_of_rot_and_decay"
-				type: "item"
-			}]
-			title: "最终城堡的地下室藏有秘密"
-			x: 1.5d
-			y: -0.5d
+			x: -2.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["20BE6956AE9A7444"]
@@ -436,8 +391,8 @@
 				type: "item"
 			}]
 			title: "奇妙法术"
-			x: -4.0d
-			y: 3.0d
+			x: -7.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["67930ABD4082CF2B"]
@@ -495,8 +450,8 @@
 				type: "item"
 			}]
 			title: "莱特兰-武器"
-			x: -7.0d
-			y: 0.0d
+			x: -7.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["67930ABD4082CF2B"]
@@ -544,7 +499,7 @@
 				type: "item"
 			}]
 			title: "永恒机械工坊"
-			x: -6.5d
+			x: -7.5d
 			y: -1.5d
 		}
 		{
@@ -575,40 +530,8 @@
 				type: "item"
 			}]
 			title: "格雷的武器和工具"
-			x: -6.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["67930ABD4082CF2B"]
-			description: ["可以挂在腰带上，方便的移动光源。"]
-			id: "5D28910C1BBB5168"
-			tasks: [{
-				id: "0EACC81216E5939D"
-				item: "minecraft:lantern"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 2.5d
-		}
-		{
-			description: ["很遗憾，无主世界路线尚未制作完成，跟着任务书走吧（）"]
-			icon: "minecraft:grass_block"
-			id: "543AA1751228F966"
-			tasks: [
-				{
-					id: "470084B304A42FF1"
-					item: "ars_nouveau:archwood_planks"
-					type: "item"
-				}
-				{
-					id: "715EEC6C25CAEA24"
-					title: "快去主世界"
-					type: "checkmark"
-				}
-			]
-			title: "不想前往主世界？"
 			x: -7.5d
-			y: -4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["67930ABD4082CF2B"]
@@ -624,9 +547,828 @@
 				type: "item"
 			}]
 			title: "暮色boss重战"
-			x: -2.5d
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["67930ABD4082CF2B"]
+			description: [
+				"你需要在一个至少2x2的水坑周围围一圈花，然后往水里丢入某种物品来激活回到主世界的传送门。"
+				""
+				"糟糕的是，暮色传送门变的更难开启了，曾经你只需要丢入一颗钻石就可以开启传送门，但是现在你需要丢入一个微缩的暮色传送门模型才能打开暮色传送门。"
+				""
+				"似乎这种传送门模型在一位魔女的手上，你可以在暮色森林的最终城堡找到她，或者，使用魔法的力量直接呼唤她。"
+			]
+			id: "7B98F4317F9682EF"
+			rewards: [
+				{
+					count: 8
+					id: "7F6F1BFE9F278278"
+					item: "minecraft:poppy"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "60081A255FE88437"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "13C0CEAF49CC3A81"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "66852DA023227AF0"
+				title: "传送门失活"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7B98F4317F9682EF"]
+			id: "2EFBD3A2CFDD4954"
+			rewards: [
+				{
+					id: "33E6C48ADA35F99A"
+					item: "twilightforest:naga_courtyard_miniature_structure"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4F2054BFFE1D1317"
+					table_id: 7551237741644313248L
+					type: "random"
+				}
+			]
+			tasks: [{
+				entity: "twilightforest:naga"
+				icon: "twilightforest:naga_trophy"
+				id: "1AB882FC88E0EC35"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2EFBD3A2CFDD4954"]
+			id: "52C9E4B3E1AEB5EB"
+			rewards: [
+				{
+					id: "5521DFF5F411D3E5"
+					item: "twilightforest:lich_tower_miniature_structure"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "59BC0551873709C8"
+					table_id: 7551237741644313248L
+					type: "random"
+				}
+			]
+			tasks: [{
+				entity: "twilightforest:lich"
+				icon: "twilightforest:lich_trophy"
+				id: "31474367BBDFF31F"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["52C9E4B3E1AEB5EB"]
+			id: "59EFA982C014655C"
+			rewards: [
+				{
+					id: "71CDFEFF426B2FD3"
+					item: {
+						Count: 1
+						id: "obtrophies:trophy"
+						tag: {
+							BlockEntityTag: {
+								VariantID: 0
+								entity: "twilightforest:minoshroom"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "09B9ACCF10DB2957"
+					table_id: 7551237741644313248L
+					type: "random"
+				}
+			]
+			tasks: [{
+				entity: "twilightforest:minoshroom"
+				icon: "twilightforest:minoshroom_trophy"
+				id: "12BF3745E858F720"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["59EFA982C014655C"]
+			id: "53CD36DAF95F9D2D"
+			rewards: [
+				{
+					id: "20E1E0C0DCA51887"
+					item: {
+						Count: 1
+						id: "obtrophies:trophy"
+						tag: {
+							BlockEntityTag: {
+								VariantID: 0
+								entity: "twilightforest:hydra"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5B7623E86A0F138A"
+					table_id: 7551237741644313248L
+					type: "random"
+				}
+			]
+			tasks: [{
+				entity: "twilightforest:hydra"
+				icon: "twilightforest:hydra_trophy"
+				id: "7217A0E04C48BF7B"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["53CD36DAF95F9D2D"]
+			id: "3042B83061823E66"
+			rewards: [
+				{
+					id: "2761956A54073A2D"
+					item: {
+						Count: 1
+						id: "obtrophies:trophy"
+						tag: {
+							BlockEntityTag: {
+								VariantID: 0
+								entity: "twilightforest:knight_phantom"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "082AE5CF22D7E1C6"
+					table_id: 7551237741644313248L
+					type: "random"
+				}
+			]
+			tasks: [{
+				entity: "twilightforest:knight_phantom"
+				icon: "twilightforest:knight_phantom_trophy"
+				id: "0F3C7B469044153A"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3042B83061823E66"]
+			id: "2C3EADF8F4372F53"
+			rewards: [
+				{
+					id: "6239E796A9E12CDA"
+					item: {
+						Count: 1
+						id: "obtrophies:trophy"
+						tag: {
+							BlockEntityTag: {
+								VariantID: 0
+								entity: "twilightforest:ur_ghast"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "597CA0A024592455"
+					table_id: 7551237741644313248L
+					type: "random"
+				}
+			]
+			tasks: [{
+				entity: "twilightforest:ur_ghast"
+				icon: "twilightforest:ur_ghast_trophy"
+				id: "24E26690803F9C1B"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2C3EADF8F4372F53"]
+			id: "49BD7BC9B3FE3129"
+			rewards: [
+				{
+					id: "2B17ED45ABEFBE44"
+					item: {
+						Count: 1
+						id: "obtrophies:trophy"
+						tag: {
+							BlockEntityTag: {
+								VariantID: 0
+								entity: "twilightforest:alpha_yeti"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2D28864E9B01A1BA"
+					table_id: 7551237741644313248L
+					type: "random"
+				}
+			]
+			tasks: [{
+				entity: "twilightforest:alpha_yeti"
+				icon: "twilightforest:alpha_yeti_trophy"
+				id: "4A533BA9979B0AEF"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["49BD7BC9B3FE3129"]
+			id: "375FD02D01342E75"
+			rewards: [
+				{
+					id: "6D03B3E1BD165DC5"
+					item: {
+						Count: 1
+						id: "obtrophies:trophy"
+						tag: {
+							BlockEntityTag: {
+								VariantID: 0
+								entity: "twilightforest:snow_queen"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "15E28171A7FE967C"
+					table_id: 7551237741644313248L
+					type: "random"
+				}
+			]
+			tasks: [{
+				entity: "twilightforest:snow_queen"
+				icon: "twilightforest:snow_queen_trophy"
+				id: "37B51BCC16864F3D"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["375FD02D01342E75"]
+			id: "75C4BA6027360C07"
+			tasks: [{
+				id: "345E404BD742120C"
+				item: "twilightforest:magic_beans"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["75C4BA6027360C07"]
+			id: "3A75CF0FDA2AA793"
+			tasks: [{
+				id: "71415DB687729631"
+				item: {
+					Count: 1
+					id: "twilightforest:giant_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3A75CF0FDA2AA793"]
+			id: "6D1D9558C3039B98"
+			tasks: [{
+				id: "4A3BC9C1D689A079"
+				item: {
+					Count: 1
+					id: "twilightforest:lamp_of_cinders"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6D1D9558C3039B98"]
+			id: "601C9A4CABEEC770"
+			tasks: [{
+				id: "2BA9A7290AF034C3"
+				item: "mokels_witch_boss:totem_of_rot_and_decay"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"601C9A4CABEEC770"
+				"72839A76DDDCEADD"
+			]
+			dependency_requirement: "one_completed"
+			id: "7AB9243EE93C03DD"
+			tasks: [{
+				entity: "mokels_witch_boss:witchboss"
+				id: "0FDA453FBBBB8ACE"
+				type: "kill"
+				value: 1L
+			}]
+			x: 13.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7B98F4317F9682EF"]
+			id: "4A3B76F51510BE18"
+			tasks: [{
+				id: "66E161ADE104EC17"
+				item: "farmingforblockheads:market"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4A3B76F51510BE18"]
+			id: "7565E9FD01274DEB"
+			tasks: [{
+				id: "6E2ABC560ABD37C0"
+				item: "ars_nouveau:archwood_planks"
+				type: "item"
+			}]
+			title: "新生魔艺"
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7565E9FD01274DEB"]
+			id: "09587E4C675EB08B"
+			tasks: [{
+				id: "20FB796F2428EEC6"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["09587E4C675EB08B"]
+			id: "798B7340982334A5"
+			tasks: [{
+				id: "48C9C16616352DB9"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["09587E4C675EB08B"]
+			description: [
+				"你需要先将铁划分为更小的单位进行烧制，然后用魔法将碳融入铁中的同时使用牛奶去除掉杂质，最终你就可以得到钢了。"
+				""
+				"如果你需要更高效率的炼钢，附魔装置可以一次性合成一个&l&b钢块1x&l&r出来（也就是729个钢锭），代价是会消耗催化剂。"
+			]
+			icon: "alltheores:steel_ingot"
+			id: "0957D4FD27D19D08"
+			tasks: [
+				{
+					id: "4C408588177C6C1B"
+					item: "gtceu:wrought_iron_nugget"
+					type: "item"
+				}
+				{
+					id: "7125C06106A1F92F"
+					item: "alltheores:steel_ingot"
+					type: "item"
+				}
+			]
+			title: "魔法锻钢"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["798B7340982334A5"]
+			icon: "ars_nouveau:enchanting_apparatus"
+			id: "36CB8F664B96F9CD"
+			tasks: [
+				{
+					id: "36F9BD18064C69F8"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+				{
+					id: "1B4BAFD56D65E75A"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "77C1923006D52CD5"
+					item: { Count: 8, id: "ars_nouveau:arcane_pedestal" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3D38D0CCC5F560D3"]
+			description: [
+				"获得安山合金后你就可以开始进入机械动力了。"
+				""
+				"为了召唤出魔女，你需要用机械动力的粉碎轮来粉碎矿物获取&a经验颗粒&r。"
+				""
+				"如果你需要详细的教程的话可以移步到单独的机械动力任务章节。"
+			]
+			id: "46CE7275E5E0FE4C"
+			tasks: [{
+				id: "707A232771F44B32"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "机械动力"
+			x: 2.0d
 			y: -1.5d
 		}
+		{
+			dependencies: [
+				"7F4F9016A98C10C5"
+				"0957D4FD27D19D08"
+				"66D028E306A9A1F4"
+			]
+			id: "587CB287DD710596"
+			rewards: [{
+				count: 2
+				id: "4DBC11620AAB4E8A"
+				item: "create:gearbox"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3034C569585B0F5D"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["587CB287DD710596"]
+			id: "39B1E088615A23D5"
+			tasks: [{
+				id: "21016115F4ED9310"
+				item: "create:experience_block"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B98F4317F9682EF"]
+			description: [
+				"你现在需要以损失一部分金为代价获取你的第一批石英，石英是进入机械动力必须的材料。"
+				""
+				"&l你需要一把格雷的锻造锤来粉碎粗金，推荐你制作一把钻石锻造锤"
+			]
+			icon: "minecraft:quartz"
+			id: "3D38D0CCC5F560D3"
+			tasks: [
+				{
+					id: "09261E0828B29351"
+					item: "create:crushed_raw_gold"
+					type: "item"
+				}
+				{
+					id: "2BB73F47CAED9140"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+			]
+			title: "金沙中的石英"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B98F4317F9682EF"]
+			description: ["暮色森林的矿山内有巨量的矿石，包括你需要的铁、金、钻石、绿宝石等各种矿物。"]
+			id: "2167510FC76D9498"
+			rewards: [{
+				count: 64
+				id: "58038EAD0A438450"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0AE3E860054C8E0A"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "富饶的矿山"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3D38D0CCC5F560D3"]
+			description: [
+				"获取到灵魂沙后，你可以低成本的通过机械动力缠魂，将沙子变成灵魂沙，再水洗出石英。"
+				""
+				"你可以前往暮色恶魂高塔获取灵魂沙，或者通过新生魔艺的路径来合成灵魂沙。"
+				""
+				"你需要合成出荒野召唤之板，执行仪式后获取到&l&e荒野之角&r。"
+				"合成或者找到&l&e转换粉&r，用结构指南针找到&l&b谜题羊&r，将谜题羊转换为星宝石兽，将金粒作为礼物丢给星宝石兽，它就会变成&l&e星宝石兽碎片&r。"
+				""
+				"接下来就可以合成&l&e召唤之精华&r了，召唤之精华和沙子合成就可以获得你的第一批&l&e灵魂沙&r。"
+			]
+			icon: "minecraft:soul_sand"
+			id: "2DB9E4CBE7DCDC0D"
+			tasks: [
+				{
+					id: "370E5BFAD68AC3D7"
+					item: "ars_nouveau:ritual_wilden_summon"
+					type: "item"
+				}
+				{
+					id: "025DA277256AA1BE"
+					item: "ars_nouveau:wilden_horn"
+					type: "item"
+				}
+				{
+					id: "4719FF2AF22CA080"
+					item: "twilightforest:transformation_powder"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "obtrophies:trophy"
+						tag: {
+							BlockEntityTag: {
+								VariantID: 0
+								entity: "twilightforest:quest_ram"
+							}
+						}
+					}
+					id: "3D056B3FA2630806"
+					observe_type: 5
+					timer: 0L
+					title: "观察谜题羊"
+					to_observe: "twilightforest:quest_ram"
+					type: "observation"
+				}
+				{
+					id: "5E199D3DA930CD43"
+					item: "ars_nouveau:starbuncle_shards"
+					type: "item"
+				}
+				{
+					id: "42FD40D8F2414808"
+					item: "ars_nouveau:conjuration_essence"
+					type: "item"
+				}
+				{
+					id: "108375644CC665EE"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+			]
+			title: "获取灵魂沙"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["677B41B665F91E9C"]
+			id: "66D028E306A9A1F4"
+			tasks: [{
+				count: 21L
+				id: "26FAA700DEC557AF"
+				item: { Count: 21, id: "create:mechanical_crafter" }
+				type: "item"
+			}]
+			title: "更大的工作台？"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["46CE7275E5E0FE4C"]
+			description: ["强大的史蒂夫手臂可以把铜粉和锌粉直接混合为黄铜粉，烧炼后就可以得到黄铜锭。"]
+			icon: "alltheores:brass_ingot"
+			id: "677B41B665F91E9C"
+			tasks: [
+				{
+					id: "715E0FBA8F3E96A3"
+					item: "alltheores:brass_dust"
+					type: "item"
+				}
+				{
+					id: "65B88D130084C1CF"
+					item: "alltheores:brass_ingot"
+					type: "item"
+				}
+			]
+			title: "黄铜合金"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2167510FC76D9498"]
+			description: [
+				"制作矿锤，然后将粗矿打成2倍的粉末。"
+				"这个合成路线在很长的一段时间里都是最优的粗矿处理路径。"
+			]
+			id: "25FCB5CD6ACAC2AC"
+			rewards: [{
+				count: 2
+				id: "637669188D95E97A"
+				item: "alltheores:platinum_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "25AD94D849FEA8AD"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "alltheores:ore_hammers"
+					}
+				}
+				title: "Any #alltheores:ore_hammers"
+				type: "item"
+			}]
+			title: "最简单的2倍矿物路线"
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7B98F4317F9682EF"]
+			description: [
+				"一种极其坚硬的物质，在你承受超过60点的爆炸伤害而且还没有死亡的情况下会就出现。"
+				""
+				"在你脚下放一个tnt并点燃，然后等待即可。请注意安全！"
+			]
+			hide_dependency_lines: true
+			id: "7F4F9016A98C10C5"
+			rewards: [{
+				count: 64
+				id: "78632C63B1FBA7F3"
+				item: "l2archery:destroyer_arrow"
+				type: "item"
+			}]
+			tasks: [{
+				id: "42BCFEAD51744BE4"
+				item: "l2complements:explosion_shard"
+				type: "item"
+			}]
+			title: "破灭残片"
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["36CB8F664B96F9CD"]
+			icon: "ars_nouveau:magebloom"
+			id: "54E7E67C319AFC72"
+			tasks: [
+				{
+					id: "0AD3DB58524CE218"
+					item: "ars_nouveau:magebloom_crop"
+					type: "item"
+				}
+				{
+					id: "52FCA06012086E8B"
+					item: "ars_nouveau:magebloom"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["54E7E67C319AFC72"]
+			icon: {
+				Count: 1
+				id: "ars_nouveau:battlemage_robes"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5B08831D1409F148"
+			tasks: [
+				{
+					id: "5035B525C7A50643"
+					item: {
+						Count: 1
+						id: "ars_nouveau:battlemage_hood"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "18B1009DF63B5418"
+					item: {
+						Count: 1
+						id: "ars_nouveau:battlemage_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "76C9C0BA6A3E51C3"
+					item: {
+						Count: 1
+						id: "ars_nouveau:battlemage_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2A9ED80CCC91C774"
+					item: {
+						Count: 1
+						id: "ars_nouveau:battlemage_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "04D4282EF62C2236"
+					item: {
+						Count: 1
+						id: "ars_nouveau:wand"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "战斗法师套装"
+			x: 7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"5B08831D1409F148"
+				"39B1E088615A23D5"
+			]
+			description: ["在一个经验块上放置一个盔甲架，给盔甲架穿上战斗法师套装以及法杖，用转换粉右击经验块就可以吸引到魔女的注意力了。"]
+			id: "72839A76DDDCEADD"
+			tasks: [{
+				id: "38AC4FBDC2BA0B1C"
+				title: "召唤魔女仪式"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: -3.0d
+		}
 	]
-	title: "Re：暮色森林的外乡人"
+	title: "暮色森林的外乡人"
 }

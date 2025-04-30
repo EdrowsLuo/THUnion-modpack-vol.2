@@ -1,3 +1,8 @@
+const WITCHHAT_HEALTH_MOD = new VariableAttributeModifier(
+    "minecraft:generic.max_health", 
+    "WITCHHAT_HEALTH_MOD", 
+    "96a7d43f-2d22-88ef-b723-a239282d642b",
+    "multiply_total")
 
 const basementBlocks=['twilightforest:blue_force_field','twilightforest:green_force_field','twilightforest:blue_castle_rune_brick','twilightforest:yellow_castle_rune_brick'];
 
@@ -38,6 +43,21 @@ BlockEvents.rightClicked(event=>{
     }
 
 });
+
+["mokels_witch_boss:witchhat", "mokels_witch_boss:witchhat_giving"].forEach(name => {
+    EntityEvents.spawned(name, event => {
+        let entity = event.entity
+        WITCHHAT_HEALTH_MOD.initValue(entity, 100000 - 1)
+        entity.setHealth(entity.getMaxHealth())
+    
+        new VariableAttributeModifier(
+            "tacz:tacz.bullet_resistance",
+            "TACZ_RESIS",
+            "56846a60-a201-4a6b-8764-634b4c3b855f",
+            "addition"
+        ).withDefaultValue(1).initDefault(entity)
+    })
+})
 
 // EntityEvents.drops(event=>{
 //     var entity=event.getEntity();

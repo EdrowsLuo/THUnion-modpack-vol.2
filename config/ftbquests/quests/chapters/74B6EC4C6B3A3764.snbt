@@ -3,7 +3,6 @@
 	default_quest_shape: ""
 	filename: "74B6EC4C6B3A3764"
 	group: "2BEB05CF4131C8C7"
-	hide_quest_until_deps_visible: true
 	icon: "lootr:trophy"
 	id: "74B6EC4C6B3A3764"
 	order_index: 4

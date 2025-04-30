@@ -116,43 +116,6 @@
 			y: -2.5d
 		}
 		{
-			id: "518F97289D534ECA"
-			tasks: [
-				{
-					id: "453EA3004BC8E656"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "comforts:sleeping_bags"
-						}
-					}
-					title: "睡袋"
-					type: "item"
-				}
-				{
-					id: "58940516C0AF06E8"
-					item: "comforts:rope_and_nail"
-					type: "item"
-				}
-				{
-					id: "4F2E8753D23D8584"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "comforts:hammocks"
-						}
-					}
-					title: "可以跳过白天"
-					type: "item"
-				}
-			]
-			title: "随时随地睡大觉"
-			x: 4.5d
-			y: -2.5d
-		}
-		{
 			description: [
 				"书的书，可以塞进去所有的书。"
 				""
@@ -164,7 +127,7 @@
 				item: "akashictome:tome"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 4.5d
 			y: -2.5d
 		}
 		{
