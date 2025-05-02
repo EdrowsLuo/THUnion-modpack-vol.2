@@ -62,3 +62,30 @@ ServerEvents.recipes(event => {
         }
     })
 })
+
+
+BlockEvents.rightClicked("create:experience_block", event => {
+    if(event.item.id != "twilightforest:transformation_powder") return;
+    var block = event.block;
+    var level = event.level;
+
+    var pos = block.pos;
+
+    let armor_stands = level.getEntitiesWithin(AABB.of(pos.x + 1, pos.y, pos.z + 1, pos.x - 1, pos.y + 3, pos.z - 1))
+                            .filter(entity => entity.getType() == 'minecraft:armor_stand')
+    if(armor_stands.isEmpty()) return;
+    let armor_stand = armor_stands.getFirst()
+    let armor_stand_nbt = armor_stand.nbt
+    if(armor_stand_nbt.HandItems[0].id != "ars_nouveau:wand") return;
+    if(armor_stand_nbt.ArmorItems[0].id != "ars_nouveau:battlemage_boots") return;
+    if(armor_stand_nbt.ArmorItems[1].id != "ars_nouveau:battlemage_leggings") return;
+    if(armor_stand_nbt.ArmorItems[2].id != "ars_nouveau:battlemage_robes") return;
+    if(armor_stand_nbt.ArmorItems[3].id != "ars_nouveau:battlemage_hood") return;
+
+    block.set("air")
+    armor_stand.kill()
+    event.item.shrink(1)
+
+    level.runCommandSilent(`summon mokels_witch_boss:witchboss ${pos.x + 0.5} ${pos.y + 3} ${pos.z + 0.5} {Attributes: [{Base:200d, Name: "minecraft:generic.max_health"}]}`);
+    level.runCommandSilent(`particle minecraft:glow ${pos.x + 0.5} ${pos.y + 2} ${pos.z + 0.5} 1 1 1 0 100 normal`);
+})

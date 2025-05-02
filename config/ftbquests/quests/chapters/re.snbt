@@ -137,10 +137,16 @@
 				type: "dimension"
 			}]
 			x: -4.0d
-			y: -4.0d
+			y: -5.0d
 		}
 		{
-			description: ["这个物品替代了钻石作为暮色传送门激活物品的能力，你现在可以和以前一样搭建一个暮色传送门，然后把这个丢进去了。"]
+			dependencies: ["7AB9243EE93C03DD"]
+			description: [
+				"击败被束缚的魔女后，你就可以获得暮色森林传送门微缩模型了。"
+				""
+				"这个物品替代了钻石作为暮色传送门激活物品的能力，你现在可以和以前一样搭建一个暮色传送门，然后把这个丢进去了。"
+			]
+			hide_dependency_lines: true
 			id: "76A0762F87D8EF26"
 			tasks: [{
 				id: "355DC6671956F9ED"
@@ -148,8 +154,8 @@
 				type: "item"
 			}]
 			title: "前往主世界的钥匙"
-			x: -2.5d
-			y: -6.0d
+			x: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["20BE6956AE9A7444"]
@@ -896,6 +902,7 @@
 		}
 		{
 			dependencies: ["6D1D9558C3039B98"]
+			description: ["你需要先前往最终城堡的地下室，右击力场房间的力场方块会消除力场并召唤出试炼。想办法取得房间中央箱子内的腐烂图腾，并将其交给城堡最上方的魔女。"]
 			id: "601C9A4CABEEC770"
 			tasks: [{
 				id: "2BA9A7290AF034C3"
@@ -914,15 +921,17 @@
 			id: "7AB9243EE93C03DD"
 			tasks: [{
 				entity: "mokels_witch_boss:witchboss"
+				icon: "mokels_witch_boss:bottomless_bag"
 				id: "0FDA453FBBBB8ACE"
 				type: "kill"
 				value: 1L
 			}]
-			x: 13.0d
-			y: -0.5d
+			x: 8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["7B98F4317F9682EF"]
+			description: ["在小市场内你可以获取到新生魔艺所需的树苗和浆果丛。"]
 			id: "4A3B76F51510BE18"
 			tasks: [{
 				id: "66E161ADE104EC17"
@@ -934,6 +943,7 @@
 		}
 		{
 			dependencies: ["4A3B76F51510BE18"]
+			description: ["你现在需要使用新生魔艺来炼钢以及获取一些特殊的物品，如果想要更加高级的附魔你也需要使用到新生魔艺的附魔系统。"]
 			id: "7565E9FD01274DEB"
 			tasks: [{
 				id: "6E2ABC560ABD37C0"
@@ -989,7 +999,7 @@
 			]
 			title: "魔法锻钢"
 			x: 4.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["798B7340982334A5"]
@@ -1177,7 +1187,7 @@
 			]
 			title: "获取灵魂沙"
 			x: 1.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["677B41B665F91E9C"]
@@ -1264,7 +1274,7 @@
 			}]
 			title: "破灭残片"
 			x: 4.0d
-			y: -0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["36CB8F664B96F9CD"]
@@ -1286,7 +1296,11 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["54E7E67C319AFC72"]
+			dependencies: [
+				"54E7E67C319AFC72"
+				"05C97719B999686C"
+			]
+			description: ["你需要用这些来召唤魔女，当然你可以做一套给自己穿。"]
 			icon: {
 				Count: 1
 				id: "ars_nouveau:battlemage_robes"
@@ -1359,15 +1373,77 @@
 				"5B08831D1409F148"
 				"39B1E088615A23D5"
 			]
-			description: ["在一个经验块上放置一个盔甲架，给盔甲架穿上战斗法师套装以及法杖，用转换粉右击经验块就可以吸引到魔女的注意力了。"]
+			description: [
+				"在一个经验块上放置一个盔甲架（你需要制作一个带手臂的盔甲架），给盔甲架穿上战斗法师套装以及法杖，用转换粉右击经验块就可以吸引到魔女的注意力了。"
+				""
+				"这样召唤到的魔女相比城堡上的魔女会更弱。"
+			]
+			icon: "utilitix:armed_stand"
 			id: "72839A76DDDCEADD"
 			tasks: [{
-				id: "38AC4FBDC2BA0B1C"
-				title: "召唤魔女仪式"
-				type: "checkmark"
+				id: "6B3367FDAF5C5B5F"
+				item: "utilitix:armed_stand"
+				type: "item"
 			}]
-			x: 11.0d
+			title: "召唤魔女仪式"
+			x: 8.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["798B7340982334A5"]
+			description: ["你需要使用仪式火盆和荒野召唤仪式来获取荒野生物的掉落物。"]
+			icon: "ars_nouveau:ritual_brazier"
+			id: "6CE9AC0590D8F9EE"
+			tasks: [
+				{
+					id: "543306769265FDFF"
+					item: "ars_nouveau:ritual_brazier"
+					type: "item"
+				}
+				{
+					id: "212C1A21FD37F9AA"
+					item: "ars_nouveau:ritual_wilden_summon"
+					type: "item"
+				}
+			]
+			title: "仪式火盆"
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6CE9AC0590D8F9EE"]
+			icon: "ars_nouveau:wilden_horn"
+			id: "05C97719B999686C"
+			tasks: [
+				{
+					id: "56EC80C43D955BD3"
+					item: "ars_nouveau:wilden_horn"
+					type: "item"
+				}
+				{
+					id: "7FEB88B9BA691A76"
+					item: "ars_nouveau:wilden_spike"
+					type: "item"
+				}
+				{
+					id: "06875160A1ECC830"
+					item: "ars_nouveau:wilden_wing"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0957D4FD27D19D08"]
+			id: "0AE2B7BD13D57A48"
+			tasks: [{
+				id: "39677A375D19C6F6"
+				item: "tacz:gun_smith_table"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.5d
 		}
 	]
 	title: "暮色森林的外乡人"
