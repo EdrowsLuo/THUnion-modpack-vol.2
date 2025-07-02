@@ -100,7 +100,7 @@ const AllBosses = [
     , new BossType("远古遗魂", "cataclysm:ancient_remnant", 1.0)//.addDesc("位于主世界沙漠里的诅咒金字塔中心，使用沙漠项链唤醒。沙漠项链可以在诅咒金字塔中刷可疑的沙子获得"),
     , new BossType("混沌守卫", "draconicevolution:draconic_guardian", 1.0).withDeathReset(2).enableFly().enableMobYoinker()//.addDesc("感谢游玩本整合包！"),
     , new BossType("守卫凋灵", "draconicevolution:guardian_wither", 1.0).withDeathReset(-1).enableFly().enableMobYoinker() // not a boss
-    , new BossType("幼年末影龙", "endertrigon:baby_ender_dragon", 1.0).withDeathReset(-1).enableFly().enableMobYoinker() // not a boss
+    //, new BossType("幼年末影龙", "endertrigon:baby_ender_dragon", 1.0).withDeathReset(-1).enableFly().enableMobYoinker() // not a boss
     , new BossType("腐化英雄", "graveyard:lich", 1.0)//.addDesc("在海洋上方的空岛，使用三种骨杖残片和血瓶召唤"), // 12000
     , new BossType("明路巨兽", "jerotesvillage:bright_land_beast", 20.0)//.addDesc("在明路草原用明路鼓槌猛敲明路大鼓"), // 13000
     , new BossType("沉降领主", "jerotesvillage:sediment_lord", 30.0)//.addDesc("找到沉降墓穴中心的沉降领主棺"), // 5100

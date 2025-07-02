@@ -49,7 +49,7 @@ function MakeGoldenSweetBerries(event) {
             "alexscaves:tremorzilla_egg",
             "biggerreactors:ludicrite_block",
             "bigger_ae2:digital_singularity_flux_storage_cell",
-            "gtceu:nan_certificate",
+            "gtceu:ev_world_accelerator",
             "the_bumblezone:essence_of_the_bees",
             "deeperdarker:sonorous_staff",
             "jerotesvillage:second_round_world_teleport_stone",

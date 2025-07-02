@@ -11,7 +11,7 @@
     "item.kubejs.ore_core": "矿物核心",
     "item.kubejs.ore_core.desc": "将各种矿物融合在了一起",
 
-    "item.kubejs.ore_core_uncompleted": "矿物核心（未完成的）",
+    "item.kubejs.ore_core_uncompleted": "松散的矿物核心",
     "item.kubejs.ore_core_uncompleted.desc": "你还需要使用坠落的铁砧来将这些矿物融合到一起",
 
     "item.kubejs.treasure_core": "宝藏核心",
