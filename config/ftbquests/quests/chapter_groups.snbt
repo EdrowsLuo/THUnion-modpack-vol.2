@@ -2,5 +2,6 @@
 	chapter_groups: [
 		{ id: "2BEB05CF4131C8C7", title: "旅途" }
 		{ id: "5D83065599C5EF63", title: "总览" }
+		{ id: "3E3F7CA80DE31D58", title: "科技+魔法+探索" }
 	]
 }

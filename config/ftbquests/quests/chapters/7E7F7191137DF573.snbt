@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7E7F7191137DF573"
+	group: "3E3F7CA80DE31D58"
+	icon: "gtceu:micro_processor_mainframe"
+	id: "7E7F7191137DF573"
+	order_index: 8
+	quest_links: [ ]
+	quests: [ ]
+	title: "格雷"
+}

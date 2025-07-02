@@ -1,0 +1,17 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0A79B79F62C63DCB"
+	group: "3E3F7CA80DE31D58"
+	icon: "create:large_cogwheel"
+	id: "0A79B79F62C63DCB"
+	order_index: 1
+	quest_links: [{
+		id: "2B79A6673E407509"
+		linked_quest: "6BA10159881E4A60"
+		x: 0.0d
+		y: -0.5d
+	}]
+	quests: [ ]
+	title: "机械动力"
+}

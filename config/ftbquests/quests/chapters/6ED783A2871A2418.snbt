@@ -5,7 +5,7 @@
 	group: "5D83065599C5EF63"
 	icon: "gtceu:beehive"
 	id: "6ED783A2871A2418"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -130,7 +130,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["109014752147196A"]
 			hide_dependent_lines: true
 			id: "18B12709A88EE136"
 			tasks: [{

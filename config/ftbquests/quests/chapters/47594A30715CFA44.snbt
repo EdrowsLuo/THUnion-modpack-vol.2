@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "47594A30715CFA44"
+	group: "2BEB05CF4131C8C7"
+	icon: "kubejs:golden_sweet_berries"
+	id: "47594A30715CFA44"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "章节三：金浆果"
+}

@@ -1,0 +1,50 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7919B8370BF8B927"
+	group: ""
+	icon: "supplementaries:key"
+	id: "7919B8370BF8B927"
+	order_index: 3
+	quest_links: [
+		{
+			id: "1F8D638D6E018387"
+			linked_quest: "223608EA82A803AB"
+			x: 0.5d
+			y: -7.5d
+		}
+		{
+			id: "2D74857022AB9BDD"
+			linked_quest: "1C14858212B8AD2A"
+			x: 2.5d
+			y: -7.5d
+		}
+	]
+	quests: [
+		{
+			description: ["安山合金是机械动力所需的关键材料，你往后需要用到很多很多。"]
+			id: "6BA10159881E4A60"
+			tasks: [{
+				id: "44FAC601BD1F7961"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "关键节点：安山合金"
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			description: ["魔源宝石是新生魔艺的关键材料，你之后会用到很多。"]
+			id: "4BDE2436FFD64AF5"
+			tasks: [{
+				id: "79FE04144F79AC72"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			title: "关键节点：魔源宝石"
+			x: 2.5d
+			y: -3.5d
+		}
+	]
+	title: "关键节点"
+}

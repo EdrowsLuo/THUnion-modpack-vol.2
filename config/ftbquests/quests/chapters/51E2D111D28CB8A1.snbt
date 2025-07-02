@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "51E2D111D28CB8A1"
+	group: "3E3F7CA80DE31D58"
+	icon: "mekanism:metallurgic_infuser"
+	id: "51E2D111D28CB8A1"
+	order_index: 3
+	quest_links: [ ]
+	quests: [ ]
+	title: "通用机械"
+}

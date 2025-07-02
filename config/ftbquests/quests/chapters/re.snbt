@@ -124,66 +124,34 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["76A0762F87D8EF26"]
-			hide_until_deps_visible: false
-			id: "109014752147196A"
-			shape: "diamond"
-			size: 2.0d
-			subtitle: "回归！"
-			tasks: [{
-				dimension: "minecraft:overworld"
-				id: "52A48269627B74F8"
-				title: "前往主世界"
-				type: "dimension"
-			}]
-			x: -4.0d
-			y: -5.0d
-		}
-		{
 			dependencies: ["7AB9243EE93C03DD"]
 			description: [
 				"击败被束缚的魔女后，你就可以获得暮色森林传送门微缩模型了。"
 				""
 				"这个物品替代了钻石作为暮色传送门激活物品的能力，你现在可以和以前一样搭建一个暮色传送门，然后把这个丢进去了。"
 			]
-			hide_dependency_lines: true
+			icon: "twilightforest:twilight_portal_miniature_structure"
 			id: "76A0762F87D8EF26"
-			tasks: [{
-				id: "355DC6671956F9ED"
-				item: "twilightforest:twilight_portal_miniature_structure"
-				type: "item"
-			}]
+			shape: "gear"
+			size: 3.0d
+			tasks: [
+				{
+					id: "355DC6671956F9ED"
+					item: "twilightforest:twilight_portal_miniature_structure"
+					type: "item"
+				}
+				{
+					dimension: "minecraft:overworld"
+					id: "50555737E7DA26A3"
+					title: "前往主世界"
+					type: "dimension"
+				}
+			]
 			title: "前往主世界的钥匙"
-			x: -4.0d
-			y: -3.0d
+			x: 10.5d
+			y: -0.5d
 		}
 		{
-			dependencies: ["20BE6956AE9A7444"]
-			id: "2F2537066B86E9F3"
-			subtitle: "为了发展工业，你需要去找到这个地方"
-			tasks: [{
-				biome: "alexscaves:magnetic_caves"
-				id: "38DFE8776F7AFE2C"
-				type: "biome"
-			}]
-			title: "探索Alex的磁力洞穴"
-			x: -8.5d
-			y: -11.0d
-		}
-		{
-			dependencies: ["109014752147196A"]
-			id: "4A5CF0E2C58CC54C"
-			subtitle: "接下来的任务只是一些前期建议，没有思绪的时候可以来看看"
-			tasks: [{
-				id: "42D73763264A9B2D"
-				title: "建议"
-				type: "checkmark"
-			}]
-			x: -4.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["4A5CF0E2C58CC54C"]
 			id: "20BE6956AE9A7444"
 			rewards: [
 				{
@@ -210,178 +178,8 @@
 				type: "item"
 			}]
 			title: "Alex的洞穴"
-			x: -6.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["20BE6956AE9A7444"]
-			id: "1619774A4979611C"
-			subtitle: "这可以解决你的发电问题"
-			tasks: [{
-				biome: "alexscaves:toxic_caves"
-				id: "14D0C7CB2729F096"
-				type: "biome"
-			}]
-			title: "探索毒化洞穴"
-			x: -9.0d
-			y: -9.0d
-		}
-		{
-			dependencies: ["4A5CF0E2C58CC54C"]
-			id: "046576A47FE77434"
-			subtitle: "发展血魔法，在不久的将来这会给你带来很大的提升。"
-			tasks: [{
-				id: "4DE76319F857489E"
-				item: "bloodmagic:altar"
-				type: "item"
-			}]
-			title: "大魔法师的精选"
-			x: -5.5d
-			y: -10.0d
-		}
-		{
-			dependencies: ["4A5CF0E2C58CC54C"]
-			id: "01F85F885D09E929"
-			subtitle: "你现在就可以发展AE了，不过可能还需要解决一下能源问题。"
-			tasks: [{
-				id: "2BB71E50975B2191"
-				item: "ae2:controller"
-				type: "item"
-			}]
-			title: "准备AE"
-			x: -4.0d
-			y: -11.0d
-		}
-		{
-			dependencies: ["01F85F885D09E929"]
-			id: "18030E53EF41013B"
-			subtitle: "如果你已经在生产魔力了，那么这也是一种选择。"
-			tasks: [{
-				id: "1F4DEAB3679297F4"
-				item: "arseng:source_acceptor"
-				type: "item"
-			}]
-			title: "魔法驱动AE"
-			x: -5.0d
-			y: -12.0d
-		}
-		{
-			dependencies: ["01F85F885D09E929"]
-			id: "5DC69226C5E51F21"
-			subtitle: "或许，最原始的方法也还是可以使用的。"
-			tasks: [{
-				id: "79F6F8D8EA1F6304"
-				item: "ae2:vibration_chamber"
-				type: "item"
-			}]
-			title: "最原始的AE"
-			x: -3.0d
-			y: -12.0d
-		}
-		{
-			dependencies: ["4A5CF0E2C58CC54C"]
-			id: "5B48BB137AB413A0"
-			subtitle: "去寻找ATM矿，这可能会给你一些帮助"
-			tasks: [{
-				id: "0D4191869648102A"
-				item: "allthemodium:raw_allthemodium"
-				type: "item"
-			}]
-			title: "ATM"
-			x: -2.5d
-			y: -10.0d
-		}
-		{
-			dependencies: ["5B48BB137AB413A0"]
-			id: "463ED6EBE4260297"
-			tasks: [
-				{
-					id: "756C126E7963A5E9"
-					item: "allthemodium:teleport_pad"
-					type: "item"
-				}
-				{
-					dimension: "allthemodium:mining"
-					id: "2D2525BDCFE8AC84"
-					title: "在主世界使用传送垫前往挖矿维度"
-					type: "dimension"
-				}
-				{
-					dimension: "allthemodium:the_other"
-					id: "1A73B3B0A63E9BF7"
-					title: "在下界使用传送垫前往异界"
-					type: "dimension"
-				}
-				{
-					dimension: "allthemodium:the_beyond"
-					id: "173371FE4E3C41E5"
-					title: "在末地使用传送垫前往虚空的维度"
-					type: "dimension"
-				}
-			]
-			title: "三个特殊维度"
-			x: -1.0d
-			y: -11.0d
-		}
-		{
-			dependencies: ["4A5CF0E2C58CC54C"]
-			description: ["蹲下右键村民可以收回村民，这是简易村民Mod的功能"]
-			id: "64C8D00CF048B24A"
-			subtitle: "村庄可以帮你很多。"
-			tasks: [{
-				id: "0C5574E27E121507"
-				item: "easy_villagers:villager"
-				match_nbt: false
-				type: "item"
-			}]
-			title: "找到一个村庄"
-			x: -1.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["4A5CF0E2C58CC54C"]
-			description: [
-				"随便逛逛，看看有什么想玩的mod，有啥还没去的维度，你的进度自己做主。"
-				"ps. 善用mcmod百科"
-				"ps. 考虑一下和朋友们一起行动吧"
-			]
-			id: "3F9B250A0F0CDEDD"
-			subtitle: "悠闲的享受minecraft生活"
-			tasks: [{
-				id: "0A9D8FF41D7410CF"
-				title: "自由的探索"
-				type: "checkmark"
-			}]
-			title: "自由的探索"
-			x: -4.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["4A5CF0E2C58CC54C"]
-			description: [""]
-			id: "656A3569B50B1FF9"
-			subtitle: "你可以和往常一样的开始机械动力"
-			tasks: [{
-				id: "4A0960DE9143CDA2"
-				item: "create:andesite_alloy"
-				type: "item"
-			}]
-			title: "机械动力还是一如既往"
-			x: -6.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["4A5CF0E2C58CC54C"]
-			id: "41EFC4B59A0E55CD"
-			subtitle: "整个法术系统的基础"
-			tasks: [{
-				id: "09CA2FAE99661B44"
-				item: "ars_nouveau:source_gem"
-				type: "item"
-			}]
-			title: "开始新生魔艺"
-			x: -1.5d
-			y: -7.5d
+			x: 10.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["67930ABD4082CF2B"]
@@ -565,6 +363,7 @@
 				""
 				"似乎这种传送门模型在一位魔女的手上，你可以在暮色森林的最终城堡找到她，或者，使用魔法的力量直接呼唤她。"
 			]
+			icon: "twilightforest:twilight_portal_miniature_structure"
 			id: "7B98F4317F9682EF"
 			rewards: [
 				{
@@ -594,7 +393,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["7B98F4317F9682EF"]
+			dependencies: ["4002031076E1B30C"]
 			id: "2EFBD3A2CFDD4954"
 			rewards: [
 				{
@@ -927,42 +726,37 @@
 				value: 1L
 			}]
 			x: 8.0d
-			y: 2.0d
+			y: -0.5d
 		}
 		{
-			dependencies: ["7B98F4317F9682EF"]
+			dependencies: ["6CBA84C2A517B90B"]
 			description: ["在小市场内你可以获取到新生魔艺所需的树苗和浆果丛。"]
+			icon: "farmingforblockheads:market"
 			id: "4A3B76F51510BE18"
-			tasks: [{
-				id: "66E161ADE104EC17"
-				item: "farmingforblockheads:market"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "66E161ADE104EC17"
+					item: "farmingforblockheads:market"
+					type: "item"
+				}
+				{
+					id: "14781F26B2775B67"
+					item: "ars_nouveau:archwood_planks"
+					type: "item"
+				}
+			]
 			x: 1.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["4A3B76F51510BE18"]
-			description: ["你现在需要使用新生魔艺来炼钢以及获取一些特殊的物品，如果想要更加高级的附魔你也需要使用到新生魔艺的附魔系统。"]
-			id: "7565E9FD01274DEB"
-			tasks: [{
-				id: "6E2ABC560ABD37C0"
-				item: "ars_nouveau:archwood_planks"
-				type: "item"
-			}]
-			title: "新生魔艺"
-			x: 2.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["7565E9FD01274DEB"]
 			id: "09587E4C675EB08B"
 			tasks: [{
 				id: "20FB796F2428EEC6"
 				item: "ars_nouveau:imbuement_chamber"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: -4.5d
 		}
 		{
@@ -973,7 +767,7 @@
 				item: "ars_nouveau:source_gem"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.0d
 			y: -4.5d
 		}
 		{
@@ -1023,7 +817,7 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
+			x: 4.0d
 			y: -4.5d
 		}
 		{
@@ -1074,11 +868,11 @@
 				item: "create:experience_block"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 6.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["7B98F4317F9682EF"]
+			dependencies: ["6CBA84C2A517B90B"]
 			description: [
 				"你现在需要以损失一部分金为代价获取你的第一批石英，石英是进入机械动力必须的材料。"
 				""
@@ -1292,7 +1086,7 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
+			x: 5.0d
 			y: -4.5d
 		}
 		{
@@ -1365,7 +1159,7 @@
 				}
 			]
 			title: "战斗法师套装"
-			x: 7.0d
+			x: 6.0d
 			y: -4.5d
 		}
 		{
@@ -1386,7 +1180,7 @@
 				type: "item"
 			}]
 			title: "召唤魔女仪式"
-			x: 8.0d
+			x: 6.5d
 			y: -3.0d
 		}
 		{
@@ -1407,7 +1201,7 @@
 				}
 			]
 			title: "仪式火盆"
-			x: 5.0d
+			x: 4.0d
 			y: -5.5d
 		}
 		{
@@ -1431,7 +1225,7 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
+			x: 5.0d
 			y: -5.5d
 		}
 		{
@@ -1445,6 +1239,100 @@
 			x: 5.0d
 			y: -3.5d
 		}
+		{
+			dependencies: ["7B98F4317F9682EF"]
+			description: ["很多时候漫无目的的跑图寻找某些群系或者特殊结构是一个很无聊而且很浪费时间和硬盘的工作，这时你就需要这些特殊的指南针了。"]
+			id: "0FCE155994FDB15D"
+			rewards: [{
+				id: "2857B52EA1081023"
+				item: {
+					Count: 1
+					id: "explorerscompass:explorerscompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "539BB73F3A897EA9"
+				item: {
+					Count: 1
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "坚定的目标"
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7B98F4317F9682EF"]
+			id: "6CBA84C2A517B90B"
+			tasks: [{
+				id: "51295822B773B647"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "科技路线"
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7B98F4317F9682EF"]
+			id: "4002031076E1B30C"
+			tasks: [{
+				id: "51DFEB711CAB2081"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			title: "战斗路线"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["67930ABD4082CF2B"]
+			description: [
+				"1.先看这里"
+				" 你应该先去查阅任务书最上面的那一章，如果你还没有看完的话最好回去补完一下，有一些重要信息和一些对你开局很有帮助的奖励。"
+				""
+				"{ \"text\": \"链接：先看这里\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0AD2FDBCB981F155\" } }"
+				""
+				"2. 商店章节"
+				""
+				"在你摸了一些宝箱或者战胜了一些boss后，你可以用战斗核心和宝藏核心来换取一些非常好用的物资。"
+				""
+				"{ \"text\": \"链接：商店\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"25D90D361468752E\" } }"
+				""
+				"（下一页还有内容）"
+				""
+				"{@pagebreak}"
+				""
+				"3. 实用工具"
+				""
+				"这里包含了一些比较小的特殊功能mod。"
+				"事先了解一下，当你需要用到的时候可能就会想起来它们了。"
+				""
+				""
+				"{ \"text\": \"链接：实用工具\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7C79E15A70AA694D\" } }"
+				""
+				"4. 旅途"
+				""
+				"旅途章节组指引你一步步的探索这个世界。开局位于这个章节组的第一章，进入主世界后解锁第二章。"
+				""
+				""
+				"其他的任务书章节目前对你可能用处有限，如果需要的话可以参考参考机械动力和新生魔艺的独立教程，仅此而已。"
+			]
+			icon: "ftbquests:book"
+			id: "223608EA82A803AB"
+			shape: "rsquare"
+			tasks: [{
+				id: "46E3D99E66B2C3D9"
+				title: "任务书介绍（一）"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
 	]
-	title: "暮色森林的外乡人"
+	title: "章节一：暮色森林的外乡人"
 }

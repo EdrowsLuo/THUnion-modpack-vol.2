@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2"
+	group: "3E3F7CA80DE31D58"
+	icon: "ae2:charged_certus_quartz_crystal"
+	id: "0FB15A69DFD5E2F8"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "应用能源2"
+}

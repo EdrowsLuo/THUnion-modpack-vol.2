@@ -9,6 +9,11 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"此整合包受到ATM系列整合包的启发而制作。"
+				""
+				"无论你是想尝试接触minecraft模组世界的新玩家，还是希望体验新系统、新mod新内容的老玩家，此整合包内都有你想要的东西。"
+			]
 			icon: "kubejs:golden_sweet_berries"
 			id: "0AD2FDBCB981F155"
 			rewards: [{
@@ -243,6 +248,7 @@
 				"390B32FB37CB9B88"
 				"675EABCCB6FB5867"
 				"7420E76101D7AEC2"
+				"15FA9DCA20EC146F"
 			]
 			hide_dependency_lines: true
 			id: "26D97EC06ACFEB47"
@@ -390,7 +396,7 @@
 		}
 		{
 			dependencies: ["72020FD69437BCB6"]
-			description: ["你可以在 https://mcmod.cn/ 里找到各种mod的百科页面。任务书里不会有特别细致的指引，遇到不懂的就可以去百科查查，甚至还可以发现新天地。"]
+			description: ["你可以在 https://mcmod.cn/ 里找到各种mod的百科页面。任务书里的指引可能会有疏漏，遇到不懂的就可以去百科查查，甚至还可以发现新天地。"]
 			id: "3F8CD27A7841A952"
 			tasks: [{
 				id: "1AFB9AD4B8A5CE57"
@@ -414,7 +420,7 @@
 		}
 		{
 			dependencies: ["72020FD69437BCB6"]
-			description: ["默认按键为左Alt。一次最多挖掘32个方块，有5s冷却时间。"]
+			description: ["默认按键为左Alt。一次最多挖掘64个方块，有5s冷却时间。"]
 			id: "390B32FB37CB9B88"
 			tasks: [{
 				id: "3D4CF4E9E1040113"
@@ -430,6 +436,8 @@
 				"机械动力软管滑轮不再把10000格流体视作无限流体源了，如果你需要无穷无尽的岩浆，最好换个方法。"
 				""
 				"比如模拟火山。"
+				""
+				"（当然你也可以估算一下你的岩浆消耗量再决定使用什么路线）"
 			]
 			icon: "alexscaves:volcanic_core"
 			id: "675EABCCB6FB5867"
@@ -457,6 +465,18 @@
 			}]
 			title: "战斗翻滚"
 			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0AD2FDBCB981F155"]
+			description: ["在旅途章节中会有介绍任务书的内容，防止你看任务书里这么多的章节看的头大了。"]
+			id: "15FA9DCA20EC146F"
+			tasks: [{
+				id: "3F6EA2F319C37D9A"
+				title: "引导的引导"
+				type: "checkmark"
+			}]
+			x: -1.0d
 			y: -5.0d
 		}
 	]

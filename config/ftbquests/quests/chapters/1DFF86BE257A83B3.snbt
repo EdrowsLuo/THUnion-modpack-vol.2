@@ -11,16 +11,21 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"简易的摘下灾厄之册的方法。"
+				""
+				"注意！这会一次性弹出你的所有饰品，请确保不会造成坏的影响！"
+			]
 			id: "5857516570F87007"
 			rewards: [
 				{
-					command: "/curios drop @p catastrophe"
+					command: "/curios drop @p"
 					elevate_perms: true
 					exclude_from_claim_all: true
 					icon: "celestial_artifacts:catastrophe_scroll"
 					id: "07FA3623EA269F5B"
 					silent: true
-					title: "弹出你的灾厄之册"
+					title: "弹出你的灾厄之册（以及其他所有饰品）"
 					type: "command"
 				}
 				{
@@ -190,6 +195,34 @@
 			title: "药水自选"
 			x: 1.0d
 			y: -7.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:ancient"
+					}
+					gem: "apotheosis:the_end/endersurge"
+				}
+			}
+			id: "25D90D361468752E"
+			rewards: [{
+				id: "16B16B4BE7826D2D"
+				item: "kubejs:treasure_core"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "75A77F2540AE98AB"
+				item: "kubejs:treasure_core"
+				type: "item"
+			}]
+			title: "欢迎光临"
+			x: -1.5d
+			y: -11.0d
 		}
 	]
 	title: "商店"

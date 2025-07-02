@@ -2,14 +2,13 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "74B6EC4C6B3A3764"
-	group: "2BEB05CF4131C8C7"
+	group: "3E3F7CA80DE31D58"
 	icon: "lootr:trophy"
 	id: "74B6EC4C6B3A3764"
-	order_index: 4
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["109014752147196A"]
 			hide_dependent_lines: true
 			id: "5BDB529A3F61BEE4"
 			subtitle: "一些关键的合成材料，需要独特的合成方法。"

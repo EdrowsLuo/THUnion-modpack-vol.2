@@ -1,0 +1,90 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5717FAF5D63121D5"
+	group: "2BEB05CF4131C8C7"
+	icon: "minecraft:grass_block"
+	id: "5717FAF5D63121D5"
+	order_index: 1
+	quest_links: [{
+		id: "7204612B8BB6B7F5"
+		linked_quest: "76A0762F87D8EF26"
+		shape: "gear"
+		size: 2.0d
+		x: -2.0d
+		y: -1.5d
+	}]
+	quests: [
+		{
+			dependencies: ["76A0762F87D8EF26"]
+			description: [
+				"你现在进入了主世界，接下来会有一段很长的自由探索阶段，发展路线会比较发散。"
+				""
+				"有一些大致的发展方向供你参考。"
+			]
+			id: "0EBA2AE42B7ED266"
+			tasks: [{
+				id: "0A9DA18A6827D765"
+				type: "checkmark"
+			}]
+			title: "指引一"
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			id: "220A42C72B97F6C4"
+			tasks: [{
+				id: "2B926C33EF4EFB60"
+				title: "世界探索"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			id: "7A00DB5F300C5219"
+			tasks: [{
+				id: "1DBBE32A2D160E36"
+				title: "发电"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			id: "7447E00FB6B4452E"
+			tasks: [{
+				id: "03DBB2686F32FA92"
+				title: "指引二"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"76A0762F87D8EF26"
+				"223608EA82A803AB"
+			]
+			description: [
+				"1. &l总览&r"
+				"总览部分现在对你非常有用。"
+				""
+				"{ \"text\": \"1.1. 天顶科技公司\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"57C74BF21E254657\" } }"
+				""
+				"你可以在这里找到各种你需要的科技，比如发电、储电、获取资源、一些简化配方、传送。"
+			]
+			icon: "ftbquests:book"
+			id: "1C14858212B8AD2A"
+			shape: "rsquare"
+			tasks: [{
+				id: "1AEBE8E6F6696494"
+				title: "任务书介绍（二）"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+	]
+	title: "章节二：探索时光"
+}
